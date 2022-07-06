@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, type Ref } from "vue";
+import { useIntervalFn } from "@vueuse/core";
 import { useECharts } from "@pureadmin/utils";
 
 const barChartRef = ref<HTMLDivElement | null>(null);
@@ -39,11 +40,6 @@ setOptions(
       {
         triggerEvent: true,
         type: "category",
-        axisLine: {
-          lineStyle: {
-            color: "rgba(204,187,225,0.5)",
-          },
-        },
         splitLine: {
           show: false,
         },
@@ -62,9 +58,6 @@ setOptions(
         },
         axisLine: {
           show: true,
-          lineStyle: {
-            color: "rgba(204,187,225,0.5)",
-          },
         },
       },
     ],
@@ -83,9 +76,6 @@ setOptions(
         type: "line",
         symbolSize: 10,
         symbol: "circle",
-        itemStyle: {
-          color: "#6f7de3",
-        },
         markPoint: {
           label: {
             color: "#fff",
@@ -112,9 +102,6 @@ setOptions(
         type: "line",
         symbolSize: 10,
         symbol: "circle",
-        itemStyle: {
-          color: "#c257F6",
-        },
         markPoint: {
           label: {
             color: "#fff",
@@ -148,7 +135,7 @@ setOptions(
 );
 
 let a = 1;
-setInterval(() => {
+useIntervalFn(() => {
   if (a == xData.length - 24) {
     a = 0;
   }

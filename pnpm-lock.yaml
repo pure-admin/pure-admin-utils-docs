@@ -5,6 +5,7 @@ specifiers:
   '@pureadmin/utils': ^0.0.14
   '@types/react': ^18.0.14
   '@vue/theme': ^1.0.2
+  '@vueuse/core': ^8.7.5
   echarts: ^5.3.3
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -20,6 +21,7 @@ devDependencies:
   '@pureadmin/utils': 0.0.14_echarts@5.3.3+vue@3.2.37
   '@types/react': 18.0.14
   '@vue/theme': 1.0.2_6f12f59c30e372244f50ee5fad20f277
+  '@vueuse/core': 8.7.5_vue@3.2.37
   echarts: 5.3.3
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
