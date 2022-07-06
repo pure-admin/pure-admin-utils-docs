@@ -14,7 +14,7 @@ const getHooksLinks = () => {
   const links: any[] = [];
   HooksList?.forEach((item) => {
     links.push({
-      text: item.compZhName,
+      text: item.compName,
       link: `/Hooks/${item.compName}/index`,
     });
   });
@@ -23,7 +23,10 @@ const getHooksLinks = () => {
 
 const themeConfig = async () => {
   const config = await base();
-  config.markdown.highlight = await highlight();
+  config.markdown = {
+    highlight: await highlight(),
+    // lineNumbers: true,
+  };
   return config;
 };
 
@@ -35,12 +38,12 @@ export default defineConfig({
   themeConfig: {
     siteTitle: "@pureadmin/utils",
     outlineTitle: "目录",
-    // socialLinks: [
-    //   {
-    //     icon: "github",
-    //     link: "",
-    //   },
-    // ],
+    socialLinks: [
+      {
+        icon: "github",
+        link: "https://github.com/xiaoxian521/pure-admin-utils-docs",
+      },
+    ],
     nav: [{ text: "指引", link: "/Guide/index" }],
     sidebar: [
       {
@@ -53,7 +56,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "图表",
+        text: "Hooks",
         collapsible: true,
         items: getHooksLinks(),
       },
@@ -62,6 +65,7 @@ export default defineConfig({
       message: "Released under the MIT License.",
       copyright: "Copyright © 2022-present RealityBoy",
     },
+    lastUpdatedText: "最近更新时间",
   },
   vite: {
     build: {

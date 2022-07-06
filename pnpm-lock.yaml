@@ -8,6 +8,7 @@ specifiers:
   echarts: ^5.3.3
   react: ^18.2.0
   react-dom: ^18.2.0
+  shiki: ^0.10.1
   typescript: ^4.7.4
   unocss: ^0.43.1
   vite: ^2.9.13
@@ -22,6 +23,7 @@ devDependencies:
   echarts: 5.3.3
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  shiki: 0.10.1
   typescript: 4.7.4
   unocss: 0.43.1_vite@2.9.13
   vite: 2.9.13

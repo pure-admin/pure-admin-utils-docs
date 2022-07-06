@@ -20,6 +20,8 @@ html .vp-doc {
 
   --vt-code-inserted: #1c6b48;
   --vt-code-deleted: #a14f55;
+
+  /* --vp-code-line-number-color: red; */
 }
 
 html.dark .vp-doc {
@@ -39,6 +41,8 @@ html.dark .vp-doc {
 
   --vt-code-inserted: #4d9375;
   --vt-code-deleted: #bc6066;
+
+  /* --vp-code-line-number-color: green; */
 }
 
 /* Overrides */

@@ -2,8 +2,6 @@
   {
     "compType": "Hooks",
     "compName": "useEcharts",
-    "compZhName": "加载",
-    "compDesc": "加载",
     "compClassName": "useEcharts"
   }
 ]
