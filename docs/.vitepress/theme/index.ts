@@ -1,5 +1,6 @@
 import { type Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
+import Description from "../../components/description.vue";
 
 import "uno.css";
 import "./style/code.css";
@@ -11,6 +12,7 @@ import { useEcharts } from "../plugins/echarts";
 const theme: Theme = {
   ...DefaultTheme,
   enhanceApp({ app }) {
+    app.component("description", Description);
     app.use(useEcharts);
   },
 };

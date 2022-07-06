@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /Guide/index
+      link: /guide/guide
     - theme: alt
       text: 作者
       link: https://github.com/xiaoxian521

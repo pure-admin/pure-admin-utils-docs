@@ -1,22 +1,7 @@
-import links from "./links";
 import Unocss from "unocss/vite";
+import { sync } from "fast-glob";
 import mkcert from "vite-plugin-mkcert";
-import { defineConfig } from "vitepress";
-
-const HooksList = links.filter(
-  (item: any) => !item.children || item.children.length === 0
-);
-
-const getHooksLinks = () => {
-  const links: any[] = [];
-  HooksList.forEach((item) => {
-    links.push({
-      text: item.name,
-      link: `/Hooks/${item.name}/index`,
-    });
-  });
-  return links;
-};
+import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
   markdown: {
@@ -37,21 +22,26 @@ export default defineConfig({
         link: "https://github.com/xiaoxian521/pure-admin-utils-docs",
       },
     ],
-    nav: [{ text: "指引", link: "/Guide/index" }],
+    nav: [{ text: "指引", link: "/guide/guide" }],
     sidebar: [
       {
         text: "介绍",
         items: [
           {
             text: "快速开始",
-            link: "/Guide/index",
+            link: "/guide/guide",
           },
         ],
       },
       {
-        text: "Hooks",
+        text: `Hooks（${getItems("hooks").length}）`,
         collapsible: true,
-        items: getHooksLinks(),
+        items: getItems("hooks"),
+      },
+      {
+        text: `Utils（${getItems("utils").length}）`,
+        collapsible: true,
+        items: getItems("utils"),
       },
     ],
     footer: {
@@ -67,7 +57,12 @@ export default defineConfig({
     },
     optimizeDeps: {
       // 不进行预编译，因为预编译可能会触发页面整体刷新
-      exclude: ["@pureadmin/utils", "echarts", "@vueuse/core"],
+      exclude: [
+        "echarts",
+        "@vueuse/core",
+        "@pureadmin/utils",
+        "@vicons/ionicons5",
+      ],
     },
     build: {
       chunkSizeWarningLimit: 2000,
@@ -78,3 +73,17 @@ export default defineConfig({
     reactivityTransform: true,
   },
 });
+
+function getItems(path: string) {
+  const links: DefaultTheme.SidebarItem[] = [];
+  sync(`docs/${path}/*`, {
+    onlyDirectories: true,
+    objectMode: true,
+  }).forEach(({ name }) => {
+    links.push({
+      text: name,
+      link: `/${path}/${name}/${name}`,
+    });
+  });
+  return links;
+}
