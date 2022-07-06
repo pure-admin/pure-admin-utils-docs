@@ -4,6 +4,7 @@ import DefaultTheme from "vitepress/theme";
 import "uno.css";
 import "./style/code.css";
 import "./style/overrides.css";
+import "@unocss/reset/tailwind.css";
 
 import { useEcharts } from "../plugins/echarts";
 

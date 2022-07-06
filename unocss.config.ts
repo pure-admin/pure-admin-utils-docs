@@ -13,10 +13,6 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   // @ts-expect-error
   exclude: [`${__dirname}/node_modules/**/*`],
-  shortcuts: {
-    "wh-full": "w-full h-full",
-    "flex-ac": "flex justify-around items-center",
-    "flex-bc": "flex justify-between items-center",
-  },
+  shortcuts: {},
   theme: {},
 });

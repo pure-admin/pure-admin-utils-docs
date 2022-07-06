@@ -1,7 +1,3 @@
-html.dark {
-  color-scheme: dark;
-}
-
 /* Color scheme */
 html .vp-doc {
   --vt-code-comment: #a0ada0;
@@ -57,34 +53,6 @@ a > code {
 
 .vp-doc [class*="language-"] pre {
   padding: 24px;
-}
-
-.shiki-light {
-  background: #f9f9f9 !important;
-}
-.shiki-dark {
-  background: #242424 !important;
-}
-
-html.dark .shiki-light {
-  opacity: 0;
-  z-index: -1;
-}
-html:not(.dark) .shiki-dark {
-  opacity: 0;
-  z-index: -1;
-}
-
-.shiki {
-  transition: opacity 0.5s !important;
-}
-
-.shiki-light {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .vp-doc div[class*="language-"] {

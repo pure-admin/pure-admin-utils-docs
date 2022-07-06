@@ -15,10 +15,6 @@
   --vp-c-green-dark: #337ecc;
 }
 
-html.dark {
-  color-scheme: dark;
-}
-
 .vp-doc h1 {
   margin: 0 0 1rem;
 }

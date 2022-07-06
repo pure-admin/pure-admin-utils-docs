@@ -1,38 +1,31 @@
+import links from "./links";
 import Unocss from "unocss/vite";
-// @ts-expect-error
-import base from "@vue/theme/config";
+import mkcert from "vite-plugin-mkcert";
 import { defineConfig } from "vitepress";
-import highlight from "./plugins/highlight";
 
-import dirs from "./dirs.json";
-
-const HooksList = dirs.filter(
+const HooksList = links.filter(
   (item: any) => !item.children || item.children.length === 0
 );
 
 const getHooksLinks = () => {
   const links: any[] = [];
-  HooksList?.forEach((item) => {
+  HooksList.forEach((item) => {
     links.push({
-      text: item.compName,
-      link: `/Hooks/${item.compName}/index`,
+      text: item.name,
+      link: `/Hooks/${item.name}/index`,
     });
   });
   return links;
 };
 
-const themeConfig = async () => {
-  const config = await base();
-  config.markdown = {
-    highlight: await highlight(),
-    // lineNumbers: true,
-  };
-  return config;
-};
-
 export default defineConfig({
-  extends: themeConfig,
-  appearance: true,
+  markdown: {
+    theme: {
+      dark: "min-dark",
+      light: "min-light",
+    },
+    // lineNumbers: true, // 目前还有问题，复制代码的话会把序号也复制进去
+  },
   lastUpdated: true,
   title: "@pureadmin/utils",
   themeConfig: {
@@ -68,10 +61,18 @@ export default defineConfig({
     lastUpdatedText: "最近更新时间",
   },
   vite: {
+    server: {
+      https: true,
+      host: "0.0.0.0",
+    },
+    optimizeDeps: {
+      // 不进行预编译，因为预编译可能会触发页面整体刷新
+      exclude: ["@pureadmin/utils", "echarts", "@vueuse/core"],
+    },
     build: {
       chunkSizeWarningLimit: 2000,
     },
-    plugins: [Unocss()],
+    plugins: [mkcert(), Unocss()],
   },
   vue: {
     reactivityTransform: true,
