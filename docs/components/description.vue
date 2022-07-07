@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { CheckmarkCircle } from "@vicons/ionicons5";
-import { NSpace, NTag, NIcon, NAlert } from "naive-ui";
+import { NSpace, NTag, NIcon, NAlert, NGradientText } from "naive-ui";
 
 defineProps({
   tagNameList: {
@@ -21,6 +21,8 @@ defineProps({
     </n-tag>
   </n-space>
   <n-alert class="mt-4" type="success" :show-icon="false">
-    功能：{{ description }}
+    <n-gradient-text :size="20" type="success">
+      功能：{{ description }}
+    </n-gradient-text>
   </n-alert>
 </template>
