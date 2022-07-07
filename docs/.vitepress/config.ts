@@ -66,7 +66,7 @@ export default defineConfig({
       ],
     },
     build: {
-      chunkSizeWarningLimit: 2000,
+      chunkSizeWarningLimit: 3000,
     },
     plugins: [mkcert(), Unocss()],
   },
