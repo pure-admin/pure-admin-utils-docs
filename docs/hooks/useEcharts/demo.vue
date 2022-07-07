@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import { ref, type Ref } from "vue";
 import { useIntervalFn } from "@vueuse/core";
-import { useECharts } from "@pureadmin/utils";
+import { ref, computed, type Ref } from "vue";
+import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils";
+
+const { isDark } = useDark();
+
+let theme: EchartOptions["theme"] = computed(() => {
+  return isDark.value ? "dark" : "default";
+});
 
 const barChartRef = ref<HTMLDivElement | null>(null);
 const { setOptions, getInstance } = useECharts(
-  barChartRef as Ref<HTMLDivElement>
+  barChartRef as Ref<HTMLDivElement>,
+  { theme }
 );
 
 let xData = (() => {

@@ -1,22 +1,12 @@
 <script setup lang="ts">
 import { useRouter } from "vitepress";
-import { useDark } from "@pureadmin/utils";
-import {
-  NSpace,
-  NTag,
-  NButton,
-  NTooltip,
-  darkTheme,
-  NConfigProvider,
-  NNumberAnimation,
-} from "naive-ui";
+import { NSpace, NTag, NButton, NTooltip, NNumberAnimation } from "naive-ui";
 
 const { go } = useRouter();
-const { isDark } = useDark();
 </script>
 
 <template>
-  <n-config-provider :theme="isDark ? darkTheme : undefined">
+  <naive-theme>
     <n-space vertical>
       <div className="flex items-center">
         <n-tag type="info">
@@ -33,8 +23,7 @@ const { isDark } = useDark();
             </template>
             点击查看hooks方法
           </n-tooltip>
-          ，
-          <n-number-animation :from="0" :to="25" /> 个
+          、<n-number-animation :from="0" :to="25" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
               <n-button
@@ -69,5 +58,5 @@ const { isDark } = useDark();
         </a>
       </div>
     </n-space>
-  </n-config-provider>
+  </naive-theme>
 </template>
