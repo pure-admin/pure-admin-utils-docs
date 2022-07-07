@@ -1,0 +1,33 @@
+import { ref } from "vue";
+import { subBetween } from "@pureadmin/utils";
+
+const modules = import.meta.globEager("../../{hooks,utils}/**/*.md");
+
+export function useData() {
+  let utilsList = [];
+  let hooksList = [];
+  let dataList = ref([]);
+
+  Object.keys(modules).forEach((v) => {
+    if (v.includes("/utils/")) utilsList.push(v);
+    if (v.includes("/hooks/")) hooksList.push(v);
+  });
+
+  Object.keys(modules).map((key) => {
+    if (!modules[key].default?.name) return;
+    dataList.value.push({
+      name: subBetween(modules[key].default?.name, "/", "/"),
+      value: 1,
+    });
+  });
+  dataList.value.push(
+    { name: "Hooks", value: hooksList.length },
+    { name: "Utils", value: utilsList.length }
+  );
+
+  return {
+    data: dataList,
+    utilsLen: utilsList.length,
+    hooksLen: hooksList.length,
+  };
+}

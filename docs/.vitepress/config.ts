@@ -14,6 +14,7 @@ export default defineConfig({
   lastUpdated: true,
   title: "@pureadmin/utils",
   themeConfig: {
+    logo: "/logo.svg",
     siteTitle: "@pureadmin/utils",
     outlineTitle: "目录",
     socialLinks: [
