@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { useData } from "./data";
-import { onBeforeUnmount } from "vue";
-import { WordCloud } from "@antv/g2plot";
-import { debounce } from "@pureadmin/utils";
+import { onBeforeUnmount, watch } from "vue";
+import { WordCloud, G2 } from "@antv/g2plot";
+import { debounce, useDark } from "@pureadmin/utils";
 
-const { data, utilsLen } = useData();
+const theme = G2.getTheme("dark");
+G2.registerTheme("customize-dark", {
+  ...theme,
+  background: "transparent",
+});
+
+const { data } = useData();
+const { isDark } = useDark();
 
 let wordCloud;
 debounce(() => {
@@ -18,11 +25,18 @@ debounce(() => {
       fontSize: [22, 42],
       rotation: 0,
     },
+    theme: isDark.value ? "customize-dark" : "light",
     // 返回值设置成一个 [0, 1] 区间内的值，可以让每次渲染的位置相同（前提是每次的宽高一致）
     random: () => 0.5,
   });
   wordCloud.render();
 }, 20)();
+
+watch(isDark, (value) => {
+  value
+    ? wordCloud?.update({ theme: "customize-dark" })
+    : wordCloud?.update({ theme: "light" });
+});
 
 onBeforeUnmount(() => {
   wordCloud.destroy();
