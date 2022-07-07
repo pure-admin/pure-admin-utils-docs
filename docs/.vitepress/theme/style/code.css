@@ -56,5 +56,9 @@ a > code {
 }
 
 .vp-doc div[class*="language-"] {
-  background: none !important;
+  background: #fafafa;
+}
+
+html.dark .vp-doc div[class*="language-"] {
+  background: #1d1d1d;
 }
