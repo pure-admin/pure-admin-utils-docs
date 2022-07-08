@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@algolia/client-search': ^4.13.1
   '@antv/g2plot': ^2.4.20
-  '@pureadmin/utils': ^0.0.18
+  '@pureadmin/utils': ^0.0.19
   '@types/react': ^18.0.14
   '@vicons/ionicons5': ^0.12.0
   '@vue/theme': ^1.0.2
@@ -23,7 +23,7 @@ specifiers:
 devDependencies:
   '@algolia/client-search': 4.13.1
   '@antv/g2plot': 2.4.20
-  '@pureadmin/utils': 0.0.18_echarts@5.3.3+vue@3.2.37
+  '@pureadmin/utils': 0.0.19_echarts@5.3.3+vue@3.2.37
   '@types/react': 18.0.15
   '@vicons/ionicons5': 0.12.0
   '@vue/theme': 1.0.2_a9cf36dd974ecc9d31e60ea36bf4cb39
@@ -564,8 +564,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/0.0.18_echarts@5.3.3+vue@3.2.37:
-    resolution: {integrity: sha512-6wfh4nEWW36y1fR+GG3SITBpMUqZeT6JOWiMnLNF+TnnHT2LVG5NuSzX8/LkG/dHqTHT9u6RyeHGZr8F7LVF0Q==}
+  /@pureadmin/utils/0.0.19_echarts@5.3.3+vue@3.2.37:
+    resolution: {integrity: sha512-dB1wTwCN0tWuD9CapiTGF/6PNzOr/cqeuPwdgm/fjh8PQGqDuZV138yy06g245nGToHkS7SVeJHIFYw6GQRKBw==}
     peerDependencies:
       dayjs: '*'
       echarts: ^5.3.0

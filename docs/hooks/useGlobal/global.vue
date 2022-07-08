@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, type ComponentCustomProps } from "vue";
+import { ref } from "vue";
 import { useGlobal } from "@pureadmin/utils";
 import { NButton, NSpace, NGradientText } from "naive-ui";
 
@@ -11,7 +11,7 @@ const property: Record<string, any> = useGlobal();
 
 <template>
   <naive-theme>
-    <n-space className="flex  items-center">
+    <n-space className="flex items-center">
       <n-button @click="globals = Object.keys(property)"> 获取 </n-button>
       <n-button
         text

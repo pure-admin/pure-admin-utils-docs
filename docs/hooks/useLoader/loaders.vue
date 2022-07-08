@@ -11,9 +11,7 @@ function addScript() {
     src: "https://unpkg.com/@pureadmin/utils@0.0.18/dist/iife.global.js",
   }).then((mgs) => {
     if (mgs === "success") {
-      message.success("加载JS成功", {
-        keepAliveOnHover: true,
-      });
+      message.success("加载JS成功");
     }
   });
 }
@@ -23,9 +21,7 @@ function addCss() {
     src: "https://unpkg.com/element-plus/dist/index.css",
   }).then((mgs) => {
     if (mgs === "success") {
-      message.success("加载CSS成功", {
-        keepAliveOnHover: true,
-      });
+      message.success("加载CSS成功");
     }
   });
 }
@@ -34,9 +30,7 @@ function addScriptFail() {
   loadScript({
     src: "https://failTest.js",
   }).catch(() => {
-    message.error("加载JS失败", {
-      keepAliveOnHover: true,
-    });
+    message.error("加载JS失败");
   });
 }
 
@@ -44,9 +38,7 @@ function addCssFail() {
   loadCss({
     src: "https://failTest.css",
   }).catch(() => {
-    message.error("加载CSS失败", {
-      keepAliveOnHover: true,
-    });
+    message.error("加载CSS失败");
   });
 }
 </script>
