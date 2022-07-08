@@ -17,13 +17,24 @@ export default defineConfig({
     logo: "/logo.svg",
     siteTitle: "@pureadmin/utils",
     outlineTitle: "目录",
+    editLink: {
+      pattern:
+        "https://github.com/xiaoxian521/pure-admin-utils-docs/tree/main/docs/:path",
+      text: "在 GitHub 上编辑此页",
+    },
     socialLinks: [
       {
         icon: "github",
         link: "https://github.com/xiaoxian521/pure-admin-utils-docs",
       },
     ],
-    nav: [{ text: "指引", link: "/guide/guide" }],
+    nav: [
+      {
+        text: "指引",
+        link: "/guide/guide",
+        activeMatch: `^/guide/`,
+      },
+    ],
     sidebar: [
       {
         text: "介绍",

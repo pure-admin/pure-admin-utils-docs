@@ -1,6 +1,7 @@
+import { type App } from "vue";
 import * as echarts from "echarts";
 
-export function useEcharts(app: any) {
+export function useEcharts(app: App) {
   app.config.globalProperties.$echarts = echarts;
 }
 

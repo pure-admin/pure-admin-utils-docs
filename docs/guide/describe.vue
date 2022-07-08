@@ -16,7 +16,7 @@ const { go } = useRouter();
               <n-button
                 text
                 type="primary"
-                @click="go('/hooks/useAttrs/useAttrs')"
+                @click="go('/hooks/useComponent/useComponent')"
               >
                 Hooks
               </n-button>

@@ -21,7 +21,7 @@ defineProps({
     </n-tag>
   </n-space>
   <n-alert class="mt-4" type="success" :show-icon="false">
-    <n-gradient-text :size="20" type="success">
+    <n-gradient-text :size="18" type="success">
       功能：{{ description }}
     </n-gradient-text>
   </n-alert>
