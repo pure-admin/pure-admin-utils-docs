@@ -58,3 +58,18 @@
   border-bottom: none;
   margin-bottom: 0;
 }
+
+.outline-marker {
+  width: 4px !important;
+  height: 20px !important;
+  border-radius: 4px !important;
+  left: 5px !important;
+}
+
+.VPDocAsideOutline .content {
+  border-left: none !important;
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: #409eff !important;
+}
