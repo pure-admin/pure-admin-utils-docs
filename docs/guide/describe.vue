@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useRouter } from "vitepress";
+import { useData } from "../components/wordcloud/data";
 import { NSpace, NTag, NButton, NTooltip, NNumberAnimation } from "naive-ui";
 
 const { go } = useRouter();
+const { hooksLen, utilsLen } = useData();
 </script>
 
 <template>
@@ -10,7 +12,7 @@ const { go } = useRouter();
     <n-space vertical>
       <div className="flex items-center">
         <n-tag type="info">
-          <n-number-animation :from="0" :to="9" /> 个
+          <n-number-animation :from="0" :to="hooksLen" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
               <n-button
@@ -23,7 +25,7 @@ const { go } = useRouter();
             </template>
             点击查看hooks方法
           </n-tooltip>
-          、<n-number-animation :from="0" :to="25" /> 个
+          、<n-number-animation :from="0" :to="utilsLen" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
               <n-button

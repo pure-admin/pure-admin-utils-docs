@@ -27,7 +27,7 @@ export function useData() {
 
   return {
     data: dataList,
-    utilsLen: utilsList.length,
     hooksLen: hooksList.length,
+    utilsLen: utilsList.length,
   };
 }
