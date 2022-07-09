@@ -61,6 +61,11 @@ export default defineConfig({
       copyright: "Copyright © 2022-present RealityBoy",
     },
     lastUpdatedText: "最近更新时间",
+    algolia: {
+      appId: "EKWGNTZJFC",
+      apiKey: "681ac43aa17d09fd05de6dd9f1562d0c",
+      indexName: "pureutils",
+    },
   },
   vite: {
     server: {
