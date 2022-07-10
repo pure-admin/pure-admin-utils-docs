@@ -8,8 +8,6 @@ import copyToClipboard from './copyToClipboard.vue'
   <description description="拷贝" /> 
 </ClientOnly>
 
-- 返回`clipboardValue`：要拷贝的数据、`copied`：是否拷贝成功（`true`：成功、`false`：失败）
-
 ## 基础用法
 <ClientOnly>
   <copyToClipboard />
@@ -21,3 +19,8 @@ import copyToClipboard from './copyToClipboard.vue'
 <<< @/hooks/useCopyToClipboard/copyToClipboard.vue
 
 </details>
+
+## 返回值或方法
+
+- `clipboardValue`：要拷贝的数据  
+- `copied`：是否拷贝成功（`true`：成功、`false`：失败）

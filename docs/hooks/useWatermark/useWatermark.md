@@ -5,7 +5,7 @@ import watermark from './watermark.vue'
 # useWatermark
 
 <ClientOnly>
-  <description description="useWatermark" /> 
+  <description description="给元素加水印" /> 
 </ClientOnly>
 
 ## 基础用法
@@ -19,3 +19,12 @@ import watermark from './watermark.vue'
 <<< @/hooks/useWatermark/watermark.vue
 
 </details>
+
+## 参数
+
+- `appendEl`：要添加水印的主体，默认`body`
+
+## 返回值或方法
+
+- `setWatermark`：第一个参数`str`：水印值, 第二个参数`attr`: 水印样式属性
+- `clear`：清除水印

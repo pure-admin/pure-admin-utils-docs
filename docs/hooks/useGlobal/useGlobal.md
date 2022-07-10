@@ -8,7 +8,6 @@ import global from './global.vue'
   <description description="获取实例中全局property" /> 
 </ClientOnly>
 
-- 返回 [`globalProperties`](https://vuejs.org/api/application.html#app-config-globalproperties)
 
 ## 基础用法
 <ClientOnly>
@@ -21,3 +20,7 @@ import global from './global.vue'
 <<< @/hooks/useGlobal/global.vue
 
 </details>
+
+## 返回值或方法
+
+- 返回 [`globalProperties`](https://vuejs.org/api/application.html#app-config-globalproperties)
