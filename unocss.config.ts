@@ -11,7 +11,6 @@ import {
 export default defineConfig({
   presets: [presetMini({ dark: "class" }), presetAttributify(), presetUno()],
   transformers: [transformerDirectives(), transformerVariantGroup()],
-  // @ts-expect-error
   exclude: [`${__dirname}/node_modules/**/*`],
   shortcuts: {},
   theme: {},

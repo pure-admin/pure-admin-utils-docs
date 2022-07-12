@@ -138,6 +138,20 @@ setOptions(
     callback: (params) => {
       console.log("click", params);
     },
+  },
+  {
+    name: "contextmenu",
+    callback: (params) => {
+      console.log("contextmenu", params);
+    },
+  },
+  // 点击空白处
+  {
+    type: "zrender",
+    name: "click",
+    callback: (params) => {
+      console.log("点击空白处", params);
+    },
   }
 );
 
