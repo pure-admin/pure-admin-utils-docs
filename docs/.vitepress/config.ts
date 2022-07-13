@@ -1,6 +1,5 @@
 import Unocss from "unocss/vite";
 import { sync } from "fast-glob";
-import mkcert from "vite-plugin-mkcert";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
@@ -69,7 +68,6 @@ export default defineConfig({
   },
   vite: {
     server: {
-      https: true,
       host: "0.0.0.0",
     },
     optimizeDeps: {
@@ -84,7 +82,7 @@ export default defineConfig({
     build: {
       chunkSizeWarningLimit: 3000,
     },
-    plugins: [mkcert(), Unocss()],
+    plugins: [Unocss()],
   },
   vue: {
     reactivityTransform: true,
