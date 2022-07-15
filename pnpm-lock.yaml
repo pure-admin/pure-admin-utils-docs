@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antv/g2plot': ^2.4.20
-  '@pureadmin/utils': ^0.0.27
+  '@pureadmin/utils': ^0.0.28
   '@vicons/ionicons5': ^0.12.0
   '@vue/theme': ^1.0.2
   '@vueuse/core': ^8.9.2
@@ -17,7 +17,7 @@ specifiers:
 
 devDependencies:
   '@antv/g2plot': 2.4.20
-  '@pureadmin/utils': 0.0.27_echarts@5.3.3+vue@3.2.37
+  '@pureadmin/utils': 0.0.28_echarts@5.3.3+vue@3.2.37
   '@vicons/ionicons5': 0.12.0
   '@vue/theme': 1.0.4_vue@3.2.37
   '@vueuse/core': 8.9.2_vue@3.2.37
@@ -490,8 +490,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/0.0.27_echarts@5.3.3+vue@3.2.37:
-    resolution: {integrity: sha512-GIIOXFDBbmC9xDp2NVxGGDmk6Pl1y8N1V2SxqT+nbQ5CwgGaLJ5Id4ZoGfRyex4MwtTQsU7gDUhi7g6Zw3Hrwg==}
+  /@pureadmin/utils/0.0.28_echarts@5.3.3+vue@3.2.37:
+    resolution: {integrity: sha512-cgVGNxZ6G7426be+b6F4BhzeNpy7QSUwgazvOWqDmqmiIub4kf0mgNF2FvwwdxRVwTGS9zmr80yYKCmwK32P2Q==}
     peerDependencies:
       dayjs: '*'
       echarts: ^5.3.0
