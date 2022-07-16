@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { CheckmarkCircle } from "@vicons/ionicons5";
-import { NSpace, NTag, NIcon, NAlert, NGradientText } from "naive-ui";
+import { CheckmarkCircle } from "@vicons/ionicons5"
+import { NSpace, NTag, NIcon, NAlert, NGradientText } from "naive-ui"
 
 defineProps({
   tagNameList: {
     type: Array<String>,
-    default: () => ['Vue3','浏览器']
+    default: () => ['Vue3', '浏览器']
   },
   description: String
-});
+})
 </script>
 
 <template>

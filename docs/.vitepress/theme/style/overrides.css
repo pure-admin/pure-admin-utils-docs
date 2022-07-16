@@ -73,3 +73,8 @@
 .VPDocAsideOutline .outline-link.active {
   color: #409eff !important;
 }
+
+/* 覆盖naive-ui样式 */
+.n-gradient-text {
+  white-space: inherit;
+}
