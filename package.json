@@ -11,7 +11,7 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.20",
-    "@pureadmin/utils": "^0.0.29",
+    "@pureadmin/utils": "^0.0.31",
     "@vicons/ionicons5": "^0.12.0",
     "@vue/theme": "^1.0.2",
     "@vueuse/core": "^8.9.2",
