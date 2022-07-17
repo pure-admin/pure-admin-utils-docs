@@ -8,6 +8,7 @@ specifiers:
   '@vueuse/core': ^8.9.2
   echarts: ^5.3.3
   fast-glob: ^3.2.11
+  highlight.js: ^11.6.0
   naive-ui: ^2.31.0
   typescript: ^4.7.4
   unocss: ^0.44.2
@@ -23,6 +24,7 @@ devDependencies:
   '@vueuse/core': 8.9.2_vue@3.2.37
   echarts: 5.3.3
   fast-glob: 3.2.11
+  highlight.js: 11.6.0
   naive-ui: 2.31.0_vue@3.2.37
   typescript: 4.7.4
   unocss: 0.44.2_vite@3.0.0
