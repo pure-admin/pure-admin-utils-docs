@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText, NDivider } from "naive-ui"
+import { NButton, NSpace, NGradientText } from "naive-ui"
 import { getCurrentWeek, monthDays, createYear, getCurrentDate } from "@pureadmin/utils"
 
 let days = ref()
@@ -18,7 +18,6 @@ let currentWeek = ref('')
         {{ currentWeek }}
       </n-gradient-text>
     </n-space>
-    <n-divider dashed />
 
     <n-space className="flex items-center mb-2">
       <n-button @click="days = monthDays(new Date())"> 获取指定日期月份的总天数 </n-button>
@@ -26,7 +25,6 @@ let currentWeek = ref('')
         {{ days }}
       </n-gradient-text>
     </n-space>
-    <n-divider dashed />
 
     <n-space className="flex items-center mb-2">
       <n-button @click="yearsList = createYear(2010)"> 获取从当前年份到指定开始年份的数组 </n-button>
@@ -34,7 +32,6 @@ let currentWeek = ref('')
         {{ yearsList }}
       </n-gradient-text>
     </n-space>
-    <n-divider dashed />
 
     <n-space className="flex items-center mb-2">
       <n-button @click="currentDate = getCurrentDate()"> 当前的日期（年月日模式）</n-button>

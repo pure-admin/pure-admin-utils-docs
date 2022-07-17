@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { CashOutline as CashIcon } from "@vicons/ionicons5"
-import { NButton, NSpace, NGradientText, NDivider, NIcon } from "naive-ui"
+import { NButton, NSpace, NGradientText, NIcon } from "naive-ui"
 import { randomColor, hexToRgb, rgbToHex, darken, lighten } from "@pureadmin/utils"
 
 let color = ref()
@@ -20,7 +20,6 @@ let currentColor = ref('#94cdaf')
         {{ color }}
       </n-gradient-text>
     </n-space>
-    <n-divider dashed />
 
     <n-space className="flex items-center mb-2">
       <n-button @click="hrColor = hexToRgb('#9ad447')"> hex 转 rgb </n-button>
@@ -29,7 +28,6 @@ let currentColor = ref('#94cdaf')
         {{ hrColor }}
       </n-gradient-text>
     </n-space>
-    <n-divider dashed />
 
     <n-space className="flex items-center mb-2">
       <n-button @click="currentColor = darken('#94cdaf', 1 / 5)"> 颜色值加深 </n-button>
