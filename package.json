@@ -21,7 +21,7 @@
     "naive-ui": "^2.31.0",
     "typescript": "^4.7.4",
     "unocss": "^0.44.2",
-    "vite": "^3.0.0",
+    "vite": "^3.0.1",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37"
   },
