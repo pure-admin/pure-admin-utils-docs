@@ -11,7 +11,7 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.20",
-    "@pureadmin/utils": "^0.0.31",
+    "@pureadmin/utils": "^0.0.33",
     "@vicons/ionicons5": "^0.12.0",
     "@vue/theme": "^1.0.2",
     "@vueuse/core": "^8.9.2",
@@ -21,7 +21,7 @@
     "naive-ui": "^2.31.0",
     "typescript": "^4.7.4",
     "unocss": "^0.44.2",
-    "vite": "^3.0.1",
+    "vite": "^3.0.2",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37"
   },
