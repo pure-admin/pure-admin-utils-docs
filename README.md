@@ -1,5 +1,5 @@
 # pure-admin-utils-docs
 
-- [文档地址](https://pure-admin-utils-docs.vercel.app)
+- [文档地址](https://xiaoxian521.github.io/pure-admin-utils-docs)
 
-pure-admin-utils新版文档，使用vitepress搭建
+`pure-admin-utils` 新版文档，使用 `vitepress` 搭建
