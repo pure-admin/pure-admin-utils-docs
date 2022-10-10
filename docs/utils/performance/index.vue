@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from "vue"
 import { getPerformance } from "@pureadmin/utils"
-import { NGradientText, NNumberAnimation } from "naive-ui"
 
 let performance = ref()
 let precision = computed(() => {

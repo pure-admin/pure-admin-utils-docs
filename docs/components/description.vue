@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { CheckmarkCircle } from "@vicons/ionicons5"
-import { NSpace, NTag, NIcon, NAlert, NGradientText } from "naive-ui"
 
 defineProps({
   tagNameList: {

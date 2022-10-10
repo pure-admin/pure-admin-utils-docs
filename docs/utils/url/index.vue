@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NGradientText } from "naive-ui"
 import { getQueryMap, getLocation } from "@pureadmin/utils"
 
 let url = ref('https://test?a=test&&token=token')

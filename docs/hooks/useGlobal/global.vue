@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useGlobal } from "@pureadmin/utils";
-import { NButton, NSpace, NGradientText } from "naive-ui";
 
 let globals = ref();
 const property: Record<string, any> = useGlobal();

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { formDataHander } from "@pureadmin/utils"
-import { NButton, NSpace, NGradientText, } from "naive-ui"
 
 let formParam = ref()
 </script>

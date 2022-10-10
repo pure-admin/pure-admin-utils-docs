@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useLoader } from "@pureadmin/utils";
-import { NSpace, NButton, NCard } from "naive-ui";
 import { useMessage } from "../../components/message";
 
 const { message } = useMessage();

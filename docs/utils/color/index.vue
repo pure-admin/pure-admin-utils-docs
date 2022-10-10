@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { CashOutline as CashIcon } from "@vicons/ionicons5"
-import { NButton, NSpace, NGradientText, NIcon } from "naive-ui"
 import { randomColor, hexToRgb, rgbToHex, darken, lighten } from "@pureadmin/utils"
 
 let color = ref()

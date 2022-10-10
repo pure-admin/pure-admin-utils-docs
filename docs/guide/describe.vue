@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from "vitepress";
 import { useData } from "../components/wordcloud/data";
-import { NSpace, NTag, NButton, NTooltip, NNumberAnimation } from "naive-ui";
 
 const { go } = useRouter();
 const { hooksLen, utilsLen } = useData();

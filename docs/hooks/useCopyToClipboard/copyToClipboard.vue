@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, unref } from "vue";
-import { NButton, NSpace, NInput } from "naive-ui";
 import { useCopyToClipboard } from "@pureadmin/utils";
 import { useMessage } from "../../components/message";
 

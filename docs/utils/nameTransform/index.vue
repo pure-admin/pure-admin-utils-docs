@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText } from "naive-ui"
 import { nameCamelize, nameHyphenate } from "@pureadmin/utils"
 
 let name = ref('i-love-study')

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { NButton } from "naive-ui"
 import { openLink } from "@pureadmin/utils"
 </script>
 

@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { NSwitch } from "naive-ui";
-</script>
-
 <template>
   <naive-theme #default="{ dark }">
     <n-switch :value="dark" disabled>

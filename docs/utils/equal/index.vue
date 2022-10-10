@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from "vue"
-import { NSpace, NSelect } from "naive-ui"
 import { isEqual } from "@pureadmin/utils"
 
 let beforeVal = ref('')

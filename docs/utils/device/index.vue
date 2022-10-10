@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { useResizeObserver } from "@vueuse/core"
-import { NSpace, NGradientText } from "naive-ui"
 import { deviceDetection, getBrowserInfo } from "@pureadmin/utils"
 
 let device = ref()

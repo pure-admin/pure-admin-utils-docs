@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from "vue"
-import { NButton, NSpace, NCode } from "naive-ui"
 import { removeLeftSpace, removeRightSpace, removeBothSidesSpace, removeAllSpace } from "@pureadmin/utils"
 
 let str = ref(' i love study ')

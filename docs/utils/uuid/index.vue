@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText, NTag } from "naive-ui"
 import { buildUUID, buildPrefixUUID, uuid } from "@pureadmin/utils"
 
 let UUID = ref('')

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NTooltip } from "naive-ui"
 import { urlToBase64, dataURLtoBlob } from "@pureadmin/utils"
 
 let blob = ref()

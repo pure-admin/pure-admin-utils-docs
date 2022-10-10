@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText, NInput } from "naive-ui"
 import { max, min, sum, average, numberToChinese } from "@pureadmin/utils"
 
 let arr = [2, 4, 6, 8]

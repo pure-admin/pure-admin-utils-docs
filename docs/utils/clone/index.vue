@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { clone, hasOwnProp } from "@pureadmin/utils"
-import { NButton, NGradientText, NDivider } from "naive-ui"
 
 const obj = { name: 'Tom' }
 const arr1 = ref('text')

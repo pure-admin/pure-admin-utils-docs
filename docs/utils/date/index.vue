@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText } from "naive-ui"
 import { getCurrentWeek, monthDays, createYear, getCurrentDate } from "@pureadmin/utils"
 
 let days = ref()

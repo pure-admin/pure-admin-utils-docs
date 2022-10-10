@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { NButton, NSpace, NGradientText } from "naive-ui"
 import { subBefore, subAfter, subBothSides, subBetween, subTextAddEllipsis, splitNum } from "@pureadmin/utils"
 
 let character1 = ref('')

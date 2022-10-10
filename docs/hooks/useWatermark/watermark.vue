@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { NButton, NSpace } from "naive-ui";
 import { useWatermark } from "@pureadmin/utils";
 
 let color = ref("#409EFF");

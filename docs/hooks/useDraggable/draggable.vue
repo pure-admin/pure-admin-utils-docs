@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { NTag } from "naive-ui";
 import { ref, computed } from "vue";
 import { useDraggable } from "@pureadmin/utils";
 

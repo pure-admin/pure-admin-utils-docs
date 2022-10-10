@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { NButton, NSpace } from "naive-ui";
 import { banMouseEvent, allowMouseEvent } from "@pureadmin/utils";
 </script>
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { convertPath, clone } from "@pureadmin/utils"
-import { NCard, NGradientText, NSpace } from "naive-ui"
 
 let path1 = ref('Documents\\newFolder')
 let path2 = ref('C:\\Documents\\newFolder\\test.js')
