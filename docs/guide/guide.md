@@ -1,10 +1,19 @@
 <script setup>
 import describe from './describe.vue'
+import tags from './tags.vue'
 </script>
 
 <ClientOnly>
   <describe /> 
   <wordcloud/>
+</ClientOnly>
+
+## 🏷️ 标签
+
+<ClientOnly>
+  <tags :className="'type-it1'" :values="['支持Vue3']" />
+  <tags :className="'type-it2'" :tagNameList="['浏览器']" :values="['支持任意运行在浏览器的JS语言']" :speed="100" />
+  <tags :className="'type-it3'" :tagNameList="['Node']" :values="['支持NodeJs']" />
 </ClientOnly>
 
 ## 📦 安装
@@ -20,7 +29,7 @@ yarn add @pureadmin/utils
 pnpm add @pureadmin/utils
 ```
 
-## 🕸️ CDN引用
+## 🕸️ CDN 引用
 
 ```bash
 # with unpkg

@@ -4,9 +4,13 @@ import { CheckmarkCircle } from "@vicons/ionicons5"
 defineProps({
   tagNameList: {
     type: Array<String>,
-    default: () => ['Vue3', '浏览器']
+    default: () => ['Vue3']
   },
-  description: String
+  isShowGradient: {
+    type: Boolean,
+    default: true
+  },
+  description: String,
 })
 </script>
 
@@ -19,7 +23,7 @@ defineProps({
       </template>
     </n-tag>
   </n-space>
-  <n-alert class="mt-4" type="success" :show-icon="false">
+  <n-alert v-show="isShowGradient" class="mt-4" type="success" :show-icon="false">
     <n-gradient-text :size="18" type="success">
       功能：{{ description }}
     </n-gradient-text>
