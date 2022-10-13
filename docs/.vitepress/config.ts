@@ -14,7 +14,7 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "keywords", content: "pure-admin-utils" }],
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/pure-admin-utils-docs/favicon.ico" }],
   ],
   markdown: {
     theme: {
