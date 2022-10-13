@@ -4,6 +4,18 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
   base: "/pure-admin-utils-docs/",
+  head: [
+    [
+      "meta",
+      {
+        name: "viewport",
+        content:
+          "width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+      },
+    ],
+    ["meta", { name: "keywords", content: "pure-admin-utils" }],
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+  ],
   markdown: {
     theme: {
       dark: "min-dark",
