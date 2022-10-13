@@ -12,6 +12,4 @@ export default defineConfig({
   presets: [presetMini({ dark: "class" }), presetAttributify(), presetUno()],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   exclude: [`${__dirname}/node_modules/**/*`],
-  shortcuts: {},
-  theme: {},
 });
