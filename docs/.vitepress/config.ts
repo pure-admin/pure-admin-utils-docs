@@ -93,7 +93,7 @@ export default defineConfig({
       ],
     },
     build: {
-      chunkSizeWarningLimit: 4000,
+      chunkSizeWarningLimit: 10000,
     },
     plugins: [Unocss()],
   },

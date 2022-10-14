@@ -78,3 +78,13 @@
 .n-gradient-text {
   white-space: inherit;
 }
+
+.github-release-tag {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 6px;
+  margin-left: 6px;
+  background: var(--vp-c-green);
+  color: white;
+  border-radius: 10px;
+}
