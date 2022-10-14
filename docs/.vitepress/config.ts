@@ -21,7 +21,6 @@ export default defineConfig({
       dark: "min-dark",
       light: "min-light",
     },
-    lineNumbers: true, // 目前还有问题，复制代码的话会把序号也复制进去
   },
   lastUpdated: true,
   title: "@pureadmin/utils",
