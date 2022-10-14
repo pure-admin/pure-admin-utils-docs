@@ -6,6 +6,10 @@ defineProps({
     type: Array<String>,
     default: () => ['Vue3']
   },
+  isShowIcon: {
+    type: Boolean,
+    default: true
+  },
   isShowGradient: {
     type: Boolean,
     default: true
@@ -15,7 +19,7 @@ defineProps({
 </script>
 
 <template>
-  <n-space>
+  <n-space v-show="isShowIcon">
     <n-tag round :bordered="false" type="success" v-for="item of tagNameList">
       {{ item }}
       <template #icon>

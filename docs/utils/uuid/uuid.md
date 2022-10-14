@@ -9,6 +9,7 @@ import Index from './index.vue'
 </ClientOnly>
 
 ## 基础用法
+
 <ClientOnly>
   <Index />
 </ClientOnly>
