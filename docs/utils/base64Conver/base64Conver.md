@@ -1,22 +1,49 @@
 <script setup>
-import Index from './index.vue'
+import urlToBase64 from './urlToBase64.vue'
+import dataURLtoBlob from './dataURLtoBlob.vue'
 </script>
 
-# base64Conver
+# 图片 url 转 base64、base64 转 blob
 
 <ClientOnly>
-  <description :tagNameList="['浏览器']" description="图片url转base64、base64转blob" /> 
+  <description-popover :num="2" />
 </ClientOnly>
 
-## 基础用法
+## urlToBase64
+
 <ClientOnly>
-  <Index />
+  <description :isShowIcon="false" description="图片url转base64" /> 
+</ClientOnly>
+
+### 基础用法
+
+<ClientOnly>
+  <urlToBase64 />
 </ClientOnly>
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/utils/base64Conver/index.vue
+<<< @/utils/base64Conver/urlToBase64.vue
+
+</details>
+
+## dataURLtoBlob
+
+<ClientOnly>
+  <description :isShowIcon="false" description="base64转blob" /> 
+</ClientOnly>
+
+### 基础用法
+
+<ClientOnly>
+  <dataURLtoBlob />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/base64Conver/dataURLtoBlob.vue
 
 </details>
 

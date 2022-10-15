@@ -16,6 +16,12 @@ import tags from './tags.vue'
   <tags :className="'type-it3'" :tagNameList="['Node']" :values="['支持NodeJs']" />
 </ClientOnly>
 
+## 🦄 使用示例
+
+- 集成 `vue-vite`、`vue-cli`、`preact`、`react`、`solid`、`svelte`、`nuxt3`、`next`、`node` 版本使用示例
+
+[点我查看所有使用示例](https://github.com/xiaoxian521/pure-admin-utils-docs/tree/main/playgrounds)
+
 ## 📦 安装
 
 ```bash

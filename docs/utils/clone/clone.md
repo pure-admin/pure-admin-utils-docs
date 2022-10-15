@@ -1,22 +1,49 @@
 <script setup>
-import Index from './index.vue'
+import clone from './clone.vue'
+import hasOwnProp from './hasOwnProp.vue'
 </script>
 
-# clone
+# 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
 
 <ClientOnly>
-  <description :tagNameList="['浏览器','Node']" description="浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性" /> 
+  <description-popover :num="2" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
-## 基础用法
+## clone
+
 <ClientOnly>
-  <Index />
+  <description :isShowIcon="false" description="浅拷贝/深拷贝" /> 
+</ClientOnly>
+
+### 基础用法
+
+<ClientOnly>
+  <clone />
 </ClientOnly>
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/utils/clone/index.vue
+<<< @/utils/clone/clone.vue
+
+</details>
+
+## hasOwnProp
+
+<ClientOnly>
+  <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" /> 
+</ClientOnly>
+
+### 基础用法
+
+<ClientOnly>
+  <hasOwnProp />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/clone/hasOwnProp.vue
 
 </details>
 

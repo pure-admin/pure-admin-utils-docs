@@ -21,7 +21,6 @@ export default defineConfig({
       dark: "min-dark",
       light: "min-light",
     },
-    // lineNumbers: true, // 目前还有问题，复制代码的话会把序号也复制进去
   },
   lastUpdated: true,
   title: "@pureadmin/utils",
@@ -29,6 +28,7 @@ export default defineConfig({
     logo: "/logo.svg",
     siteTitle: "@pureadmin/utils",
     outlineTitle: "目录",
+    outline: [2, 6],
     editLink: {
       pattern:
         "https://github.com/xiaoxian521/pure-admin-utils-docs/tree/main/docs/:path",
@@ -93,7 +93,7 @@ export default defineConfig({
       ],
     },
     build: {
-      chunkSizeWarningLimit: 4000,
+      chunkSizeWarningLimit: 10000,
     },
     plugins: [Unocss()],
   },

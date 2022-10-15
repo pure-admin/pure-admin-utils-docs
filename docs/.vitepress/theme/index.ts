@@ -8,9 +8,12 @@ import "./style/overrides.css";
 import naive from "naive-ui";
 
 import { useEcharts } from "../plugins/echarts";
-import NaiveTheme from "../../components/theme.vue";
-import Description from "../../components/description.vue";
-import Wordcloud from "../../components/wordcloud/index.vue";
+import {
+  Wordcloud,
+  NaiveTheme,
+  Description,
+  DescriptionPopover,
+} from "../../components";
 
 const theme: Theme = {
   ...DefaultTheme,
@@ -19,6 +22,7 @@ const theme: Theme = {
     app.component("wordcloud", Wordcloud);
     app.component("naive-theme", NaiveTheme);
     app.component("description", Description);
+    app.component("description-popover", DescriptionPopover);
     app.use(useEcharts);
   },
 };

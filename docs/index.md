@@ -2,14 +2,18 @@
 layout: home
 
 hero:
-  name: '@pureadmin/utils'
+  name: "@pureadmin/utils"
   text: 常用的工具函数（utils、hooks）
+  tagline: 提高开发效率
+  image:
+    src: /logo.png
+    alt: "@pureadmin/utils"
   actions:
     - theme: brand
-      text: 开始
+      text: 开始 🏃
       link: /guide/guide
     - theme: alt
-      text: 作者
+      text: Star 🎉
       link: https://github.com/xiaoxian521
 
 features:
@@ -32,3 +36,12 @@ features:
     title: 一键式发版命令
     details: 超简单的发版流程，集成一键式发版命令
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
+
+onMounted(() => {
+  addReleaseTag()
+})
+</script>

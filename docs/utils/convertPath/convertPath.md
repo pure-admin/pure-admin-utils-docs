@@ -1,21 +1,28 @@
 <script setup>
-import Index from './index.vue'
+import convertPath from './convertPath.vue'
 </script>
 
-# convertPath
+# 路径转换相关函数
 
 <ClientOnly>
-  <description :tagNameList="['Node']" description="将Windows反斜杠路径转换为斜杠路径" /> 
+  <description-popover :num="1" :tagNameList="['Node']" />
 </ClientOnly>
 
-## 基础用法
+## convertPath
+
 <ClientOnly>
-  <Index />
+  <description :isShowIcon="false" description="将 Windows 反斜杠路径转换为斜杠路径" /> 
+</ClientOnly>
+
+### 基础用法
+
+<ClientOnly>
+  <convertPath />
 </ClientOnly>
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/utils/convertPath/index.vue
+<<< @/utils/convertPath/convertPath.vue
 
 </details>
