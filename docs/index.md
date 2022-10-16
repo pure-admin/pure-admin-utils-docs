@@ -10,7 +10,7 @@ hero:
     alt: "@pureadmin/utils"
   actions:
     - theme: brand
-      text: 开始 🏃
+      text: 开始
       link: /guide/guide
     - theme: alt
       text: Star 🎉
