@@ -74,6 +74,11 @@
   color: #409eff !important;
 }
 
+.vp-doc p,
+.vp-doc summary {
+  opacity: 0.8 !important;
+}
+
 /* 覆盖naive-ui样式 */
 .n-gradient-text {
   white-space: inherit;
