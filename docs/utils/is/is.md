@@ -9,7 +9,7 @@
 ### is
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否某值是某种类型" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否某值是某种类型" /> 
 </ClientOnly>
 
 #### 参数
@@ -24,7 +24,7 @@
 ### isDef
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否非 undefined" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否非 undefined" /> 
 </ClientOnly>
 
 #### 参数
@@ -38,7 +38,7 @@
 ### isUnDef
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 undefined" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 undefined" /> 
 </ClientOnly>
 
 #### 参数
@@ -52,7 +52,7 @@
 ### isObject
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是对象 object" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是对象 object" /> 
 </ClientOnly>
 
 #### 参数
@@ -66,7 +66,7 @@
 ### isDate
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Date 日期类型" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Date 日期类型" /> 
 </ClientOnly>
 
 #### 参数
@@ -80,7 +80,7 @@
 ### isNull
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 null" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null" /> 
 </ClientOnly>
 
 #### 参数
@@ -94,7 +94,7 @@
 ### isNullAndUnDef
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 null 并且是 undefined" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null 并且是 undefined" /> 
 </ClientOnly>
 
 #### 参数
@@ -108,7 +108,7 @@
 ### isNullAndUnDef
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 null 或者 undefined" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null 或者 undefined" /> 
 </ClientOnly>
 
 #### 参数
@@ -122,7 +122,7 @@
 ### isNumber
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 number" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 number" /> 
 </ClientOnly>
 
 #### 参数
@@ -136,7 +136,7 @@
 ### isPromise
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Promise" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Promise" /> 
 </ClientOnly>
 
 #### 参数
@@ -150,7 +150,7 @@
 ### isString
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 string" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 string" /> 
 </ClientOnly>
 
 #### 参数
@@ -164,7 +164,7 @@
 ### isFunction
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Function" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Function" /> 
 </ClientOnly>
 
 #### 参数
@@ -178,7 +178,7 @@
 ### isBoolean
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Boolean" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Boolean" /> 
 </ClientOnly>
 
 #### 参数
@@ -192,7 +192,7 @@
 ### isRegExp
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 RegExp" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 RegExp" /> 
 </ClientOnly>
 
 #### 参数
@@ -206,7 +206,7 @@
 ### isArray
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Array" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Array" /> 
 </ClientOnly>
 
 #### 参数
@@ -220,7 +220,7 @@
 ### isWindow
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Window" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Window" /> 
 </ClientOnly>
 
 #### 参数
@@ -234,7 +234,7 @@
 ### isElement
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Element" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Element" /> 
 </ClientOnly>
 
 #### 参数
@@ -248,13 +248,13 @@
 ### isServer
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是服务端" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是服务端" /> 
 </ClientOnly>
 
 ### isClient
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 window" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 window" /> 
 </ClientOnly>
 
 ## 正则判断
@@ -262,7 +262,7 @@
 ### isUrl
 
 <ClientOnly>
-  <description :isShowIcon="false" description="url 链接正则" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="url 链接正则" /> 
 </ClientOnly>
 
 #### 参数
@@ -276,7 +276,7 @@
 ### isPhone
 
 <ClientOnly>
-  <description :isShowIcon="false" description="手机号码正则" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="手机号码正则" /> 
 </ClientOnly>
 
 #### 参数
@@ -290,7 +290,7 @@
 ### isEmail
 
 <ClientOnly>
-  <description :isShowIcon="false" description="邮箱正则" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="邮箱正则" /> 
 </ClientOnly>
 
 #### 参数
@@ -304,7 +304,7 @@
 ### isQQ
 
 <ClientOnly>
-  <description :isShowIcon="false" description="QQ 正则" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="QQ 正则" /> 
 </ClientOnly>
 
 #### 参数
@@ -318,7 +318,7 @@
 ### isPostCode
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是中国大陆邮政编码（共6位，且不能以0开头）" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是中国大陆邮政编码（共6位，且不能以0开头）" /> 
 </ClientOnly>
 
 #### 参数
@@ -332,7 +332,7 @@
 ### hasCNChars
 
 <ClientOnly>
-  <description :isShowIcon="false" description="校验是否包含中文字符（包括中文标点符号）" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="校验是否包含中文字符（包括中文标点符号）" /> 
 </ClientOnly>
 
 #### 参数
@@ -346,7 +346,7 @@
 ### isLowerCase
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是小写字母" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是小写字母" /> 
 </ClientOnly>
 
 #### 参数
@@ -360,7 +360,7 @@
 ### isUpperCase
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是大写字母" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大写字母" /> 
 </ClientOnly>
 
 #### 参数
@@ -374,7 +374,7 @@
 ### isAlphabets
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是大小写字母" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大小写字母" /> 
 </ClientOnly>
 
 #### 参数
@@ -388,7 +388,7 @@
 ### isExistSpace
 
 <ClientOnly>
-  <description :isShowIcon="false" description="检测字符串是否有空格" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="检测字符串是否有空格" /> 
 </ClientOnly>
 
 #### 参数
@@ -404,7 +404,7 @@
 ### isEmpty
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否为空" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空" /> 
 </ClientOnly>
 
 #### 参数
@@ -418,7 +418,7 @@
 ### isLeapYear
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是闰年" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是闰年" /> 
 </ClientOnly>
 
 #### 参数
@@ -432,7 +432,7 @@
 ### isBase64
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 Base64" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Base64" /> 
 </ClientOnly>
 
 #### 参数
@@ -446,7 +446,7 @@
 ### isHex
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 hex" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 hex" /> 
 </ClientOnly>
 
 #### 参数
@@ -460,7 +460,7 @@
 ### isRgb
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 rgb" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 rgb" /> 
 </ClientOnly>
 
 #### 参数
@@ -474,7 +474,7 @@
 ### isRgba
 
 <ClientOnly>
-  <description :isShowIcon="false" description="是否是 rgba" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 rgba" /> 
 </ClientOnly>
 
 #### 参数

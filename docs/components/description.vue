@@ -14,6 +14,7 @@ defineProps({
     type: Boolean,
     default: true
   },
+  gradientClass: String,
   description: String,
 })
 </script>
@@ -27,7 +28,7 @@ defineProps({
       </template>
     </n-tag>
   </n-space>
-  <n-alert v-show="isShowGradient" class="mt-4" type="success" :show-icon="false">
+  <n-alert v-show="isShowGradient" :class="['mt-2', gradientClass]" type="success" :show-icon="false">
     <n-gradient-text :size="18" type="success">
       功能：{{ description }}
     </n-gradient-text>
