@@ -103,9 +103,9 @@ let options = [
 <template>
   <naive-theme>
     <n-space>
-      <n-select :options="options" class="w-220px" v-model:value="beforeVal" />
-      <span class="leading-34px">{{ isObjEqual ? '等于' : '不等于' }}</span>
-      <n-select :options="options" class="w-220px" v-model:value="afterVal" />
+      <n-select :options="options" class="w-220px mt-2" v-model:value="beforeVal" />
+      <span class="leading-50px">{{ isObjEqual ? '等于' : '不等于' }}</span>
+      <n-select :options="options" class="w-220px mt-2" v-model:value="afterVal" />
     </n-space>
   </naive-theme>
 </template>
