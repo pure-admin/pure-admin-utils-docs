@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { getQueryMap, getLocation } from "@pureadmin/utils"
+import { getQueryMap } from "@pureadmin/utils"
 
-let url = ref('https://test?a=test&&token=token')
+let url = ref('http://test/#/tabs/query-detail?a=test&&token=token')
 </script>
 
 <template>
@@ -12,10 +12,5 @@ let url = ref('https://test?a=test&&token=token')
     <n-gradient-text type="info">
       url中所有参数：{{ getQueryMap(url) }}
     </n-gradient-text>
-
-    <p>当前的location信息：<n-gradient-text type="info">
-        {{ getLocation() }}
-      </n-gradient-text>
-    </p>
   </naive-theme>
 </template>
