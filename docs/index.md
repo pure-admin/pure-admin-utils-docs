@@ -51,7 +51,7 @@ const mess = h("span", {}, [
   h(
     "a",
     {
-      href: "https://github.com/vuejs/vitepress",
+      href: "https://vitepress.vuejs.org/",
       target: "_blank",
       style: {
         color: "#409eff",
