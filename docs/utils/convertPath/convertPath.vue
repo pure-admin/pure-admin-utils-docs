@@ -8,7 +8,7 @@ let path2 = ref('C:\\Documents\\newFolder\\test.js')
 
 <template>
   <naive-theme>
-    <n-space className="flex items-center mb-2">
+    <n-space className="flex items-center mt-2">
       <n-card title="Demo1" embedded :bordered="false">
         <n-gradient-text type="info">
           windows路径：{{ clone(path1) }}
@@ -20,7 +20,7 @@ let path2 = ref('C:\\Documents\\newFolder\\test.js')
       </n-card>
     </n-space>
 
-    <n-space className="flex items-center mb-2">
+    <n-space className="flex items-center mt-2">
       <n-card title="Demo2" embedded :bordered="false">
         <n-gradient-text type="info">
           windows路径：{{ clone(path2) }}

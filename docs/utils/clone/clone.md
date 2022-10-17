@@ -15,6 +15,15 @@ import hasOwnProp from './hasOwnProp.vue'
   <description :isShowIcon="false" description="浅拷贝/深拷贝" /> 
 </ClientOnly>
 
+### 参数
+
+- 接收两个参数，第一个参数 `val` ，第二个参数 `deep` ，返回拷贝后的值
+
+| **参数属性** | **说明**                 | **类型**  | **默认值** |
+| ------------ | ------------------------ | --------- | ---------- |
+| `val`        | 需要拷贝的值             | `any`     | -          |
+| `deep`       | 是否深拷贝（默认浅拷贝） | `boolean` | `false`    |
+
 ### 基础用法
 
 <ClientOnly>
@@ -33,6 +42,15 @@ import hasOwnProp from './hasOwnProp.vue'
 <ClientOnly>
   <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" /> 
 </ClientOnly>
+
+### 参数
+
+- 接收两个参数，第一个参数 `obj` ，第二个参数 `key` ，返回值类型 `boolean`
+
+| **参数属性** | **说明**     | **类型**           |
+| ------------ | ------------ | ------------------ |
+| `obj`        | 要判断的对象 | `object`           |
+| `key`        | 指定的属性   | `string`、`number` |
 
 ### 基础用法
 

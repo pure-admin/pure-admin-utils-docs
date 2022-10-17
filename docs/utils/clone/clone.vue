@@ -29,29 +29,35 @@ function deepCopy() {
     <div className="mt-2">
       <n-button @click="shallowCopy"> 浅拷贝（基本数据类型）</n-button>
       <p>
-        拷贝数据改变: <n-gradient-text type="info">
+        拷贝数据改变:
+        <n-gradient-text type="info">
           {{ copyArr1 }}
         </n-gradient-text>
-        原数据不变: <n-gradient-text type="info">
+        原数据不变:
+        <n-gradient-text type="info">
           {{ arr1 }}
         </n-gradient-text>
       </p>
 
       <n-button @click="shallowCopyChange"> 浅拷贝（引用数据类型）</n-button>
       <p>
-        拷贝数据改变: <n-gradient-text type="info">
+        拷贝数据改变:
+        <n-gradient-text type="info">
           {{ copyArr2 }}
         </n-gradient-text>
-        原数据改变: <n-gradient-text type="info">
+        原数据改变:
+        <n-gradient-text type="info">
           {{ arr2 }}
         </n-gradient-text>
       </p>
 
       <n-button @click="deepCopy"> 深拷贝 </n-button>
-      <p>拷贝数据改变: <n-gradient-text type="info">
+      <p>拷贝数据改变:
+        <n-gradient-text type="info">
           {{ copyArr3 }}
         </n-gradient-text>
-        原数据不变: <n-gradient-text type="info">
+        原数据不变:
+        <n-gradient-text type="info">
           {{ arr3 }}
         </n-gradient-text>
       </p>

@@ -15,6 +15,16 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
   <description :isShowIcon="false" description="图片url转base64" /> 
 </ClientOnly>
 
+### 参数
+
+- 接收三个参数，第一个参数 `url` ，第二个参数 `mineType` ，第三个参数 `encoderOptions` ，返回值类型 `Promise<string>`
+
+| **参数属性**     | **说明**                                                                               | **类型** |
+| ---------------- | -------------------------------------------------------------------------------------- | -------- |
+| `url`            | 图片 `url`                                                                             | `string` |
+| `mineType`       | 图片格式，默认为 `image/png`                                                           | `string` |
+| `encoderOptions` | `0` 到 `1` 之间的取值，主要用来选定图片的质量，默认值是 `0.92`，超出范围也会选择默认值 | `number` |
+
 ### 基础用法
 
 <ClientOnly>
@@ -33,6 +43,14 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 <ClientOnly>
   <description :isShowIcon="false" description="base64转blob" /> 
 </ClientOnly>
+
+### 参数
+
+- 接收一个参数 `base64Buf` ，返回值类型 `Blob`
+
+| **参数属性** | **说明** | **类型** |
+| ------------ | -------- | -------- |
+| `base64Buf`  | base64   | `string` |
 
 ### 基础用法
 
