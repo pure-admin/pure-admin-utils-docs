@@ -1,25 +1,64 @@
 <script setup>
-import Index from './index.vue'
+import nameCamelize from './nameCamelize.vue'
+import nameHyphenate from './nameHyphenate.vue'
 </script>
 
-# nameTransform
+# 横线、驼峰命名互转
 
 <ClientOnly>
-  <description :tagNameList="['浏览器','Node']" description="横线、驼峰命名互转" /> 
+  <description-popover :num="2" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
-## 基础用法
+## nameCamelize
+
 <ClientOnly>
-  <Index />
+  <description :isShowIcon="false" description="横线转驼峰命名" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收一个参数 `str` ，返回值类型 `string`
+
+| **参数属性** | **说明** | **类型** |
+| ------------ | -------- | -------- |
+| `str`        | 字符串   | `string` |
+
+### 基础用法
+
+<ClientOnly>
+  <nameCamelize />
 </ClientOnly>
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/utils/nameTransform/index.vue
+<<< @/utils/nameTransform/nameCamelize.vue
 
 </details>
 
-::: tip
-驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写
-:::
+## nameHyphenate
+
+<ClientOnly>
+  <description :isShowIcon="false" description="驼峰命名转横线命名：拆分字符串，使用 - 相连，并且全部转换为小写" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收一个参数 `str` ，返回值类型 `string`
+
+| **参数属性** | **说明** | **类型** |
+| ------------ | -------- | -------- |
+| `str`        | 字符串   | `string` |
+
+### 基础用法
+
+<ClientOnly>
+  <nameHyphenate />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/nameTransform/nameHyphenate.vue
+
+</details>
