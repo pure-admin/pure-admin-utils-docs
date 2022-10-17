@@ -38,10 +38,33 @@ features:
 ---
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, h } from 'vue'
+import { useMessage } from "./components/message"
 import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
 
 onMounted(() => {
   addReleaseTag()
 })
+
+const mess = h("span", {}, [
+  "文档使用",
+  h(
+    "a",
+    {
+      href: "https://github.com/vuejs/vitepress",
+      target: "_blank",
+      style: {
+        color: "#409eff",
+      },
+    },
+    [" vitepress "]
+  ),
+  h(
+    "span",
+    "编写，vitepress 处于非稳定版本阶段，如点击页面遇到卡顿，请刷新浏览器即可"
+  ),
+])
+
+const { message } = useMessage()
+message.info(() => mess, { duration: 12000 })
 </script>
