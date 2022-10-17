@@ -14,7 +14,8 @@ const { hooksLen, utilsLen } = useData()
           <n-number-animation :from="0" :to="hooksLen" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
-              <n-button text type="primary" @click="go('/hooks/useCopyToClipboard/useCopyToClipboard')">
+              <n-button text type="primary"
+                @click="go('/pure-admin-utils-docs/hooks/useCopyToClipboard/useCopyToClipboard')">
                 Hooks
               </n-button>
             </template>
@@ -24,7 +25,7 @@ const { hooksLen, utilsLen } = useData()
           <n-number-animation :from="0" :to="utilsLen" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
-              <n-button text type="primary" @click="go('/utils/banMouseEvent/banMouseEvent')">
+              <n-button text type="primary" @click="go('/pure-admin-utils-docs/utils/banMouseEvent/banMouseEvent')">
                 Utils
               </n-button>
             </template>
