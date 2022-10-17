@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://unpkg.com/@pureadmin/utils"></script>
+</head>
+
+<body>
+  <p>打开控制台查看所有utils</p>
+  <p class="uuid"></p>
+</body>
+
+<script>
+  console.log('PureUtils', PureUtils)
+  window.onload = function () {
+    document.querySelector('.uuid').innerText = PureUtils.uuid()
+  }
+</script>
+
+</html>
