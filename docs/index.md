@@ -67,5 +67,5 @@ const mess = h("span", {}, [
 
 const { message } = useMessage()
 
-if(process.env.NODE_ENV !== 'development') message?.info(() => mess, { duration: 12000 })
+if(process.env.NODE_ENV !== 'development') message?.info(() => mess, { closable: true, duration: 12000 })
 </script>
