@@ -1,21 +1,36 @@
 <script setup>
-import Index from './index.vue'
+import formDataHander from './formDataHander.vue'
 </script>
 
-# formData
+# 处理 FormData 传参
 
 <ClientOnly>
-  <description :tagNameList="['浏览器','Node']" description="处理FormData传参" /> 
+  <description-popover :num="1" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
-## 基础用法
+## formDataHander
+
 <ClientOnly>
-  <Index />
+  <description :isShowIcon="false" description="处理 FormData 传参" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收一个参数 `obj`，返回值类型 `FormData`
+
+| **参数属性** | **说明**                                      | **类型** |
+| ------------ | --------------------------------------------- | -------- |
+| `obj`        | 参数，对象格式，例如：`{ a: 1, b: "2", ... }` | `object` |
+
+### 基础用法
+
+<ClientOnly>
+  <formDataHander />
 </ClientOnly>
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/utils/formData/index.vue
+<<< @/utils/formData/formDataHander.vue
 
 </details>
