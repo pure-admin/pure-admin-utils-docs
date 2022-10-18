@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "pure-admin-utils-docs",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -11,10 +11,11 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.20",
-    "@pureadmin/utils": "^1.1.1",
+    "@pureadmin/utils": "^1.1.2",
     "@vicons/ionicons5": "^0.12.0",
     "@vue/theme": "^1.0.2",
     "@vueuse/core": "^9.3.0",
+    "axios": "^1.1.3",
     "echarts": "^5.4.0",
     "fast-glob": "^3.2.11",
     "highlight.js": "^11.6.0",
