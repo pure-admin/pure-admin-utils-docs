@@ -484,3 +484,18 @@
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `color`      | 需要判断的值 | `string` |
+
+### isIncludeAllChildren
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素" /> 
+</ClientOnly>
+
+#### 参数
+
+- 接收二个参数，第一个参数 `c`，第二个参数 `m`，返回值类型为 `boolean`
+
+| **参数属性** | **说明** | **类型**                                           |
+| ------------ | -------- | -------------------------------------------------- |
+| `c`          | 子体     | `Array<string>`、`Array<number>`、`Array<unknown>` |
+| `m`          | 母体     | `Array<unknown>`                                   |
