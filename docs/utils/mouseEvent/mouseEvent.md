@@ -32,7 +32,7 @@ import allowMouseEvent from './allowMouseEvent.vue'
 
 <summary>查看代码</summary>
 
-<<< @/utils/banMouseEvent/banMouseEvent.vue
+<<< @/utils/mouseEvent/banMouseEvent.vue
 
 </details>
 
@@ -59,6 +59,6 @@ import allowMouseEvent from './allowMouseEvent.vue'
 
 <summary>查看代码</summary>
 
-<<< @/utils/banMouseEvent/allowMouseEvent.vue
+<<< @/utils/mouseEvent/allowMouseEvent.vue
 
 </details>

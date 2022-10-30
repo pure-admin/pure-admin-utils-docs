@@ -24,7 +24,7 @@ const { hooksLen, utilsLen } = useData()
           <n-number-animation :from="0" :to="utilsLen" /> 个
           <n-tooltip trigger="hover">
             <template #trigger>
-              <n-button text type="primary" @click="go('/utils/banMouseEvent/banMouseEvent')">
+              <n-button text type="primary" @click="go('/utils/base64Conver/base64Conver')">
                 Utils
               </n-button>
             </template>
