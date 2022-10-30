@@ -3,7 +3,7 @@ import { sync } from "fast-glob";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
-  base: "/pure-admin-utils-docs/",
+  base: "/",
   head: [
     [
       "meta",
@@ -14,7 +14,7 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "keywords", content: "pure-admin-utils" }],
-    ["link", { rel: "icon", href: "/pure-admin-utils-docs/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.ico" }],
   ],
   markdown: {
     theme: {
