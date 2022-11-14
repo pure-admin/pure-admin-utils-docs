@@ -332,16 +332,29 @@
 ### hasCNChars
 
 <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="校验是否包含中文字符（包括中文标点符号）" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符" /> 
 </ClientOnly>
 
 #### 参数
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+- 接收两个参数，第一个参数 `value`，第二个参数 `options`，返回值类型为 `boolean`
 
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `any`    |
+| **参数属性** | **说明**                                  | **类型**   |
+| ------------ | ----------------------------------------- | ---------- |
+| `value`      | 需要判断的值                              | `any`      |
+| `options`    | 拥有三个属性，具体看下面的 `options` 详情 | `isParams` |
+
+#### `options` 详情
+
+| **参数属性**     | **说明**                                   | **类型**  |
+| ---------------- | ------------------------------------------ | --------- |
+| `unicode`        | 自定义 `unicode`，不会覆盖默认的 `unicode` | `string`  |
+| `replaceUnicode` | 自定义 `unicode`，会覆盖默认的 `unicode`   | `string`  |
+| `all`            | 是否全部是中文，默认 `false`               | `boolean` |
+
+### 类型声明
+
+<<< @/utils/is/types/hasCNChars.ts
 
 ### isLowerCase
 
@@ -369,7 +382,7 @@
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `string` |
+| `value`      | 需要判断的值 | `any`    |
 
 ### isAlphabets
 

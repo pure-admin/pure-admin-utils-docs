@@ -26,6 +26,10 @@
 | `format`     | 是否返回已经转化好单位的包总大小 （通过下面的 `formatBytes` 函数转化） | `boolean`          | `true`     |
 | `callback`   | 回调函数，返回包总大小（单位：字节）                                   | `CallableFunction` | -          |
 
+### 类型声明
+
+<<< @/utils/packageSize/types/getPackageSize.ts
+
 ### 具体使用参考
 
 - [demo1](https://github.com/xiaoxian521/vue-pure-admin/blob/main/build/info.ts#L34)
