@@ -9,6 +9,7 @@ import watermark from './watermark.vue'
 </ClientOnly>
 
 ## 基础用法
+
 <ClientOnly>
   <watermark />
 </ClientOnly>
@@ -24,7 +25,7 @@ import watermark from './watermark.vue'
 
 - `appendEl`：要添加水印的主体，默认`body`
 
-## 返回值或方法
+## 方法
 
 - `setWatermark`：第一个参数`str`：水印值, 第二个参数`attr`: 水印样式属性
 - `clear`：清除水印
