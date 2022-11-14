@@ -33,13 +33,13 @@ debounce(() => {
   })
   wordCloud.on('element:click', ({ data: { data: { text } } }) => {
     if (text === 'Utils') {
-      go('/utils/base64Conver/base64Conver')
+      go('/pure-admin-utils-docs/utils/base64Conver/base64Conver')
     } else if (text === 'Hooks') {
-      go('/hooks/useCopyToClipboard/useCopyToClipboard')
+      go('/pure-admin-utils-docs/hooks/useCopyToClipboard/useCopyToClipboard')
     } else if (text.slice(0, 3) === ('use')) {
-      go(`/hooks/${text}/${text}`)
+      go(`/pure-admin-utils-docs/hooks/${text}/${text}`)
     } else {
-      go(`/utils/${text}/${text}`)
+      go(`pure-admin-utils-docs/utils/${text}/${text}`)
     }
   })
   wordCloud.render()
