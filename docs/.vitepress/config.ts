@@ -3,7 +3,7 @@ import { sync } from "fast-glob";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
-  base: "/",
+  base: "/pure-admin-utils/",
   head: [
     [
       "meta",
