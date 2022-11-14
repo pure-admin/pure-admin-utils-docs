@@ -13,7 +13,7 @@ hero:
       text: 开始
       link: /guide/guide
     - theme: alt
-      text: Star 🎉
+      text: Follow
       link: https://github.com/xiaoxian521
 
 features:
