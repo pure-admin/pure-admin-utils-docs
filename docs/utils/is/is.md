@@ -1,3 +1,7 @@
+<script setup>
+import hasCNChars from './hasCNChars.vue'
+</script>
+
 # 类型、正则判断相关函数
 
 <ClientOnly>
@@ -332,7 +336,7 @@
 ### hasCNChars
 
 <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）" /> 
 </ClientOnly>
 
 #### 参数
@@ -342,19 +346,42 @@
 | **参数属性** | **说明**                                  | **类型**   |
 | ------------ | ----------------------------------------- | ---------- |
 | `value`      | 需要判断的值                              | `any`      |
-| `options`    | 拥有三个属性，具体看下面的 `options` 详情 | `isParams` |
+| `options`    | 拥有四个属性，具体看下面的 `options` 详情 | `isParams` |
 
 #### `options` 详情
 
 | **参数属性**     | **说明**                                   | **类型**  |
 | ---------------- | ------------------------------------------ | --------- |
+| `all`            | 是否全部是中文，默认 `false`               | `boolean` |
 | `unicode`        | 自定义 `unicode`，不会覆盖默认的 `unicode` | `string`  |
 | `replaceUnicode` | 自定义 `unicode`，会覆盖默认的 `unicode`   | `string`  |
-| `all`            | 是否全部是中文，默认 `false`               | `boolean` |
+| `pure`           | 是否删除全部空格，默认 `false`             | `boolean` |
 
 ### 类型声明
 
 <<< @/utils/is/types/hasCNChars.ts
+
+### 基础用法
+
+<ClientOnly>
+  <hasCNChars />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/is/hasCNChars.vue
+
+</details>
+
+:::tip
+
+- [unicode 转换](https://unicode.yunser.com/coding)
+- 将 `replaceUnicode` 值设置为非常用中文标点符号的 `unicode` 编码时，常用中文标点符号不会被识别为中文
+- 常用中文标点符号 `。` `；` `，` `：` `“` `”` `（` `）` `、` `？` `《` `》` `！` `【` `】` `￥`
+- 依次对应的 `unicode` 编码为 `\u3002` `\uff1b` `\uff0c` `\uff1a` `\u201c` `\u201d` `\uff08` `\uff09` `\u3001` `\uff1f` `\u300a` `\u300b` `\uff01` `\u3010` `\u3011` `\uffe5`
+
+:::
 
 ### isLowerCase
 

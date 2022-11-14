@@ -5,4 +5,6 @@ export interface isParams {
   replaceUnicode?: string;
   /** 是否全部是中文，默认 `false` */
   all?: boolean;
+  /** 是否删除全部空格，默认 `false` */
+  pure?: boolean;
 }
