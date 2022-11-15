@@ -92,4 +92,5 @@
   background: var(--vp-c-green);
   color: white;
   border-radius: 10px;
+  vertical-align: middle;
 }

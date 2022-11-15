@@ -12,7 +12,7 @@ function urlToBase() {
 }
 
 function urlOnLineToBase() {
-  urlToBase64("https://xiaoxian521.github.io/pure-admin-utils-docs/logo.png").then((res) => {
+  urlToBase64("https://xiaoxian521.github.io/pure-admin-doc/img/pure.png").then((res) => {
     base64OnLineUrl.value = res
   })
 }

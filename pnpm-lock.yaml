@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antv/g2plot': ^2.4.22
-  '@pureadmin/utils': ^1.5.1
+  '@pureadmin/utils': ^1.6.0
   '@vicons/ionicons5': ^0.12.0
   '@vue/theme': ^1.2.2
   '@vueuse/core': ^9.5.0
@@ -15,12 +15,12 @@ specifiers:
   typescript: ^4.8.4
   unocss: ^0.46.5
   vite: ^3.2.3
-  vitepress: 1.0.0-alpha.28
+  vitepress: 1.0.0-alpha.29
   vue: ^3.2.45
 
 devDependencies:
   '@antv/g2plot': 2.4.22
-  '@pureadmin/utils': 1.5.1_echarts@5.4.0+vue@3.2.45
+  '@pureadmin/utils': 1.6.0_echarts@5.4.0+vue@3.2.45
   '@vicons/ionicons5': 0.12.0
   '@vue/theme': 1.2.2_vue@3.2.45
   '@vueuse/core': 9.5.0_vue@3.2.45
@@ -33,7 +33,7 @@ devDependencies:
   typescript: 4.8.4
   unocss: 0.46.5_vite@3.2.3
   vite: 3.2.3
-  vitepress: 1.0.0-alpha.28
+  vitepress: 1.0.0-alpha.29
   vue: 3.2.45
 
 packages:
@@ -520,8 +520,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/1.5.1_echarts@5.4.0+vue@3.2.45:
-    resolution: {integrity: sha512-G8Lls6sBRannfzHhBP/6u+VPg4kjOw92Xyo3Ib3MxKc6ZXVpqIf9SRRyKh9eVPtFLF2SVCUcY5OXLT0EX3q36w==}
+  /@pureadmin/utils/1.6.0_echarts@5.4.0+vue@3.2.45:
+    resolution: {integrity: sha512-w3ITmdHtLQKOounUkLwmzmXYkKXeWUSGLqxzvvK6/05QUxyFqZ8/PDuGfg6peJfaD9j/MsbekgZvFBIcQyDyeA==}
     peerDependencies:
       dayjs: '*'
       echarts: '*'
@@ -2536,8 +2536,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.28:
-    resolution: {integrity: sha512-pvbLssDMgLUN1terajmPlFBxHSDGO4DqwexKbjFyr7LeELerVuwGrG6F2J1hxmwOlbpLd1kHXEDqGm9JX/kTDQ==}
+  /vitepress/1.0.0-alpha.29:
+    resolution: {integrity: sha512-oaRaeMLcN9M3Bxz97fFVF6Gzm3Aqtb0CijTt5TOW0XPzNPuKA0YpFnsmS97gdKmA+VztM6itRJ8K7JJuU0VS3g==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.0

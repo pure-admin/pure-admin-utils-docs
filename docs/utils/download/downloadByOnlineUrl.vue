@@ -2,7 +2,7 @@
 import { downloadByOnlineUrl } from "@pureadmin/utils"
 
 function down() {
-  downloadByOnlineUrl('https://xiaoxian521.github.io/pure-admin-utils-docs/logo.png', 'test-url.png')
+  downloadByOnlineUrl('https://xiaoxian521.github.io/pure-admin-doc/img/pure.png', 'test-url.png')
 }
 </script>
 
