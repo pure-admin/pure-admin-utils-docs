@@ -33,7 +33,7 @@ debounce(() => {
   })
   wordCloud.on('element:click', ({ data: { data: { text } } }) => {
     if (text === 'Utils') {
-      go('/utils/base64Conver/base64Conver')
+      go('/utils/amount/amount')
     } else if (text === 'Hooks') {
       go('/hooks/useCopyToClipboard/useCopyToClipboard')
     } else if (text.slice(0, 3) === ('use')) {
