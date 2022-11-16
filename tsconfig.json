@@ -21,8 +21,9 @@
     "incremental": true,
     "types": [
       "node",
+      "vitepress",
       "vite/client",
-      "naive-ui/volar"
+      "naive-ui/volar",
     ],
   },
   "include": [
