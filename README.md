@@ -1,5 +1,5 @@
 # pure-admin-utils-docs
 
-- [文档地址](https://pure-admin-utils.netlify.app)
+[pure-admin-utils](https://www.npmjs.com/package/@pureadmin/utils) 文档，使用 `vitepress` 搭建
 
-`pure-admin-utils` 新版文档，使用 `vitepress` 搭建
+[文档地址](https://pure-admin-utils.netlify.app)

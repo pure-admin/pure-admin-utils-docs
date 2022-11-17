@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "pure-admin-utils-docs",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -11,7 +11,8 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.22",
-    "@pureadmin/utils": "^1.6.5",
+    "@pureadmin/utils": "^1.6.6",
+    "@types/workbox-build": "^5.0.1",
     "@vicons/ionicons5": "^0.12.0",
     "@vite-pwa/vitepress": "^0.0.2",
     "@vue/theme": "^1.2.2",

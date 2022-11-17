@@ -5,7 +5,7 @@ import watermark from './watermark.vue'
 # useWatermark
 
 <ClientOnly>
-  <description description="给元素加水印" /> 
+  <description description="给元素加水印" :tagNameList="['Vue3']"  /> 
 </ClientOnly>
 
 ## 基础用法

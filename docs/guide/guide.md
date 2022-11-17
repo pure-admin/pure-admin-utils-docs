@@ -46,5 +46,5 @@ pnpm add @pureadmin/utils
 ```
 
 :::tip
-我们提供了一个全局变量`PureUtils`，里面包含所有方法
+`CDN` 引用可以使用平台提供的一个全局变量 `PureUtils` 包含所有方法
 :::

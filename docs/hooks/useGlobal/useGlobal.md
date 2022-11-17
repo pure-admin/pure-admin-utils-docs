@@ -5,11 +5,11 @@ import global from './global.vue'
 # useGlobal
 
 <ClientOnly>
-  <description description="获取实例中全局property" /> 
+  <description description="获取实例中全局property" :tagNameList="['Vue3']"  /> 
 </ClientOnly>
 
-
 ## 基础用法
+
 <ClientOnly>
   <global />
 </ClientOnly>

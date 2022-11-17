@@ -235,7 +235,6 @@ import hasCNChars from './hasCNChars.vue'
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
 
-
 ### isWindow
 
 <ClientOnly>

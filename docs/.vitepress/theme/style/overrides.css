@@ -79,6 +79,10 @@
   opacity: 0.8 !important;
 }
 
+.custom-block.tip {
+  color: var(--vp-c-brand);
+}
+
 /* 覆盖naive-ui样式 */
 .n-gradient-text {
   white-space: inherit;
