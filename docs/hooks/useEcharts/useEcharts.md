@@ -53,7 +53,9 @@ app.mount("#app");
   // 可选，清空当前实例，会移除实例中所有的组件和图表，一般用于动态渲染，默认：`true`
   clear: true,
   // 可选，给`x`、`y`轴添加`Tooltip`文字提示，一般用于文字太长，`x`代表`x轴`   `y`代表`y轴`   `true`(默认)代表`x、y轴`（该属性生效的前提是将 `xAxis` 或者 `yAxis` 添加`triggerEvent: true`属性，用到哪个添加哪个）
-  addTooltip: true
+  addTooltip: true,
+   /** 可选，`window.onresize` 时改变图表尺寸的延时时间，单位毫秒，默认 `300` 毫秒。当您的 `echarts` 在拖拉窗口时不会自适应（一般不会出现这种情况），可以调整 `delay` 数值到自适应为止 */
+  delay: 300
 }
 ```
 
