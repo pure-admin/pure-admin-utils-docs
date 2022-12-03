@@ -20,7 +20,7 @@ import tags from './tags.vue'
 
 - 集成 `vue-vite`、`vue-cli`、`preact`、`react`、`solid`、`svelte`、`nuxt3`、`next`、`node`、`html` 版本使用示例
 
-[点我查看所有使用示例](https://github.com/xiaoxian521/pure-admin-utils-docs/tree/main/playgrounds)
+[点我查看所有使用示例](https://github.com/xiaoxian521/pure-admin-utils-docs/tree/master/playgrounds)
 
 ## 📦 安装
 
