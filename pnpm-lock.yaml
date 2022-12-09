@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antv/g2plot': ^2.4.22
-  '@pureadmin/utils': ^1.8.0
+  '@pureadmin/utils': ^1.8.2
   '@types/workbox-build': ^5.0.1
   '@vicons/ionicons5': ^0.12.0
   '@vite-pwa/vitepress': ^0.0.2
@@ -24,7 +24,7 @@ specifiers:
 
 devDependencies:
   '@antv/g2plot': 2.4.22
-  '@pureadmin/utils': 1.8.0_echarts@5.4.0+vue@3.2.45
+  '@pureadmin/utils': 1.8.2_echarts@5.4.0+vue@3.2.45
   '@types/workbox-build': 5.0.1
   '@vicons/ionicons5': 0.12.0
   '@vite-pwa/vitepress': 0.0.2_mxyp6wtzkqofzgjtkavgznr6uq
@@ -1674,8 +1674,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/1.8.0_echarts@5.4.0+vue@3.2.45:
-    resolution: {integrity: sha512-FL10xNmCtWQKYt+i16aoRbdZ7wOoTNXtwaRTUbkbKRY0RC8DbtV3YzgWGpz6CHOr4BUOmT21RjWEH+Yl1OKMSg==}
+  /@pureadmin/utils/1.8.2_echarts@5.4.0+vue@3.2.45:
+    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
     peerDependencies:
       echarts: '*'
       vue: '*'

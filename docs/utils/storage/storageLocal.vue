@@ -17,24 +17,24 @@ let storages = reactive({
 })
 
 function set() {
-  storageLocal.setItem('info', {
+  storageLocal().setItem('info', {
     name: 'xiaoming',
     age: 18
   })
 }
 
 function get() {
-  if (!storageLocal.getItem<StorageConfigs>('info')?.name) message?.info('暂无对应键名的 storage，请先储存localStorage对象')
-  storages.info.name = storageLocal.getItem<StorageConfigs>('info')?.name
-  storages.info.age = storageLocal.getItem<StorageConfigs>('info')?.age
+  if (!storageLocal().getItem<StorageConfigs>('info')?.name) message?.info('暂无对应键名的 storage，请先储存localStorage对象')
+  storages.info.name = storageLocal().getItem<StorageConfigs>('info')?.name
+  storages.info.age = storageLocal().getItem<StorageConfigs>('info')?.age
 }
 
 function remove() {
-  storageLocal.removeItem('info')
+  storageLocal().removeItem('info')
 }
 
 function clear() {
-  storageLocal.clear()
+  storageLocal().clear()
 }
 </script>
 

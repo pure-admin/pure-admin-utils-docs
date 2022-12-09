@@ -17,24 +17,24 @@ let storages = reactive({
 })
 
 function set() {
-  storageSession.setItem('info', {
+  storageSession().setItem('info', {
     name: 'xiaoming',
     age: 18
   })
 }
 
 function get() {
-  if (!storageSession.getItem<StorageConfigs>('info')?.name) message?.info('暂无对应键名的 storage，请先储存sessionStorage对象')
-  storages.info.name = storageSession.getItem<StorageConfigs>('info')?.name
-  storages.info.age = storageSession.getItem<StorageConfigs>('info')?.age
+  if (!storageSession().getItem<StorageConfigs>('info')?.name) message?.info('暂无对应键名的 storage，请先储存sessionStorage对象')
+  storages.info.name = storageSession().getItem<StorageConfigs>('info')?.name
+  storages.info.age = storageSession().getItem<StorageConfigs>('info')?.age
 }
 
 function remove() {
-  storageSession.removeItem('info')
+  storageSession().removeItem('info')
 }
 
 function clear() {
-  storageSession.clear()
+  storageSession().clear()
 }
 </script>
 
