@@ -1,14 +1,14 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@preact/preset-vite': ^2.4.0
-  '@pureadmin/utils': ^1.0.6
+  '@pureadmin/utils': ^1.8.2
   preact: ^10.11.1
   typescript: ^4.6.4
   vite: ^3.1.8
 
 dependencies:
-  '@pureadmin/utils': 1.0.6
+  '@pureadmin/utils': 1.8.2
   preact: 10.11.1
 
 devDependencies:
@@ -371,15 +371,12 @@ packages:
       - supports-color
     dev: true
 
-  /@pureadmin/utils/1.0.6:
-    resolution: {integrity: sha512-vM1FS5wGUpiOvm/DHf0UtqrN5eSDAQ+F2QNam8sZYqwsDyTtwuTovMcOkJeT2WbhXCgoqsePsI5F+Vo6BhbQTA==}
+  /@pureadmin/utils/1.8.2:
+    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
     peerDependencies:
-      dayjs: '*'
       echarts: '*'
       vue: '*'
     peerDependenciesMeta:
-      dayjs:
-        optional: true
       echarts:
         optional: true
       vue:
@@ -783,7 +780,6 @@ packages:
 
   /preact/10.11.1:
     resolution: {integrity: sha512-1Wz5PCRm6Fg+6BTXWJHhX4wRK9MZbZBHuwBqfZlOdVm2NqPe8/rjYpufvYCwJSGb9layyzB2jTTXfpCTynLqFQ==}
-    dev: false
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}

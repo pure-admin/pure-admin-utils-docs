@@ -1099,10 +1099,10 @@
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@pureadmin/utils@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/@pureadmin/utils/-/utils-1.0.6.tgz#c0ed7abccbfe61e6f8d4cfbcfb83e3e376b53305"
-  integrity sha512-vM1FS5wGUpiOvm/DHf0UtqrN5eSDAQ+F2QNam8sZYqwsDyTtwuTovMcOkJeT2WbhXCgoqsePsI5F+Vo6BhbQTA==
+"@pureadmin/utils@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmmirror.com/@pureadmin/utils/-/utils-1.8.2.tgz#87123af1b11d5a51f33dbbf1a12639ec8ed03ea8"
+  integrity sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"

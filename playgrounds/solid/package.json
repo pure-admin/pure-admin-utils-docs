@@ -15,7 +15,7 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
-    "@pureadmin/utils": "^1.0.6",
+    "@pureadmin/utils": "^1.8.2",
     "solid-js": "^1.4.7"
   }
 }

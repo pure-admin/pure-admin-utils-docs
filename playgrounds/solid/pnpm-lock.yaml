@@ -1,14 +1,14 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
-  '@pureadmin/utils': ^1.0.6
+  '@pureadmin/utils': ^1.8.2
   solid-js: ^1.4.7
   typescript: ^4.7.4
   vite: ^3.1.8
   vite-plugin-solid: ^2.3.0
 
 dependencies:
-  '@pureadmin/utils': 1.0.6
+  '@pureadmin/utils': 1.8.2
   solid-js: 1.4.7
 
 devDependencies:
@@ -381,15 +381,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@pureadmin/utils/1.0.6:
-    resolution: {integrity: sha512-vM1FS5wGUpiOvm/DHf0UtqrN5eSDAQ+F2QNam8sZYqwsDyTtwuTovMcOkJeT2WbhXCgoqsePsI5F+Vo6BhbQTA==}
+  /@pureadmin/utils/1.8.2:
+    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
     peerDependencies:
-      dayjs: '*'
       echarts: '*'
       vue: '*'
     peerDependenciesMeta:
-      dayjs:
-        optional: true
       echarts:
         optional: true
       vue:
@@ -832,7 +829,6 @@ packages:
 
   /solid-js/1.4.7:
     resolution: {integrity: sha512-u3hoe5w3xseAc/8zLwYaQVGanWXknMMQkzryNz7lOPy2ygW6DhCtfMseun4kLflRNRzrUUpTV3W5p7j2SGcHCQ==}
-    dev: false
 
   /solid-refresh/0.4.1_solid-js@1.4.7:
     resolution: {integrity: sha512-v3tD/OXQcUyXLrWjPW1dXZyeWwP7/+GQNs8YTL09GBq+5FguA6IejJWUvJDrLIA4M0ho9/5zK2e9n+uy+4488g==}

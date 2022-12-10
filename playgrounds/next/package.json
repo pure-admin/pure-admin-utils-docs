@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@pureadmin/utils": "^1.0.6",
+    "@pureadmin/utils": "^1.8.2",
     "next": "^12.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"

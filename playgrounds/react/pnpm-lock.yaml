@@ -1,7 +1,7 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
-  '@pureadmin/utils': ^1.0.6
+  '@pureadmin/utils': ^1.8.2
   '@types/react': ^18.0.12
   '@types/react-dom': ^18.0.5
   '@vitejs/plugin-react': ^2.1.0
@@ -11,7 +11,7 @@ specifiers:
   vite: ^3.1.8
 
 dependencies:
-  '@pureadmin/utils': 1.0.6
+  '@pureadmin/utils': 1.8.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -347,15 +347,12 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@pureadmin/utils/1.0.6:
-    resolution: {integrity: sha512-vM1FS5wGUpiOvm/DHf0UtqrN5eSDAQ+F2QNam8sZYqwsDyTtwuTovMcOkJeT2WbhXCgoqsePsI5F+Vo6BhbQTA==}
+  /@pureadmin/utils/1.8.2:
+    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
     peerDependencies:
-      dayjs: '*'
       echarts: '*'
       vue: '*'
     peerDependenciesMeta:
-      dayjs:
-        optional: true
       echarts:
         optional: true
       vue:

@@ -1,15 +1,15 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@koa/router': ^10.0.0
-  '@pureadmin/utils': ^1.0.6
+  '@pureadmin/utils': ^1.8.2
   koa: ^2.13.1
   koa-logger: ^3.2.1
   koa-pino-logger: ^3.0.0
 
 dependencies:
   '@koa/router': 10.1.1
-  '@pureadmin/utils': 1.0.6
+  '@pureadmin/utils': 1.8.2
   koa: 2.13.4
   koa-logger: 3.2.1
   koa-pino-logger: 3.0.0
@@ -29,15 +29,12 @@ packages:
       - supports-color
     dev: false
 
-  /@pureadmin/utils/1.0.6:
-    resolution: {integrity: sha512-vM1FS5wGUpiOvm/DHf0UtqrN5eSDAQ+F2QNam8sZYqwsDyTtwuTovMcOkJeT2WbhXCgoqsePsI5F+Vo6BhbQTA==}
+  /@pureadmin/utils/1.8.2:
+    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
     peerDependencies:
-      dayjs: '*'
       echarts: '*'
       vue: '*'
     peerDependenciesMeta:
-      dayjs:
-        optional: true
       echarts:
         optional: true
       vue:

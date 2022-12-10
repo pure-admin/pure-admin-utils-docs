@@ -20,6 +20,6 @@
     "vite": "^3.1.8"
   },
   "dependencies": {
-    "@pureadmin/utils": "^1.0.6"
+    "@pureadmin/utils": "^1.8.2"
   }
 }

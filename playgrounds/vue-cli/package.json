@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@pureadmin/utils": "^1.0.6",
+    "@pureadmin/utils": "^1.8.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
