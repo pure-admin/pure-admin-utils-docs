@@ -1,12 +1,13 @@
 <script setup>
 import clone from './clone.vue'
+import cloneDeep from './cloneDeep.vue'
 import hasOwnProp from './hasOwnProp.vue'
 </script>
 
 # 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
 
 <ClientOnly>
-  <description-popover :num="2" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## clone
@@ -34,6 +35,33 @@ import hasOwnProp from './hasOwnProp.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/clone/clone.vue
+
+</details>
+
+## cloneDeep
+
+<ClientOnly>
+  <description :isShowIcon="false" description="深拷贝" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收一个参数 `val` ，返回拷贝后的值
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `val`        | 需要拷贝的值 | `any`    |
+
+### 基础用法
+
+<ClientOnly>
+  <cloneDeep />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/clone/cloneDeep.vue
 
 </details>
 
