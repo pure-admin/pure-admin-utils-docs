@@ -458,7 +458,21 @@ import hasCNChars from './hasCNChars.vue'
 ### isEmpty
 
 <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断" /> 
+</ClientOnly>
+
+#### 参数
+
+- 接收一个参数 `val`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型**  |
+| ------------ | ------------ | --------- |
+| `val`        | 需要判断的值 | `unknown` |
+
+### isAllEmpty
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空" /> 
 </ClientOnly>
 
 #### 参数
