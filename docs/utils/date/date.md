@@ -9,7 +9,7 @@ import dateFormat from './dateFormat.vue'
 # 时间、日期相关函数
 
 <ClientOnly>
-  <description-popover :num="4" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="5" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## getCurrentWeek
