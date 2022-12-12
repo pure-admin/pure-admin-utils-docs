@@ -3,6 +3,7 @@ import getCurrentWeek from './getCurrentWeek.vue'
 import monthDays from './monthDays.vue'
 import createYear from './createYear.vue'
 import getCurrentDate from './getCurrentDate.vue'
+import dateFormat from './dateFormat.vue'
 </script>
 
 # 时间、日期相关函数
@@ -127,5 +128,32 @@ import getCurrentDate from './getCurrentDate.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/date/getCurrentDate.vue
+
+</details>
+
+## dateFormat
+
+<ClientOnly>
+  <description :isShowIcon="false" description="获取格式化后的当前日期" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收一个参数 `format`
+
+| **参数属性** | **说明**   | **类型** |
+| ------------ | ---------- | -------- |
+| `format`     | 日期格式化 | `string` |
+
+### 基础用法
+
+<ClientOnly>
+  <dateFormat />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/date/dateFormat.vue
 
 </details>
