@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "pure-admin-utils-docs",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -11,7 +11,7 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.22",
-    "@pureadmin/utils": "^1.8.3",
+    "@pureadmin/utils": "^1.8.4",
     "@types/workbox-build": "^5.0.1",
     "@vicons/ionicons5": "^0.12.0",
     "@vite-pwa/vitepress": "^0.0.2",
@@ -25,9 +25,9 @@
     "pathe": "^1.0.0",
     "typeit": "^8.7.0",
     "typescript": "^4.9.4",
-    "unocss": "^0.47.5",
-    "vite": "^4.0.0",
-    "vite-plugin-pwa": "^0.13.3",
+    "unocss": "^0.47.6",
+    "vite": "^4.0.1",
+    "vite-plugin-pwa": "^0.14.0",
     "vitepress": "1.0.0-alpha.31",
     "vue": "^3.2.45"
   },
