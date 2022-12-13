@@ -1,6 +1,7 @@
 <script setup>
 import swapOrder from './swapOrder.vue'
 import isIncludeAllChildren from './isIncludeAllChildren.vue'
+import intersection from './intersection.vue'
 </script>
 
 # 处理数组相关函数
@@ -63,5 +64,28 @@ import isIncludeAllChildren from './isIncludeAllChildren.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/array/isIncludeAllChildren.vue
+
+</details>
+
+## intersection
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="获取由基本数据类型组成的数组交集" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收无数量限制的数组参数，返回由基本数据类型组成的数组交集
+
+### 基础用法
+
+<ClientOnly>
+  <intersection />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/intersection.vue
 
 </details>
