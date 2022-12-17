@@ -82,3 +82,5 @@ docs/.vitepress/dist
 .idea
 
 .DS_Store
+docs/.vitepress/cache
+docs/dev-dist

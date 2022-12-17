@@ -3,6 +3,7 @@ import { resolve } from "pathe";
 import Unocss from "unocss/vite";
 import { sync } from "fast-glob";
 import { withPwa } from "@vite-pwa/vitepress";
+import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default withPwa(
@@ -153,20 +154,27 @@ export default withPwa(
         host: "0.0.0.0",
       },
       optimizeDeps: {
-        // 不进行预编译，因为预编译可能会触发页面整体刷新
-        exclude: [
+        include: [
+          "axios",
           "typeit",
           "echarts",
-          "vitepress",
+          "@antv/g2plot",
+          "highlight.js",
           "@vueuse/core",
-          "@pureadmin/utils",
           "@vicons/ionicons5",
         ],
+        exclude: ["@pureadmin/utils"],
       },
       build: {
         chunkSizeWarningLimit: 10000,
       },
-      plugins: [Unocss()],
+      plugins: [
+        Unocss(),
+        SearchPlugin({
+          encode: false,
+          tokenize: "full",
+        }),
+      ],
     },
     vue: {
       reactivityTransform: true,
