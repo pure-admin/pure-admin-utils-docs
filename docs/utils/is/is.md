@@ -109,7 +109,7 @@ import hasCNChars from './hasCNChars.vue'
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
 
-### isNullAndUnDef
+### isNullOrUnDef
 
 <ClientOnly>
   <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null 或者 undefined" /> 
