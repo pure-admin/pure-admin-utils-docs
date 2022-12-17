@@ -3,7 +3,7 @@ import { resolve } from "pathe";
 import Unocss from "unocss/vite";
 import { sync } from "fast-glob";
 import { withPwa } from "@vite-pwa/vitepress";
-import { SearchPlugin } from "vitepress-plugin-search";
+// import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default withPwa(
@@ -170,10 +170,10 @@ export default withPwa(
       },
       plugins: [
         Unocss(),
-        SearchPlugin({
-          encode: false,
-          tokenize: "full",
-        }),
+        // SearchPlugin({
+        //   encode: false,
+        //   tokenize: "full",
+        // }),
       ],
     },
     vue: {
