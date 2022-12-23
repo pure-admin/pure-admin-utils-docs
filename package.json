@@ -16,7 +16,7 @@
     "@vicons/ionicons5": "^0.12.0",
     "@vite-pwa/vitepress": "^0.0.2",
     "@vue/theme": "^1.2.2",
-    "@vueuse/core": "^9.6.0",
+    "@vueuse/core": "^9.8.2",
     "axios": "^1.2.1",
     "echarts": "^5.4.1",
     "fast-glob": "^3.2.11",
@@ -25,11 +25,10 @@
     "pathe": "^1.0.0",
     "typeit": "^8.7.0",
     "typescript": "^4.9.4",
-    "unocss": "^0.47.6",
-    "vite": "^4.0.1",
+    "unocss": "^0.48.0",
+    "vite": "^4.0.3",
     "vite-plugin-pwa": "^0.14.0",
-    "vitepress": "1.0.0-alpha.32",
-    "vitepress-plugin-search": "1.0.4-alpha.17",
+    "vitepress": "1.0.0-alpha.33",
     "vue": "^3.2.45"
   },
   "pnpm": {
