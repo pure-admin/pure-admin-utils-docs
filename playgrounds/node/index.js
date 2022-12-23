@@ -1,7 +1,7 @@
 const Koa = require('koa')
 const logger = require('koa-logger')
 const router = require('@koa/router')()
-const utils = require('@pureadmin/utils')
+const { getCurrentWeek, buildUUID } = require('@pureadmin/utils')
 
 const app = new Koa()
 
@@ -9,7 +9,6 @@ const app = new Koa()
 
 app.use(logger())
 
-const { getCurrentWeek, buildUUID } = utils
 
 const helloWorld = ctx => {
   ctx.body = getCurrentWeek() + buildUUID()
