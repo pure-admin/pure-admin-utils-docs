@@ -1,13 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@antv/g2plot': ^2.4.22
+  '@antv/g2plot': ^2.4.23
   '@pureadmin/utils': ^1.8.5
   '@types/workbox-build': ^5.0.1
   '@vicons/ionicons5': ^0.12.0
   '@vite-pwa/vitepress': ^0.0.2
   '@vue/theme': ^1.2.2
-  '@vueuse/core': ^9.8.2
+  '@vueuse/core': ^9.9.0
   axios: ^1.2.1
   echarts: ^5.4.1
   fast-glob: ^3.2.11
@@ -23,13 +23,13 @@ specifiers:
   vue: ^3.2.45
 
 devDependencies:
-  '@antv/g2plot': 2.4.22
+  '@antv/g2plot': 2.4.23
   '@pureadmin/utils': 1.8.5_echarts@5.4.1+vue@3.2.45
   '@types/workbox-build': 5.0.1
   '@vicons/ionicons5': 0.12.0
   '@vite-pwa/vitepress': 0.0.2_n46hanechhcb4seycmn3d5vts4
   '@vue/theme': 1.2.2_vue@3.2.45
-  '@vueuse/core': 9.8.2_vue@3.2.45
+  '@vueuse/core': 9.9.0_vue@3.2.45
   axios: 1.2.1
   echarts: 5.4.1
   fast-glob: 3.2.12
@@ -197,7 +197,7 @@ packages:
     resolution: {integrity: sha512-KnPEaAH+XNJMjax9U35W67nzPI+QQ2x27pYlzmSIWrbj4/k8PGrARXfzDTjwoozHJY8qG62Z+Ww6Alhu2FctXQ==}
     dependencies:
       '@antv/util': 2.0.17
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/component/0.8.28:
@@ -205,13 +205,13 @@ packages:
     dependencies:
       '@antv/color-util': 2.0.6
       '@antv/dom-util': 2.0.4
-      '@antv/g-base': 0.5.11
+      '@antv/g-base': 0.5.12
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/path-util': 2.0.15
       '@antv/scale': 0.3.18
       '@antv/util': 2.0.17
       fecha: 4.2.3
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/coord/0.3.1:
@@ -219,62 +219,62 @@ packages:
     dependencies:
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/util': 2.0.17
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/dom-util/2.0.4:
     resolution: {integrity: sha512-2shXUl504fKwt82T3GkuT4Uoc6p9qjCKnJ8gXGLSW4T1W37dqf9AV28aCfoVPHp2BUXpSsB+PAJX2rG/jLHsLQ==}
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/event-emitter/0.1.3:
     resolution: {integrity: sha512-4ddpsiHN9Pd4UIlWuKVK1C4IiZIdbwQvy9i7DUSI3xNJ89FPUFt8lxDYj8GzzfdllV0NkJTRxnG+FvLk0llidg==}
     dev: true
 
-  /@antv/g-base/0.5.11:
-    resolution: {integrity: sha512-10Hkq7XksVCqxZZrPkd6HTU9tb/+2meCVEMy/edhS4I/sokhcgC9m3fQP5bE8rA3EVKwELE7MJHZ98BEpVFqvQ==}
+  /@antv/g-base/0.5.12:
+    resolution: {integrity: sha512-KDM3K1rDnemvTAoPYsRYue+ZX7bR4D0TvOQ5Ib6osGtSpZcstwhA0CuQGI0wNXb/ax7h6/KyzNPVFqESrtWbqw==}
     dependencies:
       '@antv/event-emitter': 0.1.3
-      '@antv/g-math': 0.1.7
+      '@antv/g-math': 0.1.9
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/path-util': 2.0.15
       '@antv/util': 2.0.17
       '@types/d3-timer': 2.0.1
       d3-ease: 1.0.7
-      d3-interpolate: 1.4.0
+      d3-interpolate: 3.0.1
       d3-timer: 1.0.10
       detect-browser: 5.3.0
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
-  /@antv/g-canvas/0.5.12:
-    resolution: {integrity: sha512-iJ/muwwqCCNONVlPIzv/7OL5iLguaKRj2BxNMytUO3TWwamM+kHkiyYEOkS0dPn9h/hBsHYlLUluSVz2Fp6/bw==}
+  /@antv/g-canvas/0.5.13:
+    resolution: {integrity: sha512-nu6wNeZhYomkEks2aniWlYML0ZGb9t5PGzjiOIp+B4z4HUEUvHOTdIPNfinzl5+4QC7fVZntsQKZK5dBFO5MDQ==}
     dependencies:
-      '@antv/g-base': 0.5.11
-      '@antv/g-math': 0.1.7
+      '@antv/g-base': 0.5.12
+      '@antv/g-math': 0.1.9
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/path-util': 2.0.15
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
-  /@antv/g-math/0.1.7:
-    resolution: {integrity: sha512-xGyXaloD1ynfp7gS4VuV+MjSptZIwHvLHr8ekXJSFAeWPYLu84yOW2wOZHDdp1bzDAIuRv6xDBW58YGHrWsFcA==}
+  /@antv/g-math/0.1.9:
+    resolution: {integrity: sha512-KHMSfPfZ5XHM1PZnG42Q2gxXfOitYveNTA7L61lR6mhZ8Y/aExsYmHqaKBsSarU0z+6WLrl9C07PQJZaw0uljQ==}
     dependencies:
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
     dev: true
 
-  /@antv/g-svg/0.5.6:
-    resolution: {integrity: sha512-Xve1EUGk4HMbl2nq4ozR4QLh6GyoZ8Xw/+9kHYI4B5P2lIUQU95MuRsaLFfW5NNpZDx85ZeH97tqEmC9L96E7A==}
+  /@antv/g-svg/0.5.7:
+    resolution: {integrity: sha512-jUbWoPgr4YNsOat2Y/rGAouNQYGpw4R0cvlN0YafwOyacFFYy2zC8RslNd6KkPhhR3XHNSqJOuCYZj/YmLUwYw==}
     dependencies:
-      '@antv/g-base': 0.5.11
-      '@antv/g-math': 0.1.7
+      '@antv/g-base': 0.5.12
+      '@antv/g-math': 0.1.9
       '@antv/util': 2.0.17
       detect-browser: 5.3.0
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/g2/4.2.8:
@@ -287,18 +287,18 @@ packages:
       '@antv/coord': 0.3.1
       '@antv/dom-util': 2.0.4
       '@antv/event-emitter': 0.1.3
-      '@antv/g-base': 0.5.11
-      '@antv/g-canvas': 0.5.12
-      '@antv/g-svg': 0.5.6
+      '@antv/g-base': 0.5.12
+      '@antv/g-canvas': 0.5.13
+      '@antv/g-svg': 0.5.7
       '@antv/matrix-util': 3.1.0-beta.3
       '@antv/path-util': 2.0.15
       '@antv/scale': 0.3.18
       '@antv/util': 2.0.17
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
-  /@antv/g2plot/2.4.22:
-    resolution: {integrity: sha512-wwpSJ9TL1Z4f35dnlT4wy2z24T38xb8qvb+a9thC/FUx4Iu04zc5vqGOqNvDlBRZAq53+KOMRJ7eC5XtsT8QIg==}
+  /@antv/g2plot/2.4.23:
+    resolution: {integrity: sha512-GnrSuUclOKYq/V1sb0WWUM37IV0VKWOA2Klq0jmfj8gLI2r3A9bFzKj+EEg8sr2Hlfo2Iztvt77HYv4laxLUSQ==}
     dependencies:
       '@antv/event-emitter': 0.1.3
       '@antv/g2': 4.2.8
@@ -308,7 +308,7 @@ packages:
       fmin: 0.0.2
       pdfast: 0.2.0
       size-sensor: 1.0.1
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/matrix-util/3.0.4:
@@ -316,7 +316,7 @@ packages:
     dependencies:
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/matrix-util/3.1.0-beta.3:
@@ -324,7 +324,7 @@ packages:
     dependencies:
       '@antv/util': 2.0.17
       gl-matrix: 3.4.3
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/path-util/2.0.15:
@@ -332,7 +332,7 @@ packages:
     dependencies:
       '@antv/matrix-util': 3.0.4
       '@antv/util': 2.0.17
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/scale/0.3.18:
@@ -340,14 +340,14 @@ packages:
     dependencies:
       '@antv/util': 2.0.17
       fecha: 4.2.3
-      tslib: 2.4.1
+      tslib: 2.3.0
     dev: true
 
   /@antv/util/2.0.17:
     resolution: {integrity: sha512-o6I9hi5CIUvLGDhth0RxNSFDRwXeywmt6ExR4+RmVAzIi48ps6HUy+svxOCayvrPBN37uE6TAc2KDofRo0nK9Q==}
     dependencies:
-      csstype: 3.1.1
-      tslib: 2.4.1
+      csstype: 3.0.11
+      tslib: 2.3.0
     dev: true
 
   /@apideck/better-ajv-errors/0.3.6_ajv@8.11.2:
@@ -2299,7 +2299,7 @@ packages:
     dependencies:
       '@docsearch/css': 3.3.0
       '@docsearch/js': 3.3.0
-      '@vueuse/core': 9.8.2_vue@3.2.45
+      '@vueuse/core': 9.9.0_vue@3.2.45
       body-scroll-lock: 3.1.5
       normalize.css: 8.0.1
     transitivePeerDependencies:
@@ -2311,24 +2311,24 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/core/9.8.2_vue@3.2.45:
-    resolution: {integrity: sha512-aWiCmcYIpPt7xjuqYiceODEMHchDYthrJ4AqI+FXPZrR23PZOqdiktbUVyQl2kGlR3H4i9UJ/uimQrwhz9UouQ==}
+  /@vueuse/core/9.9.0_vue@3.2.45:
+    resolution: {integrity: sha512-JdDb7TrE0imZnwBhMF4+0PCJqGD3AxzH8S2sfk54P0rqvklK+EAtAR/mPb1HwV/JPujQFQJhghQ190Yq03YpVw==}
     dependencies:
       '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.8.2
-      '@vueuse/shared': 9.8.2_vue@3.2.45
+      '@vueuse/metadata': 9.9.0
+      '@vueuse/shared': 9.9.0_vue@3.2.45
       vue-demi: 0.13.11_vue@3.2.45
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
     dev: true
 
-  /@vueuse/metadata/9.8.2:
-    resolution: {integrity: sha512-N4E/BKS+9VsUeD4WLVRU1J2kCOLh+iikBcMtipFcTyL204132vDYHs27zLAVabJYGnhC0dIVGdhg9pbOZiY2TQ==}
+  /@vueuse/metadata/9.9.0:
+    resolution: {integrity: sha512-pgxsUJv/d7IjKpLeB6TthggEsaBwM3ffc5jPrr5TmxAm/fup0mGR5VTzrdA/PSx85tpb+CIvP92D+55qBNc8ag==}
     dev: true
 
-  /@vueuse/shared/9.8.2_vue@3.2.45:
-    resolution: {integrity: sha512-ACjrPQzowd5dnabNJt9EoGVobco9/ENiA5qP53vjiuxndlJYuc/UegwhXC7KdQbPX4F45a50+45K3g1wNqOzmA==}
+  /@vueuse/shared/9.9.0_vue@3.2.45:
+    resolution: {integrity: sha512-+D0XFwHG0T+uaIbCSlROBwm1wzs71B7n3KyDOxnvfEMMHDOzl09rYKwaE2AENmYwYPXfHPbSBRDD2gBVHbvTcg==}
     dependencies:
       vue-demi: 0.13.11_vue@3.2.45
     transitivePeerDependencies:
@@ -2724,12 +2724,9 @@ packages:
     resolution: {integrity: sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==}
     dev: true
 
-  /csstype/3.1.1:
-    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
-    dev: true
-
-  /d3-color/1.4.1:
-    resolution: {integrity: sha512-p2sTHSLCJI2QKunbGb7ocOh7DgTAn8IrLx21QRc/BSnodXM4sv6aLQlnfpvehFMLZEfBc6g9pH9SWQccFYfJ9Q==}
+  /d3-color/3.1.0:
+    resolution: {integrity: sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==}
+    engines: {node: '>=12'}
     dev: true
 
   /d3-ease/1.0.7:
@@ -2740,10 +2737,11 @@ packages:
     resolution: {integrity: sha512-SwIdqM3HxQX2214EG9GTjgmCc/mbSx4mQBn+DuEETubhOw6/U3fmnji4uCVrmzOydMHSO1nZle5gh6HB/wdOzw==}
     dev: true
 
-  /d3-interpolate/1.4.0:
-    resolution: {integrity: sha512-V9znK0zc3jOPV4VD2zZn0sDhZU3WAE2bmlxdIwwQPPzPjvyLkd8B3JUVdS1IDUFDkWZ72c9qnv1GK2ZagTZ8EA==}
+  /d3-interpolate/3.0.1:
+    resolution: {integrity: sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==}
+    engines: {node: '>=12'}
     dependencies:
-      d3-color: 1.4.1
+      d3-color: 3.1.0
     dev: true
 
   /d3-regression/1.3.10:
@@ -4240,10 +4238,6 @@ packages:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
     dev: true
 
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: true
-
   /type-fest/0.16.0:
     resolution: {integrity: sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==}
     engines: {node: '>=10'}
@@ -4462,7 +4456,7 @@ packages:
       '@docsearch/js': 3.3.0
       '@vitejs/plugin-vue': 4.0.0_vite@4.0.3+vue@3.2.45
       '@vue/devtools-api': 6.4.5
-      '@vueuse/core': 9.8.2_vue@3.2.45
+      '@vueuse/core': 9.9.0_vue@3.2.45
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.12.1
       vite: 4.0.3
