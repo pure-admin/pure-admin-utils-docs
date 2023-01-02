@@ -17,7 +17,7 @@
     "@vite-pwa/vitepress": "^0.0.2",
     "@vue/theme": "^1.2.2",
     "@vueuse/core": "^9.9.0",
-    "axios": "^1.2.1",
+    "axios": "^1.2.2",
     "echarts": "^5.4.1",
     "fast-glob": "^3.2.11",
     "highlight.js": "^11.7.0",

@@ -8,7 +8,7 @@ specifiers:
   '@vite-pwa/vitepress': ^0.0.2
   '@vue/theme': ^1.2.2
   '@vueuse/core': ^9.9.0
-  axios: ^1.2.1
+  axios: ^1.2.2
   echarts: ^5.4.1
   fast-glob: ^3.2.11
   highlight.js: ^11.7.0
@@ -30,7 +30,7 @@ devDependencies:
   '@vite-pwa/vitepress': 0.0.2_n46hanechhcb4seycmn3d5vts4
   '@vue/theme': 1.2.2_vue@3.2.45
   '@vueuse/core': 9.9.0_vue@3.2.45
-  axios: 1.2.1
+  axios: 1.2.2
   echarts: 5.4.1
   fast-glob: 3.2.12
   highlight.js: 11.7.0
@@ -2471,8 +2471,8 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
-  /axios/1.2.1:
-    resolution: {integrity: sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==}
+  /axios/1.2.2:
+    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
