@@ -19,7 +19,7 @@ specifiers:
   unocss: ^0.49.1
   vite: ^4.0.4
   vite-plugin-pwa: ^0.14.1
-  vitepress: 1.0.0-alpha.40
+  vitepress: 1.0.0-alpha.43
   vue: ^3.2.45
 
 devDependencies:
@@ -41,7 +41,7 @@ devDependencies:
   unocss: 0.49.1_vite@4.0.4
   vite: 4.0.4
   vite-plugin-pwa: 0.14.1_vite@4.0.4
-  vitepress: 1.0.0-alpha.40
+  vitepress: 1.0.0-alpha.43
   vue: 3.2.45
 
 packages:
@@ -4063,8 +4063,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /shiki/0.12.1:
-    resolution: {integrity: sha512-aieaV1m349rZINEBkjxh2QbBvFFQOlgqYTNtCal82hHj4dDZ76oMlQIX+C7ryerBTDiga3e5NfH6smjdJ02BbQ==}
+  /shiki/0.13.0:
+    resolution: {integrity: sha512-QucKtRFyoHgivnde/6tXu+7ZfUhcg02qiFlUSa4X0jQvHVKdtrimWPlbg+q06H2EeNSuj9DcMhtB18GgtDLsmw==}
     dependencies:
       jsonc-parser: 3.2.0
       vscode-oniguruma: 1.7.0
@@ -4532,8 +4532,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.40:
-    resolution: {integrity: sha512-axhLI/wq/V9RjzFQZ00Ur0WhvoZXG7E1H88NxnglZm6wU/FAePP4bGaWPzU2WZwy3Nzpb9cbf1oXC+1DNgv9cQ==}
+  /vitepress/1.0.0-alpha.43:
+    resolution: {integrity: sha512-bguPWYojF371vIfTY8jGmKeFroRe6UVGmDp3+PjTnVq57wTlz9x88OKm6KKF4l/1D7GugkHex5X9wNcOdCmCiQ==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.2
@@ -4542,7 +4542,7 @@ packages:
       '@vue/devtools-api': 6.5.0
       '@vueuse/core': 9.11.1_vue@3.2.45
       body-scroll-lock: 4.0.0-beta.0
-      shiki: 0.12.1
+      shiki: 0.13.0
       vite: 4.0.4
       vue: 3.2.45
     transitivePeerDependencies:
