@@ -175,6 +175,7 @@ export default withPwa(
         //   tokenize: "full",
         // }),
       ],
+      ssr: { noExternal: ["@antv/g2plot"] },
     },
     vue: {
       reactivityTransform: true,
