@@ -3,7 +3,6 @@ import { resolve } from "pathe";
 import Unocss from "unocss/vite";
 import { sync } from "fast-glob";
 import { withPwa } from "@vite-pwa/vitepress";
-// import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default withPwa(
@@ -143,11 +142,30 @@ export default withPwa(
         copyright: "Copyright © 2022-present RealityBoy",
       },
       lastUpdatedText: "最近更新时间",
-      // algolia: {
-      //   appId: "EKWGNTZJFC",
-      //   apiKey: "681ac43aa17d09fd05de6dd9f1562d0c",
-      //   indexName: "pureutils",
-      // },
+      search: {
+        provider: "local",
+        options: {
+          locales: {
+            root: {
+              translations: {
+                button: {
+                  buttonText: "搜索文档",
+                  buttonAriaLabel: "搜索文档",
+                },
+                modal: {
+                  noResultsText: "无法找到相关结果",
+                  resetButtonTitle: "清除查询条件",
+                  footer: {
+                    selectText: "选择",
+                    navigateText: "切换",
+                    closeText: "关闭",
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
     },
     vite: {
       server: {
@@ -168,13 +186,7 @@ export default withPwa(
       build: {
         chunkSizeWarningLimit: 10000,
       },
-      plugins: [
-        Unocss(),
-        // SearchPlugin({
-        //   encode: false,
-        //   tokenize: "full",
-        // }),
-      ],
+      plugins: [Unocss()],
       ssr: { noExternal: ["@antv/g2plot"] },
     },
     vue: {
