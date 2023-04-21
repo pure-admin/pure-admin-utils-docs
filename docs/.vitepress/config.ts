@@ -139,7 +139,7 @@ export default withPwa(
       ],
       footer: {
         message: "Released under the MIT License.",
-        copyright: "Copyright © 2022-present RealityBoy",
+        copyright: "Copyright © 2022-present pure-admin",
       },
       lastUpdatedText: "最近更新时间",
       search: {
