@@ -1,14 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@pureadmin/utils': ^1.8.2
+  '@pureadmin/utils': ^1.8.7
   solid-js: ^1.4.7
   typescript: ^4.7.4
   vite: ^3.1.8
   vite-plugin-solid: ^2.3.0
 
 dependencies:
-  '@pureadmin/utils': 1.8.2
+  '@pureadmin/utils': 1.8.7
   solid-js: 1.4.7
 
 devDependencies:
@@ -381,8 +381,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@pureadmin/utils/1.8.2:
-    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
+  /@pureadmin/utils/1.8.7:
+    resolution: {integrity: sha512-4I8SMrjy1zXsYJyI02bObNgrpLYhfFrIJi9AMSeaqKMqL3qwe2/7+rfrWgzEgb8bvua6m40Whvt91p4jrlyu2Q==}
     peerDependencies:
       echarts: '*'
       vue: '*'

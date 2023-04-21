@@ -2,13 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@preact/preset-vite': ^2.4.0
-  '@pureadmin/utils': ^1.8.2
+  '@pureadmin/utils': ^1.8.7
   preact: ^10.11.1
   typescript: ^4.6.4
   vite: ^3.1.8
 
 dependencies:
-  '@pureadmin/utils': 1.8.2
+  '@pureadmin/utils': 1.8.7
   preact: 10.11.1
 
 devDependencies:
@@ -371,8 +371,8 @@ packages:
       - supports-color
     dev: true
 
-  /@pureadmin/utils/1.8.2:
-    resolution: {integrity: sha512-9mr/y3RZJZGCYpKuRVngR6XVumdMjRNPLkFfljwU9KS5UQio70cfqsH6TQ8uL/Oh0eepDym+/KkSVTMx2EsOyQ==}
+  /@pureadmin/utils/1.8.7:
+    resolution: {integrity: sha512-4I8SMrjy1zXsYJyI02bObNgrpLYhfFrIJi9AMSeaqKMqL3qwe2/7+rfrWgzEgb8bvua6m40Whvt91p4jrlyu2Q==}
     peerDependencies:
       echarts: '*'
       vue: '*'
