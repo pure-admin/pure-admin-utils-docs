@@ -8,12 +8,13 @@ import addition from './addition.vue'
 import subtraction from './subtraction.vue'
 import multiplication from './multiplication.vue'
 import divisionOperation from './divisionOperation.vue'
+import formatBytes from './formatBytes.vue'
 </script>
 
 # 数值计算相关函数
 
 <ClientOnly>
-  <description-popover :num="9" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="10" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## max
@@ -264,5 +265,33 @@ import divisionOperation from './divisionOperation.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/math/divisionOperation.vue
+
+</details>
+
+## formatBytes
+
+<ClientOnly>
+  <description :isShowIcon="false" description="将字节单位智能转化成 Bytes 、 KB 、 MB 、 GB 、 TB 、 PB 、 EB 、 ZB 、 YB 其中的一种" />
+</ClientOnly>
+
+### 参数
+
+- 接收两个参数，第一个 `byte`，第二个 `digits`，返回智能转化字节单位后的值，返回值类型为 `string`
+
+| **参数属性** | **说明**             | **类型** | **默认值** |
+| ------------ | -------------------- | -------- | ---------- |
+| `byte`       | 字节                 | `number` | -          |
+| `digits`     | 四舍五入保留几位小数 | `number` | `2`        |
+
+### 基础用法
+
+<ClientOnly>
+  <formatBytes />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/math/formatBytes.vue
 
 </details>
