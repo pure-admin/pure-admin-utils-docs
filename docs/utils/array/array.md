@@ -2,6 +2,7 @@
 import swapOrder from './swapOrder.vue'
 import isIncludeAllChildren from './isIncludeAllChildren.vue'
 import intersection from './intersection.vue'
+import getKeyList from './getKeyList.vue'
 </script>
 
 # 处理数组相关函数
@@ -87,5 +88,33 @@ import intersection from './intersection.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/array/intersection.vue
+
+</details>
+
+## getKeyList
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收二个参数，第一个参数 `arr`，第二个参数 `key`，返回值类型为 `any[]`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `arr`        | 数组         | `any[]`  |
+| `key`        | 指定的 `key` | `string` |
+
+### 基础用法
+
+<ClientOnly>
+  <getKeyList />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/getKeyList.vue
 
 </details>
