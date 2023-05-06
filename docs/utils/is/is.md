@@ -5,7 +5,7 @@ import hasCNChars from './hasCNChars.vue'
 # 类型、正则判断相关函数
 
 <ClientOnly>
-  <description-popover :num="35" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="36" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## 类型判断
@@ -58,6 +58,22 @@ import hasCNChars from './hasCNChars.vue'
 <ClientOnly>
   <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是对象 object" /> 
 </ClientOnly>
+
+#### 参数
+
+- 接收一个参数 `val`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `val`        | 需要判断的值 | `any`    |
+
+### isPlainObject
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是普通对象" /> 
+</ClientOnly>
+
+功能同 https://www.lodashjs.com/docs/lodash.isPlainObject
 
 #### 参数
 
