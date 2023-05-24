@@ -2,7 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antv/g2plot': ^2.4.25
-  '@pureadmin/utils': ^1.8.9
+  '@faker-js/faker': ^8.0.1
+  '@pureadmin/utils': ^1.9.1
   '@types/workbox-build': ^5.0.1
   '@vicons/ionicons5': ^0.12.0
   '@vite-pwa/vitepress': ^0.0.5
@@ -24,7 +25,8 @@ specifiers:
 
 devDependencies:
   '@antv/g2plot': 2.4.25
-  '@pureadmin/utils': 1.8.9_echarts@5.4.2+vue@3.2.47
+  '@faker-js/faker': 8.0.1
+  '@pureadmin/utils': 1.9.1_echarts@5.4.2+vue@3.2.47
   '@types/workbox-build': 5.1.0
   '@vicons/ionicons5': 0.12.0
   '@vite-pwa/vitepress': 0.0.5_vite-plugin-pwa@0.14.7
@@ -1842,6 +1844,11 @@ packages:
     dev: true
     optional: true
 
+  /@faker-js/faker/8.0.1:
+    resolution: {integrity: sha512-kbh5MenpTN9U0B4QcOI1NoTPlZHniSYQ3BHbhAnPjJGAmmFqxoxTE4sGdpy7ZOO9038DPGCuhXyMkjOr05uVwA==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
+    dev: true
+
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
@@ -1925,8 +1932,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/1.8.9_echarts@5.4.2+vue@3.2.47:
-    resolution: {integrity: sha512-P+MfCuCImwHXeXmZuKQVEYdx7O0FDTuhSUD0HaXamPRerbd5LTuwSV0MN2pMsNUCYrHySHKRPkmah2wXl0XDjw==}
+  /@pureadmin/utils/1.9.1_echarts@5.4.2+vue@3.2.47:
+    resolution: {integrity: sha512-1Gpto6msGnFPLMIci3PWk1UyG+RZOnuNmVQt1wOS1uLTCGpJjfiZSxpVEuVWgYHA0zUkAKaHvSzhkLy8mTYSBw==}
     peerDependencies:
       echarts: '*'
       vue: '*'
