@@ -1,6 +1,7 @@
 import Unocss from "unocss/vite";
 import { sync } from "fast-glob";
 import { defineConfig, type DefaultTheme } from "vitepress";
+import ReactivityTransform from "@vue-macros/reactivity-transform/vite";
 
 export default defineConfig({
   base: "/",
@@ -154,7 +155,7 @@ export default defineConfig({
     build: {
       chunkSizeWarningLimit: 10000,
     },
-    plugins: [Unocss()],
+    plugins: [Unocss(), ReactivityTransform()],
     ssr: { noExternal: ["@antv/g2plot"] },
   },
   vue: {
