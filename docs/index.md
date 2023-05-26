@@ -38,7 +38,7 @@ features:
 ---
 
 <script setup>
-// import { onMounted, h } from 'vue'
+import { onMounted } from 'vue'
 // import { useMessage } from "./components/message"
 import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
 
