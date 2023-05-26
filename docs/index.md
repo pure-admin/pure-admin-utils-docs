@@ -37,35 +37,35 @@ features:
     details: 超简单的发版流程，集成一键式发版命令
 ---
 
-<!-- <script setup>
-import { onMounted, h } from 'vue'
-import { useMessage } from "./components/message"
+<script setup>
+// import { onMounted, h } from 'vue'
+// import { useMessage } from "./components/message"
 import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
 
 onMounted(() => {
   addReleaseTag()
 })
 
-const mess = h("span", {}, [
-  "文档使用",
-  h(
-    "a",
-    {
-      href: "https://vitepress.vuejs.org/",
-      target: "_blank",
-      style: {
-        color: "#409eff",
-      },
-    },
-    [" vitepress "]
-  ),
-  h(
-    "span",
-    "编写，vitepress 处于非稳定版本阶段，如点击页面遇到卡顿，请刷新浏览器即可"
-  ),
-])
+// const mess = h("span", {}, [
+//   "文档使用",
+//   h(
+//     "a",
+//     {
+//       href: "https://vitepress.vuejs.org/",
+//       target: "_blank",
+//       style: {
+//         color: "#409eff",
+//       },
+//     },
+//     [" vitepress "]
+//   ),
+//   h(
+//     "span",
+//     "编写，vitepress 处于非稳定版本阶段，如点击页面遇到卡顿，请刷新浏览器即可"
+//   ),
+// ])
 
-const { message } = useMessage()
+// const { message } = useMessage()
 
-if(process.env.NODE_ENV !== 'development') message?.info(() => mess, { closable: true, duration: 12000 })
-</script> -->
+// if(process.env.NODE_ENV !== 'development') message?.info(() => mess, { closable: true, duration: 12000 })
+</script>
