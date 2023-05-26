@@ -37,7 +37,7 @@ features:
     details: 超简单的发版流程，集成一键式发版命令
 ---
 
-<script setup>
+<!-- <script setup>
 import { onMounted, h } from 'vue'
 import { useMessage } from "./components/message"
 import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
@@ -68,4 +68,4 @@ const mess = h("span", {}, [
 const { message } = useMessage()
 
 if(process.env.NODE_ENV !== 'development') message?.info(() => mess, { closable: true, duration: 12000 })
-</script>
+</script> -->
