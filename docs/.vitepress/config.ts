@@ -46,6 +46,7 @@ export default defineConfig({
       },
     ],
   ],
+  cleanUrls: true,
   markdown: {
     theme: {
       dark: "min-dark",
