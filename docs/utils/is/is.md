@@ -568,3 +568,17 @@ import hasCNChars from './hasCNChars.vue'
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `color`      | 需要判断的值 | `string` |
+
+### isHtml
+
+<ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 html" /> 
+</ClientOnly>
+
+#### 参数
+
+- 接收一个参数 `value`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `value`      | 需要判断的值 | `string` |
