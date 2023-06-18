@@ -49,7 +49,7 @@ import throttle from './throttle.vue'
 
 | **参数属性** | **说明**         | **类型**       | **默认值** |
 | ------------ | ---------------- | -------------- | ---------- |
-| `fn`         | 要执行的函数     | `FunctionArgs` | -          |
+| `fn`         | 要执行的函数     | `FunctionArgs` |            |
 | `timeout`    | 延迟时间（毫秒） | `number`       | `200`      |
 | `immediate`  | 是否立即执行     | `boolean`      | `false`    |
 
@@ -82,7 +82,7 @@ import throttle from './throttle.vue'
 
 | **参数属性** | **说明**         | **类型**       | **默认值** |
 | ------------ | ---------------- | -------------- | ---------- |
-| `fn`         | 要执行的函数     | `FunctionArgs` | -          |
+| `fn`         | 要执行的函数     | `FunctionArgs` |            |
 | `timeout`    | 延迟时间（毫秒） | `number`       | `1000`     |
 
 ### 类型声明

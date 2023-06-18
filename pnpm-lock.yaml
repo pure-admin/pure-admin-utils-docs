@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antv/g2plot': ^2.4.31
   '@faker-js/faker': ^8.0.2
-  '@pureadmin/utils': ^1.9.3
+  '@pureadmin/utils': ^1.9.6
   '@types/workbox-build': ^5.1.0
   '@vicons/ionicons5': ^0.12.0
   '@vue-macros/reactivity-transform': ^0.3.10
@@ -25,7 +25,7 @@ specifiers:
 devDependencies:
   '@antv/g2plot': 2.4.31
   '@faker-js/faker': 8.0.2
-  '@pureadmin/utils': 1.9.3_echarts@5.4.2+vue@3.3.4
+  '@pureadmin/utils': 1.9.6_echarts@5.4.2+vue@3.3.4
   '@types/workbox-build': 5.1.0
   '@vicons/ionicons5': 0.12.0
   '@vue-macros/reactivity-transform': 0.3.10_vue@3.3.4
@@ -61,6 +61,9 @@ packages:
     resolution: {integrity: sha512-2LVsf4W66hVHQ3Ua/8k15oPlxjELCztbAkQm/hP42Sw+GLkHAdY1vaVRYziaWq64+Oljfg6FKkZHCdgXH+CGIA==}
     peerDependencies:
       search-insights: '>= 1 < 3'
+    peerDependenciesMeta:
+      search-insights:
+        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.9.2_algoliasearch@4.17.2
     transitivePeerDependencies:
@@ -1956,8 +1959,8 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@pureadmin/utils/1.9.3_echarts@5.4.2+vue@3.3.4:
-    resolution: {integrity: sha512-2sAen4puE67Bb4YYH+8Gm9qDfQtpX1hQNg6T87wune5nRrDTXpiD0pyCP7owaLJrwPnbiUbBUHVvSEXN/VYKqQ==}
+  /@pureadmin/utils/1.9.6_echarts@5.4.2+vue@3.3.4:
+    resolution: {integrity: sha512-vu9KhKHx7JnHEDq1k0rmesvBDlAF4TD/x7qNyyNkwa8uvdMB/lMMkGoeaKDKjXpp26d9PRhAzRyIG8wZz/ntmw==}
     peerDependencies:
       echarts: '*'
       vue: '*'

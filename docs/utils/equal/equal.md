@@ -48,10 +48,10 @@ import isEqualObject from './isEqualObject.vue'
 
 - 接收两个参数，第一个参数 `obj` ，第二个参数 `other` ，返回值类型 `boolean`
 
-| **参数属性** | **说明**   | **类型**                               |
-| ------------ | ---------- | -------------------------------------- |
-| `obj`        | 前一个对象 | `Record<string, unknown>`、`undefined` |
-| `other`      | 后一个对象 | `Record<string, unknown>`、`undefined` |
+| **参数属性** | **说明**   | **类型**                              |
+| ------------ | ---------- | ------------------------------------- |
+| `obj`        | 前一个对象 | `Record<string, unknown>`/`undefined` |
+| `other`      | 后一个对象 | `Record<string, unknown>`/`undefined` |
 
 ### 基础用法
 
@@ -76,10 +76,10 @@ import isEqualObject from './isEqualObject.vue'
 
 - 接收两个参数，第一个参数 `obj` ，第二个参数 `other` ，返回值类型 `boolean`
 
-| **参数属性** | **说明**   | **类型**                 |
-| ------------ | ---------- | ------------------------ |
-| `obj`        | 前一个数组 | `unknown[]`、`undefined` |
-| `other`      | 后一个数组 | `unknown[]`、`undefined` |
+| **参数属性** | **说明**   | **类型**                |
+| ------------ | ---------- | ----------------------- |
+| `obj`        | 前一个数组 | `unknown[]`/`undefined` |
+| `other`      | 后一个数组 | `unknown[]`/`undefined` |
 
 ### 基础用法
 

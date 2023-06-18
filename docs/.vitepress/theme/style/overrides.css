@@ -83,6 +83,13 @@
   color: var(--vp-c-brand);
 }
 
+table tbody tr {
+  background: transparent !important;
+}
+table tbody tr:hover {
+  background: var(--vp-c-bg-soft) !important;
+}
+
 /* 覆盖naive-ui样式 */
 .n-gradient-text {
   white-space: inherit;

@@ -113,8 +113,8 @@ import downloadByUrl from './downloadByUrl.vue'
 
 | **参数属性** | **说明**                                 | **类型** | **默认值** |
 | ------------ | ---------------------------------------- | -------- | ---------- |
-| `url`        | 文件地址                                 | `string` | -          |
-| `fileName`   | 文件名                                   | `string` | -          |
+| `url`        | 文件地址                                 | `string` |            |
+| `fileName`   | 文件名                                   | `string` |            |
 | `target`     | 拥有五个属性，具体看下面的 `target` 详情 | `Target` | `_self`    |
 
 #### `target` 详情

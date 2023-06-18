@@ -5,12 +5,13 @@ import subBothSides from './subBothSides.vue'
 import subBetween from './subBetween.vue'
 import subTextAddEllipsis from './subTextAddEllipsis.vue'
 import splitNum from './splitNum.vue'
+import hideTextAtIndex from './hideTextAtIndex.vue'
 </script>
 
 # 截取字符相关函数
 
 <ClientOnly>
-  <description-popover :num="6" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="7" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## subBefore
@@ -140,10 +141,10 @@ import splitNum from './splitNum.vue'
 
 - 接收两个参数，第一个参数 `val` ，第二个参数 `len` ，返回值类型 `string`
 
-| **参数属性** | **说明**     | **类型**           | **默认值** |
-| ------------ | ------------ | ------------------ | ---------- |
-| `val`        | 要截取的值   | `string`           | -          |
-| `len`        | 要保留的位数 | `string`、`number` | `3`        |
+| **参数属性** | **说明**     | **类型**          | **默认值** |
+| ------------ | ------------ | ----------------- | ---------- |
+| `val`        | 要截取的值   | `string`          |            |
+| `len`        | 要保留的位数 | `string`/`number` | `3`        |
 
 ### 基础用法
 
@@ -184,5 +185,39 @@ import splitNum from './splitNum.vue'
 <summary>查看代码</summary>
 
 <<< @/utils/substring/splitNum.vue
+
+</details>
+
+## hideTextAtIndex
+
+<ClientOnly>
+  <description :isShowIcon="false" description="使用指定符号对指定的文字进行隐藏，默认使用 * 符号" /> 
+</ClientOnly>
+
+### 参数
+
+- 接收三个参数，第一个参数 `text` ，第二个参数 `index` ，第三个参数 `symbol` ，返回值类型 `string`
+
+| **参数属性** | **说明**                 | **类型**                                                                     | **默认值** |
+| ------------ | ------------------------ | ---------------------------------------------------------------------------- | ---------- |
+| `text`       | 文字                     | `string`/`number`                                                            |            |
+| `index`      | 指定的文字索引或索引区间 | `number`/`Array<number\|unknown>`/<br>`HideTextIndex`/`Array<HideTextIndex>` |            |
+| `symbol`     | 指定的符号，默认 `*`     | `string`                                                                     | `*`        |
+
+### 类型声明
+
+<<< @/utils/substring/types/hideTextAtIndex.ts
+
+### 基础用法
+
+<ClientOnly>
+  <hideTextAtIndex />
+</ClientOnly>
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/substring/hideTextAtIndex.vue
 
 </details>
