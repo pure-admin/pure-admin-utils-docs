@@ -1,6 +1,7 @@
 {
   "name": "pure-admin-utils-docs",
   "version": "1.9.7",
+  "packageManager": "pnpm@7.32.1",
   "description": "pure-admin-utils-docs",
   "scripts": {
     "dev": "vitepress dev docs",
