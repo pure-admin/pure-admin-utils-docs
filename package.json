@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "description": "pure-admin-utils-docs",
   "scripts": {
     "dev": "vitepress dev docs",
