@@ -13,6 +13,7 @@
   --vp-c-green-light: #337ecc;
   --vp-c-green-lighter: #337ecc;
   --vp-c-green-dark: #337ecc;
+  --vp-c-green-darker: #337ecc;
 }
 
 .VPImage.logo {
@@ -26,8 +27,8 @@
 .vp-doc h2 {
   margin: 32px 0 8px 0;
   border-top: none;
-  padding-top: 0;
-  opacity: 0.8;
+  /* padding-top: 0; */
+  /* opacity: 0.8; */
   font-size: 22px;
 }
 

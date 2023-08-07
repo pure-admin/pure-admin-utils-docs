@@ -52,6 +52,10 @@ export default defineConfig({
       dark: "min-dark",
       light: "min-light",
     },
+    // anchor: {
+    //   slugify: (str) => encodeURIComponent(str),
+    //   level: [1, 2, 3, 4, 5, 6],
+    // },
   },
   lastUpdated: true,
   title: "@pureadmin/utils",
