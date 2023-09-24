@@ -25,7 +25,6 @@
     "@types/workbox-build": "^5.1.0",
     "@vicons/ionicons5": "^0.12.0",
     "@vue-macros/reactivity-transform": "^0.3.23",
-    "@vue/theme": "^2.2.4",
     "@vueuse/core": "^10.4.1",
     "axios": "^1.5.0",
     "echarts": "^5.4.3",
