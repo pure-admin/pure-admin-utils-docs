@@ -1,8 +1,16 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.9.7",
-  "packageManager": "pnpm@7.32.1",
+  "version": "1.9.8",
   "description": "pure-admin-utils-docs",
+  "type": "module",
+  "keywords": [
+    "pure-admin-utils-docs",
+    "@pureadmin/utils",
+    "typescript",
+    "hooks",
+    "vue3",
+    "es6"
+  ],
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -12,26 +20,31 @@
   "author": "xiaoxian521",
   "devDependencies": {
     "@antv/g2plot": "^2.4.31",
-    "@faker-js/faker": "^8.0.2",
-    "@pureadmin/utils": "^1.9.7",
+    "@faker-js/faker": "^8.1.0",
+    "@pureadmin/utils": "^1.9.8",
     "@types/workbox-build": "^5.1.0",
     "@vicons/ionicons5": "^0.12.0",
-    "@vue-macros/reactivity-transform": "^0.3.18",
-    "@vue/theme": "^1.3.0",
-    "@vueuse/core": "^10.3.0",
-    "axios": "^1.4.0",
+    "@vue-macros/reactivity-transform": "^0.3.23",
+    "@vue/theme": "^2.2.4",
+    "@vueuse/core": "^10.4.1",
+    "axios": "^1.5.0",
     "echarts": "^5.4.3",
     "fast-glob": "^3.3.1",
     "highlight.js": "^11.8.0",
     "naive-ui": "^2.34.4",
     "pathe": "^1.1.1",
     "typeit": "^8.7.1",
-    "typescript": "^5.1.6",
-    "unocss": "^0.53.6",
-    "vite": "^4.4.8",
-    "vitepress": "1.0.0-beta.7",
+    "typescript": "^5.2.2",
+    "unocss": "^0.56.1",
+    "vite": "^4.4.9",
+    "vitepress": "1.0.0-rc.20",
     "vue": "^3.3.4"
   },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0",
+    "pnpm": ">=8.6.10"
+  },
+  "packageManager": "pnpm@8.6.10",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

@@ -1,5 +1,5 @@
+import fg from "fast-glob";
 import Unocss from "unocss/vite";
-import { sync } from "fast-glob";
 import { defineConfig, type DefaultTheme } from "vitepress";
 import ReactivityTransform from "@vue-macros/reactivity-transform/vite";
 
@@ -163,14 +163,11 @@ export default defineConfig({
     plugins: [Unocss(), ReactivityTransform()],
     ssr: { noExternal: ["@antv/g2plot"] },
   },
-  vue: {
-    reactivityTransform: true,
-  },
 });
 
 function getItems(path: string) {
   const links: DefaultTheme.SidebarItem[] = [];
-  sync(`docs/${path}/*`, {
+  fg.sync(`docs/${path}/*`, {
     onlyDirectories: true,
     objectMode: true,
   }).forEach(({ name }) => {
