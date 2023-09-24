@@ -3,7 +3,7 @@ import axios from "axios"
 import { downloadByData } from "@pureadmin/utils"
 
 function down() {
-  axios.get('https://xiaoxian521.github.io/pure-admin-doc/img/pure.png', { responseType: 'blob' }).then(({ data }) => {
+  axios.get('https://avatars.githubusercontent.com/u/44761321?v=4', { responseType: 'blob' }).then(({ data }) => {
     downloadByData(data, 'test-data.png')
   })
 }
