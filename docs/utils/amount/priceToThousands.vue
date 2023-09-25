@@ -4,9 +4,24 @@ import { priceToThousands } from "@pureadmin/utils"
 
 <template>
   <naive-theme>
-    <n-space className="flex items-center mt-2">
+    <n-space vertical>
       <n-gradient-text type="info">
-        格式化金额，三位加一个逗号: {{ priceToThousands(1234567) }}
+        123456789 格式化 <span className="text-red">{{ priceToThousands(123456789) }}</span>
+      </n-gradient-text>
+      <n-gradient-text type="info">
+        123456789 格式化并保留两位小数 <span className="text-red">{{ priceToThousands(123456789, { digit: 2 }) }}</span>
+      </n-gradient-text>
+      <n-gradient-text type="info">
+        123456789.567 格式化并保留两位小数 <span className="text-red">{{ priceToThousands(123456789.567, { digit: 2 }) }}</span>
+      </n-gradient-text>
+      <n-gradient-text type="info">
+        123456789.567 格式化并保留两位小数且小数位进行四舍五入
+        <span className="text-red">
+          {{ priceToThousands(123456789.567, { digit: 2, round: true }) }}
+        </span>
+      </n-gradient-text>
+      <n-gradient-text type="info">
+        123456789.567 格式化并保留五位小数 <span className="text-red">{{ priceToThousands(123456789.567, { digit: 5 }) }}</span>
       </n-gradient-text>
     </n-space>
   </naive-theme>

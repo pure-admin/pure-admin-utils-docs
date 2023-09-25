@@ -100,16 +100,28 @@ import addZero from './addZero.vue'
 ## priceToThousands
 
 <ClientOnly>
-  <description :isShowIcon="false" description="格式化金额，三位加一个逗号（如果是整数后加 `.00`，如果是小数保留两位小数，小数超过两位四舍五入保留两位小数）" /> 
+  <description :isShowIcon="false" description="格式化金额，三位加一个逗号" /> 
 </ClientOnly>
 
 ### 参数
 
-- 接收一个参数 `num`，返回格式化后的金额
+- 接收两个参数，第一个参数 `amount` ，第二个参数 `options` ，返回格式化后的金额
 
-| **参数属性** | **说明** | **类型** |
-| ------------ | -------- | -------- |
-| `num`        | 金额     | `number` |
+| **参数属性** | **说明**                                  | **类型**    |
+| ------------ | ----------------------------------------- | ----------- |
+| `amount`     | 金额                                      | `number`    |
+| `options`    | 拥有两个属性，具体看下面的 `options` 详情 | `AmountOpt` |
+
+#### `options` 详情
+
+| **参数属性** | **说明**           | **类型**  | **默认值** |
+| ------------ | ------------------ | --------- | ---------- |
+| `digit`      | 保留几位小数       | `number`  | `0`        |
+| `round`      | 小数位是否四舍五入 | `boolean` | `false`    |
+
+### 类型声明
+
+<<< @/utils/amount/types/priceToThousands.ts
 
 ### 基础用法
 
