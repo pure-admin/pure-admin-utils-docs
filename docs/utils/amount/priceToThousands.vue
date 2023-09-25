@@ -4,7 +4,7 @@ import { priceToThousands } from "@pureadmin/utils"
 
 <template>
   <naive-theme>
-    <n-space vertical>
+    <n-space vertical className="mt-2">
       <n-gradient-text type="info">
         123456789 格式化 <span className="text-red">{{ priceToThousands(123456789) }}</span>
       </n-gradient-text>
