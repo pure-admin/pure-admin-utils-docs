@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^8.1.0
     version: 8.1.0
   '@pureadmin/utils':
-    specifier: ^1.9.9
-    version: 1.9.9(echarts@5.4.3)(vue@3.3.4)
+    specifier: ^1.9.10
+    version: 1.9.10(echarts@5.4.3)(vue@3.3.4)
   '@types/workbox-build':
     specifier: ^5.1.0
     version: 5.1.0
@@ -1936,8 +1936,8 @@ packages:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
 
-  /@pureadmin/utils@1.9.9(echarts@5.4.3)(vue@3.3.4):
-    resolution: {integrity: sha512-OKmzoX1ZHUCaO62N42qcVzbJbaqyTQYhQKEYB/1zGggCiRrmBY8QyLSq6+4Z/PAyRqMcRy0iIGRu4N1c62YdDQ==}
+  /@pureadmin/utils@1.9.10(echarts@5.4.3)(vue@3.3.4):
+    resolution: {integrity: sha512-hNg6u6nltvvO9U+QEKbDbXzky2kP3rP9sw2yvQc0fCObq73/mZ+PfKEr5HLmuze/1LYEUnz3koqpgfuyWBswVw==}
     peerDependencies:
       echarts: '*'
       vue: '*'
