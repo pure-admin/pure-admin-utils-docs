@@ -8,7 +8,7 @@ import getKeyList from './getKeyList.vue'
 # 处理数组相关函数
 
 <ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="4" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## swapOrder
@@ -94,7 +94,7 @@ import getKeyList from './getKeyList.vue'
 ## getKeyList
 
 <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值" /> 
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 key 组成的新数组，会去重也会去除不存在的值" /> 
 </ClientOnly>
 
 ### 参数

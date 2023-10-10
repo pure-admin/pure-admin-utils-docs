@@ -10,7 +10,7 @@ import getTime from './getTime.vue'
 # 时间、日期相关函数
 
 <ClientOnly>
-  <description-popover :num="5" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="6" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## getCurrentWeek

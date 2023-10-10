@@ -5,7 +5,7 @@ import hasCNChars from './hasCNChars.vue'
 # 类型、正则判断相关函数
 
 <ClientOnly>
-  <description-popover :num="36" :tagNameList="['浏览器','Node']" />
+  <description-popover :num="39" :tagNameList="['浏览器','Node']" />
 </ClientOnly>
 
 ## 类型判断
