@@ -1,7 +1,9 @@
 import { ref } from "vue";
 import { subBetween } from "@pureadmin/utils";
 
-const modules = import.meta.globEager("../../{hooks,utils}/**/*.md");
+const modules: any = import.meta.glob("../../{hooks,utils}/**/*.md", {
+  eager: true,
+});
 
 export function useData() {
   let utilsList = [];
