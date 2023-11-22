@@ -1,5 +1,6 @@
 <script setup>
 import echarts from './echarts.vue'
+import request from './request.vue'
 </script>
 
 # useEcharts
@@ -8,9 +9,11 @@ import echarts from './echarts.vue'
   <description description="渲染Echarts" :tagNameList="['Vue3']"  /> 
 </ClientOnly>
 
+- 生命周期销毁时会自动移除`Echarts`以及它的事件监听
+
 ## 使用前提
 
-- 将`echarts`绑定到全局 property 上，做法如下：(这里我全局引入了`echarts`，你也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)
+- 将`echarts`绑定到全局`property`上，做法如下：(这里我全局引入了`echarts`，你也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)
 
 ```ts
 // main.ts
@@ -38,6 +41,19 @@ app.mount("#app");
 
 </details>
 
+## 接口请求
+
+<ClientOnly>
+  <request />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/request.vue
+
+</details>
+
 ## 参数
 
 - `elRef`：必传`Ref`，[组件实例](https://vuejs.org/guide/essentials/template-refs.html#ref-on-component)
@@ -46,7 +62,7 @@ app.mount("#app");
 ## 返回值或方法
 
 - `echarts`：Echarts
-- `setOptions`：第一个参数`options`：设置图表的`配置项`和`数据`（除了 echarts 配置项[api](https://echarts.apache.org/zh/option.html#title)之外，我们还增加了额外的两个`api`，如下：
+- `setOptions`：第一个参数`options`：设置图表的`配置项`和`数据`（除了 echarts 配置项[api](https://echarts.apache.org/zh/option.html#title)之外，还额外增加了的三个`api`，如下：
 
 ```js
 {

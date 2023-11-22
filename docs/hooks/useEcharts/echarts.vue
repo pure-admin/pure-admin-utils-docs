@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import { useIntervalFn } from "@vueuse/core";
-import { ref, computed, type Ref } from "vue";
-import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils";
+import { useIntervalFn } from "@vueuse/core"
+import { type Ref, ref, computed } from "vue"
+import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils"
 
-const { isDark } = useDark();
+const { isDark } = useDark()
 
 let theme: EchartOptions["theme"] = computed(() => {
-  return isDark.value ? "dark" : "default";
-});
+  return isDark.value ? "dark" : "default"
+})
 
-const barChartRef = ref<HTMLDivElement | null>(null);
+const chartRef = ref<HTMLDivElement | null>(null)
 const { setOptions, getInstance } = useECharts(
-  barChartRef as Ref<HTMLDivElement>,
+  chartRef as Ref<HTMLDivElement>,
   { theme }
-);
+)
 
 let xData = (() => {
-  let data: any[] = [];
+  let data: any[] = []
   for (let i = 1; i < 31; i++) {
-    data.push(`${i}日`);
+    data.push(`${i}日`)
   }
-  return data;
-})();
+  return data
+})()
 
 setOptions(
   {
@@ -136,13 +136,13 @@ setOptions(
   {
     name: "click",
     callback: (params) => {
-      console.log("click", params);
+      console.log("click", params)
     },
   },
   {
     name: "contextmenu",
     callback: (params) => {
-      console.log("contextmenu", params);
+      console.log("contextmenu", params)
     },
   },
   // 点击空白处
@@ -150,25 +150,25 @@ setOptions(
     type: "zrender",
     name: "click",
     callback: (params) => {
-      console.log("点击空白处", params);
+      console.log("点击空白处", params)
     },
   }
-);
+)
 
-let a = 1;
+let a = 1
 useIntervalFn(() => {
   if (a == xData.length - 24) {
-    a = 0;
+    a = 0
   }
   getInstance()!.dispatchAction({
     type: "dataZoom",
     startValue: a,
     endValue: a + 24,
-  });
-  a++;
-}, 2000);
+  })
+  a++
+}, 2000)
 </script>
 
 <template>
-  <div ref="barChartRef" style="width: 100%; height: 35vh" />
+  <div ref="chartRef" style="width: 100%; height: 35vh" />
 </template>
