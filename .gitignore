@@ -74,6 +74,7 @@ dist
 # vuepress build output
 .vuepress/dist
 docs/.vitepress/dist
+docs/.vitepress/.temp
 
 # Serverless directories
 .serverless
@@ -84,3 +85,5 @@ docs/.vitepress/dist
 .DS_Store
 docs/.vitepress/cache
 docs/dev-dist
+
+config.*.timestamp*

@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "1.9.10",
+  "version": "1.9.12",
   "description": "pure-admin-utils-docs",
   "type": "module",
   "keywords": [
@@ -14,17 +14,20 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
+    "format": "prettier --check --write .",
     "preview": "pnpm build && vitepress serve docs --port 8084"
   },
   "license": "MIT",
-  "author": "xiaoxian521",
+  "author": {
+    "name": "xiaoxian521",
+    "email": "pureadmin@163.com",
+    "url": "https://github.com/xiaoxian521"
+  },
   "devDependencies": {
-    "@antv/g2plot": "^2.4.31",
     "@faker-js/faker": "^8.3.1",
-    "@pureadmin/utils": "^1.9.10",
-    "@types/workbox-build": "^5.1.0",
+    "@pureadmin/utils": "^1.9.12",
     "@vicons/ionicons5": "^0.12.0",
-    "@vue-macros/reactivity-transform": "^0.3.23",
+    "@vue-macros/reactivity-transform": "^0.4.0",
     "@vueuse/core": "^10.6.1",
     "axios": "^1.6.2",
     "echarts": "^5.4.3",
@@ -32,10 +35,11 @@
     "highlight.js": "^11.9.0",
     "naive-ui": "^2.35.0",
     "pathe": "^1.1.1",
+    "prettier": "^3.1.0",
     "typeit": "^8.7.1",
     "typescript": "^5.3.2",
-    "unocss": "^0.57.6",
-    "vite": "^5.0.0",
+    "unocss": "^0.57.7",
+    "vite": "^5.0.2",
     "vitepress": "1.0.0-rc.29",
     "vue": "^3.3.8"
   },

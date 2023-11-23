@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
@@ -18,10 +18,9 @@
     "allowJs": false,
     "resolveJsonModule": true,
     "lib": [
-      "dom",
-      "esnext"
+      "ESNext",
+      "DOM"
     ],
-    "incremental": true,
     "types": [
       "node",
       "vitepress",
@@ -32,11 +31,13 @@
   },
   "include": [
     "docs/**/*.ts",
-    "unocss.config.ts"
+    "docs/**/*.vue",
+    "unocss.config.ts",
+    "docs/.vitepress/**/*.ts",
   ],
   "exclude": [
-    "node_modules",
     "dist",
+    "node_modules",
     "docs/.vitepress/dist"
   ]
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { faker } from '@faker-js/faker'
 import { useScrollTo } from "@pureadmin/utils"
+import { faker } from '@faker-js/faker/locale/en'
 
 const scrollbarRef = ref()
 

@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-brand-1: #646cff; // https://github.com/vuejs/vitepress/pull/2797
+  --vp-c-brand-1: #646cff; /* https://github.com/vuejs/vitepress/pull/2797 */
   --vp-c-brand: #646cff;
   --vp-c-brand-light: #747bff;
   --vp-c-brand-lighter: #9499ff;
@@ -41,15 +41,15 @@
     #41d1ff
   );
 
-  --vp-home-hero-image-background-image: linear-gradient(
+  /* --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
     #bd34fe 50%,
     #47caff 50%
   );
-  --vp-home-hero-image-filter: blur(40px);
+  --vp-home-hero-image-filter: blur(40px); */
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
@@ -59,7 +59,7 @@
   :root {
     --vp-home-hero-image-filter: blur(72px);
   }
-}
+} */
 
 /**
  * VitePress: Custom fix
@@ -98,6 +98,16 @@
 
 .VPImage.logo {
   margin-right: 0;
+}
+
+.VPImage.image-src {
+  max-width: 460px;
+}
+
+@media screen and (max-width: 640px) {
+  .VPImage.image-src {
+    max-width: 320px !important;
+  }
 }
 
 .vp-doc h1 {

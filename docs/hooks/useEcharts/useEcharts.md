@@ -62,7 +62,7 @@ app.mount("#app");
 ## 返回值或方法
 
 - `echarts`：Echarts
-- `setOptions`：第一个参数`options`：设置图表的`配置项`和`数据`（除了 echarts 配置项[api](https://echarts.apache.org/zh/option.html#title)之外，还额外增加了的三个`api`，如下：
+- `setOptions`：第一个参数`options`：设置图表的`配置项`和`数据`（除了 echarts 配置项[api](https://echarts.apache.org/zh/option.html#title)之外，还额外增加了的四个`api`，如下：
 
 ```js
 {
@@ -70,8 +70,10 @@ app.mount("#app");
   clear: true,
   // 可选，给`x`、`y`轴添加`Tooltip`文字提示，一般用于文字太长，`x`代表`x轴`   `y`代表`y轴`   `true`(默认)代表`x、y轴`（该属性生效的前提是将 `xAxis` 或者 `yAxis` 添加`triggerEvent: true`属性，用到哪个添加哪个）
   addTooltip: true,
-   /** 可选，`window.onresize` 时改变图表尺寸的延时时间，单位毫秒，默认 `300` 毫秒。当您的 `echarts` 在拖拉窗口时不会自适应（一般不会出现这种情况），可以调整 `delay` 数值到自适应为止 */
-  delay: 300
+  // 可选，`window.onresize` 时改变图表尺寸的延时时间，单位毫秒，默认 `300` 毫秒。当您的 `echarts` 在拖拉窗口时不会自适应（一般不会出现这种情况），可以调整 `delay` 数值到自适应为止
+  delay: 300,
+  // 可选，是否监听页面`resize`事件并在页面`resize`时改变图表尺寸以适应当前容器，监听及改变，`true`(默认)代表监听 `false`代表不监听
+  resize: true
 }
 ```
 

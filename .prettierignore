@@ -1,0 +1,10 @@
+*.md
+.vscode
+.DS_Store
+playgrounds
+pnpm-lock.yaml
+config.*.timestamp*
+docs/dev-dist
+docs/.vitepress/dist
+docs/.vitepress/.temp
+docs/.vitepress/cache

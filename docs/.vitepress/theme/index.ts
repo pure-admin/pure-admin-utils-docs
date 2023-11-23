@@ -12,19 +12,20 @@ import {
   Wordcloud,
   NaiveTheme,
   Description,
-  DescriptionPopover,
+  DescriptionPopover
 } from "../../components";
 
-const theme: Theme = {
+export default {
   ...DefaultTheme,
-  enhanceApp({ app }) {
+  async enhanceApp({ app }) {
+    if (!import.meta.env.SSR) {
+      await import("../plugins/wordcloud");
+    }
     app.use(naive);
     app.component("wordcloud", Wordcloud);
     app.component("naive-theme", NaiveTheme);
     app.component("description", Description);
     app.component("description-popover", DescriptionPopover);
     app.use(useEcharts);
-  },
-};
-
-export default theme;
+  }
+} satisfies Theme;
