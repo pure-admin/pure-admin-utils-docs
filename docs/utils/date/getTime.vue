@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getTime } from "@pureadmin/utils"
+import { getTime } from "@pureadmin/utils";
 </script>
 
 <template>
@@ -18,7 +18,9 @@ import { getTime } from "@pureadmin/utils"
 
     <n-space className="flex items-center mt-2">
       <n-gradient-text type="info">
-        299.099375 秒等于 {{ getTime(299.099375).h }}:{{ getTime(299.099375).m }}:{{ getTime(299.099375).s }}
+        299.099375 秒等于 {{ getTime(299.099375).h }}:{{
+          getTime(299.099375).m
+        }}:{{ getTime(299.099375).s }}
       </n-gradient-text>
     </n-space>
   </naive-theme>

@@ -1,15 +1,15 @@
 import * as echarts from "echarts";
 
 echarts.extendSeriesModel({
-  type: 'series.wordCloud',
+  type: "series.wordCloud",
 
-  visualStyleAccessPath: 'textStyle',
+  visualStyleAccessPath: "textStyle",
   visualStyleMapper: function (model) {
     return {
-      fill: model.get('color')
+      fill: model.get("color")
     };
   },
-  visualDrawType: 'fill',
+  visualDrawType: "fill",
 
   optionUpdated: function () {
     var option = this.option;
@@ -18,7 +18,7 @@ echarts.extendSeriesModel({
 
   getInitialData: function (option, ecModel) {
     var dimensions = echarts.helper.createDimensions(option.data, {
-      coordDimensions: ['value']
+      coordDimensions: ["value"]
     });
     var list = new echarts.List(dimensions, this);
     list.initData(option.data);
@@ -30,16 +30,16 @@ echarts.extendSeriesModel({
     maskImage: null,
 
     // Shape can be 'circle', 'cardioid', 'diamond', 'triangle-forward', 'triangle', 'pentagon', 'star'
-    shape: 'circle',
+    shape: "circle",
     keepAspect: false,
 
-    left: 'center',
+    left: "center",
 
-    top: 'center',
+    top: "center",
 
-    width: '70%',
+    width: "70%",
 
-    height: '80%',
+    height: "80%",
 
     sizeRange: [12, 60],
 
@@ -53,7 +53,7 @@ echarts.extendSeriesModel({
     shrinkToFit: false,
 
     textStyle: {
-      fontWeight: 'normal'
+      fontWeight: "normal"
     }
   }
 });

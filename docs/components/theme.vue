@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useDark } from "@pureadmin/utils"
-import { darkTheme } from "naive-ui"
+import { useDark } from "@pureadmin/utils";
+import { darkTheme } from "naive-ui";
 
-import hljs from "highlight.js/lib/core"
-import javascript from "highlight.js/lib/languages/javascript"
-hljs.registerLanguage('javascript', javascript)
+import hljs from "highlight.js/lib/core";
+import javascript from "highlight.js/lib/languages/javascript";
+hljs.registerLanguage("javascript", javascript);
 
-const { isDark } = useDark()
+const { isDark } = useDark();
 </script>
 
 <template>

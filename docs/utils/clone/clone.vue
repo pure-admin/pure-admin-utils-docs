@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { clone } from "@pureadmin/utils"
+import { ref } from "vue";
+import { clone } from "@pureadmin/utils";
 
-const arr1 = ref('text')
-let copyArr1 = clone(arr1)
+const arr1 = ref("text");
+let copyArr1 = clone(arr1);
 
-const arr2 = ref([0, { age: 18 }])
-let copyArr2 = clone(arr2)
+const arr2 = ref([0, { age: 18 }]);
+let copyArr2 = clone(arr2);
 
-const arr3 = ref([1, 2, 3, { name: 'boy' }])
-let copyArr3 = clone(arr3, true)
+const arr3 = ref([1, 2, 3, { name: "boy" }]);
+let copyArr3 = clone(arr3, true);
 
 function shallowCopy() {
-  copyArr1.value = 'copy-text'
+  copyArr1.value = "copy-text";
 }
 
 function shallowCopyChange() {
-  copyArr2.value[0] = 100
+  copyArr2.value[0] = 100;
 }
 
 function deepCopy() {
-  copyArr3.value = [0, 1, 2]
+  copyArr3.value = [0, 1, 2];
 }
 </script>
 
@@ -52,7 +52,8 @@ function deepCopy() {
       </p>
 
       <n-button @click="deepCopy"> 深拷贝 </n-button>
-      <p>拷贝数据改变:
+      <p>
+        拷贝数据改变:
         <n-gradient-text type="info">
           {{ copyArr3 }}
         </n-gradient-text>

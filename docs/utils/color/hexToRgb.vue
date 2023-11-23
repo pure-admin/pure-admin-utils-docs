@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { hexToRgb } from "@pureadmin/utils"
+import { ref } from "vue";
+import { hexToRgb } from "@pureadmin/utils";
 
-let hrColor = ref()
+let hrColor = ref();
 </script>
 
 <template>

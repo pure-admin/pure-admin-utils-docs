@@ -1,46 +1,46 @@
 <script setup lang="ts">
-import { useIntervalFn } from "@vueuse/core"
-import { type Ref, ref, computed } from "vue"
-import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils"
+import { useIntervalFn } from "@vueuse/core";
+import { type Ref, ref, computed } from "vue";
+import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils";
 
-const { isDark } = useDark()
+const { isDark } = useDark();
 
 let theme: EchartOptions["theme"] = computed(() => {
-  return isDark.value ? "dark" : "default"
-})
+  return isDark.value ? "dark" : "default";
+});
 
-const chartRef = ref<HTMLDivElement | null>(null)
+const chartRef = ref<HTMLDivElement | null>(null);
 const { setOptions, getInstance } = useECharts(
   chartRef as Ref<HTMLDivElement>,
   { theme }
-)
+);
 
 let xData = (() => {
-  let data: any[] = []
+  let data: any[] = [];
   for (let i = 1; i < 31; i++) {
-    data.push(`${i}日`)
+    data.push(`${i}日`);
   }
-  return data
-})()
+  return data;
+})();
 
 setOptions(
   {
     tooltip: {
       trigger: "axis",
       axisPointer: {
-        type: "shadow",
-      },
+        type: "shadow"
+      }
     },
     grid: {
       borderWidth: 0,
       top: 110,
-      bottom: 95,
+      bottom: 95
     },
     legend: {
       textStyle: {
-        color: "#90979c",
+        color: "#90979c"
       },
-      data: ["访问量", "订单量"],
+      data: ["访问量", "订单量"]
     },
     calculable: true,
     xAxis: [
@@ -48,25 +48,25 @@ setOptions(
         triggerEvent: true,
         type: "category",
         splitLine: {
-          show: false,
+          show: false
         },
         axisTick: {
-          show: false,
+          show: false
         },
-        data: xData,
-      },
+        data: xData
+      }
     ],
     yAxis: [
       {
         triggerEvent: true,
         type: "value",
         splitLine: {
-          show: false,
+          show: false
         },
         axisLine: {
-          show: true,
-        },
-      },
+          show: true
+        }
+      }
     ],
     dataZoom: [
       {
@@ -74,8 +74,8 @@ setOptions(
         show: false,
         realtime: true,
         startValue: 0,
-        endValue: 24,
-      },
+        endValue: 24
+      }
     ],
     series: [
       {
@@ -85,24 +85,24 @@ setOptions(
         symbol: "circle",
         markPoint: {
           label: {
-            color: "#fff",
+            color: "#fff"
           },
           data: [
             {
               type: "max",
-              name: "最大值",
+              name: "最大值"
             },
             {
               type: "min",
-              name: "最小值",
-            },
-          ],
+              name: "最小值"
+            }
+          ]
         },
         data: [
           509, 917, 2455, 2610, 2719, 3033, 3044, 3085, 2708, 2809, 2117, 2000,
           1455, 1210, 719, 733, 944, 2285, 2208, 3372, 3936, 3693, 2962, 2810,
-          3519, 2455, 2610, 2719, 2484, 2078,
-        ],
+          3519, 2455, 2610, 2719, 2484, 2078
+        ]
       },
       {
         name: "订单量",
@@ -111,62 +111,62 @@ setOptions(
         symbol: "circle",
         markPoint: {
           label: {
-            color: "#fff",
+            color: "#fff"
           },
           data: [
             {
               type: "max",
-              name: "最大值",
+              name: "最大值"
             },
             {
               type: "min",
-              name: "最小值",
-            },
-          ],
+              name: "最小值"
+            }
+          ]
         },
         data: [
           2136, 3693, 2962, 3810, 3519, 3484, 3915, 3823, 3455, 4310, 4019,
           3433, 3544, 3885, 4208, 3372, 3484, 3915, 3748, 3675, 4009, 4433,
-          3544, 3285, 4208, 3372, 3484, 3915, 3823, 4265, 4298,
-        ],
-      },
+          3544, 3285, 4208, 3372, 3484, 3915, 3823, 4265, 4298
+        ]
+      }
     ],
-    addTooltip: true,
+    addTooltip: true
   },
   {
     name: "click",
-    callback: (params) => {
-      console.log("click", params)
-    },
+    callback: params => {
+      console.log("click", params);
+    }
   },
   {
     name: "contextmenu",
-    callback: (params) => {
-      console.log("contextmenu", params)
-    },
+    callback: params => {
+      console.log("contextmenu", params);
+    }
   },
   // 点击空白处
   {
     type: "zrender",
     name: "click",
-    callback: (params) => {
-      console.log("点击空白处", params)
-    },
+    callback: params => {
+      console.log("点击空白处", params);
+    }
   }
-)
+);
 
-let a = 1
+let a = 1;
 useIntervalFn(() => {
   if (a == xData.length - 24) {
-    a = 0
+    a = 0;
   }
   getInstance()!.dispatchAction({
     type: "dataZoom",
     startValue: a,
-    endValue: a + 24,
-  })
-  a++
-}, 2000)
+    endValue: a + 24
+  });
+  a++;
+}, 2000);
 </script>
 
 <template>

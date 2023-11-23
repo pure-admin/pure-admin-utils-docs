@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { nameCamelize } from "@pureadmin/utils"
+import { ref } from "vue";
+import { nameCamelize } from "@pureadmin/utils";
 
-let name = ref('i-love-study')
+let name = ref("i-love-study");
 </script>
 
 <template>

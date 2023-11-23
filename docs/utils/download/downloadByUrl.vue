@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { downloadByUrl } from "@pureadmin/utils"
+import { downloadByUrl } from "@pureadmin/utils";
 
 function down() {
-  downloadByUrl('https://github.com/xiaoxian521/xiaoxian521/archive/refs/heads/main.zip', 'xiaoxian521.zip')
+  downloadByUrl(
+    "https://github.com/xiaoxian521/xiaoxian521/archive/refs/heads/main.zip",
+    "xiaoxian521.zip"
+  );
 }
 </script>
 

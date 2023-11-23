@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { addZero } from "@pureadmin/utils"
+import { addZero } from "@pureadmin/utils";
 </script>
 
 <template>

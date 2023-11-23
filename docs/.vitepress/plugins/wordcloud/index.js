@@ -1,17 +1,17 @@
 import * as echarts from "echarts";
 
-import './WordCloudSeries';
-import './WordCloudView';
+import "./WordCloudSeries";
+import "./WordCloudView";
 
-import wordCloudLayoutHelper from './layout';
+import wordCloudLayoutHelper from "./layout";
 
 if (!wordCloudLayoutHelper.isSupported) {
-  throw new Error('Sorry your browser not support wordCloud');
+  throw new Error("Sorry your browser not support wordCloud");
 }
 
 // https://github.com/timdream/wordcloud2.js/blob/c236bee60436e048949f9becc4f0f67bd832dc5c/index.js#L233
 function updateCanvasMask(maskCanvas) {
-  var ctx = maskCanvas.getContext('2d');
+  var ctx = maskCanvas.getContext("2d");
   var imageData = ctx.getImageData(0, 0, maskCanvas.width, maskCanvas.height);
   var newImageData = ctx.createImageData(imageData);
 
@@ -53,7 +53,7 @@ function updateCanvasMask(maskCanvas) {
 }
 
 echarts.registerLayout(function (ecModel, api) {
-  ecModel.eachSeriesByType('wordCloud', function (seriesModel) {
+  ecModel.eachSeriesByType("wordCloud", function (seriesModel) {
     var gridRect = echarts.helper.getLayoutRect(
       seriesModel.getBoxLayoutParams(),
       {
@@ -62,41 +62,41 @@ echarts.registerLayout(function (ecModel, api) {
       }
     );
 
-    var keepAspect = seriesModel.get('keepAspect');
-    var maskImage = seriesModel.get('maskImage');
+    var keepAspect = seriesModel.get("keepAspect");
+    var maskImage = seriesModel.get("maskImage");
     var ratio = maskImage ? maskImage.width / maskImage.height : 1;
     keepAspect && adjustRectAspect(gridRect, ratio);
 
     var data = seriesModel.getData();
 
-    var canvas = document.createElement('canvas');
+    var canvas = document.createElement("canvas");
     canvas.width = gridRect.width;
     canvas.height = gridRect.height;
 
-    var ctx = canvas.getContext('2d');
+    var ctx = canvas.getContext("2d");
     if (maskImage) {
       try {
         ctx.drawImage(maskImage, 0, 0, canvas.width, canvas.height);
         updateCanvasMask(canvas);
       } catch (e) {
-        console.error('Invalid mask image');
+        console.error("Invalid mask image");
         console.error(e.toString());
       }
     }
 
-    var sizeRange = seriesModel.get('sizeRange');
-    var rotationRange = seriesModel.get('rotationRange');
-    var valueExtent = data.getDataExtent('value');
+    var sizeRange = seriesModel.get("sizeRange");
+    var rotationRange = seriesModel.get("rotationRange");
+    var valueExtent = data.getDataExtent("value");
 
     var DEGREE_TO_RAD = Math.PI / 180;
-    var gridSize = seriesModel.get('gridSize');
+    var gridSize = seriesModel.get("gridSize");
     wordCloudLayoutHelper(canvas, {
       list: data
-        .mapArray('value', function (value, idx) {
+        .mapArray("value", function (value, idx) {
           var itemModel = data.getItemModel(idx);
           return [
             data.getName(idx),
-            itemModel.get('textStyle.fontSize', true) ||
+            itemModel.get("textStyle.fontSize", true) ||
               echarts.number.linearMap(value, valueExtent, sizeRange),
             idx
           ];
@@ -106,13 +106,13 @@ echarts.registerLayout(function (ecModel, api) {
           return b[1] - a[1];
         }),
       fontFamily:
-        seriesModel.get('textStyle.fontFamily') ||
-        seriesModel.get('emphasis.textStyle.fontFamily') ||
-        ecModel.get('textStyle.fontFamily'),
+        seriesModel.get("textStyle.fontFamily") ||
+        seriesModel.get("emphasis.textStyle.fontFamily") ||
+        ecModel.get("textStyle.fontFamily"),
       fontWeight:
-        seriesModel.get('textStyle.fontWeight') ||
-        seriesModel.get('emphasis.textStyle.fontWeight') ||
-        ecModel.get('textStyle.fontWeight'),
+        seriesModel.get("textStyle.fontWeight") ||
+        seriesModel.get("emphasis.textStyle.fontWeight") ||
+        ecModel.get("textStyle.fontWeight"),
 
       gridSize: gridSize,
 
@@ -125,16 +125,16 @@ echarts.registerLayout(function (ecModel, api) {
 
       rotateRatio: 1,
 
-      rotationStep: seriesModel.get('rotationStep') * DEGREE_TO_RAD,
+      rotationStep: seriesModel.get("rotationStep") * DEGREE_TO_RAD,
 
-      drawOutOfBound: seriesModel.get('drawOutOfBound'),
-      shrinkToFit: seriesModel.get('shrinkToFit'),
+      drawOutOfBound: seriesModel.get("drawOutOfBound"),
+      shrinkToFit: seriesModel.get("shrinkToFit"),
 
-      layoutAnimation: seriesModel.get('layoutAnimation'),
+      layoutAnimation: seriesModel.get("layoutAnimation"),
 
       shuffle: false,
 
-      shape: seriesModel.get('shape')
+      shape: seriesModel.get("shape")
     });
 
     function onWordCloudDrawn(e) {
@@ -151,7 +151,7 @@ echarts.registerLayout(function (ecModel, api) {
       }
     }
 
-    canvas.addEventListener('wordclouddrawn', onWordCloudDrawn);
+    canvas.addEventListener("wordclouddrawn", onWordCloudDrawn);
 
     if (seriesModel.layoutInstance) {
       // Dispose previous
@@ -162,9 +162,9 @@ echarts.registerLayout(function (ecModel, api) {
       ondraw: null,
 
       dispose: function () {
-        canvas.removeEventListener('wordclouddrawn', onWordCloudDrawn);
+        canvas.removeEventListener("wordclouddrawn", onWordCloudDrawn);
         // Abort
-        canvas.addEventListener('wordclouddrawn', function (e) {
+        canvas.addEventListener("wordclouddrawn", function (e) {
           // Prevent default to cancle the event and stop the loop
           e.preventDefault();
         });
@@ -177,10 +177,10 @@ echarts.registerPreprocessor(function (option) {
   var series = (option || {}).series;
   !echarts.util.isArray(series) && (series = series ? [series] : []);
 
-  var compats = ['shadowColor', 'shadowBlur', 'shadowOffsetX', 'shadowOffsetY'];
+  var compats = ["shadowColor", "shadowBlur", "shadowOffsetX", "shadowOffsetY"];
 
   echarts.util.each(series, function (seriesItem) {
-    if (seriesItem && seriesItem.type === 'wordCloud') {
+    if (seriesItem && seriesItem.type === "wordCloud") {
       var textStyle = seriesItem.textStyle || {};
 
       compatTextStyle(textStyle.normal);
@@ -192,7 +192,7 @@ echarts.registerPreprocessor(function (option) {
     textStyle &&
       echarts.util.each(compats, function (key) {
         if (textStyle.hasOwnProperty(key)) {
-          textStyle['text' + echarts.format.capitalFirst(key)] = textStyle[key];
+          textStyle["text" + echarts.format.capitalFirst(key)] = textStyle[key];
         }
       });
   }

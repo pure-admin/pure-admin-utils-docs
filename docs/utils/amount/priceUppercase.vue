@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { priceUppercase } from "@pureadmin/utils"
+import { priceUppercase } from "@pureadmin/utils";
 </script>
 
 <template>

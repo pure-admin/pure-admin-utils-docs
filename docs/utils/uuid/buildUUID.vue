@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { buildUUID } from "@pureadmin/utils"
+import { ref } from "vue";
+import { buildUUID } from "@pureadmin/utils";
 
-let UUID = ref('')
+let UUID = ref("");
 </script>
 
 <template>

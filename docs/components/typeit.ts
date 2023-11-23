@@ -9,25 +9,25 @@ export default defineComponent({
     /** 打字速度，以每一步之间的毫秒数为单位 */
     speed: {
       type: Number,
-      default: 200,
+      default: 200
     },
     values: {
       type: Array,
-      defalut: [],
+      defalut: []
     },
     className: {
       type: String,
-      default: "type-it",
-    },
+      default: "type-it"
+    }
   },
   render() {
     return h(
       "span",
       {
-        class: this.className,
+        class: this.className
       },
       {
-        default: () => [],
+        default: () => []
       }
     );
   },
@@ -35,7 +35,7 @@ export default defineComponent({
     new TypeIt(`.${this.className}`, {
       strings: this.values,
       speed: this.speed,
-      cursor: false,
+      cursor: false
     }).go();
-  },
+  }
 });

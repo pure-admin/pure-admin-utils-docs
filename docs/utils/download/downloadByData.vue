@@ -1,11 +1,15 @@
 <script setup lang="ts">
-import axios from "axios"
-import { downloadByData } from "@pureadmin/utils"
+import axios from "axios";
+import { downloadByData } from "@pureadmin/utils";
 
 function down() {
-  axios.get('https://avatars.githubusercontent.com/u/44761321?v=4', { responseType: 'blob' }).then(({ data }) => {
-    downloadByData(data, 'test-data.png')
-  })
+  axios
+    .get("https://avatars.githubusercontent.com/u/44761321?v=4", {
+      responseType: "blob"
+    })
+    .then(({ data }) => {
+      downloadByData(data, "test-data.png");
+    });
 }
 </script>
 

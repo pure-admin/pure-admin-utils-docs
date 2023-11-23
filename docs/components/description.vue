@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CheckmarkCircle } from "@vicons/ionicons5"
+import { CheckmarkCircle } from "@vicons/ionicons5";
 
 defineProps({
   tagNameList: {
@@ -15,8 +15,8 @@ defineProps({
     default: true
   },
   gradientClass: String,
-  description: String,
-})
+  description: String
+});
 </script>
 
 <template>
@@ -29,7 +29,12 @@ defineProps({
         </template>
       </n-tag>
     </n-space>
-    <n-alert v-show="isShowGradient" :class="['mt-2', gradientClass]" type="success" :show-icon="false">
+    <n-alert
+      v-show="isShowGradient"
+      :class="['mt-2', gradientClass]"
+      type="success"
+      :show-icon="false"
+    >
       功能：{{ description }}
     </n-alert>
   </naive-theme>

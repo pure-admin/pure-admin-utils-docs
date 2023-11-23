@@ -1,43 +1,57 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { useScrollTo } from "@pureadmin/utils"
-import { faker } from '@faker-js/faker/locale/en'
+import { ref } from "vue";
+import { useScrollTo } from "@pureadmin/utils";
+import { faker } from "@faker-js/faker/locale/en";
 
-const scrollbarRef = ref()
+const scrollbarRef = ref();
 
 const onTop = () => {
   useScrollTo({
-    el: scrollbarRef, to: 0, directions: "scrollTop", duration: 2000, callback: () => {
-      console.log('已滚动到顶部')
+    el: scrollbarRef,
+    to: 0,
+    directions: "scrollTop",
+    duration: 2000,
+    callback: () => {
+      console.log("已滚动到顶部");
     }
-  }).start()
-}
+  }).start();
+};
 
 const onBottom = () => {
   const { start, stop } = useScrollTo({
-    el: scrollbarRef, to: scrollbarRef.value!.scrollHeight, directions: "scrollTop", duration: 2000, callback: () => {
-      console.log('已滚动到底部')
+    el: scrollbarRef,
+    to: scrollbarRef.value!.scrollHeight,
+    directions: "scrollTop",
+    duration: 2000,
+    callback: () => {
+      console.log("已滚动到底部");
     }
-  })
-  start()
-}
+  });
+  start();
+};
 
 const onTopShortly = () => {
-  useScrollTo({ el: scrollbarRef, to: 0, directions: "scrollTop" })
-}
+  useScrollTo({ el: scrollbarRef, to: 0, directions: "scrollTop" });
+};
 
 const onBottomShortly = () => {
-  useScrollTo({ el: scrollbarRef, to: scrollbarRef.value!.scrollHeight, directions: "scrollTop" })
-}
+  useScrollTo({
+    el: scrollbarRef,
+    to: scrollbarRef.value!.scrollHeight,
+    directions: "scrollTop"
+  });
+};
 </script>
 
 <template>
   <naive-theme>
-    <div ref="scrollbarRef"
-      class="h-[335px] overflow-y-scroll bg-[#f8fafc] dark:bg-[#1e293b] dark:text-[#1e293b] rounded-lg">
+    <div
+      ref="scrollbarRef"
+      class="h-[335px] overflow-y-scroll bg-[#f8fafc] dark:bg-[#1e293b] dark:text-[#1e293b] rounded-lg"
+    >
       <div v-for="(text, index) in 66" :key="index" class="my-[10px]">
         <div class="bg-white flex items-center justify-start p-2 w-9/10 m-auto">
-          <img class="rounded-lg w-[80px] mr-10" :src="faker.image.avatar()">
+          <img class="rounded-lg w-[80px] mr-10" :src="faker.image.avatar()" />
           <p>{{ faker.word.words({ count: { min: 5, max: 10 } }) }}</p>
         </div>
       </div>

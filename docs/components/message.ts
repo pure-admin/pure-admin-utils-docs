@@ -2,7 +2,7 @@ import {
   darkTheme,
   lightTheme,
   createDiscreteApi,
-  ConfigProviderProps,
+  ConfigProviderProps
 } from "naive-ui";
 import { computed } from "vue";
 import { useDark } from "@pureadmin/utils";
@@ -11,14 +11,14 @@ export function useMessage() {
   const { isDark } = useDark();
 
   const configProviderPropsRef = computed<ConfigProviderProps>(() => ({
-    theme: isDark.value ? darkTheme : lightTheme,
+    theme: isDark.value ? darkTheme : lightTheme
   }));
 
   const { message } = createDiscreteApi(["message"], {
-    configProviderProps: configProviderPropsRef,
+    configProviderProps: configProviderPropsRef
   });
 
   return {
-    message,
+    message
   };
 }

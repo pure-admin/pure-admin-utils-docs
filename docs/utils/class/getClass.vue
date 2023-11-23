@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { getClass } from "@pureadmin/utils"
+import { ref } from "vue";
+import { getClass } from "@pureadmin/utils";
 
-const testRef = ref()
+const testRef = ref();
 </script>
 
 <template>

@@ -1,6 +1,11 @@
 <script setup lang="ts">
-import { getKeyList } from "@pureadmin/utils"
-let arr = [{ name: 'Mary', age: 18 }, { name: 'Tony', age: 18 }, { name: 'Tom', age: 19 }, { name: 'Jack', age: 20 }]
+import { getKeyList } from "@pureadmin/utils";
+let arr = [
+  { name: "Mary", age: 18 },
+  { name: "Tony", age: 18 },
+  { name: "Tom", age: 19 },
+  { name: "Jack", age: 20 }
+];
 </script>
 
 <template>
@@ -12,11 +17,11 @@ let arr = [{ name: 'Mary', age: 18 }, { name: 'Tony', age: 18 }, { name: 'Tom', 
       </n-gradient-text>
       提取name后的新数组
       <n-gradient-text type="info">
-        {{ getKeyList(arr, 'name') }}
+        {{ getKeyList(arr, "name") }}
       </n-gradient-text>
       提取age后的新数组
       <n-gradient-text type="info">
-        {{ getKeyList(arr, 'age') }}
+        {{ getKeyList(arr, "age") }}
       </n-gradient-text>
     </n-space>
   </naive-theme>

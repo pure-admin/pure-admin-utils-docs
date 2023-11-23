@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import description from "../components/description.vue"
-import TypeIt from "../components/typeit"
+import description from "../components/description.vue";
+import TypeIt from "../components/typeit";
 
 defineProps({
   tagNameList: {
     type: Array<String>,
-    default: () => ['Vue3']
+    default: () => ["Vue3"]
   },
   values: {
     type: Array<String | Number>,
@@ -13,13 +13,13 @@ defineProps({
   },
   className: {
     type: String,
-    default: "type-it",
+    default: "type-it"
   },
   speed: {
     type: Number,
-    default: 200,
-  },
-})
+    default: 200
+  }
+});
 </script>
 
 <template>

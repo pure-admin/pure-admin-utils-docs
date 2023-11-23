@@ -1,40 +1,41 @@
 <script setup lang="ts">
-import { reactive } from "vue"
-import { storageSession } from "@pureadmin/utils"
-import { useMessage } from "../../components/message"
+import { reactive } from "vue";
+import { storageSession } from "@pureadmin/utils";
+import { useMessage } from "../../components/message";
 
 interface StorageConfigs {
-  name: string,
-  age: number
+  name: string;
+  age: number;
 }
 
-const { message } = useMessage()
+const { message } = useMessage();
 let storages = reactive({
   info: {
-    name: '',
+    name: "",
     age: 0
   }
-})
+});
 
 function set() {
-  storageSession().setItem('info', {
-    name: 'xiaoming',
+  storageSession().setItem("info", {
+    name: "xiaoming",
     age: 18
-  })
+  });
 }
 
 function get() {
-  if (!storageSession().getItem<StorageConfigs>('info')?.name) message?.info('暂无对应键名的 storage，请先储存sessionStorage对象')
-  storages.info.name = storageSession().getItem<StorageConfigs>('info')?.name
-  storages.info.age = storageSession().getItem<StorageConfigs>('info')?.age
+  if (!storageSession().getItem<StorageConfigs>("info")?.name)
+    message?.info("暂无对应键名的 storage，请先储存sessionStorage对象");
+  storages.info.name = storageSession().getItem<StorageConfigs>("info")?.name;
+  storages.info.age = storageSession().getItem<StorageConfigs>("info")?.age;
 }
 
 function remove() {
-  storageSession().removeItem('info')
+  storageSession().removeItem("info");
 }
 
 function clear() {
-  storageSession().clear()
+  storageSession().clear();
 }
 </script>
 
@@ -49,7 +50,7 @@ function clear() {
       <div className="flex items-center">
         <n-button @click="get"> 获取sessionStorage对象 </n-button>
         <span className="ml-2">
-          {{ storages.info.name ? storages : '' }}
+          {{ storages.info.name ? storages : "" }}
         </span>
       </div>
       <n-button @click="remove"> 删除sessionStorage对象 </n-button>

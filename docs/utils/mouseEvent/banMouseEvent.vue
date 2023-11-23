@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { banMouseEvent } from "@pureadmin/utils"
+import { banMouseEvent } from "@pureadmin/utils";
 </script>
 
 <template>

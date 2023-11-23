@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { convertPath, clone } from "@pureadmin/utils"
+import { ref } from "vue";
+import { convertPath, clone } from "@pureadmin/utils";
 
-let path1 = ref('Documents\\newFolder')
-let path2 = ref('C:\\Documents\\newFolder\\test.js')
+let path1 = ref("Documents\\newFolder");
+let path2 = ref("C:\\Documents\\newFolder\\test.js");
 </script>
 
 <template>

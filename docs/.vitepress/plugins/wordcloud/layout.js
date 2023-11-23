@@ -12,7 +12,7 @@ if (!window.setImmediate) {
         }
 
         var callbacks = [undefined];
-        var message = 'zero-timeout-message';
+        var message = "zero-timeout-message";
 
         // Like setTimeout, but only takes a function argument.  There's
         // no time argument (always zero) and no arguments (you have to
@@ -20,18 +20,18 @@ if (!window.setImmediate) {
         var setZeroTimeout = function setZeroTimeout(callback) {
           var id = callbacks.length;
           callbacks.push(callback);
-          window.postMessage(message + id.toString(36), '*');
+          window.postMessage(message + id.toString(36), "*");
 
           return id;
         };
 
         window.addEventListener(
-          'message',
+          "message",
           function setZeroTimeoutMessage(evt) {
             // Skipping checking event source, retarded IE confused this window
             // object with another in the presence of iframe
             if (
-              typeof evt.data !== 'string' ||
+              typeof evt.data !== "string" ||
               evt.data.substr(0, message.length) !== message /* ||
             evt.source !== window */
             ) {
@@ -88,12 +88,12 @@ if (!window.clearImmediate) {
 
 // Check if WordCloud can run on this browser
 var isSupported = (function isSupported() {
-  var canvas = document.createElement('canvas');
+  var canvas = document.createElement("canvas");
   if (!canvas || !canvas.getContext) {
     return false;
   }
 
-  var ctx = canvas.getContext('2d');
+  var ctx = canvas.getContext("2d");
   if (!ctx) {
     return false;
   }
@@ -121,7 +121,7 @@ var minFontSize = (function getMinFontSize() {
     return;
   }
 
-  var ctx = document.createElement('canvas').getContext('2d');
+  var ctx = document.createElement("canvas").getContext("2d");
 
   // start from 20
   var size = 20;
@@ -130,16 +130,16 @@ var minFontSize = (function getMinFontSize() {
   var hanWidth, mWidth;
 
   while (size) {
-    ctx.font = size.toString(10) + 'px sans-serif';
+    ctx.font = size.toString(10) + "px sans-serif";
     if (
-      ctx.measureText('\uFF37').width === hanWidth &&
-      ctx.measureText('m').width === mWidth
+      ctx.measureText("\uFF37").width === hanWidth &&
+      ctx.measureText("m").width === mWidth
     ) {
       return size + 1;
     }
 
-    hanWidth = ctx.measureText('\uFF37').width;
-    mWidth = ctx.measureText('m').width;
+    hanWidth = ctx.measureText("\uFF37").width;
+    mWidth = ctx.measureText("m").width;
 
     size--;
   }
@@ -182,14 +182,14 @@ var WordCloud = function WordCloud(elements, options) {
   }
 
   elements.forEach(function (el, i) {
-    if (typeof el === 'string') {
+    if (typeof el === "string") {
       elements[i] = document.getElementById(el);
       if (!elements[i]) {
-        throw new Error('The element id specified is not found.');
+        throw new Error("The element id specified is not found.");
       }
     } else if (!el.tagName && !el.appendChild) {
       throw new Error(
-        'You must pass valid HTML elements, or ID of the element.'
+        "You must pass valid HTML elements, or ID of the element."
       );
     }
   });
@@ -200,12 +200,12 @@ var WordCloud = function WordCloud(elements, options) {
     fontFamily:
       '"Trebuchet MS", "Heiti TC", "微軟正黑體", ' +
       '"Arial Unicode MS", "Droid Fallback Sans", sans-serif',
-    fontWeight: 'normal',
-    color: 'random-dark',
+    fontWeight: "normal",
+    color: "random-dark",
     minSize: 0, // 0 to disable
     weightFactor: 1,
     clearCanvas: true,
-    backgroundColor: '#fff', // opaque white = rgba(255, 255, 255, 1)
+    backgroundColor: "#fff", // opaque white = rgba(255, 255, 255, 1)
 
     gridSize: 8,
     drawOutOfBound: false,
@@ -213,7 +213,7 @@ var WordCloud = function WordCloud(elements, options) {
     origin: null,
 
     drawMask: false,
-    maskColor: 'rgba(255,0,0,0.3)',
+    maskColor: "rgba(255,0,0,0.3)",
     maskGapWidth: 0.3,
 
     layoutAnimation: true,
@@ -229,7 +229,7 @@ var WordCloud = function WordCloud(elements, options) {
     shuffle: true,
     rotateRatio: 0.1,
 
-    shape: 'circle',
+    shape: "circle",
     ellipticity: 0.65,
 
     classes: null,
@@ -247,7 +247,7 @@ var WordCloud = function WordCloud(elements, options) {
   }
 
   /* Convert weightFactor into a function */
-  if (typeof settings.weightFactor !== 'function') {
+  if (typeof settings.weightFactor !== "function") {
     var factor = settings.weightFactor;
     settings.weightFactor = function weightFactor(pt) {
       return pt * factor; // in px
@@ -255,16 +255,16 @@ var WordCloud = function WordCloud(elements, options) {
   }
 
   /* Convert shape into a function */
-  if (typeof settings.shape !== 'function') {
+  if (typeof settings.shape !== "function") {
     switch (settings.shape) {
-      case 'circle':
+      case "circle":
       /* falls through */
       default:
         // 'circle' is the default and a shortcut in the code loop.
-        settings.shape = 'circle';
+        settings.shape = "circle";
         break;
 
-      case 'cardioid':
+      case "cardioid":
         settings.shape = function shapeCardioid(theta) {
           return 1 - Math.sin(theta);
         };
@@ -279,7 +279,7 @@ var WordCloud = function WordCloud(elements, options) {
         where t' equals to mod(t, 2PI/X);
         */
 
-      case 'diamond':
+      case "diamond":
         // http://www.wolframalpha.com/input/?i=plot+r+%3D+1%2F%28cos%28mod+
         // %28t%2C+PI%2F2%29%29%2Bsin%28mod+%28t%2C+PI%2F2%29%29%29%2C+t+%3D
         // +0+..+2*PI
@@ -289,7 +289,7 @@ var WordCloud = function WordCloud(elements, options) {
         };
         break;
 
-      case 'square':
+      case "square":
         // http://www.wolframalpha.com/input/?i=plot+r+%3D+min(1%2Fabs(cos(t
         // )),1%2Fabs(sin(t)))),+t+%3D+0+..+2*PI
         settings.shape = function shapeSquare(theta) {
@@ -300,7 +300,7 @@ var WordCloud = function WordCloud(elements, options) {
         };
         break;
 
-      case 'triangle-forward':
+      case "triangle-forward":
         // http://www.wolframalpha.com/input/?i=plot+r+%3D+1%2F%28cos%28mod+
         // %28t%2C+2*PI%2F3%29%29%2Bsqrt%283%29sin%28mod+%28t%2C+2*PI%2F3%29
         // %29%29%2C+t+%3D+0+..+2*PI
@@ -312,8 +312,8 @@ var WordCloud = function WordCloud(elements, options) {
         };
         break;
 
-      case 'triangle':
-      case 'triangle-upright':
+      case "triangle":
+      case "triangle-upright":
         settings.shape = function shapeTriangle(theta) {
           var thetaPrime = (theta + (Math.PI * 3) / 2) % ((2 * Math.PI) / 3);
           return (
@@ -322,14 +322,14 @@ var WordCloud = function WordCloud(elements, options) {
         };
         break;
 
-      case 'pentagon':
+      case "pentagon":
         settings.shape = function shapePentagon(theta) {
           var thetaPrime = (theta + 0.955) % ((2 * Math.PI) / 5);
           return 1 / (Math.cos(thetaPrime) + 0.726543 * Math.sin(thetaPrime));
         };
         break;
 
-      case 'star':
+      case "star":
         settings.shape = function shapeStar(theta) {
           var thetaPrime = (theta + 0.955) % ((2 * Math.PI) / 10);
           if (
@@ -375,30 +375,30 @@ var WordCloud = function WordCloud(elements, options) {
   var getTextColor;
   function randomHslColor(min, max) {
     return (
-      'hsl(' +
+      "hsl(" +
       (Math.random() * 360).toFixed() +
-      ',' +
+      "," +
       (Math.random() * 30 + 70).toFixed() +
-      '%,' +
+      "%," +
       (Math.random() * (max - min) + min).toFixed() +
-      '%)'
+      "%)"
     );
   }
   switch (settings.color) {
-    case 'random-dark':
+    case "random-dark":
       getTextColor = function getRandomDarkColor() {
         return randomHslColor(10, 50);
       };
       break;
 
-    case 'random-light':
+    case "random-light":
       getTextColor = function getRandomLightColor() {
         return randomHslColor(50, 90);
       };
       break;
 
     default:
-      if (typeof settings.color === 'function') {
+      if (typeof settings.color === "function") {
         getTextColor = settings.color;
       }
       break;
@@ -406,13 +406,13 @@ var WordCloud = function WordCloud(elements, options) {
 
   /* function for getting the font-weight of the text */
   var getTextFontWeight;
-  if (typeof settings.fontWeight === 'function') {
+  if (typeof settings.fontWeight === "function") {
     getTextFontWeight = settings.fontWeight;
   }
 
   /* function for getting the classes of the text */
   var getTextClasses = null;
-  if (typeof settings.classes === 'function') {
+  if (typeof settings.classes === "function") {
     getTextClasses = settings.classes;
   }
 
@@ -443,7 +443,7 @@ var WordCloud = function WordCloud(elements, options) {
     var y = Math.floor((eventY * (canvas.height / rect.height || 1)) / g);
 
     if (!infoGrid[x]) {
-      return null
+      return null;
     }
 
     return infoGrid[x][y];
@@ -497,7 +497,7 @@ var WordCloud = function WordCloud(elements, options) {
     while (t--) {
       // distort the radius to put the cloud in shape
       var rx = 1;
-      if (settings.shape !== 'circle') {
+      if (settings.shape !== "circle") {
         rx = settings.shape((t / T) * 2 * Math.PI); // 0 to 1
       }
 
@@ -536,7 +536,10 @@ var WordCloud = function WordCloud(elements, options) {
       return minRotation;
     }
 
-    return minRotation + Math.round(Math.random() * rotationRange / rotationStep) * rotationStep;
+    return (
+      minRotation +
+      Math.round((Math.random() * rotationRange) / rotationStep) * rotationStep
+    );
   };
 
   var getTextInfo = function getTextInfo(
@@ -576,14 +579,14 @@ var WordCloud = function WordCloud(elements, options) {
       fontWeight = settings.fontWeight;
     }
 
-    var fcanvas = document.createElement('canvas');
-    var fctx = fcanvas.getContext('2d', { willReadFrequently: true });
+    var fcanvas = document.createElement("canvas");
+    var fctx = fcanvas.getContext("2d", { willReadFrequently: true });
 
     fctx.font =
       fontWeight +
-      ' ' +
+      " " +
       (fontSize * mu).toString(10) +
-      'px ' +
+      "px " +
       settings.fontFamily;
 
     // Estimate the dimension of the text with measureText().
@@ -591,8 +594,8 @@ var WordCloud = function WordCloud(elements, options) {
     var fh =
       Math.max(
         fontSize * mu,
-        fctx.measureText('m').width,
-        fctx.measureText('\uFF37').width
+        fctx.measureText("m").width,
+        fctx.measureText("\uFF37").width
       ) / mu;
 
     // Create a boundary box that is larger than our estimates,
@@ -628,8 +631,8 @@ var WordCloud = function WordCloud(elements, options) {
     var width = cgw * g;
     var height = cgh * g;
 
-    fcanvas.setAttribute('width', width);
-    fcanvas.setAttribute('height', height);
+    fcanvas.setAttribute("width", width);
+    fcanvas.setAttribute("height", height);
 
     if (debug) {
       // Attach fcanvas to the DOM
@@ -647,9 +650,9 @@ var WordCloud = function WordCloud(elements, options) {
     // Set it again here.
     fctx.font =
       fontWeight +
-      ' ' +
+      " " +
       (fontSize * mu).toString(10) +
-      'px ' +
+      "px " +
       settings.fontFamily;
 
     // Fill the text into the fcanvas.
@@ -658,8 +661,8 @@ var WordCloud = function WordCloud(elements, options) {
     // Please read https://bugzil.la/737852#c6.
     // Here, we use textBaseline = 'middle' and draw the text at exactly
     // 0.5 * fontSize lower.
-    fctx.fillStyle = '#000';
-    fctx.textBaseline = 'middle';
+    fctx.fillStyle = "#000";
+    fctx.textBaseline = "middle";
     fctx.fillText(
       word,
       fillTextOffsetX * mu,
@@ -709,7 +712,7 @@ var WordCloud = function WordCloud(elements, options) {
               }
 
               if (debug) {
-                fctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+                fctx.fillStyle = "rgba(255, 0, 0, 0.5)";
                 fctx.fillRect(gx * g, gy * g, g - 0.5, g - 0.5);
               }
               break singleGridLoop;
@@ -717,14 +720,14 @@ var WordCloud = function WordCloud(elements, options) {
           }
         }
         if (debug) {
-          fctx.fillStyle = 'rgba(0, 0, 255, 0.5)';
+          fctx.fillStyle = "rgba(0, 0, 255, 0.5)";
           fctx.fillRect(gx * g, gy * g, g - 0.5, g - 0.5);
         }
       }
     }
 
     if (debug) {
-      fctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
+      fctx.fillStyle = "rgba(0, 255, 0, 0.5)";
       fctx.fillRect(
         bounds[3] * g,
         bounds[0] * g,
@@ -816,7 +819,7 @@ var WordCloud = function WordCloud(elements, options) {
 
     elements.forEach(function (el) {
       if (el.getContext) {
-        var ctx = el.getContext('2d');
+        var ctx = el.getContext("2d");
         var mu = info.mu;
 
         // Save the current state before messing it
@@ -825,9 +828,9 @@ var WordCloud = function WordCloud(elements, options) {
 
         ctx.font =
           fontWeight +
-          ' ' +
+          " " +
           (fontSize * mu).toString(10) +
-          'px ' +
+          "px " +
           settings.fontFamily;
         ctx.fillStyle = color;
 
@@ -846,7 +849,7 @@ var WordCloud = function WordCloud(elements, options) {
         // Please read https://bugzil.la/737852#c6.
         // Here, we use textBaseline = 'middle' and draw the text at exactly
         // 0.5 * fontSize lower.
-        ctx.textBaseline = 'middle';
+        ctx.textBaseline = "middle";
         ctx.fillText(
           word,
           info.fillTextOffsetX * mu,
@@ -861,35 +864,35 @@ var WordCloud = function WordCloud(elements, options) {
         ctx.restore();
       } else {
         // drawText on DIV element
-        var span = document.createElement('span');
-        var transformRule = '';
-        transformRule = 'rotate(' + (-rotateDeg / Math.PI) * 180 + 'deg) ';
+        var span = document.createElement("span");
+        var transformRule = "";
+        transformRule = "rotate(" + (-rotateDeg / Math.PI) * 180 + "deg) ";
         if (info.mu !== 1) {
           transformRule +=
-            'translateX(-' +
+            "translateX(-" +
             info.fillTextWidth / 4 +
-            'px) ' +
-            'scale(' +
+            "px) " +
+            "scale(" +
             1 / info.mu +
-            ')';
+            ")";
         }
         var styleRules = {
-          position: 'absolute',
-          display: 'block',
+          position: "absolute",
+          display: "block",
           font:
-            fontWeight + ' ' + fontSize * info.mu + 'px ' + settings.fontFamily,
-          left: (gx + info.gw / 2) * g + info.fillTextOffsetX + 'px',
-          top: (gy + info.gh / 2) * g + info.fillTextOffsetY + 'px',
-          width: info.fillTextWidth + 'px',
-          height: info.fillTextHeight + 'px',
-          lineHeight: fontSize + 'px',
-          whiteSpace: 'nowrap',
+            fontWeight + " " + fontSize * info.mu + "px " + settings.fontFamily,
+          left: (gx + info.gw / 2) * g + info.fillTextOffsetX + "px",
+          top: (gy + info.gh / 2) * g + info.fillTextOffsetY + "px",
+          width: info.fillTextWidth + "px",
+          height: info.fillTextHeight + "px",
+          lineHeight: fontSize + "px",
+          whiteSpace: "nowrap",
           transform: transformRule,
           webkitTransform: transformRule,
           msTransform: transformRule,
-          transformOrigin: '50% 40%',
-          webkitTransformOrigin: '50% 40%',
-          msTransformOrigin: '50% 40%'
+          transformOrigin: "50% 40%",
+          webkitTransformOrigin: "50% 40%",
+          msTransformOrigin: "50% 40%"
         };
         if (color) {
           styleRules.color = color;
@@ -920,7 +923,7 @@ var WordCloud = function WordCloud(elements, options) {
     grid[x][y] = false;
 
     if (drawMask) {
-      var ctx = elements[0].getContext('2d');
+      var ctx = elements[0].getContext("2d");
       ctx.fillRect(x * g, y * g, maskRectWidth, maskRectWidth);
     }
 
@@ -936,7 +939,7 @@ var WordCloud = function WordCloud(elements, options) {
     var drawMask = settings.drawMask;
     var ctx;
     if (drawMask) {
-      ctx = elements[0].getContext('2d');
+      ctx = elements[0].getContext("2d");
       ctx.save();
       ctx.fillStyle = settings.maskColor;
     }
@@ -1128,7 +1131,7 @@ var WordCloud = function WordCloud(elements, options) {
 
     // Sending a wordcloudstart event which cause the previous loop to stop.
     // Do nothing if the event is canceled.
-    if (!sendEvent('wordcloudstart', true)) {
+    if (!sendEvent("wordcloudstart", true)) {
       return;
     }
 
@@ -1148,14 +1151,14 @@ var WordCloud = function WordCloud(elements, options) {
     if (!canvas.getContext || settings.clearCanvas) {
       elements.forEach(function (el) {
         if (el.getContext) {
-          var ctx = el.getContext('2d');
+          var ctx = el.getContext("2d");
           ctx.fillStyle = settings.backgroundColor;
           ctx.clearRect(0, 0, ngx * (g + 1), ngy * (g + 1));
           ctx.fillRect(0, 0, ngx * (g + 1), ngy * (g + 1));
         } else {
-          el.textContent = '';
+          el.textContent = "";
           el.style.backgroundColor = settings.backgroundColor;
-          el.style.position = 'relative';
+          el.style.position = "relative";
         }
       });
 
@@ -1171,7 +1174,7 @@ var WordCloud = function WordCloud(elements, options) {
     } else {
       /* Determine bgPixel by creating
            another canvas and fill the specified background color. */
-      var bctx = document.createElement('canvas').getContext('2d');
+      var bctx = document.createElement("canvas").getContext("2d");
 
       bctx.fillStyle = settings.backgroundColor;
       bctx.fillRect(0, 0, 1, 1);
@@ -1181,7 +1184,7 @@ var WordCloud = function WordCloud(elements, options) {
            canvas is empty.
            (no clearCanvas only works with a canvas, not divs) */
       var imageData = canvas
-        .getContext('2d')
+        .getContext("2d")
         .getImageData(0, 0, ngx * g, ngy * g).data;
 
       gx = ngx;
@@ -1227,23 +1230,23 @@ var WordCloud = function WordCloud(elements, options) {
       }
 
       if (settings.hover) {
-        canvas.addEventListener('mousemove', wordcloudhover);
+        canvas.addEventListener("mousemove", wordcloudhover);
       }
 
       if (settings.click) {
-        canvas.addEventListener('click', wordcloudclick);
-        canvas.addEventListener('touchstart', wordcloudclick);
-        canvas.addEventListener('touchend', function (e) {
+        canvas.addEventListener("click", wordcloudclick);
+        canvas.addEventListener("touchstart", wordcloudclick);
+        canvas.addEventListener("touchend", function (e) {
           e.preventDefault();
         });
-        canvas.style.webkitTapHighlightColor = 'rgba(0, 0, 0, 0)';
+        canvas.style.webkitTapHighlightColor = "rgba(0, 0, 0, 0)";
       }
 
-      canvas.addEventListener('wordcloudstart', function stopInteraction() {
-        canvas.removeEventListener('wordcloudstart', stopInteraction);
+      canvas.addEventListener("wordcloudstart", function stopInteraction() {
+        canvas.removeEventListener("wordcloudstart", stopInteraction);
 
-        canvas.removeEventListener('mousemove', wordcloudhover);
-        canvas.removeEventListener('click', wordcloudclick);
+        canvas.removeEventListener("mousemove", wordcloudhover);
+        canvas.removeEventListener("click", wordcloudclick);
         hovered = undefined;
       });
     }
@@ -1279,11 +1282,11 @@ var WordCloud = function WordCloud(elements, options) {
     };
 
     var anotherWordCloudStart = function anotherWordCloudStart() {
-      removeEventListener('wordcloudstart', anotherWordCloudStart);
+      removeEventListener("wordcloudstart", anotherWordCloudStart);
       stoppingFunction(timer[timerId]);
     };
 
-    addEventListener('wordcloudstart', anotherWordCloudStart);
+    addEventListener("wordcloudstart", anotherWordCloudStart);
 
     // At least wait the following code before call the first iteration.
     timer[timerId] = (settings.layoutAnimation ? loopingFunction : setTimeout)(
@@ -1293,23 +1296,23 @@ var WordCloud = function WordCloud(elements, options) {
         }
         if (i >= settings.list.length) {
           stoppingFunction(timer[timerId]);
-          sendEvent('wordcloudstop', false);
-          removeEventListener('wordcloudstart', anotherWordCloudStart);
+          sendEvent("wordcloudstop", false);
+          removeEventListener("wordcloudstart", anotherWordCloudStart);
           delete timer[timerId];
           return;
         }
         escapeTime = new Date().getTime();
         var drawn = putWord(settings.list[i], 0);
-        var canceled = !sendEvent('wordclouddrawn', true, {
+        var canceled = !sendEvent("wordclouddrawn", true, {
           item: settings.list[i],
           drawn: drawn
         });
         if (exceedTime() || canceled) {
           stoppingFunction(timer[timerId]);
           settings.abort();
-          sendEvent('wordcloudabort', false);
-          sendEvent('wordcloudstop', false);
-          removeEventListener('wordcloudstart', anotherWordCloudStart);
+          sendEvent("wordcloudabort", false);
+          sendEvent("wordcloudstop", false);
+          removeEventListener("wordcloudstart", anotherWordCloudStart);
           return;
         }
         i++;

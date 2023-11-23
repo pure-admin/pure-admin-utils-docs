@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { useResizeObserver } from "@vueuse/core"
-import { getBrowserInfo } from "@pureadmin/utils"
+import { ref } from "vue";
+import { useResizeObserver } from "@vueuse/core";
+import { getBrowserInfo } from "@pureadmin/utils";
 
-let browser = ref()
-let version = ref()
+let browser = ref();
+let version = ref();
 
 useResizeObserver(document.body, () => {
-  browser.value = getBrowserInfo().browser
-  version.value = getBrowserInfo().version
-})
+  browser.value = getBrowserInfo().browser;
+  version.value = getBrowserInfo().version;
+});
 </script>
 
 <template>

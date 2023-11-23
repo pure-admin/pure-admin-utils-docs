@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getDecimalPlaces } from "@pureadmin/utils"
+import { getDecimalPlaces } from "@pureadmin/utils";
 </script>
 
 <template>

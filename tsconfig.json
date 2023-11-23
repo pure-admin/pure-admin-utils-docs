@@ -17,27 +17,20 @@
     "baseUrl": ".",
     "allowJs": false,
     "resolveJsonModule": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+    "lib": ["ESNext", "DOM"],
     "types": [
       "node",
       "vitepress",
       "vite/client",
       "naive-ui/volar",
       "@vue-macros/reactivity-transform/macros-global"
-    ],
+    ]
   },
   "include": [
     "docs/**/*.ts",
     "docs/**/*.vue",
     "unocss.config.ts",
-    "docs/.vitepress/**/*.ts",
+    "docs/.vitepress/**/*.ts"
   ],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "docs/.vitepress/dist"
-  ]
+  "exclude": ["dist", "node_modules", "docs/.vitepress/dist"]
 }

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { getQueryMap } from "@pureadmin/utils"
+import { ref } from "vue";
+import { getQueryMap } from "@pureadmin/utils";
 
-let url = ref('http://test/#/tabs/query-detail?a=test&&token=token')
+let url = ref("http://test/#/tabs/query-detail?a=test&&token=token");
 </script>
 
 <template>

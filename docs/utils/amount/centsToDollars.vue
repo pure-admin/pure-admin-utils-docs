@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { centsToDollars } from "@pureadmin/utils"
+import { centsToDollars } from "@pureadmin/utils";
 </script>
 
 <template>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { ref } from "vue"
-import { useResizeObserver } from "@vueuse/core"
-import { deviceDetection } from "@pureadmin/utils"
+import { ref } from "vue";
+import { useResizeObserver } from "@vueuse/core";
+import { deviceDetection } from "@pureadmin/utils";
 
-let device = ref()
+let device = ref();
 
 useResizeObserver(document.body, () => {
-  device.value = deviceDetection()
-})
+  device.value = deviceDetection();
+});
 </script>
 
 <template>
