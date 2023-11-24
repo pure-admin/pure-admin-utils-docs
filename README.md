@@ -1,5 +1,29 @@
-# pure-admin-utils-docs
+<p align="center">
+pure-admin-utils 文档
+</p>
 
-[pure-admin-utils](https://www.npmjs.com/package/@pureadmin/utils) 文档，使用 `vitepress` 搭建
+<p align="center">
+  采用 <a href="https://vitepress.dev/" target="_blank">vitepress</a> 和 <a href="https://www.naiveui.com/zh-CN/" target="_blank">naive-ui</a> 搭配编写
+</p>
 
-[文档地址](https://pure-admin-utils.netlify.app)
+## 👀 预览
+
+[查看文档](https://pure-admin-utils.netlify.app)
+
+## 📡 安装依赖
+
+```
+pnpm install
+```
+
+## 🚀 运行
+
+```
+pnpm dev
+```
+
+## 🕋 打包
+
+```
+pnpm build
+```
