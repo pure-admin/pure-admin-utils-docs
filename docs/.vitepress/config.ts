@@ -112,7 +112,7 @@ export default defineConfig({
       }
     ] as DefaultTheme.SidebarItem[],
     footer: {
-      message: "Released under the MIT License.",
+      message: "Released under the MIT License",
       copyright: "Copyright © 2022-present pure-admin"
     },
     lastUpdatedText: "最近更新时间",
