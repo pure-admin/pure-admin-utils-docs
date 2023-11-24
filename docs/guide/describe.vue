@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from "vitepress";
+import { hooks } from "../.vitepress/utils/sortHooks";
 import { useData } from "../components/wordcloud/data";
 
 const { go } = useRouter();
@@ -17,7 +18,7 @@ const { hooksLen, utilsLen } = useData();
               <n-button
                 text
                 type="primary"
-                @click="go('/hooks/useCopyToClipboard/useCopyToClipboard')"
+                @click="go(`/hooks/${hooks[0]}/${hooks[0]}`)"
               >
                 Hooks
               </n-button>

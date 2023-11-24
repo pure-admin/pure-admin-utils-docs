@@ -5,6 +5,7 @@ import { Reload } from "@vicons/ionicons5";
 import { type Ref, ref, computed } from "vue";
 import { useEventListener } from "@vueuse/core";
 import "../../.vitepress/plugins/wordcloud/index.d.ts"; // 路径要写完整，确保打包时引用正确
+import { hooks } from "../../.vitepress/utils/sortHooks";
 import {
   type EchartOptions,
   randomColor,
@@ -61,7 +62,7 @@ setOptions(
       if (name === "Utils") {
         go("/utils/amount/amount");
       } else if (name === "Hooks") {
-        go("/hooks/useCopyToClipboard/useCopyToClipboard");
+        go(`/hooks/${hooks[0]}/${hooks[0]}`);
       } else if (name.slice(0, 3) === "use") {
         go(`/hooks/${name}/${name}`);
       } else {

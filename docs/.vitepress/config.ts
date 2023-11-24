@@ -1,7 +1,33 @@
 import fg from "fast-glob";
 import Unocss from "unocss/vite";
+import { hooks } from "./utils/sortHooks";
 import { defineConfig, type DefaultTheme } from "vitepress";
 import ReactivityTransform from "@vue-macros/reactivity-transform/vite";
+
+function sortHooks(list: DefaultTheme.SidebarItem[]) {
+  return hooks
+    .map(hook => {
+      return list.map(l => {
+        return hook === l.text ? l : "";
+      });
+    })
+    .flat()
+    .filter(Boolean);
+}
+
+function getItems(path: string) {
+  const links: DefaultTheme.SidebarItem[] = [];
+  fg.sync(`docs/${path}/*`, {
+    onlyDirectories: true,
+    objectMode: true
+  }).forEach(({ name }) => {
+    links.push({
+      text: name,
+      link: `/${path}/${name}/${name}`
+    });
+  });
+  return links;
+}
 
 export default defineConfig({
   base: "/",
@@ -103,7 +129,7 @@ export default defineConfig({
       {
         text: `Hooks（${getItems("hooks").length}）`,
         collapsible: true,
-        items: getItems("hooks")
+        items: sortHooks(getItems("hooks"))
       },
       {
         text: `Utils（${getItems("utils").length}）`,
@@ -165,17 +191,3 @@ export default defineConfig({
     plugins: [Unocss(), ReactivityTransform()]
   }
 });
-
-function getItems(path: string) {
-  const links: DefaultTheme.SidebarItem[] = [];
-  fg.sync(`docs/${path}/*`, {
-    onlyDirectories: true,
-    objectMode: true
-  }).forEach(({ name }) => {
-    links.push({
-      text: name,
-      link: `/${path}/${name}/${name}`
-    });
-  });
-  return links;
-}
