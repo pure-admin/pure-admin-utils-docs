@@ -1,19 +1,29 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(2)
+
 import banMouseEvent from './banMouseEvent.vue'
 import allowMouseEvent from './allowMouseEvent.vue'
 </script>
 
-# 禁止、允许指定的鼠标事件
+<!-- # 禁止、允许指定的鼠标事件 -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+禁止、允许指定的鼠标事件
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="2" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## banMouseEvent
 
-<ClientOnly>
-  <description :isShowIcon="false" description="禁止指定的鼠标事件" /> 
-</ClientOnly>
+::: info 作用：禁止指定的鼠标事件
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="禁止指定的鼠标事件" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -38,9 +48,12 @@ import allowMouseEvent from './allowMouseEvent.vue'
 
 ## allowMouseEvent
 
-<ClientOnly>
-  <description :isShowIcon="false" description="允许指定的鼠标事件" /> 
-</ClientOnly>
+::: info 作用：允许指定的鼠标事件
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="允许指定的鼠标事件" />
+</ClientOnly> -->
 
 ### 参数
 

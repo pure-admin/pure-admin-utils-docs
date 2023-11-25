@@ -1,21 +1,31 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(4)
+
 import swapOrder from './swapOrder.vue'
 import isIncludeAllChildren from './isIncludeAllChildren.vue'
 import intersection from './intersection.vue'
 import getKeyList from './getKeyList.vue'
 </script>
 
-# 处理数组相关函数
+<!-- # 处理数组相关方法 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+处理数组
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="4" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## swapOrder
 
-<ClientOnly>
-  <description :isShowIcon="false" description="数组中两个元素互换位置（内部使用 splice 会改变原数组）" /> 
-</ClientOnly>
+::: info 作用：数组中两个元素互换位置（内部使用 `splice` 会改变原数组）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="数组中两个元素互换位置（内部使用 splice 会改变原数组）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -42,9 +52,12 @@ import getKeyList from './getKeyList.vue'
 
 ## isIncludeAllChildren
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素" /> 
-</ClientOnly>
+::: info 作用：判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -70,9 +83,12 @@ import getKeyList from './getKeyList.vue'
 
 ## intersection
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="获取由基本数据类型组成的数组交集" /> 
-</ClientOnly>
+::: info 作用：获取由基本数据类型组成的数组交集
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="获取由基本数据类型组成的数组交集" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -93,9 +109,12 @@ import getKeyList from './getKeyList.vue'
 
 ## getKeyList
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 key 组成的新数组，会去重也会去除不存在的值" /> 
-</ClientOnly>
+::: info 作用：从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 key 组成的新数组，会去重也会去除不存在的值" />
+</ClientOnly> -->
 
 ### 参数
 

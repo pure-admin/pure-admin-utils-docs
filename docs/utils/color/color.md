@@ -1,4 +1,7 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(5)
+
 import randomColor from './randomColor.vue'
 import hexToRgb from './hexToRgb.vue'
 import rgbToHex from './rgbToHex.vue'
@@ -6,17 +9,24 @@ import darken from './darken.vue'
 import lighten from './lighten.vue'
 </script>
 
-# 颜色相关函数
+<!-- # 颜色 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+颜色
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="5" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## randomColor
 
-<ClientOnly>
-  <description :isShowIcon="false" description="随机生成颜色" /> 
-</ClientOnly>
+::: info 作用：随机生成颜色
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="随机生成颜色" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -52,9 +62,12 @@ import lighten from './lighten.vue'
 
 ## hexToRgb
 
-<ClientOnly>
-  <description :isShowIcon="false" description="hex转rgb" /> 
-</ClientOnly>
+::: info 作用：`hex` 转 `rgb`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="hex转rgb" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -79,9 +92,12 @@ import lighten from './lighten.vue'
 
 ## rgbToHex
 
-<ClientOnly>
-  <description :isShowIcon="false" description="rgb转hex" /> 
-</ClientOnly>
+::: info 作用：`rgb` 转 `hex`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="rgb转hex" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -108,9 +124,13 @@ import lighten from './lighten.vue'
 
 ## darken
 
+::: info 作用：颜色值加深
+:::
+
+<!--
 <ClientOnly>
-  <description :isShowIcon="false" description="颜色值加深" /> 
-</ClientOnly>
+  <description :isShowIcon="false" description="颜色值加深" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -136,9 +156,12 @@ import lighten from './lighten.vue'
 
 ## lighten
 
-<ClientOnly>
-  <description :isShowIcon="false" description="颜色值变浅" /> 
-</ClientOnly>
+::: info 作用：颜色值变浅
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="颜色值变浅" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -162,9 +185,6 @@ import lighten from './lighten.vue'
 
 </details>
 
-::: tip
-
-- 推荐文章  
-  [CSS HSL 颜色](https://www.w3school.com.cn/css/css_colors_hsl.asp)
-
+::: warning 推荐文章
+[CSS HSL 颜色](https://www.w3school.com.cn/css/css_colors_hsl.asp)
 :::

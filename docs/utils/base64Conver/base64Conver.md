@@ -1,19 +1,29 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(2)
+
 import urlToBase64 from './urlToBase64.vue'
 import dataURLtoBlob from './dataURLtoBlob.vue'
 </script>
 
-# 图片 url 转 base64、base64 转 blob
+<!-- # 图片 url 转 base64、base64 转 blob -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+图片 `url` 转 `base64`、`base64` 转 `blob`
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="2" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## urlToBase64
 
-<ClientOnly>
-  <description :isShowIcon="false" description="图片url转base64" /> 
-</ClientOnly>
+::: info 作用：图片 `url` 转 `base64`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="图片url转base64" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -40,9 +50,12 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 
 ## dataURLtoBlob
 
-<ClientOnly>
-  <description :isShowIcon="false" description="base64转blob" /> 
-</ClientOnly>
+::: info 作用：`base64` 转 `blob`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="base64转blob" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -65,6 +78,6 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 
 </details>
 
-:::tip
-在线图片`url`转`base64`，要求图片请求支持跨域哦，服务器配置下允许跨域即可
+::: warning 提示信息
+在线图片`url`转`base64`，要求图片请求支持跨域，服务器配置下允许跨域即可
 :::

@@ -1,4 +1,7 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(6)
+
 import getCurrentWeek from './getCurrentWeek.vue'
 import monthDays from './monthDays.vue'
 import createYear from './createYear.vue'
@@ -7,17 +10,24 @@ import dateFormat from './dateFormat.vue'
 import getTime from './getTime.vue'
 </script>
 
-# 时间、日期相关函数
+<!-- # 时间、日期 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+时间、日期
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="6" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## getCurrentWeek
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取当前是星期几" /> 
-</ClientOnly>
+::: info 作用：获取当前是星期几
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取当前是星期几" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -42,9 +52,12 @@ import getTime from './getTime.vue'
 
 ## monthDays
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取指定日期月份的总天数" /> 
-</ClientOnly>
+::: info 作用：获取指定日期月份的总天数
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取指定日期月份的总天数" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -69,9 +82,12 @@ import getTime from './getTime.vue'
 
 ## createYear
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取从当前年份到开始年份的数组" /> 
-</ClientOnly>
+::: info 作用：获取从当前年份到开始年份的数组
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取从当前年份到开始年份的数组" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -96,9 +112,12 @@ import getTime from './getTime.vue'
 
 ## getCurrentDate
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取当前的日期" /> 
-</ClientOnly>
+::: info 作用：获取当前的日期
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取当前的日期" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -134,9 +153,12 @@ import getTime from './getTime.vue'
 
 ## dateFormat
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取格式化后的当前日期" /> 
-</ClientOnly>
+::: info 作用：获取格式化后的当前日期
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取格式化后的当前日期" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -161,9 +183,13 @@ import getTime from './getTime.vue'
 
 ## getTime
 
+::: info 作用：将秒转换为时、分、秒
+:::
+
+<!--
 <ClientOnly>
-  <description :isShowIcon="false" description="将秒转换为时、分、秒" /> 
-</ClientOnly>
+  <description :isShowIcon="false" description="将秒转换为时、分、秒" />
+</ClientOnly> -->
 
 ### 参数
 

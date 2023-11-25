@@ -1,18 +1,28 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+
 import convertPath from './convertPath.vue'
 </script>
 
-# 路径转换相关函数
+<!-- # 路径转换 -->
 
-<ClientOnly>
+::: tip 支持任意运行在 `Node` 的 `JavaScript` 语言
+路径转换
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="1" :tagNameList="['Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## convertPath
 
-<ClientOnly>
-  <description :isShowIcon="false" description="将 Windows 反斜杠路径转换为斜杠路径" /> 
-</ClientOnly>
+::: info 作用：将 `Windows` 反斜杠路径转换为斜杠路径
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="将 Windows 反斜杠路径转换为斜杠路径" />
+</ClientOnly> -->
 
 ### 参数
 

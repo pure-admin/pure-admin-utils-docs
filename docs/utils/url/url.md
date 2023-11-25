@@ -1,19 +1,29 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(2)
+
 import getQueryMap from './getQueryMap.vue'
 import getLocation from './getLocation.vue'
 </script>
 
-# 提取 url 中所有参数、获取当前的 location 信息
+<!-- # 提取 `url` 中所有参数、获取当前的 `location` 信息 -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+提取 `url` 中所有参数、获取当前的 `location` 信息
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="2" :tagNameList="['浏览器']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## getQueryMap
 
-<ClientOnly>
-  <description :isShowIcon="false" description="提取浏览器 url 中所有参数" /> 
-</ClientOnly>
+::: info 作用：提取浏览器 `url` 中所有参数
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="提取浏览器 `url` 中所有参数" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -38,9 +48,12 @@ import getLocation from './getLocation.vue'
 
 ## getLocation
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取浏览器当前的 location 信息" /> 
-</ClientOnly>
+::: info 作用：获取浏览器当前的 `location` 信息
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取浏览器当前的 `location` 信息" />
+</ClientOnly> -->
 
 ### 基础用法
 

@@ -1,4 +1,7 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(5)
+
 import hasClass from './hasClass.vue'
 import getClass from './getClass.vue'
 import addClass from './addClass.vue'
@@ -6,17 +9,24 @@ import removeClass from './removeClass.vue'
 import toggleClass from './toggleClass.vue'
 </script>
 
-# 处理元素类名相关函数
+<!-- # 处理元素类名 -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+处理元素类名
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="5" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## hasClass
 
-<ClientOnly>
-  <description :isShowIcon="false" description="判断元素是否存在指定类名" /> 
-</ClientOnly>
+::: info 作用：判断元素是否存在指定类名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="判断元素是否存在指定类名" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -42,9 +52,12 @@ import toggleClass from './toggleClass.vue'
 
 ## getClass
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取当前元素的所有类名" /> 
-</ClientOnly>
+::: info 作用：获取当前元素的所有类名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取当前元素的所有类名" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -69,9 +82,12 @@ import toggleClass from './toggleClass.vue'
 
 ## addClass
 
-<ClientOnly>
-  <description :isShowIcon="false" description="向当前元素添加指定类名" /> 
-</ClientOnly>
+::: info 作用：向当前元素添加指定类名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="向当前元素添加指定类名" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -98,9 +114,12 @@ import toggleClass from './toggleClass.vue'
 
 ## removeClass
 
-<ClientOnly>
-  <description :isShowIcon="false" description="删除当前元素的指定类名" /> 
-</ClientOnly>
+::: info 作用：删除当前元素的指定类名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="删除当前元素的指定类名" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -127,9 +146,12 @@ import toggleClass from './toggleClass.vue'
 
 ## toggleClass
 
-<ClientOnly>
-  <description :isShowIcon="false" description="是否向当前元素添加指定类名" /> 
-</ClientOnly>
+::: info 作用：是否向当前元素添加指定类名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="是否向当前元素添加指定类名" />
+</ClientOnly> -->
 
 ### 参数
 

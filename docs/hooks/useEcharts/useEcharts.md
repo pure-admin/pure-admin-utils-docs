@@ -1,15 +1,37 @@
 <script setup>
 import echarts from './echarts.vue'
 import request from './request.vue'
+
+// 常用示例
+import { 
+  Eline, 
+  Ebar, 
+  Epie, 
+  Escatter, 
+  Ecandlestick, 
+  Eradar, 
+  Eboxplot, 
+  Eheatmap, 
+  Egraph, 
+  Etree, 
+  Esunburst,
+  Esankey,
+  Efunnel,
+  Egauge,
+  EpictorialBar,
+  EthemeRiver
+} from './demo/index.ts'
 </script>
 
 # useEcharts
 
-<ClientOnly>
-  <description description="渲染Echarts" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`
+兼容 `echarts` 所有 `api` 并且额外添加尺寸自适应容器和自动销毁等功能，`echarts` 能实现的它都行
+:::
 
-- 生命周期销毁时会自动移除`Echarts`以及它的事件监听
+<!-- <ClientOnly>
+  <description description="兼容`echarts`所有`api`并且额外添加尺寸自适应容器和自动销毁等功能，`echarts`能实现的它都行" :tagNameList="['Vue3']"  />
+</ClientOnly> -->
 
 ## 使用前提
 
@@ -27,6 +49,216 @@ app.config.globalProperties.$echarts = echarts;
 
 app.mount("#app");
 ```
+
+## 常用示例
+
+### 折线图 line
+
+<ClientOnly>
+  <Eline />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/line.vue
+
+</details>
+
+### 柱状图 bar
+
+<ClientOnly>
+  <Ebar />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/bar.vue
+
+</details>
+
+### 饼图 pie
+
+<ClientOnly>
+  <Epie />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/pie.vue
+
+</details>
+
+### 散点图 scatter
+
+<ClientOnly>
+  <Escatter />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/scatter.vue
+
+</details>
+
+### K 线图 candlestick
+
+<ClientOnly>
+  <Ecandlestick />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/candlestick.vue
+
+</details>
+
+### 雷达图 radar
+
+<ClientOnly>
+  <Eradar />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/radar.vue
+
+</details>
+
+### 盒须图 boxplot
+
+<ClientOnly>
+  <Eboxplot />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/boxplot.vue
+
+</details>
+
+### 热力图 heatmap
+
+<ClientOnly>
+  <Eheatmap />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/heatmap.vue
+
+</details>
+
+### 关系图 graph
+
+<ClientOnly>
+  <Egraph />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/graph.vue
+
+</details>
+
+### 树图 tree
+
+<ClientOnly>
+  <Etree />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/tree.vue
+
+</details>
+
+### 旭日图 sunburst
+
+<ClientOnly>
+  <Esunburst />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/sunburst.vue
+
+</details>
+
+### 桑基图 sankey
+
+<ClientOnly>
+  <Esankey />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/sankey.vue
+
+</details>
+
+### 漏斗图 funnel
+
+<ClientOnly>
+  <Efunnel />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/funnel.vue
+
+</details>
+
+### 仪表盘 gauge
+
+<ClientOnly>
+  <Egauge />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/gauge.vue
+
+</details>
+
+### 象形柱图 pictorialBar
+
+<ClientOnly>
+  <EpictorialBar />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/pictorialBar.vue
+
+</details>
+
+### 主题河流图 themeRiver
+
+<ClientOnly>
+  <EthemeRiver />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/themeRiver.vue
+
+</details>
 
 ## 基础用法
 

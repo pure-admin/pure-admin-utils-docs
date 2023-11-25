@@ -20,7 +20,7 @@ defineProps({
       </template>
       <span
         >此页面共<n-gradient-text type="info">{{ num }}</n-gradient-text
-        >个函数</span
+        >个方法</span
       >
     </n-popover>
   </naive-theme>

@@ -4,9 +4,13 @@ import dark from './dark.vue'
 
 # useDark
 
-<ClientOnly>
-  <description description="获取当前网页的主题色" :tagNameList="['Vue3']" /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`
+获取当前网页的主题色
+:::
+
+<!-- <ClientOnly>
+  <description description="获取当前网页的主题色" :tagNameList="['Vue3']" />
+</ClientOnly> -->
 
 ## 基础用法
 

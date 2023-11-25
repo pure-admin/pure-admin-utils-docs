@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { marked } from "marked";
 import { CheckmarkCircle } from "@vicons/ionicons5";
 
 defineProps({
@@ -30,12 +31,12 @@ defineProps({
       </n-tag>
     </n-space>
     <n-alert
-      v-show="isShowGradient"
+      v-if="isShowGradient"
       :class="['mt-2', gradientClass]"
       type="success"
       :show-icon="false"
     >
-      功能：{{ description }}
+      <span v-html="marked.parse(description)" />
     </n-alert>
   </naive-theme>
 </template>

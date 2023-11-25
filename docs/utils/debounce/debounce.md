@@ -1,20 +1,30 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(3)
+
 import delay from './delay.vue'
 import debounce from './debounce.vue'
 import throttle from './throttle.vue'
 </script>
 
-# 延迟、防抖、节流、相关函数
+<!-- # 延迟、防抖、节流 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+延迟、防抖、节流
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## delay
 
-<ClientOnly>
-  <description :isShowIcon="false" description="延迟函数" /> 
-</ClientOnly>
+::: info 作用：延迟
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="延迟" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -39,9 +49,12 @@ import throttle from './throttle.vue'
 
 ## debounce
 
-<ClientOnly>
-  <description :isShowIcon="false" description="防抖函数" /> 
-</ClientOnly>
+::: info 作用：防抖
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="防抖" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -72,9 +85,12 @@ import throttle from './throttle.vue'
 
 ## throttle
 
-<ClientOnly>
-  <description :isShowIcon="false" description="防抖函数" /> 
-</ClientOnly>
+::: info 作用：节流
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="节流" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -102,21 +118,21 @@ import throttle from './throttle.vue'
 
 </details>
 
-::: tip
+::: warning 相关信息
 
-- 防抖：指触发事件后在 `n` 秒内函数只能执行一次，如果在 `n` 秒内又触发了事件，则会重新计算函数执行时间。
+防抖：指触发事件后在 `n` 秒内函数只能执行一次，如果在 `n` 秒内又触发了事件，则会重新计算函数执行时间
 
-  使用场景：  
-  ① 搜索框搜索输入。只需用户最后一次输入完，再发送请求  
-  ② 窗口大小 resize。只需窗口调整完成后，计算窗口大小，防止重复渲染  
-  ③ 登录、发短信等按钮避免用户点击太快，以致于发送了多次请求，需要防抖  
-  ...
+使用场景：  
+ ① 搜索框搜索输入。只需用户最后一次输入完，再发送请求  
+ ② 窗口大小 resize。只需窗口调整完成后，计算窗口大小，防止重复渲染  
+ ③ 登录、发短信等按钮避免用户点击太快，以致于发送了多次请求，需要防抖  
+ ...
 
-- 节流：连续触发事件但是在 `n` 秒中只执行一次函数，节流会稀释函数的执行频率。
+节流：连续触发事件但是在 `n` 秒中只执行一次函数，节流会稀释函数的执行频率
 
-  使用场景：  
-  ① 滚动加载，加载更多或滚到底部监听  
-  ② 搜索框，搜索联想功能  
-  ...
+使用场景：  
+ ① 滚动加载，加载更多或滚到底部监听  
+ ② 搜索框，搜索联想功能  
+ ...
 
 :::

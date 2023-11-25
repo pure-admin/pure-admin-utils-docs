@@ -1,18 +1,28 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+
 import links from './link.vue'
 </script>
 
-# 创建超链接
+<!-- # 超链接 -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+超链接
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="1" :tagNameList="['浏览器']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## openLink
 
-<ClientOnly>
-  <description :isShowIcon="false" description="创建超链接" /> 
-</ClientOnly>
+::: info 作用：创建超链接
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="创建超链接" />
+</ClientOnly> -->
 
 ### 参数
 

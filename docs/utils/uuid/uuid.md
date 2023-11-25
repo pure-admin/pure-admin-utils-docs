@@ -1,20 +1,30 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(3)
+
 import buildUUID from './buildUUID.vue'
 import buildPrefixUUID from './buildPrefixUUID.vue'
 import uuid from './uuid.vue'
 </script>
 
-# uuid 相关函数
+<!-- # uuid -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+uuid
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## buildUUID
 
-<ClientOnly>
-  <description :isShowIcon="false" description="生成32位uuid" /> 
-</ClientOnly>
+::: info 作用：生成 `32` 位 `uuid`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="生成 `32` 位 `uuid`" />
+</ClientOnly> -->
 
 ### 基础用法
 
@@ -31,9 +41,12 @@ import uuid from './uuid.vue'
 
 ## buildPrefixUUID
 
-<ClientOnly>
-  <description :isShowIcon="false" description="生成自定义前缀的uuid" /> 
-</ClientOnly>
+::: info 作用：生成自定义前缀的 `uuid`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="生成自定义前缀的 `uuid`" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -58,9 +71,12 @@ import uuid from './uuid.vue'
 
 ## uuid
 
-<ClientOnly>
-  <description :isShowIcon="false" description="生成指定长度和基数的uuid" /> 
-</ClientOnly>
+::: info 作用：生成指定长度和基数的 `uuid`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="生成指定长度和基数的 `uuid`" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -85,9 +101,9 @@ import uuid from './uuid.vue'
 
 </details>
 
-::: tip
+::: warning 提示信息
 
-- 指定基数的母体为：`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`，总长度`62`
-- 指定基数也就是规定要生成的`uuid`采用哪些字符组合，比如基数为`10`，那么生成的`uuid`就会采用基数母体的前`10`位进行组合，也就是`0123456789`
+指定基数的母体为：`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`，总长度 `62`
 
+指定基数也就是规定要生成的 `uuid` 采用哪些字符组合，比如基数为 `10`，那么生成的 `uuid` 就会采用基数母体的前 `10` 位进行组合，也就是 `0123456789`
 :::

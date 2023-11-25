@@ -1,14 +1,26 @@
-# 包大小计算相关函数
+<script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+</script>
 
-<ClientOnly>
+<!-- # 包大小计算 -->
+
+::: tip 支持任意运行在 `Node` 的 `JavaScript` 语言
+包大小计算
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="1" :tagNameList="['Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## getPackageSize
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取指定文件夹中所有文件的总大小" /> 
-</ClientOnly>
+::: info 作用：获取指定文件夹中所有文件的总大小
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取指定文件夹中所有文件的总大小" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -32,5 +44,5 @@
 
 ### 具体使用参考
 
-- [demo1](https://github.com/pure-admin/vue-pure-admin/blob/main/build/info.ts#L36)
+- [demo1](https://github.com/pure-admin/vue-pure-admin/blob/main/build/info.ts#L37)
 - [demo2](https://github.com/pure-admin/pure-admin-release/blob/main/src/index.ts#L56)

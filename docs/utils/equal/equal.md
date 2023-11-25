@@ -1,20 +1,30 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(3)
+
 import isEqual from './isEqual.vue'
 import isEqualArray from './isEqualArray.vue'
 import isEqualObject from './isEqualObject.vue'
 </script>
 
-# 判断两者是否相等相关函数
+<!-- # 判断两者是否相等 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+判断两者是否相等
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## isEqual
 
-<ClientOnly>
-  <description :isShowIcon="false" description="判断两者是否相等" /> 
-</ClientOnly>
+::: info 作用：判断两者是否相等
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="判断两者是否相等" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -40,9 +50,12 @@ import isEqualObject from './isEqualObject.vue'
 
 ## isEqualObject
 
-<ClientOnly>
-  <description :isShowIcon="false" description="判断两个对象是否相等" /> 
-</ClientOnly>
+::: info 作用：判断两个对象是否相等
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="判断两个对象是否相等" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -68,9 +81,12 @@ import isEqualObject from './isEqualObject.vue'
 
 ## isEqualArray
 
-<ClientOnly>
-  <description :isShowIcon="false" description="判断两个数组是否相等" /> 
-</ClientOnly>
+::: info 作用：判断两个数组是否相等
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="判断两个数组是否相等" />
+</ClientOnly> -->
 
 ### 参数
 

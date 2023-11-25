@@ -1,4 +1,7 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(10)
+
 import max from './max.vue'
 import min from './min.vue'
 import sum from './sum.vue'
@@ -11,17 +14,24 @@ import divisionOperation from './divisionOperation.vue'
 import formatBytes from './formatBytes.vue'
 </script>
 
-# 数值计算相关函数
+<!-- # 数值计算 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+数值计算
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="10" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## max
 
-<ClientOnly>
-  <description :isShowIcon="false" description="求数字类型组成数组中的最大值" /> 
-</ClientOnly>
+::: info 作用：求数字类型组成数组中的最大值
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="求数字类型组成数组中的最大值" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -46,9 +56,12 @@ import formatBytes from './formatBytes.vue'
 
 ## min
 
-<ClientOnly>
-  <description :isShowIcon="false" description="求数字类型组成数组中的最小值" /> 
-</ClientOnly>
+::: info 作用：求数字类型组成数组中的最小值
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="求数字类型组成数组中的最小值" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -73,9 +86,12 @@ import formatBytes from './formatBytes.vue'
 
 ## sum
 
-<ClientOnly>
-  <description :isShowIcon="false" description="求数字类型组成数组中的和" /> 
-</ClientOnly>
+::: info 作用：求数字类型组成数组中的和
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="求数字类型组成数组中的和" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -100,9 +116,12 @@ import formatBytes from './formatBytes.vue'
 
 ## average
 
-<ClientOnly>
-  <description :isShowIcon="false" description="求数字类型组成数组中的平均值" /> 
-</ClientOnly>
+::: info 作用：求数字类型组成数组中的平均值
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="求数字类型组成数组中的平均值" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -127,9 +146,12 @@ import formatBytes from './formatBytes.vue'
 
 ## numberToChinese
 
-<ClientOnly>
-  <description :isShowIcon="false" description="将阿拉伯数字翻译成中文数字" /> 
-</ClientOnly>
+::: info 作用：将阿拉伯数字翻译成中文数字
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="将阿拉伯数字翻译成中文数字" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -154,9 +176,12 @@ import formatBytes from './formatBytes.vue'
 
 ## addition
 
-<ClientOnly>
-  <description :isShowIcon="false" description="两个数值的加法运算（防止精度丢失）" /> 
-</ClientOnly>
+::: info 作用：两个数值的加法运算（防止精度丢失）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="两个数值的加法运算（防止精度丢失）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -183,9 +208,12 @@ import formatBytes from './formatBytes.vue'
 
 ## subtraction
 
-<ClientOnly>
-  <description :isShowIcon="false" description="两个数值的减法运算（防止精度丢失）" /> 
-</ClientOnly>
+::: info 作用：两个数值的减法运算（防止精度丢失）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="两个数值的减法运算（防止精度丢失）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -212,9 +240,12 @@ import formatBytes from './formatBytes.vue'
 
 ## multiplication
 
-<ClientOnly>
-  <description :isShowIcon="false" description="两个数值的乘法运算（防止精度丢失）" /> 
-</ClientOnly>
+::: info 作用：两个数值的乘法运算（防止精度丢失）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="两个数值的乘法运算（防止精度丢失）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -241,9 +272,12 @@ import formatBytes from './formatBytes.vue'
 
 ## divisionOperation
 
-<ClientOnly>
-  <description :isShowIcon="false" description="两个数值的除法运算（防止精度丢失）" /> 
-</ClientOnly>
+::: info 作用：两个数值的除法运算（防止精度丢失）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="两个数值的除法运算（防止精度丢失）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -270,9 +304,12 @@ import formatBytes from './formatBytes.vue'
 
 ## formatBytes
 
-<ClientOnly>
-  <description :isShowIcon="false" description="将字节单位智能转化成 Bytes 、 KB 、 MB 、 GB 、 TB 、 PB 、 EB 、 ZB 、 YB 其中的一种" />
-</ClientOnly>
+::: info 作用：将字节单位智能转化成 `Bytes`、`KB`、`MB`、`GB`、`TB`、`PB`、`EB`、`ZB`、`YB` 其中的一种
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="将字节单位智能转化成 `Bytes`、`KB`、`MB`、`GB`、`TB`、`PB`、`EB`、`ZB`、`YB` 其中的一种" />
+</ClientOnly> -->
 
 ### 参数
 

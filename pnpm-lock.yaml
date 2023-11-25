@@ -32,6 +32,9 @@ devDependencies:
   highlight.js:
     specifier: ^11.9.0
     version: 11.9.0
+  marked:
+    specifier: ^10.0.0
+    version: 10.0.0
   naive-ui:
     specifier: ^2.35.0
     version: 2.35.0(vue@3.3.8)
@@ -2141,6 +2144,12 @@ packages:
 
   /mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
+    dev: true
+
+  /marked@10.0.0:
+    resolution: {integrity: sha512-YiGcYcWj50YrwBgNzFoYhQ1hT6GmQbFG8SksnYJX1z4BXTHSOrz1GB5/Jm2yQvMg4nN1FHP4M6r03R10KrVUiA==}
+    engines: {node: '>= 18'}
+    hasBin: true
     dev: true
 
   /mdast-util-to-hast@13.0.2:

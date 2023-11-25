@@ -79,17 +79,18 @@ export default defineConfig({
       light: "min-light"
     }
     // anchor: {
-    //   slugify: (str) => encodeURIComponent(str),
-    //   level: [1, 2, 3, 4, 5, 6],
-    // },
+    //   slugify: str => encodeURIComponent(str),
+    //   level: [1, 2, 3, 4, 5, 6]
+    // }
   },
-  lastUpdated: true,
   title: "@pureadmin/utils",
   themeConfig: {
     logo: "/logo.svg",
     siteTitle: "@pureadmin/utils",
-    outlineTitle: "目录",
-    outline: [2, 6],
+    outline: {
+      label: "目录",
+      level: "deep"
+    },
     // editLink: {
     //   pattern:
     //     "https://github.com/pure-admin/pure-admin-utils-docs/tree/master/docs/:path",
@@ -111,7 +112,7 @@ export default defineConfig({
     ],
     nav: [
       {
-        text: "指引",
+        text: "指南",
         link: "/guide/guide",
         activeMatch: `^/guide/`
       }
@@ -141,7 +142,6 @@ export default defineConfig({
       message: "Released under the MIT License",
       copyright: "Copyright © 2022-present pure-admin"
     },
-    lastUpdatedText: "最近更新时间",
     search: {
       provider: "local",
       options: {
@@ -165,6 +165,9 @@ export default defineConfig({
           }
         }
       }
+    },
+    lastUpdated: {
+      text: "最近更新时间"
     }
   },
   vite: {

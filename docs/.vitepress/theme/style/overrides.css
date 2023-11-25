@@ -196,3 +196,14 @@ table tbody tr:hover {
   border-radius: 10px;
   vertical-align: middle;
 }
+
+.pureadminutils-outline-label-num {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  margin-left: 4px;
+  background: var(--vp-c-brand);
+  color: white;
+  border-radius: 6px;
+  vertical-align: middle;
+}

@@ -10,23 +10,23 @@ hero:
     alt: "@pureadmin/utils"
   actions:
     - theme: brand
-      text: Start
+      text: 快速开始
       link: /guide/guide
     - theme: alt
-      text: Follow
-      link: https://github.com/xiaoxian521
+      text: 关注平台
+      link: https://github.com/pure-admin
 
 features:
   - icon: 🌎
     title: 任意 JavaScript 环境中运行
     details: 支持Node.js、浏览器以及任意JavaScript框架
   - icon: 📡
-    title: 可通过 CDN 使用
+    title: 可通过 CDN 引用
     details: 同时支持 unpkg 和 jsdelivr
   - icon: ⚡️
     title: 完全可摇树
     details: 自带 Tree-shaking ，只对引入的代码进行打包
-  - icon:  💫
+  - icon: 💫
     title: 零依赖
     details: 零 Dependencies 依赖，只会安装项目本身
   - icon: 🦾
@@ -40,7 +40,7 @@ features:
 <script setup>
 import { onMounted } from 'vue'
 // import { useMessage } from "./components/message"
-import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
+import { addReleaseTag } from './.vitepress/utils/createElement.ts'
 
 onMounted(() => {
   addReleaseTag()

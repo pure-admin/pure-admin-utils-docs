@@ -1,18 +1,28 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+
 import formDataHander from './formDataHander.vue'
 </script>
 
-# 处理 FormData 传参
+<!-- # 处理 `FormData` 传参 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+处理 `FormData` 传参
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="1" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## formDataHander
 
-<ClientOnly>
-  <description :isShowIcon="false" description="处理 FormData 传参" /> 
-</ClientOnly>
+::: info 作用：处理 `FormData` 传参
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="处理 `FormData` 传参" />
+</ClientOnly> -->
 
 ### 参数
 

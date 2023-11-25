@@ -1,0 +1,136 @@
+<script setup lang="ts">
+import { type Ref, ref, computed } from "vue";
+import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
+
+// 兼容dark主题
+const { isDark } = useDark();
+let theme: EchartOptions["theme"] = computed(() => {
+  return isDark.value ? "dark" : "default";
+});
+
+// 初始化ECharts
+const chartRef = ref<HTMLDivElement | null>(null);
+const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+
+// 根据配置项渲染ECharts
+setOptions({
+  visualMap: {
+    type: "continuous",
+    min: 0,
+    max: 10,
+    inRange: {
+      color: ["#2F93C8", "#AEC48F", "#FFDB5C", "#F98862"]
+    }
+  },
+  series: {
+    type: "sunburst",
+    data: [
+      {
+        name: "Grandpa",
+        children: [
+          {
+            name: "Uncle Leo",
+            value: 15,
+            children: [
+              {
+                name: "Cousin Jack",
+                value: 2
+              },
+              {
+                name: "Cousin Mary",
+                value: 5,
+                children: [
+                  {
+                    name: "Jackson",
+                    value: 2
+                  }
+                ]
+              },
+              {
+                name: "Cousin Ben",
+                value: 4
+              }
+            ]
+          },
+          {
+            name: "Aunt Jane",
+            children: [
+              {
+                name: "Cousin Kate",
+                value: 4
+              }
+            ]
+          },
+          {
+            name: "Father",
+            value: 10,
+            children: [
+              {
+                name: "Me",
+                value: 5,
+                itemStyle: {
+                  color: "red"
+                }
+              },
+              {
+                name: "Brother Peter",
+                value: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Mike",
+        children: [
+          {
+            name: "Uncle Dan",
+            children: [
+              {
+                name: "Cousin Lucy",
+                value: 3
+              },
+              {
+                name: "Cousin Luck",
+                value: 4,
+                children: [
+                  {
+                    name: "Nephew",
+                    value: 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Nancy",
+        children: [
+          {
+            name: "Uncle Nike",
+            children: [
+              {
+                name: "Cousin Betty",
+                value: 1
+              },
+              {
+                name: "Cousin Jenny",
+                value: 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    radius: [0, "90%"],
+    label: {
+      rotate: "radial"
+    }
+  }
+});
+</script>
+
+<template>
+  <div ref="chartRef" style="width: 100%; height: 50vh" />
+</template>

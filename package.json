@@ -33,6 +33,7 @@
     "echarts": "^5.4.3",
     "fast-glob": "^3.3.2",
     "highlight.js": "^11.9.0",
+    "marked": "^10.0.0",
     "naive-ui": "^2.35.0",
     "pathe": "^1.1.1",
     "prettier": "^3.1.0",

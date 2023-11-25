@@ -4,9 +4,13 @@ import draggable from './draggable.vue'
 
 # useDraggable
 
-<ClientOnly>
-  <description description="使元素可拖动" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`
+使元素可拖动
+:::
+
+<!-- <ClientOnly>
+  <description description="使元素可拖动" :tagNameList="['Vue3']"  />
+</ClientOnly> -->
 
 ## 基础用法
 

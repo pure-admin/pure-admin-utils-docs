@@ -1,4 +1,7 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(6)
+
 import centsToDollars from './centsToDollars.vue'
 import dollarsToCents from './dollarsToCents.vue'
 import priceUppercase from './priceUppercase.vue'
@@ -7,17 +10,24 @@ import getDecimalPlaces from './getDecimalPlaces.vue'
 import addZero from './addZero.vue'
 </script>
 
-# 金额转换相关函数
+<!-- # 金额转换相关方法 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+转换金额
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="6" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## centsToDollars
 
-<ClientOnly>
-  <description :isShowIcon="false" description="分转元" /> 
-</ClientOnly>
+::: info 作用：分转元
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="分转元" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -43,9 +53,12 @@ import addZero from './addZero.vue'
 
 ## dollarsToCents
 
-<ClientOnly>
-  <description :isShowIcon="false" description="元转分" /> 
-</ClientOnly>
+::: info 作用：元转分
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="元转分" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -71,9 +84,12 @@ import addZero from './addZero.vue'
 
 ## priceUppercase
 
-<ClientOnly>
-  <description :isShowIcon="false" description="金额转大写汉字（支持小数位）" /> 
-</ClientOnly>
+::: info 作用：金额转大写汉字（支持小数位）
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="金额转大写汉字（支持小数位）" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -99,9 +115,12 @@ import addZero from './addZero.vue'
 
 ## priceToThousands
 
-<ClientOnly>
-  <description :isShowIcon="false" description="格式化金额，三位加一个逗号" /> 
-</ClientOnly>
+::: info 作用：格式化金额，三位加一个逗号
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="格式化金额，三位加一个逗号" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -138,9 +157,12 @@ import addZero from './addZero.vue'
 
 ## getDecimalPlaces
 
-<ClientOnly>
-  <description :isShowIcon="false" description="获取数值的小数位数" /> 
-</ClientOnly>
+::: info 作用：获取数值的小数位数
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="获取数值的小数位数" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -165,9 +187,12 @@ import addZero from './addZero.vue'
 
 ## addZero
 
-<ClientOnly>
-  <description :isShowIcon="false" description="在数值后加 .00" /> 
-</ClientOnly>
+::: info 作用：在数值后加 `.00`
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="在数值后加 `.00`" />
+</ClientOnly> -->
 
 ### 参数
 

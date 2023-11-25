@@ -1,19 +1,29 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(2)
+
 import nameCamelize from './nameCamelize.vue'
 import nameHyphenate from './nameHyphenate.vue'
 </script>
 
-# 横线、驼峰命名互转
+<!-- # 横线、驼峰命名互转 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+横线、驼峰命名互转
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="2" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## nameCamelize
 
-<ClientOnly>
-  <description :isShowIcon="false" description="横线转驼峰命名" /> 
-</ClientOnly>
+::: info 作用：横线转驼峰命名
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="横线转驼峰命名" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -38,9 +48,12 @@ import nameHyphenate from './nameHyphenate.vue'
 
 ## nameHyphenate
 
-<ClientOnly>
-  <description :isShowIcon="false" description="驼峰命名转横线命名：拆分字符串，使用 - 相连，并且全部转换为小写" /> 
-</ClientOnly>
+::: info 作用：驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写" />
+</ClientOnly> -->
 
 ### 参数
 

@@ -1,21 +1,31 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(4)
+
 import downloadByOnlineUrl from './downloadByOnlineUrl.vue'
 import downloadByBase64 from './downloadByBase64.vue'
 import downloadByData from './downloadByData.vue'
 import downloadByUrl from './downloadByUrl.vue'
 </script>
 
-# 下载相关函数
+<!-- # 下载 -->
 
-<ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+下载
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="4" :tagNameList="['浏览器']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## downloadByOnlineUrl
 
-<ClientOnly>
-  <description :isShowIcon="false" description="下载在线图片" /> 
-</ClientOnly>
+::: info 作用：下载在线图片
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="下载在线图片" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -43,9 +53,12 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ## downloadByBase64
 
-<ClientOnly>
-  <description :isShowIcon="false" description="基于 base64 下载图片" /> 
-</ClientOnly>
+::: info 作用：基于 `base64` 下载图片
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="基于 `base64` 下载图片" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -73,9 +86,12 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ## downloadByData
 
-<ClientOnly>
-  <description :isShowIcon="false" description="根据后台接口文件流下载" /> 
-</ClientOnly>
+::: info 作用：根据后台接口文件流下载
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="根据后台接口文件流下载" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -103,9 +119,12 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ## downloadByUrl
 
-<ClientOnly>
-  <description :isShowIcon="false" description="根据文件地址下载文件" /> 
-</ClientOnly>
+::: info 作用：根据文件地址下载文件
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="根据文件地址下载文件" />
+</ClientOnly> -->
 
 ### 参数
 

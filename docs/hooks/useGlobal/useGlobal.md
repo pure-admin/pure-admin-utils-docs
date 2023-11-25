@@ -4,9 +4,13 @@ import global from './global.vue'
 
 # useGlobal
 
-<ClientOnly>
-  <description description="获取实例中全局property" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`
+获取实例中全局 `property`
+:::
+
+<!-- <ClientOnly>
+  <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  />
+</ClientOnly> -->
 
 ## 基础用法
 

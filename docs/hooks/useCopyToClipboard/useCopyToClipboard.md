@@ -4,9 +4,13 @@ import copyToClipboard from './copyToClipboard.vue'
 
 # useCopyToClipboard
 
-<ClientOnly>
-  <description description="拷贝" :tagNameList="['Vue3']" /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`
+拷贝
+:::
+
+<!-- <ClientOnly>
+  <description description="拷贝" :tagNameList="['Vue3']" />
+</ClientOnly> -->
 
 ## 基础用法
 

@@ -1,21 +1,31 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(4)
+
 import removeLeftSpace from './removeLeftSpace.vue'
 import removeRightSpace from './removeRightSpace.vue'
 import removeBothSidesSpace from './removeBothSidesSpace.vue'
 import removeAllSpace from './removeAllSpace.vue'
 </script>
 
-# 去掉字符串空格相关函数
+<!-- # 去掉字符串空格 -->
 
-<ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+去掉字符串空格
+:::
+
+<!-- <ClientOnly>
   <description-popover :num="4" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+</ClientOnly> -->
 
 ## removeLeftSpace
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串左边空格" /> 
-</ClientOnly>
+::: info 作用：去掉字符串左边空格
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="去掉字符串左边空格" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -41,9 +51,12 @@ import removeAllSpace from './removeAllSpace.vue'
 
 ## removeRightSpace
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串右边空格" /> 
-</ClientOnly>
+::: info 作用：去掉字符串右边空格
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="去掉字符串右边空格" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -69,9 +82,12 @@ import removeAllSpace from './removeAllSpace.vue'
 
 ## removeBothSidesSpace
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串左右两边空格" /> 
-</ClientOnly>
+::: info 作用：去掉字符串左右两边空格
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="去掉字符串左右两边空格" />
+</ClientOnly> -->
 
 ### 参数
 
@@ -97,9 +113,12 @@ import removeAllSpace from './removeAllSpace.vue'
 
 ## removeAllSpace
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串全部空格" /> 
-</ClientOnly>
+::: info 作用：去掉字符串全部空格
+:::
+
+<!-- <ClientOnly>
+  <description :isShowIcon="false" description="去掉字符串全部空格" />
+</ClientOnly> -->
 
 ### 参数
 
