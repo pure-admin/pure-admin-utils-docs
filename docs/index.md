@@ -13,7 +13,7 @@ hero:
       text: 快速开始
       link: /guide/guide
     - theme: alt
-      text: 关注平台
+      text: 关注
       link: https://github.com/pure-admin
 
 features:

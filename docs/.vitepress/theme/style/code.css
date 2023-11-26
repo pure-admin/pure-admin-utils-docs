@@ -51,14 +51,14 @@ a > code {
   color: var(--vt-c-brand) !important;
 }
 
-.vp-doc [class*="language-"] pre {
+/* .vp-doc [class*="language-"] pre {
   padding: 24px;
-}
+} */
 
-.vp-doc div[class*="language-"] {
+/* .vp-doc div[class*="language-"] {
   background: #fafafa;
-}
+} */
 
-html.dark .vp-doc div[class*="language-"] {
+/* html.dark .vp-doc div[class*="language-"] {
   background: #1d1d1d;
-}
+} */

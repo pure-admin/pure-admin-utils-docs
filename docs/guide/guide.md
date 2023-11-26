@@ -18,28 +18,37 @@ import describe from './describe.vue'
 
 ## 📦 安装
 
-```bash
-# pnpm
+::: code-group
+
+```bash [pnpm]
 pnpm add @pureadmin/utils
+```
 
-# or yarn
+```bash [yarn]
 yarn add @pureadmin/utils
+```
 
-# or npm
+```bash [npm]
 npm install @pureadmin/utils
 ```
 
+:::
+
 ## 📡 `CDN`
 
-```html
+::: code-group
+
+```html [unpkg]
 <!-- 提供包含所有方法的全局变量 PureUtils -->
-
-<!-- unpkg -->
 <script src="//unpkg.com/@pureadmin/utils"></script>
+```
 
-<!-- jsdelivr -->
+```html [jsdelivr]
+<!-- 提供包含所有方法的全局变量 PureUtils -->
 <script src="//cdn.jsdelivr.net/npm/@pureadmin/utils"></script>
 ```
+
+:::
 
 ## 📚 示例
 

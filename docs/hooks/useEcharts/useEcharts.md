@@ -20,7 +20,17 @@ import {
   Egauge,
   EpictorialBar,
   EthemeRiver
-} from './demo/index.ts'
+} from './demo/simple/index.ts'
+
+// 高级示例
+import { 
+  Edemo1,
+  Edemo2, 
+  Edemo3, 
+  Edemo4,
+  Edemo5,
+  Edemo6
+} from './demo/advanced/index.ts'
 </script>
 
 # useEcharts
@@ -33,22 +43,25 @@ import {
   <description description="兼容`echarts`所有`api`并且额外添加尺寸自适应容器和自动销毁等功能，`echarts`能实现的它都行" :tagNameList="['Vue3']"  />
 </ClientOnly> -->
 
-## 使用前提
+::: danger ⚠️注意：使用前提（下面代码全局引入了 `echarts`，也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)）
 
-- 将`echarts`绑定到全局`property`上，做法如下：(这里我全局引入了`echarts`，你也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)
+必须将 `echarts` 绑定到全局 [property](https://cn.vuejs.org/api/application.html#app-config-globalproperties) 如下
 
 ```ts
-// main.ts
+// main.ts // [!code focus]
 import { type App, createApp } from "vue";
 import App from "./App.vue";
 
-import * as echarts from "echarts";
+import * as echarts from "echarts"; // [!code focus]
 
 const app = createApp(App);
-app.config.globalProperties.$echarts = echarts;
+// 这里$echarts写法自由，起名a、b、c都行，只要保证等号右侧引入的是echarts即可 // [!code focus]
+app.config.globalProperties.$echarts = echarts; // [!code focus]
 
 app.mount("#app");
 ```
+
+:::
 
 ## 常用示例
 
@@ -61,7 +74,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/line.vue
+<<< @/hooks/useEcharts/demo/simple/line.vue
 
 </details>
 
@@ -74,7 +87,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/bar.vue
+<<< @/hooks/useEcharts/demo/simple/bar.vue
 
 </details>
 
@@ -87,7 +100,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/pie.vue
+<<< @/hooks/useEcharts/demo/simple/pie.vue
 
 </details>
 
@@ -100,7 +113,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/scatter.vue
+<<< @/hooks/useEcharts/demo/simple/scatter.vue
 
 </details>
 
@@ -113,7 +126,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/candlestick.vue
+<<< @/hooks/useEcharts/demo/simple/candlestick.vue
 
 </details>
 
@@ -126,7 +139,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/radar.vue
+<<< @/hooks/useEcharts/demo/simple/radar.vue
 
 </details>
 
@@ -139,7 +152,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/boxplot.vue
+<<< @/hooks/useEcharts/demo/simple/boxplot.vue
 
 </details>
 
@@ -152,7 +165,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/heatmap.vue
+<<< @/hooks/useEcharts/demo/simple/heatmap.vue
 
 </details>
 
@@ -165,7 +178,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/graph.vue
+<<< @/hooks/useEcharts/demo/simple/graph.vue
 
 </details>
 
@@ -178,7 +191,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/tree.vue
+<<< @/hooks/useEcharts/demo/simple/tree.vue
 
 </details>
 
@@ -191,7 +204,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/sunburst.vue
+<<< @/hooks/useEcharts/demo/simple/sunburst.vue
 
 </details>
 
@@ -204,7 +217,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/sankey.vue
+<<< @/hooks/useEcharts/demo/simple/sankey.vue
 
 </details>
 
@@ -217,7 +230,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/funnel.vue
+<<< @/hooks/useEcharts/demo/simple/funnel.vue
 
 </details>
 
@@ -230,7 +243,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/gauge.vue
+<<< @/hooks/useEcharts/demo/simple/gauge.vue
 
 </details>
 
@@ -243,7 +256,7 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/pictorialBar.vue
+<<< @/hooks/useEcharts/demo/simple/pictorialBar.vue
 
 </details>
 
@@ -256,10 +269,11 @@ app.mount("#app");
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/themeRiver.vue
+<<< @/hooks/useEcharts/demo/simple/themeRiver.vue
 
 </details>
 
+<!--
 ## 基础用法
 
 <ClientOnly>
@@ -335,4 +349,84 @@ type OptionsParams = {
 - `getInstance`：获取`ECharts`实例
 - `showLoading`：显示加载动画效果
 - `hideLoading`：隐藏加载动画
-- `getConnectedDataURL`：导出联动的图表图片，返回一个`base64`的`url`，可以设置为`Image`的`src`。导出图片中每个图表的相对位置跟容器的相对位置有关
+- `getConnectedDataURL`：导出联动的图表图片，返回一个`base64`的`url`，可以设置为`Image`的`src`。导出图片中每个图表的相对位置跟容器的相对位置有关 -->
+
+## 高级示例
+
+### demo1
+
+<ClientOnly>
+  <Edemo1 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo1.vue
+
+</details>
+
+### demo2
+
+<ClientOnly>
+  <Edemo2 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo2.vue
+
+</details>
+
+### demo3
+
+<ClientOnly>
+  <Edemo3 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo3.vue
+
+</details>
+
+### demo4
+
+<ClientOnly>
+  <Edemo4 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo4.vue
+
+</details>
+
+### demo5
+
+<ClientOnly>
+  <Edemo5 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo5.vue
+
+</details>
+
+### demo6
+
+<ClientOnly>
+  <Edemo6 />
+</ClientOnly>
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useEcharts/demo/advanced/demo6.vue
+
+</details>
