@@ -19,6 +19,7 @@ export default {
   ...DefaultTheme,
   async enhanceApp({ app }) {
     if (!import.meta.env.SSR) {
+      await import("echarts-gl");
       await import("../plugins/wordcloud");
     }
     app.use(naive);

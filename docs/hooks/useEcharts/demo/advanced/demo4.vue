@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { type Ref, ref, computed } from "vue";
 import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
-// 必须引入
-import "echarts-gl";
+// 必须引入，此处注释是因为echarts-gl对纯esm以及服务端支持不友好
+// 在此处引入了 https://github.com/pure-admin/pure-admin-utils-docs/blob/master/docs/.vitepress/theme/index.ts#L22
+// 对于vue3非服务端可以把import "echarts-gl"注释解开
+// import "echarts-gl";
 
 // 兼容dark主题
 const { isDark } = useDark();

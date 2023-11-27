@@ -2,7 +2,7 @@ import { nextTick, onBeforeMount, onMounted, onBeforeUnmount } from "vue";
 import { version } from "../../../package.json";
 
 export const addReleaseTag = () => {
-  if (document.querySelector("samp")) return;
+  if (typeof document === "undefined" || document.querySelector("samp")) return;
   const tagLineParagragh = document.querySelector(
     "div.VPHero.has-image.VPHomeHero > div > div.main > p.tagline"
   );
@@ -13,7 +13,12 @@ export const addReleaseTag = () => {
 };
 
 export const useAddNumInOutlineLabel = (num = 0) => {
-  if (document.querySelector("samp") || num === 0) return;
+  if (
+    typeof document === "undefined" ||
+    document.querySelector("samp") ||
+    num === 0
+  )
+    return;
   /** 保持全局唯一 */
   const className = "pureadminutils-outline-label-num";
   let outlines = [];
