@@ -27,7 +27,7 @@ setOptions({
       data: [
         {
           value: 50,
-          name: "SCORE"
+          name: "得分"
         }
       ]
     }

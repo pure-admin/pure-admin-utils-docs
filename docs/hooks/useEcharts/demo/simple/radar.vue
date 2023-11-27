@@ -18,18 +18,17 @@ setOptions({
   legend: {
     top: 10,
     left: "left",
-    data: ["Allocated Budget", "Actual Spending"]
+    data: ["支出", "收入"]
   },
   radar: {
     // shape: 'circle',
     radius: "60%",
     indicator: [
-      { name: "Sales" },
-      { name: "Administration" },
-      { name: "Information Technology" },
-      { name: "Customer Support" },
-      { name: "Development" },
-      { name: "Marketing" }
+      { name: "周一" },
+      { name: "周二" },
+      { name: "周三" },
+      { name: "周四" },
+      { name: "周五" }
     ]
   },
   series: [
@@ -38,12 +37,12 @@ setOptions({
       type: "radar",
       data: [
         {
-          value: [4200, 3000, 20000, 35000, 50000, 18000],
-          name: "Allocated Budget"
+          value: [30, 60, 90, 120, 150],
+          name: "支出"
         },
         {
-          value: [5000, 14000, 28000, 26000, 42000, 21000],
-          name: "Actual Spending"
+          value: [60, 90, 120, 150, 180],
+          name: "收入"
         }
       ]
     }

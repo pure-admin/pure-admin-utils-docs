@@ -23,7 +23,7 @@ setOptions({
   },
   series: [
     {
-      name: "Access From",
+      name: "统计",
       type: "pie",
       radius: ["40%", "70%"],
       avoidLabelOverlap: false,
@@ -47,11 +47,11 @@ setOptions({
         show: false
       },
       data: [
-        { value: 1048, name: "Search Engine" },
-        { value: 735, name: "Direct" },
-        { value: 580, name: "Email" },
-        { value: 484, name: "Union Ads" },
-        { value: 300, name: "Video Ads" }
+        { value: 100, name: "周一" },
+        { value: 200, name: "周二" },
+        { value: 300, name: "周三" },
+        { value: 400, name: "周四" },
+        { value: 500, name: "周五" }
       ]
     }
   ]

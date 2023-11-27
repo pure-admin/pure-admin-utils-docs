@@ -28,11 +28,11 @@ setOptions({
   },
   legend: {
     top: 20,
-    data: ["Show", "Click", "Visit", "Inquiry", "Order"]
+    data: ["周一", "周二", "周三", "周四", "周五"]
   },
   series: [
     {
-      name: "Funnel",
+      name: "剩余",
       type: "funnel",
       left: "10%",
       top: 60,
@@ -65,11 +65,11 @@ setOptions({
         }
       },
       data: [
-        { value: 60, name: "Visit" },
-        { value: 40, name: "Inquiry" },
-        { value: 20, name: "Order" },
-        { value: 80, name: "Click" },
-        { value: 100, name: "Show" }
+        { value: 20, name: "周五" },
+        { value: 40, name: "周四" },
+        { value: 60, name: "周三" },
+        { value: 80, name: "周二" },
+        { value: 100, name: "周一" }
       ]
     }
   ]
