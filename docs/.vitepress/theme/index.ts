@@ -12,7 +12,8 @@ import {
   Wordcloud,
   NaiveTheme,
   Description,
-  DescriptionPopover
+  DescriptionPopover,
+  ThemeChange
 } from "../../components";
 
 export default {
@@ -27,6 +28,7 @@ export default {
     app.component("naive-theme", NaiveTheme);
     app.component("description", Description);
     app.component("description-popover", DescriptionPopover);
+    app.component("theme-change", ThemeChange);
     app.use(useEcharts);
   }
 } satisfies Theme;

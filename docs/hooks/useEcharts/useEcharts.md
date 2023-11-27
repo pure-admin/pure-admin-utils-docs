@@ -353,6 +353,10 @@ type OptionsParams = {
 
 ## 高级示例
 
+<ClientOnly>
+  <theme-change />
+</ClientOnly>
+
 ### demo1
 
 <ClientOnly>
