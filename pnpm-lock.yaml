@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@esmjs/geo':
+    specifier: ^1.0.0
+    version: 1.0.0
   '@faker-js/faker':
     specifier: ^8.3.1
     version: 8.3.1
@@ -36,8 +39,8 @@ devDependencies:
     specifier: ^11.9.0
     version: 11.9.0
   marked:
-    specifier: ^10.0.0
-    version: 10.0.0
+    specifier: ^11.0.0
+    version: 11.0.0
   naive-ui:
     specifier: ^2.35.0
     version: 2.35.0(vue@3.3.9)
@@ -48,17 +51,17 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0
   typeit:
-    specifier: ^8.7.1
-    version: 8.7.1
+    specifier: ^8.8.0
+    version: 8.8.0
   typescript:
     specifier: ^5.3.2
     version: 5.3.2
   unocss:
     specifier: ^0.57.7
-    version: 0.57.7(postcss@8.4.31)(vite@5.0.2)
+    version: 0.57.7(postcss@8.4.31)(vite@5.0.4)
   vite:
-    specifier: ^5.0.2
-    version: 5.0.2
+    specifier: ^5.0.4
+    version: 5.0.4
   vitepress:
     specifier: 1.0.0-rc.31
     version: 1.0.0-rc.31(axios@1.6.2)(postcss@8.4.31)(typescript@5.3.2)
@@ -807,6 +810,10 @@ packages:
     dev: true
     optional: true
 
+  /@esmjs/geo@1.0.0:
+    resolution: {integrity: sha512-3SCq3raFmWmiUO/3Gq3F5klIJkQvFI/XcoXFHOutgTItkIaEVBG7l/UHVV8eZeW03GHoG1LrsK4LGSS3APhQEA==}
+    dev: true
+
   /@faker-js/faker@8.3.1:
     resolution: {integrity: sha512-FdgpFxY6V6rLZE9mmIBb9hM0xpfvQOSNOLnzolzKwsE1DH+gC7lEKV1p1IbR0lAYyvYd5a4u3qWJzowUkw1bIw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
@@ -1066,6 +1073,10 @@ packages:
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
     dev: true
 
+  /@types/web-animations-js@2.2.16:
+    resolution: {integrity: sha512-ATELeWMFwj8eQiH0KmvsCl1V2lu/qx/CjOBmv4ADSZS5u8r4reMyjCXtxG7khqyiwH3IOMNdrON/Ugn94OUcRA==}
+    dev: true
+
   /@types/web-bluetooth@0.0.20:
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
     dev: true
@@ -1074,7 +1085,7 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@unocss/astro@0.57.7(vite@5.0.2):
+  /@unocss/astro@0.57.7(vite@5.0.4):
     resolution: {integrity: sha512-X4KSBdrAADdtS4x7xz02b016xpRDt9mD/d/oq23HyZAZ+sZc4oZs8el9MLSUJgu2okdWzAE62lRRV/oc4HWI1A==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
@@ -1084,8 +1095,8 @@ packages:
     dependencies:
       '@unocss/core': 0.57.7
       '@unocss/reset': 0.57.7
-      '@unocss/vite': 0.57.7(vite@5.0.2)
-      vite: 5.0.2
+      '@unocss/vite': 0.57.7(vite@5.0.4)
+      vite: 5.0.4
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1268,7 +1279,7 @@ packages:
       '@unocss/core': 0.57.7
     dev: true
 
-  /@unocss/vite@0.57.7(vite@5.0.2):
+  /@unocss/vite@0.57.7(vite@5.0.4):
     resolution: {integrity: sha512-SbJrRgfc35MmgMBlHaEK4YpJVD2B0bmxH9PVgHRuDae/hOEOG0VqNP0f2ijJtX9HG3jOpQVlbEoGnUo8jsZtsw==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
@@ -1283,7 +1294,7 @@ packages:
       chokidar: 3.5.3
       fast-glob: 3.3.2
       magic-string: 0.30.5
-      vite: 5.0.2
+      vite: 5.0.4
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -1292,14 +1303,14 @@ packages:
     resolution: {integrity: sha512-Iy1EUVRpX0WWxeu1VIReR1zsZLMc4fqpt223czR+Rpnrwu7pt46nbnC2ycO7ItI/uqDLJxnbcMC7FujKs9IfFA==}
     dev: true
 
-  /@vitejs/plugin-vue@4.5.0(vite@5.0.2)(vue@3.3.9):
+  /@vitejs/plugin-vue@4.5.0(vite@5.0.4)(vue@3.3.9):
     resolution: {integrity: sha512-a2WSpP8X8HTEww/U00bU4mX1QpLINNuz/2KMNpLsdu3BzOpak3AGI1CJYBTXcc4SPhaD0eNRUp7IyQK405L5dQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.0.2
+      vite: 5.0.4
       vue: 3.3.9(typescript@5.3.2)
     dev: true
 
@@ -2163,8 +2174,8 @@ packages:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
     dev: true
 
-  /marked@10.0.0:
-    resolution: {integrity: sha512-YiGcYcWj50YrwBgNzFoYhQ1hT6GmQbFG8SksnYJX1z4BXTHSOrz1GB5/Jm2yQvMg4nN1FHP4M6r03R10KrVUiA==}
+  /marked@11.0.0:
+    resolution: {integrity: sha512-2GsW34uXaFEGTQ/+3rCnNC6vUYTAgFuDLGl70v/aWinA5mIJtTrrFAmfbLOfVvgPyxXuDVL9He/7reCK+6j3Sw==}
     engines: {node: '>= 18'}
     hasBin: true
     dev: true
@@ -2571,9 +2582,11 @@ packages:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
     dev: true
 
-  /typeit@8.7.1:
-    resolution: {integrity: sha512-Bx/O4NMz10NWh9FWYtVwV4XwGHF9UDJfpCZPJRtw2/oUcahFAStU8J0t19aroPfTV6s1UlS5ICoqilOqmEnh2Q==}
+  /typeit@8.8.0:
+    resolution: {integrity: sha512-GQp6OW7vxro1HN3F7UPL0C2KzkGs8bFtUgmJSeK+xNhdofI40mkWxrBT2AXQwtS5Txkg7ttwplxvWCQxnUXyrw==}
     requiresBuild: true
+    dependencies:
+      '@types/web-animations-js': 2.2.16
     dev: true
 
   /typescript@5.3.2:
@@ -2628,7 +2641,7 @@ packages:
       unist-util-visit-parents: 6.0.1
     dev: true
 
-  /unocss@0.57.7(postcss@8.4.31)(vite@5.0.2):
+  /unocss@0.57.7(postcss@8.4.31)(vite@5.0.4):
     resolution: {integrity: sha512-Z99ZZPkbkjIUXEM7L+K/7Y5V5yqUS0VigG7ZIFzLf/npieKmXHKlrPyvQWFQaf3OqooMFuKBQivh75TwvSOkcQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2640,7 +2653,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      '@unocss/astro': 0.57.7(vite@5.0.2)
+      '@unocss/astro': 0.57.7(vite@5.0.4)
       '@unocss/cli': 0.57.7
       '@unocss/core': 0.57.7
       '@unocss/extractor-arbitrary-variants': 0.57.7
@@ -2659,8 +2672,8 @@ packages:
       '@unocss/transformer-compile-class': 0.57.7
       '@unocss/transformer-directives': 0.57.7
       '@unocss/transformer-variant-group': 0.57.7
-      '@unocss/vite': 0.57.7(vite@5.0.2)
-      vite: 5.0.2
+      '@unocss/vite': 0.57.7(vite@5.0.4)
+      vite: 5.0.4
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -2718,8 +2731,8 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite@5.0.2:
-    resolution: {integrity: sha512-6CCq1CAJCNM1ya2ZZA7+jS2KgnhbzvxakmlIjN24cF/PXhRMzpM/z8QgsVJA/Dm5fWUWnVEsmtBoMhmerPxT0g==}
+  /vite@5.0.4:
+    resolution: {integrity: sha512-RzAr8LSvM8lmhB4tQ5OPcBhpjOZRZjuxv9zO5UcxeoY2bd3kP3Ticd40Qma9/BqZ8JS96Ll/jeBX9u+LJZrhVg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2768,7 +2781,7 @@ packages:
       '@docsearch/css': 3.5.2
       '@docsearch/js': 3.5.2
       '@types/markdown-it': 13.0.7
-      '@vitejs/plugin-vue': 4.5.0(vite@5.0.2)(vue@3.3.9)
+      '@vitejs/plugin-vue': 4.5.0(vite@5.0.4)(vue@3.3.9)
       '@vue/devtools-api': 6.5.1
       '@vueuse/core': 10.6.1(vue@3.3.9)
       '@vueuse/integrations': 10.6.1(axios@1.6.2)(focus-trap@7.5.4)(vue@3.3.9)
@@ -2779,7 +2792,7 @@ packages:
       postcss: 8.4.31
       shikiji: 0.7.4
       shikiji-transformers: 0.7.4
-      vite: 5.0.2
+      vite: 5.0.4
       vue: 3.3.9(typescript@5.3.2)
     transitivePeerDependencies:
       - '@algolia/client-search'

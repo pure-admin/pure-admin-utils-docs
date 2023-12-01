@@ -1,6 +1,5 @@
 <script setup lang="ts">
-// geo-china.json数据来源：https://datav.aliyun.com/portal/school/atlas/area_selector
-import geoChina from "./geo-china.json";
+import { china } from "@esmjs/geo";
 import { type Ref, ref, computed } from "vue";
 import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
 
@@ -17,7 +16,7 @@ const { echarts, setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, {
 });
 
 // @ts-expect-error
-echarts.registerMap("china", { geoJSON: geoChina });
+echarts.registerMap("china", { geoJSON: china });
 
 let geoCoordMap = {
   上海: [121.4648, 31.2891],
