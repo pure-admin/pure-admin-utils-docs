@@ -1,10 +1,14 @@
 {
-  "compilerOptions": {
-    "jsx": "react"
-  },
-  "compilerOptions": {
-    "jsx": "react"
-  },
   // https://v3.nuxtjs.org/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "5.0",
+    "suppressImplicitAnyIndexErrors": true,
+    "types": [
+      "element-plus/global",
+      "@nuxtjs/tailwindcss",
+    ]
+  }
 }
