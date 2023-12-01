@@ -5,7 +5,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "HOST=0.0.0.0 nuxt preview",
     "postinstall": "nuxt prepare",
     "format": "prettier --check --write ."
   },

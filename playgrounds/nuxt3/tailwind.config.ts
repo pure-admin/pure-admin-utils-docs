@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 export default <Partial<Config>>{
   darkMode: "class",
   corePlugins: {
-    preflight: true
+    preflight: false
   },
   content: [
     "./components/**/*.{vue,js,ts}",
