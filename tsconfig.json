@@ -19,7 +19,6 @@
     "resolveJsonModule": true,
     "lib": ["ESNext", "DOM"],
     "types": [
-      "node",
       "vitepress",
       "vite/client",
       "naive-ui/volar",
