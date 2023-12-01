@@ -4,7 +4,7 @@ import draggable from './draggable.vue'
 
 # useDraggable
 
-::: tip 适用于 `Vue3`
+::: tip 适用于 `Vue3`、`Nuxt3`
 使元素可拖动
 :::
 

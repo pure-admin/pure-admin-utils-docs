@@ -4,7 +4,7 @@ import copyToClipboard from './copyToClipboard.vue'
 
 # useCopyToClipboard
 
-::: tip 适用于 `Vue3`
+::: tip 适用于 `Vue3`、`Nuxt3`（后续将支持`React`和`Next`）
 拷贝
 :::
 

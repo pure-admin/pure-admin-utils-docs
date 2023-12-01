@@ -4,7 +4,7 @@ import global from './global.vue'
 
 # useGlobal
 
-::: tip 适用于 `Vue3`
+::: tip 适用于 `Vue3`、`Nuxt3`
 获取实例中全局 `property`
 :::
 

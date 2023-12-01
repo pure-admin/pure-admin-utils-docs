@@ -4,7 +4,7 @@ import watermark from './watermark.vue'
 
 # useWatermark
 
-::: tip 适用于 `Vue3`
+::: tip 适用于 `Vue3`、`Nuxt3`（后续将支持`React`和`Next`）
 给元素加水印
 :::
 

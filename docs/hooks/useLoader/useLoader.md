@@ -4,7 +4,7 @@ import loaders from './loaders.vue'
 
 # useLoader
 
-::: tip 适用于 `Vue3`
+::: tip 适用于 `Vue3`、`Nuxt3`（后续将支持`React`和`Next`）
 使用 `Promise` 动态加载 `link` 和 `script` 标签  
 不会重复加载相同 `src` 的标签，在生命周期销毁时默认会自动移除标签
 :::
