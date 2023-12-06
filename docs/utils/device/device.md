@@ -12,18 +12,14 @@ import getBrowserInfo from './getBrowserInfo.vue'
 检测设备类型，获取浏览器型号以及版本
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="2" :tagNameList="['浏览器']" />
-</ClientOnly> -->
+<!-- <description-popover :num="2" :tagNameList="['浏览器']" /> -->
 
 ## deviceDetection
 
 ::: info 作用：检测设备类型（`mobile` 返回 `true`，反之）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="检测设备类型（`mobile` 返回 `true`，反之）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="检测设备类型（`mobile` 返回 `true`，反之）" /> -->
 
 ### 基础用法
 
@@ -43,9 +39,7 @@ import getBrowserInfo from './getBrowserInfo.vue'
 ::: info 作用：获取浏览器型号以及版本
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取浏览器型号以及版本" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取浏览器型号以及版本" /> -->
 
 ### 类型声明
 
