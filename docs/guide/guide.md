@@ -53,3 +53,7 @@ npm install @pureadmin/utils
 集成 `vue-vite`、`vue-cli`、`preact`、`react`、`solid`、`svelte`、`nuxt3`、`next`、`node`、`html` 使用示例
 
 [查看示例代码](https://github.com/pure-admin/pure-admin-utils-docs/tree/master/playgrounds)
+
+## 🤔 问题反馈
+
+[点击去反馈问题](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)
