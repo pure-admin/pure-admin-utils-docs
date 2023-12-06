@@ -15,6 +15,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "format": "prettier --check --write .",
+    "clean": "pnpm store prune && pnpm install",
     "preview": "pnpm build && vitepress serve docs --port 8084"
   },
   "license": "MIT",
@@ -29,7 +30,7 @@
     "@pureadmin/utils": "^1.9.17",
     "@vicons/ionicons5": "^0.12.0",
     "@vue-macros/reactivity-transform": "^0.4.0",
-    "@vueuse/core": "^10.6.1",
+    "@vueuse/core": "^10.7.0",
     "axios": "^1.6.2",
     "echarts": "^5.4.3",
     "echarts-gl": "^2.0.9",
@@ -41,10 +42,10 @@
     "prettier": "^3.1.0",
     "typeit": "^8.8.0",
     "typescript": "^5.3.2",
-    "unocss": "^0.57.7",
-    "vite": "^5.0.4",
+    "unocss": "^0.58.0",
+    "vite": "^5.0.5",
     "vitepress": "1.0.0-rc.31",
-    "vue": "^3.3.9"
+    "vue": "^3.3.10"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0",
