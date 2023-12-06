@@ -11,18 +11,14 @@ import convertPath from './convertPath.vue'
 路径转换
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="1" :tagNameList="['Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="1" :tagNameList="['Node']" /> -->
 
 ## convertPath
 
 ::: info 作用：将 `Windows` 反斜杠路径转换为斜杠路径
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="将 Windows 反斜杠路径转换为斜杠路径" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="将 Windows 反斜杠路径转换为斜杠路径" /> -->
 
 ### 参数
 
@@ -34,9 +30,8 @@ import convertPath from './convertPath.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <convertPath />
-</ClientOnly>
+<convertPath />
+
 <details>
 
 <summary>查看代码</summary>
