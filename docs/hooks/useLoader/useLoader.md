@@ -9,9 +9,7 @@ import loaders from './loaders.vue'
 不会重复加载相同 `src` 的标签，在生命周期销毁时默认会自动移除标签
 :::
 
-
 <!-- <description description="使用`Promise`来动态加载`link`和`script`标签" :tagNameList="['Vue3']"  /> -->
-
 
 ## 基础用法
 

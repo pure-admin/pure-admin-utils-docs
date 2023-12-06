@@ -8,9 +8,7 @@ import watermark from './watermark.vue'
 给元素加水印
 :::
 
-
 <!-- <description description="给元素加水印" :tagNameList="['Vue3']"  /> -->
-
 
 ## 基础用法
 

@@ -8,9 +8,7 @@ import global from './global.vue'
 获取实例中全局 `property`
 :::
 
-
 <!-- <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  /> -->
-
 
 ## 基础用法
 
