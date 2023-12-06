@@ -56,4 +56,4 @@ npm install @pureadmin/utils
 
 ## 🤔 问题反馈
 
-[点击去反馈问题](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)
+[反馈问题](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)
