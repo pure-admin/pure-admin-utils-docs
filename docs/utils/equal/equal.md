@@ -13,18 +13,14 @@ import isEqualObject from './isEqualObject.vue'
 判断两者是否相等
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
 
 ## isEqual
 
 ::: info 作用：判断两者是否相等
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="判断两者是否相等" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="判断两者是否相等" /> -->
 
 ### 参数
 
@@ -40,6 +36,7 @@ import isEqualObject from './isEqualObject.vue'
 <ClientOnly>
   <isEqual />
 </ClientOnly>
+
 <details>
 
 <summary>查看代码</summary>
@@ -53,9 +50,7 @@ import isEqualObject from './isEqualObject.vue'
 ::: info 作用：判断两个对象是否相等
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="判断两个对象是否相等" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="判断两个对象是否相等" /> -->
 
 ### 参数
 
@@ -68,9 +63,8 @@ import isEqualObject from './isEqualObject.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <isEqualObject />
-</ClientOnly>
+<isEqualObject />
+
 <details>
 
 <summary>查看代码</summary>
@@ -84,9 +78,7 @@ import isEqualObject from './isEqualObject.vue'
 ::: info 作用：判断两个数组是否相等
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="判断两个数组是否相等" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="判断两个数组是否相等" /> -->
 
 ### 参数
 
@@ -99,9 +91,8 @@ import isEqualObject from './isEqualObject.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <isEqualArray />
-</ClientOnly>
+<isEqualArray />
+
 <details>
 
 <summary>查看代码</summary>
