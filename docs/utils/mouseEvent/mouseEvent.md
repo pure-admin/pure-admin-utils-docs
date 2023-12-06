@@ -12,18 +12,14 @@ import allowMouseEvent from './allowMouseEvent.vue'
 禁止、允许指定的鼠标事件
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="2" />
-</ClientOnly> -->
+<!-- <description-popover :num="2" /> -->
 
 ## banMouseEvent
 
 ::: info 作用：禁止指定的鼠标事件
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="禁止指定的鼠标事件" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="禁止指定的鼠标事件" /> -->
 
 ### 参数
 
@@ -35,9 +31,8 @@ import allowMouseEvent from './allowMouseEvent.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <banMouseEvent />
-</ClientOnly>
+<banMouseEvent />
+
 <details>
 
 <summary>查看代码</summary>
@@ -51,9 +46,7 @@ import allowMouseEvent from './allowMouseEvent.vue'
 ::: info 作用：允许指定的鼠标事件
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="允许指定的鼠标事件" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="允许指定的鼠标事件" /> -->
 
 ### 参数
 
@@ -65,9 +58,8 @@ import allowMouseEvent from './allowMouseEvent.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <allowMouseEvent />
-</ClientOnly>
+<allowMouseEvent />
+
 <details>
 
 <summary>查看代码</summary>

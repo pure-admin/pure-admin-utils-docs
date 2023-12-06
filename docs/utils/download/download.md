@@ -14,18 +14,14 @@ import downloadByUrl from './downloadByUrl.vue'
 下载
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="4" :tagNameList="['浏览器']" />
-</ClientOnly> -->
+<!-- <description-popover :num="4" :tagNameList="['浏览器']" /> -->
 
 ## downloadByOnlineUrl
 
 ::: info 作用：下载在线图片
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="下载在线图片" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="下载在线图片" /> -->
 
 ### 参数
 
@@ -40,9 +36,8 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <downloadByOnlineUrl />
-</ClientOnly>
+<downloadByOnlineUrl />
+
 <details>
 
 <summary>查看代码</summary>
@@ -56,9 +51,7 @@ import downloadByUrl from './downloadByUrl.vue'
 ::: info 作用：基于 `base64` 下载图片
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="基于 `base64` 下载图片" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="基于 `base64` 下载图片" /> -->
 
 ### 参数
 
@@ -73,9 +66,8 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <downloadByBase64 />
-</ClientOnly>
+<downloadByBase64 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -89,9 +81,7 @@ import downloadByUrl from './downloadByUrl.vue'
 ::: info 作用：根据后台接口文件流下载
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="根据后台接口文件流下载" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="根据后台接口文件流下载" /> -->
 
 ### 参数
 
@@ -106,9 +96,8 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <downloadByData />
-</ClientOnly>
+<downloadByData />
+
 <details>
 
 <summary>查看代码</summary>
@@ -122,9 +111,7 @@ import downloadByUrl from './downloadByUrl.vue'
 ::: info 作用：根据文件地址下载文件
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="根据文件地址下载文件" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="根据文件地址下载文件" /> -->
 
 ### 参数
 
@@ -152,9 +139,8 @@ import downloadByUrl from './downloadByUrl.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <downloadByUrl />
-</ClientOnly>
+<downloadByUrl />
+
 <details>
 
 <summary>查看代码</summary>

@@ -11,18 +11,14 @@ import formDataHander from './formDataHander.vue'
 处理 `FormData` 传参
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="1" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="1" :tagNameList="['浏览器','Node']" /> -->
 
 ## formDataHander
 
 ::: info 作用：处理 `FormData` 传参
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="处理 `FormData` 传参" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="处理 `FormData` 传参" /> -->
 
 ### 参数
 
@@ -34,9 +30,8 @@ import formDataHander from './formDataHander.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <formDataHander />
-</ClientOnly>
+<formDataHander />
+
 <details>
 
 <summary>查看代码</summary>
