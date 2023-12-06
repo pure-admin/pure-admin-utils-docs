@@ -16,18 +16,14 @@ import getTime from './getTime.vue'
 时间、日期
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="6" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="6" :tagNameList="['浏览器','Node']" /> -->
 
 ## getCurrentWeek
 
 ::: info 作用：获取当前是星期几
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取当前是星期几" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取当前是星期几" /> -->
 
 ### 参数
 
@@ -39,9 +35,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getCurrentWeek />
-</ClientOnly>
+<getCurrentWeek />
+
 <details>
 
 <summary>查看代码</summary>
@@ -55,9 +50,7 @@ import getTime from './getTime.vue'
 ::: info 作用：获取指定日期月份的总天数
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取指定日期月份的总天数" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取指定日期月份的总天数" /> -->
 
 ### 参数
 
@@ -69,9 +62,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <monthDays />
-</ClientOnly>
+<monthDays />
+
 <details>
 
 <summary>查看代码</summary>
@@ -85,9 +77,7 @@ import getTime from './getTime.vue'
 ::: info 作用：获取从当前年份到开始年份的数组
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取从当前年份到开始年份的数组" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取从当前年份到开始年份的数组" /> -->
 
 ### 参数
 
@@ -99,9 +89,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <createYear />
-</ClientOnly>
+<createYear />
+
 <details>
 
 <summary>查看代码</summary>
@@ -115,9 +104,7 @@ import getTime from './getTime.vue'
 ::: info 作用：获取当前的日期
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取当前的日期" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取当前的日期" /> -->
 
 ### 参数
 
@@ -140,9 +127,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getCurrentDate />
-</ClientOnly>
+<getCurrentDate />
+
 <details>
 
 <summary>查看代码</summary>
@@ -156,9 +142,7 @@ import getTime from './getTime.vue'
 ::: info 作用：获取格式化后的当前日期
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取格式化后的当前日期" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取格式化后的当前日期" /> -->
 
 ### 参数
 
@@ -170,9 +154,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <dateFormat />
-</ClientOnly>
+<dateFormat />
+
 <details>
 
 <summary>查看代码</summary>
@@ -186,10 +169,7 @@ import getTime from './getTime.vue'
 ::: info 作用：将秒转换为时、分、秒
 :::
 
-<!--
-<ClientOnly>
-  <description :isShowIcon="false" description="将秒转换为时、分、秒" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="将秒转换为时、分、秒" /> -->
 
 ### 参数
 
@@ -206,9 +186,8 @@ import getTime from './getTime.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getTime />
-</ClientOnly>
+<getTime />
+
 <details>
 
 <summary>查看代码</summary>
