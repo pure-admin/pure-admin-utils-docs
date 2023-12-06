@@ -12,18 +12,14 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 图片 `url` 转 `base64`、`base64` 转 `blob`
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="2" />
-</ClientOnly> -->
+<!-- <description-popover :num="2" /> -->
 
 ## urlToBase64
 
 ::: info 作用：图片 `url` 转 `base64`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="图片url转base64" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="图片url转base64" /> -->
 
 ### 参数
 
@@ -37,9 +33,8 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <urlToBase64 />
-</ClientOnly>
+<urlToBase64 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -53,9 +48,7 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 ::: info 作用：`base64` 转 `blob`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="base64转blob" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="base64转blob" /> -->
 
 ### 参数
 
@@ -70,6 +63,7 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 <ClientOnly>
   <dataURLtoBlob />
 </ClientOnly>
+
 <details>
 
 <summary>查看代码</summary>
