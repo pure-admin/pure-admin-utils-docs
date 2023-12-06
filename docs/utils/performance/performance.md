@@ -11,24 +11,19 @@ import getPerformance from './getPerformance.vue'
 浏览器性能计时信息
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="1" :tagNameList="['浏览器']" />
-</ClientOnly> -->
+<!-- <description-popover :num="1" :tagNameList="['浏览器']" /> -->
 
 ## getPerformance
 
 ::: info 作用：获取当前页面在加载和使用期间发生各种事件的性能计时信息
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取当前页面在加载和使用期间发生各种事件的性能计时信息" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取当前页面在加载和使用期间发生各种事件的性能计时信息" /> -->
 
 ### 基础用法
 
-<ClientOnly>
-  <getPerformance />
-</ClientOnly>
+<getPerformance />
+
 <details>
 
 <summary>查看代码</summary>
