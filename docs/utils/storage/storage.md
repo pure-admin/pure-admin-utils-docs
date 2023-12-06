@@ -12,9 +12,7 @@ import storageSession from './storageSession.vue'
 本地存储
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="2" :tagNameList="['浏览器']" />
-</ClientOnly> -->
+<!-- <description-popover :num="2" :tagNameList="['浏览器']" /> -->
 
 ### storageLocal、storageSession 方法
 
@@ -30,15 +28,11 @@ import storageSession from './storageSession.vue'
 ::: info 作用：处理 `localStorage`
 :::
 
-<ClientOnly>
-  <description :isShowIcon="false" description="处理 `localStorage`" /> 
-</ClientOnly>
+<!-- <description :isShowIcon="false" description="处理 `localStorage`" />  -->
 
 ### 基础用法
 
-<ClientOnly>
-  <storageLocal />
-</ClientOnly>
+<storageLocal />
 
 <details>
 
@@ -53,15 +47,11 @@ import storageSession from './storageSession.vue'
 ::: info 作用：处理 `sessionStorage`
 :::
 
-<ClientOnly>
-  <description :isShowIcon="false" description="处理 `sessionStorage`" /> 
-</ClientOnly>
+<!-- <description :isShowIcon="false" description="处理 `sessionStorage`" />  -->
 
 ### 基础用法
 
-<ClientOnly>
-  <storageSession />
-</ClientOnly>
+<storageSession />
 
 <details>
 

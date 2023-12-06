@@ -15,18 +15,14 @@ import toggleClass from './toggleClass.vue'
 处理元素类名
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="5" />
-</ClientOnly> -->
+<!-- <description-popover :num="5" /> -->
 
 ## hasClass
 
 ::: info 作用：判断元素是否存在指定类名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="判断元素是否存在指定类名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="判断元素是否存在指定类名" /> -->
 
 ### 参数
 
@@ -39,9 +35,8 @@ import toggleClass from './toggleClass.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <hasClass />
-</ClientOnly>
+<hasClass />
+
 <details>
 
 <summary>查看代码</summary>
@@ -55,9 +50,7 @@ import toggleClass from './toggleClass.vue'
 ::: info 作用：获取当前元素的所有类名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取当前元素的所有类名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取当前元素的所有类名" /> -->
 
 ### 参数
 
@@ -69,9 +62,9 @@ import toggleClass from './toggleClass.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getClass />
-</ClientOnly>
+
+<getClass />
+
 <details>
 
 <summary>查看代码</summary>
@@ -85,9 +78,7 @@ import toggleClass from './toggleClass.vue'
 ::: info 作用：向当前元素添加指定类名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="向当前元素添加指定类名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="向当前元素添加指定类名" /> -->
 
 ### 参数
 
@@ -101,9 +92,8 @@ import toggleClass from './toggleClass.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <addClass />
-</ClientOnly>
+<addClass />
+
 <details>
 
 <summary>查看代码</summary>
@@ -117,9 +107,7 @@ import toggleClass from './toggleClass.vue'
 ::: info 作用：删除当前元素的指定类名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="删除当前元素的指定类名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="删除当前元素的指定类名" /> -->
 
 ### 参数
 
@@ -133,9 +121,8 @@ import toggleClass from './toggleClass.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <removeClass />
-</ClientOnly>
+<removeClass />
+
 <details>
 
 <summary>查看代码</summary>
@@ -149,9 +136,7 @@ import toggleClass from './toggleClass.vue'
 ::: info 作用：是否向当前元素添加指定类名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="是否向当前元素添加指定类名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="是否向当前元素添加指定类名" /> -->
 
 ### 参数
 
@@ -165,9 +150,8 @@ import toggleClass from './toggleClass.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <toggleClass />
-</ClientOnly>
+<toggleClass />
+
 <details>
 
 <summary>查看代码</summary>

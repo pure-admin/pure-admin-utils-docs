@@ -11,18 +11,14 @@ import links from './link.vue'
 超链接
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="1" :tagNameList="['浏览器']" />
-</ClientOnly> -->
+<!-- <description-popover :num="1" :tagNameList="['浏览器']" /> -->
 
 ## openLink
 
 ::: info 作用：创建超链接
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="创建超链接" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="创建超链接" /> -->
 
 ### 参数
 
@@ -49,9 +45,7 @@ import links from './link.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <links />
-</ClientOnly>
+<links />
 
 <details>
 
