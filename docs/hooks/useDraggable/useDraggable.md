@@ -8,15 +8,12 @@ import draggable from './draggable.vue'
 使元素可拖动
 :::
 
-<!-- <ClientOnly>
-  <description description="使元素可拖动" :tagNameList="['Vue3']"  />
-</ClientOnly> -->
+<!-- <description description="使元素可拖动" :tagNameList="['Vue3']"  /> -->
 
 ## 基础用法
 
-<ClientOnly>
-  <draggable />
-</ClientOnly>
+<draggable />
+
 <details>
 
 <summary>查看代码</summary>

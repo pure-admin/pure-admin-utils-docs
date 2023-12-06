@@ -8,15 +8,12 @@ import copyToClipboard from './copyToClipboard.vue'
 拷贝
 :::
 
-<!-- <ClientOnly>
-  <description description="拷贝" :tagNameList="['Vue3']" />
-</ClientOnly> -->
+<!-- <description description="拷贝" :tagNameList="['Vue3']" /> -->
 
 ## 基础用法
 
-<ClientOnly>
-  <copyToClipboard />
-</ClientOnly>
+<copyToClipboard />
+
 <details>
 
 <summary>查看代码</summary>

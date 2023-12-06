@@ -16,18 +16,14 @@ import addZero from './addZero.vue'
 转换金额
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="6" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="6" :tagNameList="['浏览器','Node']" /> -->
 
 ## centsToDollars
 
 ::: info 作用：分转元
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="分转元" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="分转元" /> -->
 
 ### 参数
 
@@ -40,9 +36,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <centsToDollars />
-</ClientOnly>
+<centsToDollars />
+
 <details>
 
 <summary>查看代码</summary>
@@ -56,9 +51,7 @@ import addZero from './addZero.vue'
 ::: info 作用：元转分
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="元转分" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="元转分" /> -->
 
 ### 参数
 
@@ -71,9 +64,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <dollarsToCents />
-</ClientOnly>
+<dollarsToCents />
+
 <details>
 
 <summary>查看代码</summary>
@@ -87,9 +79,7 @@ import addZero from './addZero.vue'
 ::: info 作用：金额转大写汉字（支持小数位）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="金额转大写汉字（支持小数位）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="金额转大写汉字（支持小数位）" /> -->
 
 ### 参数
 
@@ -102,9 +92,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <priceUppercase />
-</ClientOnly>
+<priceUppercase />
+
 <details>
 
 <summary>查看代码</summary>
@@ -118,9 +107,7 @@ import addZero from './addZero.vue'
 ::: info 作用：格式化金额，三位加一个逗号
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="格式化金额，三位加一个逗号" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="格式化金额，三位加一个逗号" /> -->
 
 ### 参数
 
@@ -144,9 +131,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <priceToThousands />
-</ClientOnly>
+<priceToThousands />
+
 <details>
 
 <summary>查看代码</summary>
@@ -160,9 +146,7 @@ import addZero from './addZero.vue'
 ::: info 作用：获取数值的小数位数
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取数值的小数位数" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取数值的小数位数" /> -->
 
 ### 参数
 
@@ -174,9 +158,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getDecimalPlaces />
-</ClientOnly>
+<getDecimalPlaces />
+
 <details>
 
 <summary>查看代码</summary>
@@ -190,9 +173,7 @@ import addZero from './addZero.vue'
 ::: info 作用：在数值后加 `.00`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="在数值后加 `.00`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="在数值后加 `.00`" /> -->
 
 ### 参数
 
@@ -204,9 +185,8 @@ import addZero from './addZero.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <addZero />
-</ClientOnly>
+<addZero />
+
 <details>
 
 <summary>查看代码</summary>

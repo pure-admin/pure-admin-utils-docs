@@ -13,24 +13,19 @@ import uuid from './uuid.vue'
 uuid
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
 
 ## buildUUID
 
 ::: info 作用：生成 `32` 位 `uuid`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="生成 `32` 位 `uuid`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="生成 `32` 位 `uuid`" /> -->
 
 ### 基础用法
 
-<ClientOnly>
-  <buildUUID />
-</ClientOnly>
+<buildUUID />
+
 <details>
 
 <summary>查看代码</summary>
@@ -44,9 +39,7 @@ uuid
 ::: info 作用：生成自定义前缀的 `uuid`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="生成自定义前缀的 `uuid`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="生成自定义前缀的 `uuid`" /> -->
 
 ### 参数
 
@@ -58,9 +51,8 @@ uuid
 
 ### 基础用法
 
-<ClientOnly>
-  <buildPrefixUUID />
-</ClientOnly>
+<buildPrefixUUID />
+
 <details>
 
 <summary>查看代码</summary>
@@ -74,9 +66,7 @@ uuid
 ::: info 作用：生成指定长度和基数的 `uuid`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="生成指定长度和基数的 `uuid`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="生成指定长度和基数的 `uuid`" /> -->
 
 ### 参数
 
@@ -90,9 +80,8 @@ uuid
 
 ### 基础用法
 
-<ClientOnly>
-  <uuid />
-</ClientOnly>
+<uuid />
+
 <details>
 
 <summary>查看代码</summary>

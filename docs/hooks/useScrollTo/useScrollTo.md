@@ -9,15 +9,14 @@ import horizontalScrollTo from './horizontalScrollTo.vue'
 使滚动对象缓动
 :::
 
-<!-- <ClientOnly>
-  <description description="使滚动对象缓动" :tagNameList="['Vue3']" />
-</ClientOnly> -->
+
+<!-- <description description="使滚动对象缓动" :tagNameList="['Vue3']" /> -->
+
 
 ## 纵向缓动
 
-<ClientOnly>
-  <verticalScrollTo />
-</ClientOnly>
+<verticalScrollTo />
+
 <details>
 
 <summary>查看代码</summary>
@@ -28,9 +27,8 @@ import horizontalScrollTo from './horizontalScrollTo.vue'
 
 ## 横向缓动
 
-<ClientOnly>
-  <horizontalScrollTo />
-</ClientOnly>
+<horizontalScrollTo />
+
 <details>
 
 <summary>查看代码</summary>

@@ -13,18 +13,14 @@ import throttle from './throttle.vue'
 延迟、防抖、节流
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
 
 ## delay
 
 ::: info 作用：延迟
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="延迟" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="延迟" /> -->
 
 ### 参数
 
@@ -36,9 +32,8 @@ import throttle from './throttle.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <delay />
-</ClientOnly>
+<delay />
+
 <details>
 
 <summary>查看代码</summary>
@@ -52,9 +47,7 @@ import throttle from './throttle.vue'
 ::: info 作用：防抖
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="防抖" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="防抖" /> -->
 
 ### 参数
 
@@ -72,9 +65,8 @@ import throttle from './throttle.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <debounce />
-</ClientOnly>
+<debounce />
+
 <details>
 
 <summary>查看代码</summary>
@@ -88,9 +80,7 @@ import throttle from './throttle.vue'
 ::: info 作用：节流
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="节流" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="节流" /> -->
 
 ### 参数
 
@@ -107,9 +97,8 @@ import throttle from './throttle.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <throttle />
-</ClientOnly>
+<throttle />
+
 <details>
 
 <summary>查看代码</summary>

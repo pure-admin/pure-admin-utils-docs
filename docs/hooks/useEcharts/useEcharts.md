@@ -39,9 +39,7 @@ import {
 兼容 `echarts` 所有 `api` 并且额外添加尺寸自适应容器和自动销毁等功能，`echarts` 能实现的它都行
 :::
 
-<!-- <ClientOnly>
-  <description description="兼容`echarts`所有`api`并且额外添加尺寸自适应容器和自动销毁等功能，`echarts`能实现的它都行" :tagNameList="['Vue3']"  />
-</ClientOnly> -->
+<!-- <description description="兼容`echarts`所有`api`并且额外添加尺寸自适应容器和自动销毁等功能，`echarts`能实现的它都行" :tagNameList="['Vue3']"  /> -->
 
 ## 使用前提
 
@@ -100,9 +98,8 @@ setOptions({
 <!--
 ## 基础用法
 
-<ClientOnly>
-  <echarts />
-</ClientOnly>
+<echarts />
+
 <details>
 
 <summary>查看代码</summary>
@@ -113,9 +110,9 @@ setOptions({
 
 ## 接口请求
 
-<ClientOnly>
-  <request />
-</ClientOnly>
+
+<request />
+
 <details>
 
 <summary>查看代码</summary>
@@ -179,9 +176,9 @@ type OptionsParams = {
 
 ### 折线图 line
 
-<ClientOnly>
-  <Eline />
-</ClientOnly>
+
+<Eline />
+
 <details>
 
 <summary>查看代码</summary>
@@ -192,9 +189,9 @@ type OptionsParams = {
 
 ### 柱状图 bar
 
-<ClientOnly>
-  <Ebar />
-</ClientOnly>
+
+<Ebar />
+
 <details>
 
 <summary>查看代码</summary>
@@ -205,9 +202,9 @@ type OptionsParams = {
 
 ### 饼图 pie
 
-<ClientOnly>
-  <Epie />
-</ClientOnly>
+
+<Epie />
+
 <details>
 
 <summary>查看代码</summary>
@@ -218,9 +215,9 @@ type OptionsParams = {
 
 ### 散点图 scatter
 
-<ClientOnly>
-  <Escatter />
-</ClientOnly>
+
+<Escatter />
+
 <details>
 
 <summary>查看代码</summary>
@@ -231,9 +228,9 @@ type OptionsParams = {
 
 ### K 线图 candlestick
 
-<ClientOnly>
-  <Ecandlestick />
-</ClientOnly>
+
+<Ecandlestick />
+
 <details>
 
 <summary>查看代码</summary>
@@ -244,9 +241,9 @@ type OptionsParams = {
 
 ### 雷达图 radar
 
-<ClientOnly>
-  <Eradar />
-</ClientOnly>
+
+<Eradar />
+
 <details>
 
 <summary>查看代码</summary>
@@ -257,9 +254,9 @@ type OptionsParams = {
 
 ### 盒须图 boxplot
 
-<ClientOnly>
-  <Eboxplot />
-</ClientOnly>
+
+<Eboxplot />
+
 <details>
 
 <summary>查看代码</summary>
@@ -270,9 +267,9 @@ type OptionsParams = {
 
 ### 热力图 heatmap
 
-<ClientOnly>
-  <Eheatmap />
-</ClientOnly>
+
+<Eheatmap />
+
 <details>
 
 <summary>查看代码</summary>
@@ -283,9 +280,9 @@ type OptionsParams = {
 
 ### 关系图 graph
 
-<ClientOnly>
+
   <Egraph />
-</ClientOnly>
+
 <details>
 
 <summary>查看代码</summary>
@@ -296,9 +293,9 @@ type OptionsParams = {
 
 ### 树图 tree
 
-<ClientOnly>
-  <Etree />
-</ClientOnly>
+
+<Etree />
+
 <details>
 
 <summary>查看代码</summary>
@@ -309,9 +306,9 @@ type OptionsParams = {
 
 ### 旭日图 sunburst
 
-<ClientOnly>
-  <Esunburst />
-</ClientOnly>
+
+<Esunburst />
+
 <details>
 
 <summary>查看代码</summary>
@@ -322,9 +319,9 @@ type OptionsParams = {
 
 ### 桑基图 sankey
 
-<ClientOnly>
-  <Esankey />
-</ClientOnly>
+
+<Esankey />
+
 <details>
 
 <summary>查看代码</summary>
@@ -335,9 +332,9 @@ type OptionsParams = {
 
 ### 漏斗图 funnel
 
-<ClientOnly>
-  <Efunnel />
-</ClientOnly>
+
+<Efunnel />
+
 <details>
 
 <summary>查看代码</summary>
@@ -348,9 +345,9 @@ type OptionsParams = {
 
 ### 仪表盘 gauge
 
-<ClientOnly>
-  <Egauge />
-</ClientOnly>
+
+<Egauge />
+
 <details>
 
 <summary>查看代码</summary>
@@ -361,9 +358,9 @@ type OptionsParams = {
 
 ### 象形柱图 pictorialBar
 
-<ClientOnly>
-  <EpictorialBar />
-</ClientOnly>
+
+<EpictorialBar />
+
 <details>
 
 <summary>查看代码</summary>
@@ -374,9 +371,9 @@ type OptionsParams = {
 
 ### 主题河流图 themeRiver
 
-<ClientOnly>
-  <EthemeRiver />
-</ClientOnly>
+
+<EthemeRiver />
+
 <details>
 
 <summary>查看代码</summary>
@@ -387,15 +384,15 @@ type OptionsParams = {
 
 ## 高级示例
 
-<ClientOnly>
-  <theme-change />
-</ClientOnly>
+
+<theme-change />
+
 
 ### demo1
 
-<ClientOnly>
-  <Edemo1 />
-</ClientOnly>
+
+<Edemo1 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -406,9 +403,9 @@ type OptionsParams = {
 
 ### demo2
 
-<ClientOnly>
-  <Edemo2 />
-</ClientOnly>
+
+<Edemo2 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -419,9 +416,9 @@ type OptionsParams = {
 
 ### demo3
 
-<ClientOnly>
-  <Edemo3 />
-</ClientOnly>
+
+<Edemo3 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -432,9 +429,9 @@ type OptionsParams = {
 
 ### demo4
 
-<ClientOnly>
-  <Edemo4 />
-</ClientOnly>
+
+<Edemo4 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -445,9 +442,9 @@ type OptionsParams = {
 
 ### demo5
 
-<ClientOnly>
-  <Edemo5 />
-</ClientOnly>
+
+<Edemo5 />
+
 <details>
 
 <summary>查看代码</summary>
@@ -458,9 +455,9 @@ type OptionsParams = {
 
 ### demo6
 
-<ClientOnly>
-  <Edemo6 />
-</ClientOnly>
+
+<Edemo6 />
+
 <details>
 
 <summary>查看代码</summary>

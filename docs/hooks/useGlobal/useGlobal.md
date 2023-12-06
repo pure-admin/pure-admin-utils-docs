@@ -8,15 +8,14 @@ import global from './global.vue'
 获取实例中全局 `property`
 :::
 
-<!-- <ClientOnly>
-  <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  />
-</ClientOnly> -->
+
+<!-- <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  /> -->
+
 
 ## 基础用法
 
-<ClientOnly>
-  <global />
-</ClientOnly>
+<global />
+
 <details>
 
 <summary>查看代码</summary>

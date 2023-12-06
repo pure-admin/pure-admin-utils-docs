@@ -9,18 +9,14 @@ useAddNumInOutlineLabel(1)
 包大小计算
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="1" :tagNameList="['Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="1" :tagNameList="['Node']" /> -->
 
 ## getPackageSize
 
 ::: info 作用：获取指定文件夹中所有文件的总大小
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="获取指定文件夹中所有文件的总大小" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="获取指定文件夹中所有文件的总大小" /> -->
 
 ### 参数
 

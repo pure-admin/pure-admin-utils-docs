@@ -17,18 +17,14 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 截取字符
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="7" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="7" :tagNameList="['浏览器','Node']" /> -->
 
 ## subBefore
 
 ::: info 作用：截取指定字符前面的值
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="截取指定字符前面的值" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="截取指定字符前面的值" /> -->
 
 ### 参数
 
@@ -41,9 +37,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <subBefore />
-</ClientOnly>
+<subBefore />
 
 <details>
 
@@ -58,9 +52,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：截取指定字符后面的值
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="截取指定字符后面的值" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="截取指定字符后面的值" /> -->
 
 ### 参数
 
@@ -73,9 +65,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <subAfter />
-</ClientOnly>
+<subAfter />
 
 <details>
 
@@ -90,9 +80,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：截取指定字符两边的值
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="截取指定字符两边的值" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="截取指定字符两边的值" /> -->
 
 ### 参数
 
@@ -105,9 +93,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <subBothSides />
-</ClientOnly>
+<subBothSides />
 
 <details>
 
@@ -122,9 +108,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：截取指定两个字符之间的值
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="截取指定两个字符之间的值" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="截取指定两个字符之间的值" /> -->
 
 ### 参数
 
@@ -138,9 +122,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <subBetween />
-</ClientOnly>
+<subBetween />
 
 <details>
 
@@ -155,9 +137,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：截取字符并追加省略号（常用场景：`echarts`）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="截取字符并追加省略号（常用场景：`echarts`）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="截取字符并追加省略号（常用场景：`echarts`）" /> -->
 
 ### 参数
 
@@ -170,9 +150,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <subTextAddEllipsis />
-</ClientOnly>
+<subTextAddEllipsis />
 
 <details>
 
@@ -187,9 +165,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：将数字拆分为单个数字组成的数组
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="将数字拆分为单个数字组成的数组" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="将数字拆分为单个数字组成的数组" /> -->
 
 ### 参数
 
@@ -201,9 +177,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <splitNum />
-</ClientOnly>
+<splitNum />
 
 <details>
 
@@ -218,9 +192,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 ::: info 作用：使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号" /> -->
 
 ### 参数
 
@@ -238,9 +210,7 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <hideTextAtIndex />
-</ClientOnly>
+<hideTextAtIndex />
 
 <details>
 

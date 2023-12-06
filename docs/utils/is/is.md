@@ -11,9 +11,7 @@ import hasCNChars from './hasCNChars.vue'
 类型、正则判断
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="39" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="39" :tagNameList="['浏览器','Node']" /> -->
 
 ## 类型判断
 
@@ -22,9 +20,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：判断某值的类型
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断某值的类型" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断某值的类型" /> -->
 
 #### 参数
 
@@ -40,9 +36,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否非 `undefined`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否非 `undefined`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否非 `undefined`" /> -->
 
 #### 参数
 
@@ -57,9 +51,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `undefined`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `undefined`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `undefined`" /> -->
 
 #### 参数
 
@@ -74,9 +66,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是对象 `object`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是对象 `object`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是对象 `object`" /> -->
 
 #### 参数
 
@@ -91,9 +81,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是普通对象
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是普通对象" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是普通对象" /> -->
 
 功能同 https://www.lodashjs.com/docs/lodash.isPlainObject
 
@@ -110,9 +98,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Date` 日期类型
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Date` 日期类型" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Date` 日期类型" /> -->
 
 #### 参数
 
@@ -127,9 +113,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `null`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null`" /> -->
 
 #### 参数
 
@@ -144,9 +128,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `null` 并且是 `undefined`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null` 并且是 `undefined`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null` 并且是 `undefined`" /> -->
 
 #### 参数
 
@@ -161,9 +143,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `null` 或者 `undefined`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null` 或者 `undefined`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `null` 或者 `undefined`" /> -->
 
 #### 参数
 
@@ -178,9 +158,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `number`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `number`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `number`" /> -->
 
 #### 参数
 
@@ -195,9 +173,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Promise`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Promise`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Promise`" /> -->
 
 #### 参数
 
@@ -212,9 +188,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `string`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `string`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `string`" /> -->
 
 #### 参数
 
@@ -229,9 +203,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Function`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Function`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Function`" /> -->
 
 #### 参数
 
@@ -246,9 +218,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Boolean`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Boolean`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Boolean`" /> -->
 
 #### 参数
 
@@ -263,9 +233,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `RegExp`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `RegExp`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `RegExp`" /> -->
 
 #### 参数
 
@@ -280,9 +248,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Array`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Array`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Array`" /> -->
 
 #### 参数
 
@@ -297,9 +263,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是标准的 `JSON` 格式
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是标准的 `JSON` 格式" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是标准的 `JSON` 格式" /> -->
 
 #### 参数
 
@@ -314,9 +278,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Window`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Window`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Window`" /> -->
 
 #### 参数
 
@@ -331,9 +293,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Element`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Element`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Element`" /> -->
 
 #### 参数
 
@@ -348,18 +308,14 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是服务端
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是服务端" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是服务端" /> -->
 
 ### isClient
 
 ::: info 作用：是否是 `window`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `window`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `window`" /> -->
 
 ## 正则判断
 
@@ -368,9 +324,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：`url` 链接正则
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="`url` 链接正则" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="`url` 链接正则" /> -->
 
 #### 参数
 
@@ -385,9 +339,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：手机号码正则
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="手机号码正则" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="手机号码正则" /> -->
 
 #### 参数
 
@@ -402,9 +354,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：邮箱正则
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="邮箱正则" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="邮箱正则" /> -->
 
 #### 参数
 
@@ -419,9 +369,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：`QQ` 正则
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="`QQ` 正则" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="`QQ` 正则" /> -->
 
 #### 参数
 
@@ -436,9 +384,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是中国大陆邮政编码（共`6`位，且不能以`0`开头）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是中国大陆邮政编码（共`6`位，且不能以`0`开头）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是中国大陆邮政编码（共`6`位，且不能以`0`开头）" /> -->
 
 #### 参数
 
@@ -453,9 +399,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）" /> -->
 
 #### 参数
 
@@ -481,9 +425,8 @@ import hasCNChars from './hasCNChars.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <hasCNChars />
-</ClientOnly>
+<hasCNChars />
+
 <details>
 
 <summary>查看代码</summary>
@@ -506,9 +449,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是小写字母
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是小写字母" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是小写字母" /> -->
 
 #### 参数
 
@@ -523,9 +464,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是大写字母
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大写字母" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大写字母" /> -->
 
 #### 参数
 
@@ -540,9 +479,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是大小写字母
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大小写字母" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大小写字母" /> -->
 
 #### 参数
 
@@ -557,9 +494,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：检测字符串是否有空格
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="检测字符串是否有空格" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="检测字符串是否有空格" /> -->
 
 #### 参数
 
@@ -576,9 +511,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断" /> -->
 
 #### 参数
 
@@ -593,9 +526,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空" /> -->
 
 #### 参数
 
@@ -610,9 +541,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是闰年
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是闰年" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是闰年" /> -->
 
 #### 参数
 
@@ -627,9 +556,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `Base64`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Base64`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `Base64`" /> -->
 
 #### 参数
 
@@ -644,9 +571,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `hex`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `hex`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `hex`" /> -->
 
 #### 参数
 
@@ -661,9 +586,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `rgb`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `rgb`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `rgb`" /> -->
 
 #### 参数
 
@@ -678,9 +601,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `rgba`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `rgba`" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `rgba`" /> -->
 
 #### 参数
 
@@ -695,9 +616,7 @@ import hasCNChars from './hasCNChars.vue'
 ::: info 作用：是否是 `html`
 :::
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `html`" /> 
-</ClientOnly>
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 `html`" />  -->
 
 #### 参数
 

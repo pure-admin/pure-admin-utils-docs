@@ -12,18 +12,14 @@ import nameHyphenate from './nameHyphenate.vue'
 横线、驼峰命名互转
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="2" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="2" :tagNameList="['浏览器','Node']" /> -->
 
 ## nameCamelize
 
 ::: info 作用：横线转驼峰命名
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="横线转驼峰命名" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="横线转驼峰命名" /> -->
 
 ### 参数
 
@@ -35,9 +31,8 @@ import nameHyphenate from './nameHyphenate.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <nameCamelize />
-</ClientOnly>
+<nameCamelize />
+
 <details>
 
 <summary>查看代码</summary>
@@ -51,9 +46,7 @@ import nameHyphenate from './nameHyphenate.vue'
 ::: info 作用：驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="驼峰命名转横线命名：拆分字符串，使用 `-` 相连，并且全部转换为小写" /> -->
 
 ### 参数
 
@@ -65,9 +58,8 @@ import nameHyphenate from './nameHyphenate.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <nameHyphenate />
-</ClientOnly>
+<nameHyphenate />
+
 <details>
 
 <summary>查看代码</summary>

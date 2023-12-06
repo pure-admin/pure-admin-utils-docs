@@ -13,18 +13,14 @@ import hasOwnProp from './hasOwnProp.vue'
 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
 
 ## clone
 
 ::: info 作用：浅拷贝/深拷贝
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="浅拷贝/深拷贝" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="浅拷贝/深拷贝" /> -->
 
 ### 参数
 
@@ -37,9 +33,8 @@ import hasOwnProp from './hasOwnProp.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <clone />
-</ClientOnly>
+<clone />
+
 <details>
 
 <summary>查看代码</summary>
@@ -53,9 +48,7 @@ import hasOwnProp from './hasOwnProp.vue'
 ::: info 作用：深拷贝
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="深拷贝" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="深拷贝" /> -->
 
 ### 参数
 
@@ -67,9 +60,8 @@ import hasOwnProp from './hasOwnProp.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <cloneDeep />
-</ClientOnly>
+<cloneDeep />
+
 <details>
 
 <summary>查看代码</summary>
@@ -83,9 +75,7 @@ import hasOwnProp from './hasOwnProp.vue'
 ::: info 作用：判断对象自身属性中是否具有指定的属性
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" /> -->
 
 ### 参数
 
@@ -98,9 +88,8 @@ import hasOwnProp from './hasOwnProp.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <hasOwnProp />
-</ClientOnly>
+<hasOwnProp />
+
 <details>
 
 <summary>查看代码</summary>

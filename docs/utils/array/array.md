@@ -14,18 +14,14 @@ import getKeyList from './getKeyList.vue'
 处理数组
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="4" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="4" :tagNameList="['浏览器','Node']" /> -->
 
 ## swapOrder
 
 ::: info 作用：数组中两个元素互换位置（内部使用 `splice` 会改变原数组）
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="数组中两个元素互换位置（内部使用 splice 会改变原数组）" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="数组中两个元素互换位置（内部使用 splice 会改变原数组）" /> -->
 
 ### 参数
 
@@ -39,9 +35,8 @@ import getKeyList from './getKeyList.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <swapOrder />
-</ClientOnly>
+<swapOrder />
+
 <details>
 
 <summary>查看代码</summary>
@@ -55,9 +50,7 @@ import getKeyList from './getKeyList.vue'
 ::: info 作用：判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="判断一个数组（这里简称为母体）中是否包含了另一个由基本数据类型组成的数组（这里简称为子体）中的全部元素" /> -->
 
 ### 参数
 
@@ -70,9 +63,8 @@ import getKeyList from './getKeyList.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <isIncludeAllChildren />
-</ClientOnly>
+<isIncludeAllChildren />
+
 <details>
 
 <summary>查看代码</summary>
@@ -86,9 +78,7 @@ import getKeyList from './getKeyList.vue'
 ::: info 作用：获取由基本数据类型组成的数组交集
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="获取由基本数据类型组成的数组交集" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="获取由基本数据类型组成的数组交集" /> -->
 
 ### 参数
 
@@ -96,9 +86,8 @@ import getKeyList from './getKeyList.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <intersection />
-</ClientOnly>
+<intersection />
+
 <details>
 
 <summary>查看代码</summary>
@@ -112,9 +101,7 @@ import getKeyList from './getKeyList.vue'
 ::: info 作用：从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 key 组成的新数组，会去重也会去除不存在的值" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" :gradientClass="'mb-2'" description="从数组中获取指定 key 组成的新数组，会去重也会去除不存在的值" /> -->
 
 ### 参数
 
@@ -127,9 +114,8 @@ import getKeyList from './getKeyList.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <getKeyList />
-</ClientOnly>
+<getKeyList />
+
 <details>
 
 <summary>查看代码</summary>

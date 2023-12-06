@@ -15,18 +15,14 @@ import lighten from './lighten.vue'
 颜色
 :::
 
-<!-- <ClientOnly>
-  <description-popover :num="5" :tagNameList="['浏览器','Node']" />
-</ClientOnly> -->
+<!-- <description-popover :num="5" :tagNameList="['浏览器','Node']" /> -->
 
 ## randomColor
 
 ::: info 作用：随机生成颜色
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="随机生成颜色" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="随机生成颜色" /> -->
 
 ### 参数
 
@@ -49,9 +45,8 @@ import lighten from './lighten.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <randomColor />
-</ClientOnly>
+<randomColor />
+
 <details>
 
 <summary>查看代码</summary>
@@ -65,9 +60,7 @@ import lighten from './lighten.vue'
 ::: info 作用：`hex` 转 `rgb`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="hex转rgb" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="hex转rgb" /> -->
 
 ### 参数
 
@@ -79,9 +72,8 @@ import lighten from './lighten.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <hexToRgb />
-</ClientOnly>
+<hexToRgb />
+
 <details>
 
 <summary>查看代码</summary>
@@ -95,9 +87,7 @@ import lighten from './lighten.vue'
 ::: info 作用：`rgb` 转 `hex`
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="rgb转hex" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="rgb转hex" /> -->
 
 ### 参数
 
@@ -111,9 +101,8 @@ import lighten from './lighten.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <rgbToHex />
-</ClientOnly>
+<rgbToHex />
+
 <details>
 
 <summary>查看代码</summary>
@@ -127,10 +116,7 @@ import lighten from './lighten.vue'
 ::: info 作用：颜色值加深
 :::
 
-<!--
-<ClientOnly>
-  <description :isShowIcon="false" description="颜色值加深" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="颜色值加深" /> -->
 
 ### 参数
 
@@ -143,9 +129,8 @@ import lighten from './lighten.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <darken />
-</ClientOnly>
+<darken />
+
 <details>
 
 <summary>查看代码</summary>
@@ -159,9 +144,7 @@ import lighten from './lighten.vue'
 ::: info 作用：颜色值变浅
 :::
 
-<!-- <ClientOnly>
-  <description :isShowIcon="false" description="颜色值变浅" />
-</ClientOnly> -->
+<!-- <description :isShowIcon="false" description="颜色值变浅" /> -->
 
 ### 参数
 
@@ -174,9 +157,8 @@ import lighten from './lighten.vue'
 
 ### 基础用法
 
-<ClientOnly>
-  <lighten />
-</ClientOnly>
+<lighten />
+
 <details>
 
 <summary>查看代码</summary>
