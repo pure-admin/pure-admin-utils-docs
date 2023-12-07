@@ -170,18 +170,8 @@
   opacity: 0.8 !important;
 }
 
-.custom-block {
-  /* padding: 16px; */
-}
 .custom-block.tip {
   color: var(--vp-c-brand);
-}
-
-table tbody tr {
-  background: transparent !important;
-}
-table tbody tr:hover {
-  background: var(--vp-c-bg-soft) !important;
 }
 
 /* 覆盖naive-ui样式 */
@@ -209,4 +199,27 @@ table tbody tr:hover {
   color: white;
   border-radius: 6px;
   vertical-align: middle;
+}
+
+/* markdown table */
+.pure-border {
+  border: 1px solid var(--pure-table-border-color);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: hidden;
+}
+.pure-border th,
+.pure-border tr,
+.pure-border td {
+  border: none;
+}
+.pure-border thead,
+.pure-border tbody {
+  border: 1px solid var(--pure-table-border-color);
+}
+table tbody tr {
+  background: transparent !important;
+}
+table tbody tr:hover {
+  background: var(--vp-c-bg-soft) !important;
 }

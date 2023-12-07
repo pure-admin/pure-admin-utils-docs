@@ -9,6 +9,10 @@ import naive from "naive-ui";
 
 import { useEcharts } from "../plugins/echarts";
 import {
+  DividerBase,
+  DividerParam,
+  DividerOptions,
+  DividerType,
   Wordcloud,
   NaiveTheme,
   Description,
@@ -24,6 +28,10 @@ export default {
       await import("../plugins/wordcloud");
     }
     app.use(naive);
+    app.component("divider-base", DividerBase);
+    app.component("divider-param", DividerParam);
+    app.component("divider-options", DividerOptions);
+    app.component("divider-type", DividerType);
     app.component("wordcloud", Wordcloud);
     app.component("naive-theme", NaiveTheme);
     app.component("description", Description);

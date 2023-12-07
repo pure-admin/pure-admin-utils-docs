@@ -10,31 +10,17 @@ import getDecimalPlaces from './getDecimalPlaces.vue'
 import addZero from './addZero.vue'
 </script>
 
-<!-- # 金额转换相关方法 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 转换金额
 :::
 
-<!-- <description-popover :num="6" :tagNameList="['浏览器','Node']" /> -->
+### centsToDollars
 
-## centsToDollars
+分转元
 
-::: info 作用：分转元
-:::
+<div class="pure-border">
 
-<!-- <description :isShowIcon="false" description="分转元" /> -->
-
-### 参数
-
-- 接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `number`
-
-| **参数属性** | **说明**                                                                                             | **类型** |
-| ------------ | ---------------------------------------------------------------------------------------------------- | -------- |
-| `val`        | 分                                                                                                   | `number` |
-| `format`     | 转元后像 `10` 、`20`、 `100` 、`1000` 这种整金额默认会在末尾加 `.00` ，如果不想要设置成 `fasle` 即可 | `number` |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <centsToDollars />
 
@@ -46,23 +32,24 @@ import addZero from './addZero.vue'
 
 </details>
 
-## dollarsToCents
+#### <divider-param /> {#param1}
 
-::: info 作用：元转分
-:::
+接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `number`
 
-<!-- <description :isShowIcon="false" description="元转分" /> -->
+| **参数属性** | **说明**                                                                                             | **类型** |
+| ------------ | ---------------------------------------------------------------------------------------------------- | -------- |
+| `val`        | 分                                                                                                   | `number` |
+| `format`     | 转元后像 `10` 、`20`、 `100` 、`1000` 这种整金额默认会在末尾加 `.00` ，如果不想要设置成 `fasle` 即可 | `number` |
 
-### 参数
+</div>
 
-- 接收两个参数，第一个参数 `val`，第二个参数 `digit`，返回值类型 `number`
+### dollarsToCents
 
-| **参数属性** | **说明**             | **类型** |
-| ------------ | -------------------- | -------- |
-| `val`        | 元                   | `number` |
-| `digit`      | 转换倍数，默认 `100` | `number` |
+元转分
 
-### 基础用法
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
 
 <dollarsToCents />
 
@@ -74,23 +61,24 @@ import addZero from './addZero.vue'
 
 </details>
 
-## priceUppercase
+#### <divider-param /> {#param2}
 
-::: info 作用：金额转大写汉字（支持小数位）
-:::
+接收两个参数，第一个参数 `val`，第二个参数 `digit`，返回值类型 `number`
 
-<!-- <description :isShowIcon="false" description="金额转大写汉字（支持小数位）" /> -->
+| **参数属性** | **说明**             | **类型** |
+| ------------ | -------------------- | -------- |
+| `val`        | 元                   | `number` |
+| `digit`      | 转换倍数，默认 `100` | `number` |
 
-### 参数
+</div>
 
-- 接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `string`
+### priceUppercase
 
-| **参数属性** | **说明**                                                                | **类型** |
-| ------------ | ----------------------------------------------------------------------- | -------- |
-| `val`        | 金额                                                                    | `number` |
-| `format`     | `整` （如果是整数金额最后面会默认加个 `整`，不想要的话给空字符串 `""`） | `string` |
+金额转大写汉字（支持小数位）
 
-### 基础用法
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
 
 <priceUppercase />
 
@@ -102,34 +90,24 @@ import addZero from './addZero.vue'
 
 </details>
 
-## priceToThousands
+#### <divider-param /> {#param3}
 
-::: info 作用：格式化金额，三位加一个逗号
-:::
+接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `string`
 
-<!-- <description :isShowIcon="false" description="格式化金额，三位加一个逗号" /> -->
+| **参数属性** | **说明**                                                                | **类型** |
+| ------------ | ----------------------------------------------------------------------- | -------- |
+| `val`        | 金额                                                                    | `number` |
+| `format`     | `整` （如果是整数金额最后面会默认加个 `整`，不想要的话给空字符串 `""`） | `string` |
 
-### 参数
+</div>
 
-- 接收两个参数，第一个参数 `amount` ，第二个参数 `options` ，返回格式化后的金额
+### priceToThousands
 
-| **参数属性** | **说明**                                  | **类型**    |
-| ------------ | ----------------------------------------- | ----------- |
-| `amount`     | 金额                                      | `number`    |
-| `options`    | 拥有两个属性，具体看下面的 `options` 详情 | `AmountOpt` |
+格式化金额，三位加一个逗号
 
-#### `options` 详情
+<div class="pure-border">
 
-| **参数属性** | **说明**           | **类型**  | **默认值** |
-| ------------ | ------------------ | --------- | ---------- |
-| `digit`      | 保留几位小数       | `number`  | `0`        |
-| `round`      | 小数位是否四舍五入 | `boolean` | `false`    |
-
-### 类型声明
-
-<<< @/utils/amount/types/priceToThousands.ts
-
-### 基础用法
+#### <divider-base /> {#base4}
 
 <priceToThousands />
 
@@ -141,22 +119,35 @@ import addZero from './addZero.vue'
 
 </details>
 
-## getDecimalPlaces
+#### <divider-param /> {#param4}
 
-::: info 作用：获取数值的小数位数
-:::
+接收两个参数，第一个参数 `amount` ，第二个参数 `options` ，返回格式化后的金额
 
-<!-- <description :isShowIcon="false" description="获取数值的小数位数" /> -->
+| **参数属性** | **说明**                                  | **类型**    |
+| ------------ | ----------------------------------------- | ----------- |
+| `amount`     | 金额                                      | `number`    |
+| `options`    | 拥有两个属性，具体看下面的 `options` 详情 | `AmountOpt` |
 
-### 参数
+#### <divider-options /> {#options4}
 
-- 接收一个参数 `val`，返回小数位数
+| **参数属性** | **说明**           | **类型**  | **默认值** |
+| ------------ | ------------------ | --------- | ---------- |
+| `digit`      | 保留几位小数       | `number`  | `0`        |
+| `round`      | 小数位是否四舍五入 | `boolean` | `false`    |
 
-| **参数属性** | **说明** | **类型**          |
-| ------------ | -------- | ----------------- |
-| `val`        | 金额     | `number`/`string` |
+#### <divider-type /> {#type4}
 
-### 基础用法
+<<< @/utils/amount/types/priceToThousands.ts
+
+</div>
+
+### getDecimalPlaces
+
+获取数值的小数位数
+
+<div class="pure-border">
+
+#### <divider-base /> {#base5}
 
 <getDecimalPlaces />
 
@@ -168,22 +159,23 @@ import addZero from './addZero.vue'
 
 </details>
 
-## addZero
+#### <divider-param /> {#param5}
 
-::: info 作用：在数值后加 `.00`
-:::
-
-<!-- <description :isShowIcon="false" description="在数值后加 `.00`" /> -->
-
-### 参数
-
-- 接收一个参数 `val`，返回加完 `.00` 后的值
+接收一个参数 `val`，返回小数位数
 
 | **参数属性** | **说明** | **类型**          |
 | ------------ | -------- | ----------------- |
-| `val`        | 数值     | `number`/`string` |
+| `val`        | 金额     | `number`/`string` |
 
-### 基础用法
+</div>
+
+### addZero
+
+在数值后加 `.00`
+
+<div class="pure-border">
+
+#### <divider-base /> {#base6}
 
 <addZero />
 
@@ -194,3 +186,13 @@ import addZero from './addZero.vue'
 <<< @/utils/amount/addZero.vue
 
 </details>
+
+#### <divider-param /> {#param6}
+
+接收一个参数 `val`，返回加完 `.00` 后的值
+
+| **参数属性** | **说明** | **类型**          |
+| ------------ | -------- | ----------------- |
+| `val`        | 数值     | `number`/`string` |
+
+</div>

@@ -18,6 +18,8 @@ html .vp-doc {
   --vt-code-deleted: #a14f55;
 
   /* --vp-code-line-number-color: red; */
+
+  --pure-table-border-color: rgba(239, 239, 245, 1);
 }
 
 html.dark .vp-doc {
@@ -39,6 +41,8 @@ html.dark .vp-doc {
   --vt-code-deleted: #bc6066;
 
   /* --vp-code-line-number-color: green; */
+
+  --pure-table-border-color: rgba(45, 45, 48, 1);
 }
 
 /* Overrides */
