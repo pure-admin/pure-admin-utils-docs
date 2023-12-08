@@ -14,30 +14,17 @@ import divisionOperation from './divisionOperation.vue'
 import formatBytes from './formatBytes.vue'
 </script>
 
-<!-- # 数值计算 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 数值计算
 :::
 
-<!-- <description-popover :num="10" :tagNameList="['浏览器','Node']" /> -->
-
 ## max
 
-::: info 作用：求数字类型组成数组中的最大值
-:::
+求数字类型组成数组中的最大值
 
-<!-- <description :isShowIcon="false" description="求数字类型组成数组中的最大值" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `list` ，返回值类型 `number`
-
-| **参数属性** | **说明**           | **类型**        |
-| ------------ | ------------------ | --------------- |
-| `list`       | 数字类型组成的数组 | `Array<number>` |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <max />
 
@@ -49,22 +36,23 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## min
+#### <divider-param /> {#param1}
 
-::: info 作用：求数字类型组成数组中的最小值
-:::
-
-<!-- <description :isShowIcon="false" description="求数字类型组成数组中的最小值" /> -->
-
-### 参数
-
-- 接收一个参数 `list` ，返回值类型 `number`
+接收一个参数 `list` ，返回值类型 `number`
 
 | **参数属性** | **说明**           | **类型**        |
 | ------------ | ------------------ | --------------- |
 | `list`       | 数字类型组成的数组 | `Array<number>` |
 
-### 基础用法
+</div>
+
+## min
+
+求数字类型组成数组中的最小值
+
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
 
 <min />
 
@@ -76,22 +64,23 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## sum
+#### <divider-param /> {#param2}
 
-::: info 作用：求数字类型组成数组中的和
-:::
-
-<!-- <description :isShowIcon="false" description="求数字类型组成数组中的和" /> -->
-
-### 参数
-
-- 接收一个参数 `list` ，返回值类型 `number`
+接收一个参数 `list` ，返回值类型 `number`
 
 | **参数属性** | **说明**           | **类型**        |
 | ------------ | ------------------ | --------------- |
 | `list`       | 数字类型组成的数组 | `Array<number>` |
 
-### 基础用法
+</div>
+
+## sum
+
+求数字类型组成数组中的和
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
 
 <sum />
 
@@ -103,22 +92,23 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## average
+#### <divider-param /> {#param3}
 
-::: info 作用：求数字类型组成数组中的平均值
-:::
-
-<!-- <description :isShowIcon="false" description="求数字类型组成数组中的平均值" /> -->
-
-### 参数
-
-- 接收一个参数 `list` ，返回值类型 `number`
+接收一个参数 `list` ，返回值类型 `number`
 
 | **参数属性** | **说明**           | **类型**        |
 | ------------ | ------------------ | --------------- |
 | `list`       | 数字类型组成的数组 | `Array<number>` |
 
-### 基础用法
+</div>
+
+## average
+
+求数字类型组成数组中的平均值
+
+<div class="pure-border">
+
+#### <divider-base /> {#base4}
 
 <average />
 
@@ -130,22 +120,23 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
+#### <divider-param /> {#param4}
+
+接收一个参数 `list` ，返回值类型 `number`
+
+| **参数属性** | **说明**           | **类型**        |
+| ------------ | ------------------ | --------------- |
+| `list`       | 数字类型组成的数组 | `Array<number>` |
+
+</div>
+
 ## numberToChinese
 
-::: info 作用：将阿拉伯数字翻译成中文数字
-:::
+将阿拉伯数字翻译成中文数字
 
-<!-- <description :isShowIcon="false" description="将阿拉伯数字翻译成中文数字" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `num` ，返回值类型 `string`
-
-| **参数属性** | **说明**   | **类型**          |
-| ------------ | ---------- | ----------------- |
-| `num`        | 阿拉伯数字 | `number`/`string` |
-
-### 基础用法
+#### <divider-base /> {#base5}
 
 <numberToChinese />
 
@@ -157,24 +148,23 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
+#### <divider-param /> {#param5}
+
+接收一个参数 `num` ，返回值类型 `string`
+
+| **参数属性** | **说明**   | **类型**          |
+| ------------ | ---------- | ----------------- |
+| `num`        | 阿拉伯数字 | `number`/`string` |
+
+</div>
+
 ## addition
 
-::: info 作用：两个数值的加法运算（防止精度丢失）
-:::
+两个数值的加法运算（防止精度丢失）
 
-<!-- <description :isShowIcon="false" description="两个数值的加法运算（防止精度丢失）" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
-
-| **参数属性** | **说明**                                        | **类型** |
-| ------------ | ----------------------------------------------- | -------- |
-| `num1`       | 第一个数值                                      | `number` |
-| `num2`       | 第二个数值                                      | `number` |
-| `decimal`    | 四舍五入保留的小数位数，为 `0` 时不进行任何处理 | `number` |
-
-### 基础用法
+#### <divider-base /> {#base6}
 
 <addition />
 
@@ -186,16 +176,9 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## subtraction
+#### <divider-param /> {#param6}
 
-::: info 作用：两个数值的减法运算（防止精度丢失）
-:::
-
-<!-- <description :isShowIcon="false" description="两个数值的减法运算（防止精度丢失）" /> -->
-
-### 参数
-
-- 接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
+接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
 
 | **参数属性** | **说明**                                        | **类型** |
 | ------------ | ----------------------------------------------- | -------- |
@@ -203,7 +186,15 @@ import formatBytes from './formatBytes.vue'
 | `num2`       | 第二个数值                                      | `number` |
 | `decimal`    | 四舍五入保留的小数位数，为 `0` 时不进行任何处理 | `number` |
 
-### 基础用法
+</div>
+
+## subtraction
+
+两个数值的减法运算（防止精度丢失）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base7}
 
 <subtraction />
 
@@ -215,16 +206,9 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## multiplication
+#### <divider-param /> {#param7}
 
-::: info 作用：两个数值的乘法运算（防止精度丢失）
-:::
-
-<!-- <description :isShowIcon="false" description="两个数值的乘法运算（防止精度丢失）" /> -->
-
-### 参数
-
-- 接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
+接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
 
 | **参数属性** | **说明**                                        | **类型** |
 | ------------ | ----------------------------------------------- | -------- |
@@ -232,7 +216,15 @@ import formatBytes from './formatBytes.vue'
 | `num2`       | 第二个数值                                      | `number` |
 | `decimal`    | 四舍五入保留的小数位数，为 `0` 时不进行任何处理 | `number` |
 
-### 基础用法
+</div>
+
+## multiplication
+
+两个数值的乘法运算（防止精度丢失）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base8}
 
 <multiplication />
 
@@ -244,16 +236,9 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
-## divisionOperation
+#### <divider-param /> {#param8}
 
-::: info 作用：两个数值的除法运算（防止精度丢失）
-:::
-
-<!-- <description :isShowIcon="false" description="两个数值的除法运算（防止精度丢失）" /> -->
-
-### 参数
-
-- 接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
+接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
 
 | **参数属性** | **说明**                                        | **类型** |
 | ------------ | ----------------------------------------------- | -------- |
@@ -261,7 +246,15 @@ import formatBytes from './formatBytes.vue'
 | `num2`       | 第二个数值                                      | `number` |
 | `decimal`    | 四舍五入保留的小数位数，为 `0` 时不进行任何处理 | `number` |
 
-### 基础用法
+</div>
+
+## divisionOperation
+
+两个数值的除法运算（防止精度丢失）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base9}
 
 <divisionOperation />
 
@@ -273,23 +266,25 @@ import formatBytes from './formatBytes.vue'
 
 </details>
 
+#### <divider-param /> {#param9}
+
+接收三个参数，第一个参数 `num1`，第二个参数 `num2`，第三个参数 `decimal`，返回值类型 `number`
+
+| **参数属性** | **说明**                                        | **类型** |
+| ------------ | ----------------------------------------------- | -------- |
+| `num1`       | 第一个数值                                      | `number` |
+| `num2`       | 第二个数值                                      | `number` |
+| `decimal`    | 四舍五入保留的小数位数，为 `0` 时不进行任何处理 | `number` |
+
+</div>
+
 ## formatBytes
 
-::: info 作用：将字节单位智能转化成 `Bytes`、`KB`、`MB`、`GB`、`TB`、`PB`、`EB`、`ZB`、`YB` 其中的一种
-:::
+将字节单位智能转化成 `Bytes`、`KB`、`MB`、`GB`、`TB`、`PB`、`EB`、`ZB`、`YB` 其中的一种
 
-<!-- <description :isShowIcon="false" description="将字节单位智能转化成 `Bytes`、`KB`、`MB`、`GB`、`TB`、`PB`、`EB`、`ZB`、`YB` 其中的一种" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `byte`，第二个 `digits`，返回智能转化字节单位后的值，返回值类型为 `string`
-
-| **参数属性** | **说明**             | **类型** | **默认值** |
-| ------------ | -------------------- | -------- | ---------- |
-| `byte`       | 字节                 | `number` |            |
-| `digits`     | 四舍五入保留几位小数 | `number` | `2`        |
-
-### 基础用法
+#### <divider-base /> {#base10}
 
 <formatBytes />
 
@@ -300,3 +295,14 @@ import formatBytes from './formatBytes.vue'
 <<< @/utils/math/formatBytes.vue
 
 </details>
+
+#### <divider-param /> {#param10}
+
+接收两个参数，第一个 `byte`，第二个 `digits`，返回智能转化字节单位后的值，返回值类型为 `string`
+
+| **参数属性** | **说明**             | **类型** | **默认值** |
+| ------------ | -------------------- | -------- | ---------- |
+| `byte`       | 字节                 | `number` |            |
+| `digits`     | 四舍五入保留几位小数 | `number` | `2`        |
+
+</div>

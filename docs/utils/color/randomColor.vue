@@ -18,9 +18,9 @@ let color = ref();
       <n-button @click="color = randomColor({ num: 6 })">
         随机生成指定数量的rgb颜色数组
       </n-button>
-      <n-gradient-text type="info">
-        {{ color }}
-      </n-gradient-text>
     </n-space>
+    <n-gradient-text type="info" class="mt-2">
+      {{ color }}
+    </n-gradient-text>
   </naive-theme>
 </template>

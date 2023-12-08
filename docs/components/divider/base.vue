@@ -1,8 +1,6 @@
 <template>
   <naive-theme>
-    <n-divider dashed>
-      基础用法
-    </n-divider>
+    <n-divider dashed> 基础用法 </n-divider>
   </naive-theme>
 </template>
 

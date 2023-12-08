@@ -7,31 +7,17 @@ import cloneDeep from './cloneDeep.vue'
 import hasOwnProp from './hasOwnProp.vue'
 </script>
 
-<!-- # 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
 :::
 
-<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
-
 ## clone
 
-::: info 作用：浅拷贝/深拷贝
-:::
+浅拷贝/深拷贝
 
-<!-- <description :isShowIcon="false" description="浅拷贝/深拷贝" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `deep` ，返回拷贝后的值
-
-| **参数属性** | **说明**                 | **类型**  | **默认值** |
-| ------------ | ------------------------ | --------- | ---------- |
-| `val`        | 需要拷贝的值             | `any`     |            |
-| `deep`       | 是否深拷贝（默认浅拷贝） | `boolean` | `false`    |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <clone />
 
@@ -43,22 +29,24 @@ import hasOwnProp from './hasOwnProp.vue'
 
 </details>
 
+#### <divider-param /> {#param1}
+
+接收两个参数，第一个参数 `val` ，第二个参数 `deep` ，返回拷贝后的值
+
+| **参数属性** | **说明**                 | **类型**  | **默认值** |
+| ------------ | ------------------------ | --------- | ---------- |
+| `val`        | 需要拷贝的值             | `any`     |            |
+| `deep`       | 是否深拷贝（默认浅拷贝） | `boolean` | `false`    |
+
+</div>
+
 ## cloneDeep
 
-::: info 作用：深拷贝
-:::
+深拷贝
 
-<!-- <description :isShowIcon="false" description="深拷贝" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `val` ，返回拷贝后的值
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `val`        | 需要拷贝的值 | `any`    |
-
-### 基础用法
+#### <divider-base /> {#base2}
 
 <cloneDeep />
 
@@ -70,23 +58,23 @@ import hasOwnProp from './hasOwnProp.vue'
 
 </details>
 
+#### <divider-param /> {#param2}
+
+接收一个参数 `val` ，返回拷贝后的值
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `val`        | 需要拷贝的值 | `any`    |
+
+</div>
+
 ## hasOwnProp
 
-::: info 作用：判断对象自身属性中是否具有指定的属性
-:::
+判断对象自身属性中是否具有指定的属性
 
-<!-- <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `obj` ，第二个参数 `key` ，返回值类型 `boolean`
-
-| **参数属性** | **说明**     | **类型**          |
-| ------------ | ------------ | ----------------- |
-| `obj`        | 要判断的对象 | `object`          |
-| `key`        | 指定的属性   | `string`/`number` |
-
-### 基础用法
+#### <divider-base /> {#base3}
 
 <hasOwnProp />
 
@@ -97,6 +85,17 @@ import hasOwnProp from './hasOwnProp.vue'
 <<< @/utils/clone/hasOwnProp.vue
 
 </details>
+
+#### <divider-param /> {#param3}
+
+-接收两个参数，第一个参数 `obj` ，第二个参数 `key` ，返回值类型 `boolean`
+
+| **参数属性** | **说明**     | **类型**          |
+| ------------ | ------------ | ----------------- |
+| `obj`        | 要判断的对象 | `object`          |
+| `key`        | 指定的属性   | `string`/`number` |
+
+</div>
 
 ::: warning 相关信息
 浅拷贝：只拷贝一层，更深层次对象级别的只会拷贝引用`地址`（不影响`基本数据类型`）  

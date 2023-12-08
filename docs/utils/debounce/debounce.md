@@ -7,30 +7,17 @@ import debounce from './debounce.vue'
 import throttle from './throttle.vue'
 </script>
 
-<!-- # 延迟、防抖、节流 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 延迟、防抖、节流
 :::
 
-<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
-
 ## delay
 
-::: info 作用：延迟
-:::
+延迟
 
-<!-- <description :isShowIcon="false" description="延迟" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `timeout` ，返回值类型为 `Promise`
-
-| **参数属性** | **说明**               | **类型** | **默认值** |
-| ------------ | ---------------------- | -------- | ---------- |
-| `timeout`    | 延迟时间（单位：毫秒） | `number` | `20`       |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <delay />
 
@@ -42,28 +29,23 @@ import throttle from './throttle.vue'
 
 </details>
 
+#### <divider-param /> {#param1}
+
+接收一个参数 `timeout` ，返回值类型为 `Promise`
+
+| **参数属性** | **说明**               | **类型** | **默认值** |
+| ------------ | ---------------------- | -------- | ---------- |
+| `timeout`    | 延迟时间（单位：毫秒） | `number` | `20`       |
+
+</div>
+
 ## debounce
 
-::: info 作用：防抖
-:::
+防抖
 
-<!-- <description :isShowIcon="false" description="防抖" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收三个参数，第一个参数 `fn` ，第二个参数 `timeout` ，第三个参数 `immediate` ，无返回值
-
-| **参数属性** | **说明**         | **类型**       | **默认值** |
-| ------------ | ---------------- | -------------- | ---------- |
-| `fn`         | 要执行的函数     | `FunctionArgs` |            |
-| `timeout`    | 延迟时间（毫秒） | `number`       | `200`      |
-| `immediate`  | 是否立即执行     | `boolean`      | `false`    |
-
-### 类型声明
-
-<<< @/utils/debounce/types/debounce.ts
-
-### 基础用法
+#### <divider-base /> {#base2}
 
 <debounce />
 
@@ -75,27 +57,29 @@ import throttle from './throttle.vue'
 
 </details>
 
-## throttle
+#### <divider-param /> {#param2}
 
-::: info 作用：节流
-:::
-
-<!-- <description :isShowIcon="false" description="节流" /> -->
-
-### 参数
-
-- 接收两个参数，第一个参数 `fn` ，第二个参数 `timeout` ，无返回值
+接收三个参数，第一个参数 `fn` ，第二个参数 `timeout` ，第三个参数 `immediate` ，无返回值
 
 | **参数属性** | **说明**         | **类型**       | **默认值** |
 | ------------ | ---------------- | -------------- | ---------- |
 | `fn`         | 要执行的函数     | `FunctionArgs` |            |
-| `timeout`    | 延迟时间（毫秒） | `number`       | `1000`     |
+| `timeout`    | 延迟时间（毫秒） | `number`       | `200`      |
+| `immediate`  | 是否立即执行     | `boolean`      | `false`    |
 
-### 类型声明
+#### <divider-type /> {#type2}
 
 <<< @/utils/debounce/types/debounce.ts
 
-### 基础用法
+</div>
+
+## throttle
+
+节流
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
 
 <throttle />
 
@@ -106,6 +90,21 @@ import throttle from './throttle.vue'
 <<< @/utils/debounce/throttle.vue
 
 </details>
+
+#### <divider-param /> {#param3}
+
+接收两个参数，第一个参数 `fn` ，第二个参数 `timeout` ，无返回值
+
+| **参数属性** | **说明**         | **类型**       | **默认值** |
+| ------------ | ---------------- | -------------- | ---------- |
+| `fn`         | 要执行的函数     | `FunctionArgs` |            |
+| `timeout`    | 延迟时间（毫秒） | `number`       | `1000`     |
+
+#### <divider-type /> {#type3}
+
+<<< @/utils/debounce/types/debounce.ts
+
+</div>
 
 ::: warning 相关信息
 

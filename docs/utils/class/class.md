@@ -9,31 +9,17 @@ import removeClass from './removeClass.vue'
 import toggleClass from './toggleClass.vue'
 </script>
 
-<!-- # 处理元素类名 -->
-
 ::: tip 支持任意运行在浏览器的 `JavaScript` 语言
 处理元素类名
 :::
 
-<!-- <description-popover :num="5" /> -->
-
 ## hasClass
 
-::: info 作用：判断元素是否存在指定类名
-:::
+判断元素是否存在指定类名
 
-<!-- <description :isShowIcon="false" description="判断元素是否存在指定类名" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `element` ，第二个参数 `name` ，返回值类型 `boolean`
-
-| **参数属性** | **说明**       | **类型**                |
-| ------------ | -------------- | ----------------------- |
-| `element`    | 当前类名的元素 | `HTMLElement`/`Element` |
-| `name`       | 类名           | `string`                |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <hasClass />
 
@@ -45,22 +31,24 @@ import toggleClass from './toggleClass.vue'
 
 </details>
 
+#### <divider-param /> {#param1}
+
+接收两个参数，第一个参数 `element` ，第二个参数 `name` ，返回值类型 `boolean`
+
+| **参数属性** | **说明**       | **类型**                |
+| ------------ | -------------- | ----------------------- |
+| `element`    | 当前类名的元素 | `HTMLElement`/`Element` |
+| `name`       | 类名           | `string`                |
+
+</div>
+
 ## getClass
 
-::: info 作用：获取当前元素的所有类名
-:::
+获取当前元素的所有类名
 
-<!-- <description :isShowIcon="false" description="获取当前元素的所有类名" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `element` ，返回值类型 `string | string[]`
-
-| **参数属性** | **说明** | **类型**                |
-| ------------ | -------- | ----------------------- |
-| `element`    | 当前元素 | `HTMLElement`/`Element` |
-
-### 基础用法
+#### <divider-base /> {#base2}
 
 <getClass />
 
@@ -72,24 +60,23 @@ import toggleClass from './toggleClass.vue'
 
 </details>
 
+#### <divider-param /> {#param2}
+
+接收一个参数 `element` ，返回值类型 `string | string[]`
+
+| **参数属性** | **说明** | **类型**                |
+| ------------ | -------- | ----------------------- |
+| `element`    | 当前元素 | `HTMLElement`/`Element` |
+
+</div>
+
 ## addClass
 
-::: info 作用：向当前元素添加指定类名
-:::
+向当前元素添加指定类名
 
-<!-- <description :isShowIcon="false" description="向当前元素添加指定类名" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收三个参数，第一个参数 `element` ，第二个参数 `name` ，第三个参数 `extraName` ，无返回值
-
-| **参数属性** | **说明**             | **类型**                |
-| ------------ | -------------------- | ----------------------- |
-| `element`    | 当前元素             | `HTMLElement`/`Element` |
-| `name`       | 类名                 | `string`                |
-| `extraName`  | 额外类名（ `可选` ） | `string`                |
-
-### 基础用法
+#### <divider-base /> {#base3}
 
 <addClass />
 
@@ -101,16 +88,9 @@ import toggleClass from './toggleClass.vue'
 
 </details>
 
-## removeClass
+#### <divider-param /> {#param3}
 
-::: info 作用：删除当前元素的指定类名
-:::
-
-<!-- <description :isShowIcon="false" description="删除当前元素的指定类名" /> -->
-
-### 参数
-
-- 接收三个参数，第一个参数 `element` ，第二个参数 `name` ，第三个参数 `extraName` ，无返回值
+接收三个参数，第一个参数 `element` ，第二个参数 `name` ，第三个参数 `extraName` ，无返回值
 
 | **参数属性** | **说明**             | **类型**                |
 | ------------ | -------------------- | ----------------------- |
@@ -118,7 +98,15 @@ import toggleClass from './toggleClass.vue'
 | `name`       | 类名                 | `string`                |
 | `extraName`  | 额外类名（ `可选` ） | `string`                |
 
-### 基础用法
+</div>
+
+## removeClass
+
+删除当前元素的指定类名
+
+<div class="pure-border">
+
+#### <divider-base /> {#base4}
 
 <removeClass />
 
@@ -130,24 +118,25 @@ import toggleClass from './toggleClass.vue'
 
 </details>
 
+#### <divider-param /> {#param4}
+
+接收三个参数，第一个参数 `element` ，第二个参数 `name` ，第三个参数 `extraName` ，无返回值
+
+| **参数属性** | **说明**             | **类型**                |
+| ------------ | -------------------- | ----------------------- |
+| `element`    | 当前元素             | `HTMLElement`/`Element` |
+| `name`       | 类名                 | `string`                |
+| `extraName`  | 额外类名（ `可选` ） | `string`                |
+
+</div>
+
 ## toggleClass
 
-::: info 作用：是否向当前元素添加指定类名
-:::
+是否向当前元素添加指定类名
 
-<!-- <description :isShowIcon="false" description="是否向当前元素添加指定类名" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收三个参数，第一个参数 `bool` ，第二个参数 `name` ，第三个参数 `element` ，无返回值
-
-| **参数属性** | **说明**                                              | **类型**                |
-| ------------ | ----------------------------------------------------- | ----------------------- |
-| `bool`       | 是否向当前元素添加指定类名                            | `boolean`               |
-| `name`       | 类名                                                  | `string`                |
-| `element`    | 当前元素（ `可选` ，如果不填，默认 `document.body` ） | `HTMLElement`/`Element` |
-
-### 基础用法
+#### <divider-base /> {#base5}
 
 <toggleClass />
 
@@ -158,3 +147,19 @@ import toggleClass from './toggleClass.vue'
 <<< @/utils/class/toggleClass.vue
 
 </details>
+
+#### <divider-param /> {#param5}
+
+接收三个参数，第一个参数 `bool` ，第二个参数 `name` ，第三个参数 `element` ，无返回值
+
+| **参数属性** | **说明**                                              | **类型**                |
+| ------------ | ----------------------------------------------------- | ----------------------- |
+| `bool`       | 是否向当前元素添加指定类名                            | `boolean`               |
+| `name`       | 类名                                                  | `string`                |
+| `element`    | 当前元素（ `可选` ，如果不填，默认 `document.body` ） | `HTMLElement`/`Element` |
+
+</div>
+
+::: warning 提示信息
+在基础用法的示例中，通过右键检查元素，可观察元素变化
+:::

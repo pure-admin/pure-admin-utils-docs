@@ -46,15 +46,23 @@ function clear() {
         打开控制台，根据对应操作观察 Session Storage 变化
       </n-tag>
 
-      <n-button @click="set"> 储存sessionStorage对象 </n-button>
+      <n-button ghost round type="success" @click="set">
+        储存sessionStorage对象
+      </n-button>
       <div className="flex items-center">
-        <n-button @click="get"> 获取sessionStorage对象 </n-button>
+        <n-button ghost round type="info" @click="get">
+          获取sessionStorage对象
+        </n-button>
         <span className="ml-2">
           {{ storages.info.name ? storages : "" }}
         </span>
       </div>
-      <n-button @click="remove"> 删除sessionStorage对象 </n-button>
-      <n-button @click="clear"> 删除此域的所有sessionStorage对象 </n-button>
+      <n-button ghost round type="warning" @click="remove">
+        删除sessionStorage对象
+      </n-button>
+      <n-button ghost round type="error" @click="clear">
+        删除此域的所有sessionStorage对象
+      </n-button>
     </n-space>
   </naive-theme>
 </template>

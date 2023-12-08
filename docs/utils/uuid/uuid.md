@@ -7,22 +7,15 @@ import buildPrefixUUID from './buildPrefixUUID.vue'
 import uuid from './uuid.vue'
 </script>
 
-<!-- # uuid -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 uuid
 :::
 
-<!-- <description-popover :num="3" :tagNameList="['浏览器','Node']" /> -->
-
 ## buildUUID
 
-::: info 作用：生成 `32` 位 `uuid`
-:::
+生成 `32` 位 `uuid`
 
-<!-- <description :isShowIcon="false" description="生成 `32` 位 `uuid`" /> -->
-
-### 基础用法
+<div class="pure-border">
 
 <buildUUID />
 
@@ -34,22 +27,15 @@ uuid
 
 </details>
 
+</div>
+
 ## buildPrefixUUID
 
-::: info 作用：生成自定义前缀的 `uuid`
-:::
+生成自定义前缀的 `uuid`
 
-<!-- <description :isShowIcon="false" description="生成自定义前缀的 `uuid`" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `prefix` ，返回值类型 `string`
-
-| **参数属性** | **说明**   | **类型** |
-| ------------ | ---------- | -------- |
-| `prefix`     | 自定义前缀 | `string` |
-
-### 基础用法
+#### <divider-base /> {#base2}
 
 <buildPrefixUUID />
 
@@ -61,24 +47,23 @@ uuid
 
 </details>
 
-## uuid
+#### <divider-param /> {#param2}
 
-::: info 作用：生成指定长度和基数的 `uuid`
-:::
-
-<!-- <description :isShowIcon="false" description="生成指定长度和基数的 `uuid`" /> -->
-
-### 参数
-
-- 接收三个参数，第一个参数 `len` ，第二个参数 `radix` ，第三个参数 `prefix` ，返回值类型 `string`
+接收一个参数 `prefix` ，返回值类型 `string`
 
 | **参数属性** | **说明**   | **类型** |
 | ------------ | ---------- | -------- |
-| `len`        | 指定长度   | `number` |
-| `radix`      | 指定基数   | `number` |
 | `prefix`     | 自定义前缀 | `string` |
 
-### 基础用法
+</div>
+
+## uuid
+
+生成指定长度和基数的 `uuid`
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
 
 <uuid />
 
@@ -89,6 +74,18 @@ uuid
 <<< @/utils/uuid/uuid.vue
 
 </details>
+
+#### <divider-param /> {#param3}
+
+接收三个参数，第一个参数 `len` ，第二个参数 `radix` ，第三个参数 `prefix` ，返回值类型 `string`
+
+| **参数属性** | **说明**   | **类型** |
+| ------------ | ---------- | -------- |
+| `len`        | 指定长度   | `number` |
+| `radix`      | 指定基数   | `number` |
+| `prefix`     | 自定义前缀 | `string` |
+
+</div>
 
 ::: warning 提示信息
 

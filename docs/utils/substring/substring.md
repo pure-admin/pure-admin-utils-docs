@@ -11,31 +11,17 @@ import splitNum from './splitNum.vue'
 import hideTextAtIndex from './hideTextAtIndex.vue'
 </script>
 
-<!-- # 截取字符 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 截取字符
 :::
 
-<!-- <description-popover :num="7" :tagNameList="['浏览器','Node']" /> -->
-
 ## subBefore
 
-::: info 作用：截取指定字符前面的值
-:::
+截取指定字符前面的值
 
-<!-- <description :isShowIcon="false" description="截取指定字符前面的值" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回值类型 `string`
-
-| **参数属性** | **说明**   | **类型** |
-| ------------ | ---------- | -------- |
-| `val`        | 要截取的值 | `string` |
-| `character`  | 指定字符   | `string` |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <subBefore />
 
@@ -47,23 +33,24 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
-## subAfter
+#### <divider-param /> {#param1}
 
-::: info 作用：截取指定字符后面的值
-:::
-
-<!-- <description :isShowIcon="false" description="截取指定字符后面的值" /> -->
-
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回值类型 `string`
+接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回值类型 `string`
 
 | **参数属性** | **说明**   | **类型** |
 | ------------ | ---------- | -------- |
 | `val`        | 要截取的值 | `string` |
 | `character`  | 指定字符   | `string` |
 
-### 基础用法
+</div>
+
+## subAfter
+
+截取指定字符后面的值
+
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
 
 <subAfter />
 
@@ -75,23 +62,24 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
-## subBothSides
+#### <divider-param /> {#param2}
 
-::: info 作用：截取指定字符两边的值
-:::
-
-<!-- <description :isShowIcon="false" description="截取指定字符两边的值" /> -->
-
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回截取后的值，数组格式，左边返回指定字符前面的值，后边返回指定字符后面的值，返回值类型 `Array<string>`
+接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回值类型 `string`
 
 | **参数属性** | **说明**   | **类型** |
 | ------------ | ---------- | -------- |
 | `val`        | 要截取的值 | `string` |
 | `character`  | 指定字符   | `string` |
 
-### 基础用法
+</div>
+
+## subBothSides
+
+截取指定字符两边的值
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
 
 <subBothSides />
 
@@ -103,24 +91,24 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
+#### <divider-param /> {#param3}
+
+接收两个参数，第一个参数 `val` ，第二个参数 `character` ，返回截取后的值，数组格式，左边返回指定字符前面的值，后边返回指定字符后面的值，返回值类型 `Array<string>`
+
+| **参数属性** | **说明**   | **类型** |
+| ------------ | ---------- | -------- |
+| `val`        | 要截取的值 | `string` |
+| `character`  | 指定字符   | `string` |
+
+</div>
+
 ## subBetween
 
-::: info 作用：截取指定两个字符之间的值
-:::
+截取指定两个字符之间的值
 
-<!-- <description :isShowIcon="false" description="截取指定两个字符之间的值" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `before` ，第三个参数 `after`，返回值类型 `string`
-
-| **参数属性** | **说明**       | **类型** |
-| ------------ | -------------- | -------- |
-| `val`        | 要截取的值     | `string` |
-| `before`     | 前一个指定字符 | `string` |
-| `after`      | 后一个指定字符 | `string` |
-
-### 基础用法
+#### <divider-base /> {#base4}
 
 <subBetween />
 
@@ -132,23 +120,25 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
+#### <divider-param /> {#param4}
+
+接收两个参数，第一个参数 `val` ，第二个参数 `before` ，第三个参数 `after`，返回值类型 `string`
+
+| **参数属性** | **说明**       | **类型** |
+| ------------ | -------------- | -------- |
+| `val`        | 要截取的值     | `string` |
+| `before`     | 前一个指定字符 | `string` |
+| `after`      | 后一个指定字符 | `string` |
+
+</div>
+
 ## subTextAddEllipsis
 
-::: info 作用：截取字符并追加省略号（常用场景：`echarts`）
-:::
+截取字符并追加省略号（常用场景：`echarts`）
 
-<!-- <description :isShowIcon="false" description="截取字符并追加省略号（常用场景：`echarts`）" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个参数 `val` ，第二个参数 `len` ，返回值类型 `string`
-
-| **参数属性** | **说明**     | **类型**          | **默认值** |
-| ------------ | ------------ | ----------------- | ---------- |
-| `val`        | 要截取的值   | `string`          |            |
-| `len`        | 要保留的位数 | `string`/`number` | `3`        |
-
-### 基础用法
+#### <divider-base /> {#base5}
 
 <subTextAddEllipsis />
 
@@ -160,22 +150,24 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
+#### <divider-param /> {#param5}
+
+接收两个参数，第一个参数 `val` ，第二个参数 `len` ，返回值类型 `string`
+
+| **参数属性** | **说明**     | **类型**          | **默认值** |
+| ------------ | ------------ | ----------------- | ---------- |
+| `val`        | 要截取的值   | `string`          |            |
+| `len`        | 要保留的位数 | `string`/`number` | `3`        |
+
+</div>
+
 ## splitNum
 
-::: info 作用：将数字拆分为单个数字组成的数组
-:::
+将数字拆分为单个数字组成的数组
 
-<!-- <description :isShowIcon="false" description="将数字拆分为单个数字组成的数组" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `number` ，返回拆分的单个数字集合，返回值类型 `Array<number> | string`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `number`     | 要拆分的数字 | `number` |
-
-### 基础用法
+#### <divider-base /> {#base6}
 
 <splitNum />
 
@@ -187,28 +179,23 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 
 </details>
 
+#### <divider-param /> {#param6}
+
+接收一个参数 `number` ，返回拆分的单个数字集合，返回值类型 `Array<number> | string`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `number`     | 要拆分的数字 | `number` |
+
+</div>
+
 ## hideTextAtIndex
 
-::: info 作用：使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号
-:::
+使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号
 
-<!-- <description :isShowIcon="false" description="使用指定符号对指定的文字进行隐藏，默认使用 `*` 符号" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收三个参数，第一个参数 `text` ，第二个参数 `index` ，第三个参数 `symbol` ，返回值类型 `string`
-
-| **参数属性** | **说明**                 | **类型**                                                                     | **默认值** |
-| ------------ | ------------------------ | ---------------------------------------------------------------------------- | ---------- |
-| `text`       | 文字                     | `string`/`number`                                                            |            |
-| `index`      | 指定的文字索引或索引区间 | `number`/`Array<number\|unknown>`/<br>`HideTextIndex`/`Array<HideTextIndex>` |            |
-| `symbol`     | 指定的符号，默认 `*`     | `string`                                                                     | `*`        |
-
-### 类型声明
-
-<<< @/utils/substring/types/hideTextAtIndex.ts
-
-### 基础用法
+#### <divider-base /> {#base7}
 
 <hideTextAtIndex />
 
@@ -219,3 +206,19 @@ import hideTextAtIndex from './hideTextAtIndex.vue'
 <<< @/utils/substring/hideTextAtIndex.vue
 
 </details>
+
+#### <divider-param /> {#param7}
+
+接收三个参数，第一个参数 `text` ，第二个参数 `index` ，第三个参数 `symbol` ，返回值类型 `string`
+
+| **参数属性** | **说明**                 | **类型**                                                                     |
+| ------------ | ------------------------ | ---------------------------------------------------------------------------- |
+| `text`       | 文字                     | `string`/`number`                                                            |
+| `index`      | 指定的文字索引或索引区间 | `number`/`Array<number\|unknown>`/<br>`HideTextIndex`/`Array<HideTextIndex>` |
+| `symbol`     | 指定的符号，默认 `*`     | `string`                                                                     |
+
+#### <divider-type /> {#type7}
+
+<<< @/utils/substring/types/hideTextAtIndex.ts
+
+</div>

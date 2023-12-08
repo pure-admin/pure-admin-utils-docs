@@ -6,30 +6,17 @@ import getQueryMap from './getQueryMap.vue'
 import getLocation from './getLocation.vue'
 </script>
 
-<!-- # 提取 `url` 中所有参数、获取当前的 `location` 信息 -->
-
 ::: tip 支持任意运行在浏览器的 `JavaScript` 语言
 提取 `url` 中所有参数、获取当前的 `location` 信息
 :::
 
-<!-- <description-popover :num="2" :tagNameList="['浏览器']" /> -->
-
 ## getQueryMap
 
-::: info 作用：提取浏览器 `url` 中所有参数
-:::
+提取浏览器 `url` 中所有参数
 
-<!-- <description :isShowIcon="false" description="提取浏览器 `url` 中所有参数" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收一个参数 `url` ，返回值类型 `object`
-
-| **参数属性** | **说明**   | **类型** |
-| ------------ | ---------- | -------- |
-| `url`        | 超链接地址 | `string` |
-
-### 基础用法
+#### <divider-base /> {#base1}
 
 <getQueryMap />
 
@@ -41,14 +28,21 @@ import getLocation from './getLocation.vue'
 
 </details>
 
+#### <divider-param /> {#param1}
+
+接收一个参数 `url` ，返回值类型 `object`
+
+| **参数属性** | **说明**   | **类型** |
+| ------------ | ---------- | -------- |
+| `url`        | 超链接地址 | `string` |
+
+</div>
+
 ## getLocation
 
-::: info 作用：获取浏览器当前的 `location` 信息
-:::
+获取浏览器当前的 `location` 信息
 
-<!-- <description :isShowIcon="false" description="获取浏览器当前的 `location` 信息" /> -->
-
-### 基础用法
+<div class="pure-border">
 
 <getLocation />
 
@@ -59,3 +53,5 @@ import getLocation from './getLocation.vue'
 <<< @/utils/url/getLocation.vue
 
 </details>
+
+</div>

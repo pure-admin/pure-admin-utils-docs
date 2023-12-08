@@ -3,93 +3,84 @@ import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts
 useAddNumInOutlineLabel(5)
 </script>
 
-<!-- # 经纬度坐标 -->
-
 ::: tip 支持任意 `JavaScript` 环境或框架
 经纬度坐标
 :::
 
-<!-- <description-popover :num="5" :tagNameList="['浏览器','Node']" /> -->
-
 ## bd09togcj02
 
-::: info 作用：百度坐标系 `BD-09` 与火星坐标系 `GCJ-02` 的转换（即百度转谷歌、高德）
-:::
+百度坐标系 `BD-09` 与火星坐标系 `GCJ-02` 的转换（即百度转谷歌、高德）
 
-<!-- <description :isShowIcon="false" description="百度坐标系 `BD-09` 与火星坐标系 `GCJ-02` 的转换（即百度转谷歌、高德）" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
+接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `lng`        | 经度     | `number` |
 | `lat`        | 纬度     | `number` |
+
+</div>
 
 ## gcj02tobd09
 
-::: info 作用：火星坐标系 `GCJ-02` 与百度坐标系 `BD-09` 的转换（即谷歌、高德 转百度）
-:::
+火星坐标系 `GCJ-02` 与百度坐标系 `BD-09` 的转换（即谷歌、高德 转百度）
 
-<!-- <description :isShowIcon="false" description="火星坐标系 `GCJ-02` 与百度坐标系 `BD-09` 的转换（即谷歌、高德 转百度）" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
+接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `lng`        | 经度     | `number` |
 | `lat`        | 纬度     | `number` |
+
+</div>
 
 ## wgs84togcj02
 
-::: info 作用：`WGS-84` 转 `GCJ-02`
-:::
+`WGS-84` 转 `GCJ-02`
 
-<!-- <description :isShowIcon="false" description="`WGS-84` 转 `GCJ-02`" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
+接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `lng`        | 经度     | `number` |
 | `lat`        | 纬度     | `number` |
+
+</div>
 
 ## gcj02towgs84
 
-::: info 作用：`GCJ-02` 转换为` WGS-84`
-:::
+`GCJ-02` 转换为` WGS-84`
 
-<!-- <description :isShowIcon="false" description="`GCJ-02` 转换为` WGS-84`" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
+接收两个参数，第一个 `lng`，第二个 `lat`，返回经、纬度组成的数组，返回值类型为 `Array<number>`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `lng`        | 经度     | `number` |
 | `lat`        | 纬度     | `number` |
+
+</div>
 
 ## out_of_china
 
-::: info 作用：判断是否是国外（非中国）坐标
-:::
+判断是否是国外（非中国）坐标
 
-<!-- <description :isShowIcon="false" description="判断是否是国外（非中国）坐标" /> -->
+<div class="pure-border">
 
-### 参数
-
-- 接收两个参数，第一个 `lng`，第二个 `lat`，返回 `true`（在国外）、`false`（在国内），返回值类型为 `boolean`
+接收两个参数，第一个 `lng`，第二个 `lat`，返回 `true`（在国外）、`false`（在国内），返回值类型为 `boolean`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `lng`        | 经度     | `number` |
 | `lat`        | 纬度     | `number` |
+
+</div>
 
 ::: warning 推荐文章
 [百度 BD09 坐标系](https://baijiahao.baidu.com/s?id=1652433444439597387&wfr=spider&for=pc)  

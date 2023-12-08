@@ -206,7 +206,7 @@
   border: 1px solid var(--pure-table-border-color);
   border-radius: 8px;
   padding: 16px;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .pure-border th,
 .pure-border tr,
@@ -222,4 +222,17 @@ table tbody tr {
 }
 table tbody tr:hover {
   background: var(--vp-c-bg-soft) !important;
+}
+
+.VPSidebarItem.level-1.is-link {
+  padding: 0 10px;
+  border-radius: 8px;
+}
+.VPSidebarItem.level-1.is-link.is-active.has-active {
+  transition: all ease 0.3s;
+  background: var(--vp-custom-block-tip-bg);
+}
+.VPSidebarItem.level-1.is-link.is-active.has-active p {
+  transition: all ease 0.4s;
+  font-size: 0.95rem;
 }
