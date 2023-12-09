@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: 快速开始
       link: /guide/guide
-    - theme: alt
-      text: 关注
-      link: https://github.com/pure-admin
+    # - theme: alt
+    #   text: 关注
+    #   link: https://github.com/pure-admin
 
 features:
   - icon: 🌎

@@ -178,7 +178,7 @@
 }
 
 .VPDocAsideOutline .outline-link.active {
-  color: #409eff !important;
+  color: var(--vp-c-brand-1) !important;
 }
 
 .vp-doc p,
@@ -211,8 +211,9 @@
   font-weight: bold;
   padding: 4px;
   margin-left: 4px;
-  background: var(--vp-c-brand);
-  color: white;
+  border: 0.4px solid var(--vp-custom-block-tip-border);
+  background: var(--vp-custom-block-tip-bg);
+  color: var(--vp-c-brand-1);
   border-radius: 6px;
   vertical-align: middle;
 }
