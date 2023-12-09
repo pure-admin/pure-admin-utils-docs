@@ -189,6 +189,8 @@ export default defineConfig({
       exclude: ["@pureadmin/utils", "@vueuse/core", "vitepress"]
     },
     build: {
+      // https://cn.vitejs.dev/guide/build.html#browser-compatibility
+      target: "es2015",
       chunkSizeWarningLimit: 10000
     },
     plugins: [Unocss(), ReactivityTransform()]
