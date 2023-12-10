@@ -1,0 +1,63 @@
+a.brand,
+a.alt,
+a.pure {
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+a.brand.pure-utils-start::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/start.svg");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  transition: background-position 0.25s ease;
+}
+
+a.brand.pure-utils-start:hover::after {
+  background-position: right center;
+}
+
+/* a.alt.pure-utils-github::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/github.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+} */
+
+a.pure.pure-doc::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/pure-doc.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+a.pure.pure-table::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/table.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+a.pure.pure-table:hover,
+a.pure.pure-doc:hover {
+  /* border-color: transparent; */
+  box-shadow: 0 6px 8px var(--vp-c-brand);
+  transition: box-shadow 0.25s ease;
+}

@@ -16,6 +16,7 @@
     "build": "vitepress build docs",
     "format": "prettier --check --write .",
     "clean": "pnpm store prune && pnpm install",
+    "svgo": "svgo -f docs/public -o docs/public",
     "preview": "pnpm build && vitepress serve docs --port 8084"
   },
   "license": "MIT",
@@ -40,6 +41,7 @@
     "naive-ui": "^2.35.0",
     "pathe": "^1.1.1",
     "prettier": "^3.1.0",
+    "svgo": "^3.0.5",
     "typeit": "^8.8.0",
     "typescript": "^5.3.2",
     "unocss": "^0.58.0",

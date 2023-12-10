@@ -4,17 +4,23 @@ layout: home
 hero:
   name: "@pureadmin/utils"
   text: 常用的工具函数（utils、hooks）
-  tagline: 共126个工具函数，助您提高开发效率
+  tagline: 共126个工具函数，帮助提高开发效率
   image:
     src: /logo.png
     alt: "@pureadmin/utils"
   actions:
-    - theme: brand
+    - theme: brand pure-utils-start
       text: 快速开始
       link: /guide/guide
-    # - theme: alt
-    #   text: 关注
-    #   link: https://github.com/pure-admin
+    - theme: alt pure-utils-github
+      text: 文档仓库
+      link: https://github.com/pure-admin/pure-admin-utils-docs
+    - theme: pure pure-doc
+      text: pure-admin-doc
+      link: https://yiming_chang.gitee.io/pure-admin-doc/
+    - theme: pure pure-table
+      text: pure-admin-table
+      link: https://github.com/pure-admin/pure-admin-table
 
 features:
   - icon: 🌎
@@ -38,6 +44,7 @@ features:
 ---
 
 <script setup>
+import './.vitepress/theme/style/home-links.css'
 import { onMounted } from 'vue'
 // import { useMessage } from "./components/message"
 import { addReleaseTag } from './.vitepress/utils/createElement.ts'
