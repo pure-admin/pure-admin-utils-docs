@@ -22,10 +22,6 @@ a.brand.pure-utils-start::after {
   animation-timing-function: ease-out;
 }
 
-a.brand.pure-utils-start:hover::after {
-  background-position: right center;
-}
-
 @keyframes start-arrow {
   0% {
     background-position: left center;
@@ -53,28 +49,37 @@ a.brand.pure-utils-start:hover::after {
 a.pure.pure-doc::before {
   content: "";
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   background-image: url("/pure-doc.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   margin-right: 0.5em;
+  background-size: 90% 100%;
+  background-position: left center;
+  transition: background-position 0.25s ease;
 }
 
 a.pure.pure-table::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background-image: url("/table.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   margin-right: 0.5em;
+  background-size: 90% 100%;
+  background-position: left center;
+  transition: background-position 0.25s ease;
 }
 
-a.pure.pure-table:hover,
-a.pure.pure-doc:hover {
-  /* border-color: transparent; */
-  box-shadow: 0 4px 8px var(--vp-c-brand);
+a.brand.pure-utils-start:hover::after,
+a.pure.pure-doc:hover::before,
+a.pure.pure-table:hover::before {
+  background-position: right center;
+}
+
+a.pure.pure-doc:hover,
+a.pure.pure-table:hover {
+  box-shadow: 0px 0px 10px 0px var(--vp-c-brand);
   transition: box-shadow 0.25s ease;
 }
