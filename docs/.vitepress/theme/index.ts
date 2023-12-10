@@ -15,10 +15,10 @@ import {
   DividerTarget,
   DividerType,
   DividerUse,
-  Wordcloud,
+  // Wordcloud,
   NaiveTheme,
-  Description,
-  DescriptionPopover,
+  // Description,
+  // DescriptionPopover,
   ThemeChange
 } from "../../components";
 
@@ -27,7 +27,7 @@ export default {
   async enhanceApp({ app }) {
     if (!import.meta.env.SSR) {
       await import("echarts-gl");
-      await import("../plugins/wordcloud");
+      // await import("../plugins/wordcloud");
     }
     app.use(naive);
     app.component("divider-base", DividerBase);
@@ -36,10 +36,10 @@ export default {
     app.component("divider-target", DividerTarget);
     app.component("divider-type", DividerType);
     app.component("divider-use", DividerUse);
-    app.component("wordcloud", Wordcloud);
+    // app.component("wordcloud", Wordcloud);
     app.component("naive-theme", NaiveTheme);
-    app.component("description", Description);
-    app.component("description-popover", DescriptionPopover);
+    // app.component("description", Description);
+    // app.component("description-popover", DescriptionPopover);
     app.component("theme-change", ThemeChange);
     app.use(useEcharts);
   }
