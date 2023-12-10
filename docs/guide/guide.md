@@ -1,12 +1,12 @@
-<script setup>
+<!-- <script setup>
 import describe from './describe.vue'
-// import tags from './tags.vue'
-</script>
+import tags from './tags.vue'
+</script> -->
 
-<ClientOnly>
-  <describe /> 
+<!-- <ClientOnly>
+  <describe />
   <wordcloud/>
-</ClientOnly>
+</ClientOnly> -->
 
 <!-- ## 🏷️ 标签
 
@@ -14,7 +14,7 @@ import describe from './describe.vue'
 <tags :className="'type-it2'" :tagNameList="['浏览器']" :values="['支持任意运行在浏览器的JS语言']" :speed="100" />
 <tags :className="'type-it3'" :tagNameList="['Node']" :values="['支持NodeJs']" /> -->
 
-## 📦 安装
+### 📦 安装
 
 ::: code-group
 
@@ -32,7 +32,7 @@ npm install @pureadmin/utils
 
 :::
 
-## 📡 `CDN`
+### 📡 `CDN`
 
 ::: code-group
 
@@ -48,12 +48,12 @@ npm install @pureadmin/utils
 
 :::
 
-## 📚 示例
+### 📚 示例
 
 集成 `vue-vite`、`vue-cli`、`preact`、`react`、`solid`、`svelte`、`nuxt3`、`next`、`node`、`html` 使用示例
 
 [查看示例代码](https://github.com/pure-admin/pure-admin-utils-docs/tree/master/playgrounds)
 
-## 🤔 问题反馈
+### 🤔 反馈
 
-[反馈问题](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)
+[反馈问题、新增需求](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)

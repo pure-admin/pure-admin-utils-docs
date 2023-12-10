@@ -246,10 +246,13 @@ table tbody tr:hover {
   border-radius: 8px;
 }
 .VPSidebarItem.level-1.is-link.is-active.has-active {
-  transition: all ease 0.3s;
-  background: var(--vp-custom-block-tip-bg);
+  transition: all 0.3s ease;
+  background: rgba(100, 108, 255, 0.12);
+}
+.VPSidebarItem.level-1.is-link p {
+  transition: all 0.4s ease;
 }
 .VPSidebarItem.level-1.is-link.is-active.has-active p {
-  transition: all ease 0.4s;
   font-size: 0.95rem;
+  padding-left: 0.5rem;
 }
