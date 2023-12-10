@@ -166,6 +166,10 @@ export default defineConfig({
         }
       }
     },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页"
+    },
     lastUpdated: {
       text: "最近更新时间"
     }

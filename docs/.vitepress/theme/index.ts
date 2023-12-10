@@ -19,11 +19,13 @@ import {
   NaiveTheme,
   // Description,
   // DescriptionPopover,
-  ThemeChange
+  ThemeChange,
+  Layout
 } from "../../components";
 
 export default {
   ...DefaultTheme,
+  Layout,
   async enhanceApp({ app }) {
     if (!import.meta.env.SSR) {
       await import("echarts-gl");

@@ -9,6 +9,7 @@ import description from "./description.vue";
 import wordcloud from "./wordcloud/index.vue";
 import descriptionPopover from "./description-popover.vue";
 import themeChange from "./theme-change.vue";
+import layout from "./layout.vue";
 
 const DividerBase = dividerBase;
 const DividerOptions = dividerOptions;
@@ -21,6 +22,7 @@ const Description = description;
 const Wordcloud = wordcloud;
 const DescriptionPopover = descriptionPopover;
 const ThemeChange = themeChange;
+const Layout = layout;
 
 export {
   DividerBase,
@@ -33,5 +35,6 @@ export {
   Description,
   Wordcloud,
   DescriptionPopover,
-  ThemeChange
+  ThemeChange,
+  Layout
 };
