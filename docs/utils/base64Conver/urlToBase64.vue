@@ -12,17 +12,17 @@ function urlToBase() {
 }
 
 function urlOnLineToBase() {
-  urlToBase64("https://avatars.githubusercontent.com/u/44761321?v=4").then(
-    res => {
-      base64OnLineUrl.value = res;
-    }
-  );
+  urlToBase64(
+    "https://avatars.githubusercontent.com/u/106637267?s=200&v=4"
+  ).then(res => {
+    base64OnLineUrl.value = res;
+  });
 }
 </script>
 
 <template>
   <naive-theme>
-    <n-space className="flex items-center mt-2">
+    <div>
       <n-button @click="urlToBase"> 本地图片转base64 </n-button>
       <img
         :src="base64Url"
@@ -30,18 +30,21 @@ function urlOnLineToBase() {
         width="60"
         height="60"
         v-show="base64Url"
+        class="mt-2"
       />
-    </n-space>
-
-    <n-space className="flex items-center mt-2">
-      <n-button @click="urlOnLineToBase"> 在线图片url转base64 </n-button>
+    </div>
+    <div class="mt-2">
+      <n-button @click="urlOnLineToBase" class="mt-2">
+        在线图片url转base64
+      </n-button>
       <img
         :src="base64OnLineUrl"
         alt="base64OnLineUrl"
         width="60"
         height="60"
         v-show="base64OnLineUrl"
+        class="mt-2"
       />
-    </n-space>
+    </div>
   </naive-theme>
 </template>
