@@ -1,35 +1,26 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(3)
+
 import clone from './clone.vue'
 import cloneDeep from './cloneDeep.vue'
 import hasOwnProp from './hasOwnProp.vue'
 </script>
 
-# 浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
-
-<ClientOnly>
-  <description-popover :num="3" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+浅拷贝/深拷贝、判断对象自身属性中是否具有指定的属性
+:::
 
 ## clone
 
-<ClientOnly>
-  <description :isShowIcon="false" description="浅拷贝/深拷贝" /> 
-</ClientOnly>
+浅拷贝/深拷贝
 
-### 参数
+<div class="pure-border">
 
-- 接收两个参数，第一个参数 `val` ，第二个参数 `deep` ，返回拷贝后的值
+#### <divider-base /> {#base1}
 
-| **参数属性** | **说明**                 | **类型**  | **默认值** |
-| ------------ | ------------------------ | --------- | ---------- |
-| `val`        | 需要拷贝的值             | `any`     |            |
-| `deep`       | 是否深拷贝（默认浅拷贝） | `boolean` | `false`    |
+<clone />
 
-### 基础用法
-
-<ClientOnly>
-  <clone />
-</ClientOnly>
 <details>
 
 <summary>查看代码</summary>
@@ -38,25 +29,27 @@ import hasOwnProp from './hasOwnProp.vue'
 
 </details>
 
+#### <divider-param /> {#param1}
+
+接收两个参数，第一个参数 `val` ，第二个参数 `deep` ，返回拷贝后的值
+
+| **参数属性** | **说明**                 | **类型**  | **默认值** |
+| ------------ | ------------------------ | --------- | ---------- |
+| `val`        | 需要拷贝的值             | `any`     |            |
+| `deep`       | 是否深拷贝（默认浅拷贝） | `boolean` | `false`    |
+
+</div>
+
 ## cloneDeep
 
-<ClientOnly>
-  <description :isShowIcon="false" description="深拷贝" /> 
-</ClientOnly>
+深拷贝
 
-### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val` ，返回拷贝后的值
+#### <divider-base /> {#base2}
 
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `val`        | 需要拷贝的值 | `any`    |
+<cloneDeep />
 
-### 基础用法
-
-<ClientOnly>
-  <cloneDeep />
-</ClientOnly>
 <details>
 
 <summary>查看代码</summary>
@@ -65,26 +58,26 @@ import hasOwnProp from './hasOwnProp.vue'
 
 </details>
 
+#### <divider-param /> {#param2}
+
+接收一个参数 `val` ，返回拷贝后的值
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `val`        | 需要拷贝的值 | `any`    |
+
+</div>
+
 ## hasOwnProp
 
-<ClientOnly>
-  <description :isShowIcon="false" description="判断对象自身属性中是否具有指定的属性" /> 
-</ClientOnly>
+判断对象自身属性中是否具有指定的属性
 
-### 参数
+<div class="pure-border">
 
-- 接收两个参数，第一个参数 `obj` ，第二个参数 `key` ，返回值类型 `boolean`
+#### <divider-base /> {#base3}
 
-| **参数属性** | **说明**     | **类型**          |
-| ------------ | ------------ | ----------------- |
-| `obj`        | 要判断的对象 | `object`          |
-| `key`        | 指定的属性   | `string`/`number` |
+<hasOwnProp />
 
-### 基础用法
-
-<ClientOnly>
-  <hasOwnProp />
-</ClientOnly>
 <details>
 
 <summary>查看代码</summary>
@@ -93,7 +86,18 @@ import hasOwnProp from './hasOwnProp.vue'
 
 </details>
 
-:::tip
+#### <divider-param /> {#param3}
+
+-接收两个参数，第一个参数 `obj` ，第二个参数 `key` ，返回值类型 `boolean`
+
+| **参数属性** | **说明**     | **类型**          |
+| ------------ | ------------ | ----------------- |
+| `obj`        | 要判断的对象 | `object`          |
+| `key`        | 指定的属性   | `string`/`number` |
+
+</div>
+
+::: info 相关信息
 浅拷贝：只拷贝一层，更深层次对象级别的只会拷贝引用`地址`（不影响`基本数据类型`）  
 深拷贝：指源对象与拷贝对象互相独立，其中任何一个对象的改动都不会对另外一个对象造成影响，每一层都会拷贝（既不影响`基本数据类型`，又不影响`引用数据类型`）
 :::

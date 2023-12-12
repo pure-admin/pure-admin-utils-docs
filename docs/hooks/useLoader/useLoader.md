@@ -4,17 +4,17 @@ import loaders from './loaders.vue'
 
 # useLoader
 
-<ClientOnly>
-  <description description="动态加载link和script标签" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`、`Nuxt3`
+使用 `Promise` 动态加载 `link` 和 `script` 标签  
+不会重复加载相同 `src` 的标签，在生命周期销毁时默认会自动移除标签
+:::
 
-- 不会重复加载相同`src`的标签，在生命周期销毁时默认会自动移除标签
+<!-- <description description="使用`Promise`来动态加载`link`和`script`标签" :tagNameList="['Vue3']"  /> -->
 
 ## 基础用法
 
-<ClientOnly>
-  <loaders />
-</ClientOnly>
+<loaders />
+
 <details>
 
 <summary>查看代码</summary>

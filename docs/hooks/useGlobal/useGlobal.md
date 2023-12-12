@@ -4,15 +4,16 @@ import global from './global.vue'
 
 # useGlobal
 
-<ClientOnly>
-  <description description="获取实例中全局property" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`、`Nuxt3`
+获取实例中全局 `property`
+:::
+
+<!-- <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  /> -->
 
 ## 基础用法
 
-<ClientOnly>
-  <global />
-</ClientOnly>
+<global />
+
 <details>
 
 <summary>查看代码</summary>

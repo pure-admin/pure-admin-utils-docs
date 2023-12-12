@@ -7,9 +7,11 @@ let precision = computed(() => {
   return val => (val > 0 ? 3 : 0);
 });
 
-getPerformance().then(res => {
-  performance.value = res;
-});
+getPerformance()
+  .then(res => {
+    performance.value = res;
+  })
+  .catch(err => console.log(err));
 </script>
 
 <template>

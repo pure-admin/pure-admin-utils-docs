@@ -1,35 +1,26 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(4)
+
 import removeLeftSpace from './removeLeftSpace.vue'
 import removeRightSpace from './removeRightSpace.vue'
 import removeBothSidesSpace from './removeBothSidesSpace.vue'
 import removeAllSpace from './removeAllSpace.vue'
 </script>
 
-# 去掉字符串空格相关函数
-
-<ClientOnly>
-  <description-popover :num="4" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+去掉字符串空格
+:::
 
 ## removeLeftSpace
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串左边空格" /> 
-</ClientOnly>
+去掉字符串左边空格
 
-### 参数
+<div class="pure-border">
 
-- 接收一个参数 `str` ，返回值类型 `string`
+#### <divider-base /> {#base1}
 
-| **参数属性** | **说明** | **类型** |
-| ------------ | -------- | -------- |
-| `str`        | 字符串   | `string` |
-
-### 基础用法
-
-<ClientOnly>
-  <removeLeftSpace />
-</ClientOnly>
+<removeLeftSpace />
 
 <details>
 
@@ -39,25 +30,25 @@ import removeAllSpace from './removeAllSpace.vue'
 
 </details>
 
-## removeRightSpace
+#### <divider-param /> {#param1}
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串右边空格" /> 
-</ClientOnly>
-
-### 参数
-
-- 接收一个参数 `str` ，返回值类型 `string`
+接收一个参数 `str` ，返回值类型 `string`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `str`        | 字符串   | `string` |
 
-### 基础用法
+</div>
 
-<ClientOnly>
-  <removeRightSpace />
-</ClientOnly>
+## removeRightSpace
+
+去掉字符串右边空格
+
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
+
+<removeRightSpace />
 
 <details>
 
@@ -67,25 +58,25 @@ import removeAllSpace from './removeAllSpace.vue'
 
 </details>
 
-## removeBothSidesSpace
+#### <divider-param /> {#param2}
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串左右两边空格" /> 
-</ClientOnly>
-
-### 参数
-
-- 接收一个参数 `str` ，返回值类型 `string`
+接收一个参数 `str` ，返回值类型 `string`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `str`        | 字符串   | `string` |
 
-### 基础用法
+</div>
 
-<ClientOnly>
-  <removeBothSidesSpace />
-</ClientOnly>
+## removeBothSidesSpace
+
+去掉字符串左右两边空格
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
+
+<removeBothSidesSpace />
 
 <details>
 
@@ -95,25 +86,25 @@ import removeAllSpace from './removeAllSpace.vue'
 
 </details>
 
-## removeAllSpace
+#### <divider-param /> {#param3}
 
-<ClientOnly>
-  <description :isShowIcon="false" description="去掉字符串全部空格" /> 
-</ClientOnly>
-
-### 参数
-
-- 接收一个参数 `str` ，返回值类型 `string`
+接收一个参数 `str` ，返回值类型 `string`
 
 | **参数属性** | **说明** | **类型** |
 | ------------ | -------- | -------- |
 | `str`        | 字符串   | `string` |
 
-### 基础用法
+</div>
 
-<ClientOnly>
-  <removeAllSpace />
-</ClientOnly>
+## removeAllSpace
+
+去掉字符串全部空格
+
+<div class="pure-border">
+
+#### <divider-base /> {#base4}
+
+<removeAllSpace />
 
 <details>
 
@@ -122,3 +113,13 @@ import removeAllSpace from './removeAllSpace.vue'
 <<< @/utils/space/removeAllSpace.vue
 
 </details>
+
+#### <divider-param /> {#param4}
+
+接收一个参数 `str` ，返回值类型 `string`
+
+| **参数属性** | **说明** | **类型** |
+| ------------ | -------- | -------- |
+| `str`        | 字符串   | `string` |
+
+</div>

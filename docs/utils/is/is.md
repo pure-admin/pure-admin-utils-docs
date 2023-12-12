@@ -1,401 +1,433 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(40)
+
 import hasCNChars from './hasCNChars.vue'
 </script>
 
-# 类型、正则判断相关函数
-
-<ClientOnly>
-  <description-popover :num="39" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+类型、正则判断
+:::
 
 ## 类型判断
 
 ### is
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否某值是某种类型" /> 
-</ClientOnly>
+判断某值的类型
 
-#### 参数
+<div class="pure-border">
 
-- 接收两个参数，第一个 `val`，第二个 `type`，返回值 `true`（该值是该类型）、`false`（该值非该类型），返回值类型为 `boolean`
+接收两个参数，第一个 `val`，第二个 `type`，返回值 `true`（该值是该类型）、`false`（该值非该类型），返回值类型为 `boolean`
 
 | **参数属性** | **说明**         | **类型**  |
 | ------------ | ---------------- | --------- |
 | `val`        | 需要判断的值     | `unknown` |
 | `type`       | 需要判断值的类型 | `string`  |
 
+</div>
+
 ### isDef
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否非 undefined" /> 
-</ClientOnly>
+是否非 `undefined`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isUnDef
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 undefined" /> 
-</ClientOnly>
+是否是 `undefined`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isObject
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是对象 object" /> 
-</ClientOnly>
+是否是对象 `object`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `val`        | 需要判断的值 | `any`    |
+
+</div>
 
 ### isPlainObject
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是普通对象" /> 
-</ClientOnly>
+是否是普通对象，功能同 [lodash.isPlainObject](https://www.lodashjs.com/docs/lodash.isPlainObject)
 
-功能同 https://www.lodashjs.com/docs/lodash.isPlainObject
+<div class="pure-border">
 
-#### 参数
-
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `val`        | 需要判断的值 | `any`    |
+
+</div>
 
 ### isDate
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Date 日期类型" /> 
-</ClientOnly>
+是否是 `Date` 日期类型
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isNull
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null" /> 
-</ClientOnly>
+是否是 `null`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isNullAndUnDef
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null 并且是 undefined" /> 
-</ClientOnly>
+是否是 `null` 并且是 `undefined`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isNullOrUnDef
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 null 或者 undefined" /> 
-</ClientOnly>
+是否是 `null` 或者 `undefined`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isNumber
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 number" /> 
-</ClientOnly>
+是否是 `number`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isPromise
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Promise" /> 
-</ClientOnly>
+是否是 `Promise`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isString
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 string" /> 
-</ClientOnly>
+是否是 `string`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isFunction
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Function" /> 
-</ClientOnly>
+是否是 `Function`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isBoolean
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Boolean" /> 
-</ClientOnly>
+是否是 `Boolean`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isRegExp
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 RegExp" /> 
-</ClientOnly>
+是否是 `RegExp`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isArray
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Array" /> 
-</ClientOnly>
+是否是 `Array`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isJSON
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是标准的 JSON 格式" /> 
-</ClientOnly>
+是否是标准的 `JSON` 格式
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
 
+</div>
+
 ### isWindow
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Window" /> 
-</ClientOnly>
+是否是 `Window`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `val`        | 需要判断的值 | `any`    |
 
+</div>
+
 ### isElement
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Element" /> 
-</ClientOnly>
+是否是 `Element`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
 
+</div>
+
 ### isServer
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是服务端" /> 
-</ClientOnly>
+是否处于服务端，非浏览器环境，无需参数（根据是否存在`window`来判断）
 
 ### isClient
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 window" /> 
-</ClientOnly>
+是否处于浏览器环境，无需参数（根据是否存在`window`来判断）
+
+### isBrowser
+
+是否处于浏览器环境，无需参数（根据是否存在`document`来判断）
 
 ## 正则判断
 
 ### isUrl
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="url 链接正则" /> 
-</ClientOnly>
+`url` 链接正则
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `string` |
 
+</div>
+
 ### isPhone
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="手机号码正则" /> 
-</ClientOnly>
+手机号码正则
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `any`    |
 
+</div>
+
 ### isEmail
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="邮箱正则" /> 
-</ClientOnly>
+邮箱正则
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `string` |
 
+</div>
+
 ### isQQ
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="QQ 正则" /> 
-</ClientOnly>
+`QQ` 正则
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `number` |
+
+</div>
 
 ### isPostCode
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是中国大陆邮政编码（共6位，且不能以0开头）" /> 
-</ClientOnly>
+是否是中国大陆邮政编码（共`6`位，且不能以`0`开头）
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `number` |
 
+</div>
+
+### isLowerCase
+
+是否是小写字母
+
+<div class="pure-border">
+
+接收一个参数 `value`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `value`      | 需要判断的值 | `string` |
+
+</div>
+
+### isUpperCase
+
+是否是大写字母
+
+<div class="pure-border">
+
+接收一个参数 `value`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `value`      | 需要判断的值 | `any`    |
+
+</div>
+
+### isAlphabets
+
+是否是大小写字母
+
+<div class="pure-border">
+
+接收一个参数 `value`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `value`      | 需要判断的值 | `string` |
+
+</div>
+
+### isExistSpace
+
+检测字符串是否有空格
+
+<div class="pure-border">
+
+接收一个参数 `value`，返回 `true`（有空格）、`false`（无空格），返回值类型为 `boolean`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `value`      | 需要判断的值 | `string` |
+
+</div>
+
 ### hasCNChars
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="1. 校验是否包含中文或指定的 `unicode` 字符；2. 校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）" /> 
-</ClientOnly>
+校验是否包含中文或指定的 `unicode` 字符；校验是否全是中文或指定的 `unicode` 字符 （包括常用中文标点符号）
 
-#### 参数
+<div class="pure-border">
 
-- 接收两个参数，第一个参数 `value`，第二个参数 `options`，返回值类型为 `boolean`
+#### <divider-base /> {#base}
 
-| **参数属性** | **说明**                                  | **类型**   |
-| ------------ | ----------------------------------------- | ---------- |
-| `value`      | 需要判断的值                              | `any`      |
-| `options`    | 拥有四个属性，具体看下面的 `options` 详情 | `isParams` |
+<hasCNChars />
 
-#### `options` 详情
-
-| **参数属性**     | **说明**                                   | **类型**  |
-| ---------------- | ------------------------------------------ | --------- |
-| `all`            | 是否全部是中文，默认 `false`               | `boolean` |
-| `unicode`        | 自定义 `unicode`，不会覆盖默认的 `unicode` | `string`  |
-| `replaceUnicode` | 自定义 `unicode`，会覆盖默认的 `unicode`   | `string`  |
-| `pure`           | 是否删除全部空格，默认 `false`             | `boolean` |
-
-### 类型声明
-
-<<< @/utils/is/types/hasCNChars.ts
-
-### 基础用法
-
-<ClientOnly>
-  <hasCNChars />
-</ClientOnly>
 <details>
 
 <summary>查看代码</summary>
@@ -404,7 +436,29 @@ import hasCNChars from './hasCNChars.vue'
 
 </details>
 
-:::tip
+#### <divider-param /> {#param}
+
+接收两个参数，第一个参数 `value`，第二个参数 `options`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**                                  | **类型**   |
+| ------------ | ----------------------------------------- | ---------- |
+| `value`      | 需要判断的值                              | `any`      |
+| `options`    | 拥有四个属性，具体看下面的 `options` 详情 | `isParams` |
+
+#### <divider-options /> {#options}
+
+| **参数属性**     | **说明**                                   | **类型**  |
+| ---------------- | ------------------------------------------ | --------- |
+| `all`            | 是否全部是中文，默认 `false`               | `boolean` |
+| `unicode`        | 自定义 `unicode`，不会覆盖默认的 `unicode` | `string`  |
+| `replaceUnicode` | 自定义 `unicode`，会覆盖默认的 `unicode`   | `string`  |
+| `pure`           | 是否删除全部空格，默认 `false`             | `boolean` |
+
+#### <divider-type /> {#type}
+
+<<< @/utils/is/types/hasCNChars.ts
+
+::: info 提示信息
 
 - [unicode 转换](https://unicode.yunser.com/coding)
 - 将 `replaceUnicode` 值设置为非常用中文标点符号的 `unicode` 编码时，常用中文标点符号不会被识别为中文
@@ -413,172 +467,119 @@ import hasCNChars from './hasCNChars.vue'
 
 :::
 
-### isLowerCase
-
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是小写字母" /> 
-</ClientOnly>
-
-#### 参数
-
-- 接收一个参数 `value`，返回值类型为 `boolean`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `string` |
-
-### isUpperCase
-
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大写字母" /> 
-</ClientOnly>
-
-#### 参数
-
-- 接收一个参数 `value`，返回值类型为 `boolean`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `any`    |
-
-### isAlphabets
-
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是大小写字母" /> 
-</ClientOnly>
-
-#### 参数
-
-- 接收一个参数 `value`，返回值类型为 `boolean`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `string` |
-
-### isExistSpace
-
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="检测字符串是否有空格" /> 
-</ClientOnly>
-
-#### 参数
-
-- 接收一个参数 `value`，返回 `true`（有空格）、`false`（无空格），返回值类型为 `boolean`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `value`      | 需要判断的值 | `string` |
+</div>
 
 ## 其他判断
 
 ### isEmpty
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断" /> 
-</ClientOnly>
+是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()` 进行判断
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isAllEmpty
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空" /> 
-</ClientOnly>
+是否为空，针对 `数组`、`对象`、`字符串`、`new Map()`、`new Set()`、`null`、`undefined` 进行判断，`null`、`undefined` 直接返回 `true`，也就是直接等于空
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
+
+</div>
 
 ### isLeapYear
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是闰年" /> 
-</ClientOnly>
+是否是闰年
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型**  |
 | ------------ | ------------ | --------- |
 | `val`        | 需要判断的值 | `unknown` |
 
+</div>
+
 ### isBase64
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 Base64" /> 
-</ClientOnly>
+是否是 `Base64`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `val`        | 需要判断的值 | `string` |
 
+</div>
+
 ### isHex
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 hex" /> 
-</ClientOnly>
+是否是 `hex`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `color`      | 需要判断的值 | `string` |
+
+</div>
 
 ### isRgb
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 rgb" /> 
-</ClientOnly>
+是否是 `rgb`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `color`      | 需要判断的值 | `string` |
+
+</div>
 
 ### isRgba
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 rgba" /> 
-</ClientOnly>
+是否是 `rgba`
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `val`，返回值类型为 `boolean`
+接收一个参数 `val`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `color`      | 需要判断的值 | `string` |
 
+</div>
+
 ### isHtml
 
-<ClientOnly>
-  <description :isShowIcon="false" :gradientClass="'mb-2'" description="是否是 html" /> 
-</ClientOnly>
+是否是 `HTML`，通过判断传入字符是否包含类似`HTML`标签的结构，适用于基本场景  
+如需判断传入字符是否符合 `W3C HTML` 规范可以用 [html-validate](https://www.npmjs.com/package/html-validate)
 
-#### 参数
+<div class="pure-border">
 
-- 接收一个参数 `value`，返回值类型为 `boolean`
+接收一个参数 `value`，返回值类型为 `boolean`
 
 | **参数属性** | **说明**     | **类型** |
 | ------------ | ------------ | -------- |
 | `value`      | 需要判断的值 | `string` |
+
+</div>

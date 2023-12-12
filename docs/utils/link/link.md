@@ -1,29 +1,42 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+
 import links from './link.vue'
 </script>
 
-# 创建超链接
-
-<ClientOnly>
-  <description-popover :num="1" :tagNameList="['浏览器']" />
-</ClientOnly>
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+超链接
+:::
 
 ## openLink
 
-<ClientOnly>
-  <description :isShowIcon="false" description="创建超链接" /> 
-</ClientOnly>
+创建超链接
 
-### 参数
+<div class="pure-border">
 
-- 接收两个参数，第一个参数 `href` ，第二个参数 `target` ，无返回值
+#### <divider-base /> {#base1}
+
+<links />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/link/link.vue
+
+</details>
+
+#### <divider-param /> {#param1}
+
+接收两个参数，第一个参数 `href` ，第二个参数 `target` ，无返回值
 
 | **参数属性** | **说明**                                 | **类型** | **默认值** |
 | ------------ | ---------------------------------------- | -------- | ---------- |
 | `href`       | 要跳转的超链接地址                       | `string` |            |
 | `target`     | 拥有五个属性，具体看下面的 `target` 详情 | `Target` | `_blank`   |
 
-#### `target` 详情
+#### <divider-target /> {#target1}
 
 | **参数属性** | **说明**                           |
 | ------------ | ---------------------------------- |
@@ -37,16 +50,4 @@ import links from './link.vue'
 
 <<< @/utils/link/types/openLink.ts
 
-### 基础用法
-
-<ClientOnly>
-  <links />
-</ClientOnly>
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/utils/link/link.vue
-
-</details>
+</div>

@@ -1,32 +1,24 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(1)
+
 import formDataHander from './formDataHander.vue'
 </script>
 
-# 处理 FormData 传参
-
-<ClientOnly>
-  <description-popover :num="1" :tagNameList="['浏览器','Node']" />
-</ClientOnly>
+::: tip 支持任意 `JavaScript` 环境或框架
+处理 `FormData` 传参
+:::
 
 ## formDataHander
 
-<ClientOnly>
-  <description :isShowIcon="false" description="处理 FormData 传参" /> 
-</ClientOnly>
+处理 `FormData` 传参
 
-### 参数
+<div class="pure-border">
 
-- 接收一个参数 `obj`，返回值类型 `FormData`
+#### <divider-base /> {#base1}
 
-| **参数属性** | **说明**                                      | **类型** |
-| ------------ | --------------------------------------------- | -------- |
-| `obj`        | 参数，对象格式，例如：`{ a: 1, b: "2", ... }` | `object` |
+<formDataHander />
 
-### 基础用法
-
-<ClientOnly>
-  <formDataHander />
-</ClientOnly>
 <details>
 
 <summary>查看代码</summary>
@@ -34,3 +26,13 @@ import formDataHander from './formDataHander.vue'
 <<< @/utils/formData/formDataHander.vue
 
 </details>
+
+#### <divider-param /> {#param1}
+
+接收一个参数 `obj`，返回值类型 `FormData`
+
+| **参数属性** | **说明**                                      | **类型** |
+| ------------ | --------------------------------------------- | -------- |
+| `obj`        | 参数，对象格式，例如：`{ a: 1, b: "2", ... }` | `object` |
+
+</div>

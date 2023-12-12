@@ -1,16 +1,25 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "HOST=0.0.0.0 nuxt dev",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "preview": "HOST=0.0.0.0 nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier --check --write ."
   },
   "devDependencies": {
-    "nuxt": "^3.0.0"
+    "@element-plus/nuxt": "^1.0.7",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "nuxt": "^3.8.2",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.3.5"
   },
   "dependencies": {
-    "@pureadmin/utils": "^1.8.7"
+    "@pureadmin/utils": "^1.9.15",
+    "echarts": "^5.4.3",
+    "element-plus": "^2.4.3"
   }
 }

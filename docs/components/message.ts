@@ -5,10 +5,10 @@ import {
   ConfigProviderProps
 } from "naive-ui";
 import { computed } from "vue";
-import { useDark } from "@pureadmin/utils";
+import { useData } from "vitepress";
 
 export function useMessage() {
-  const { isDark } = useDark();
+  const { isDark } = useData();
 
   const configProviderPropsRef = computed<ConfigProviderProps>(() => ({
     theme: isDark.value ? darkTheme : lightTheme

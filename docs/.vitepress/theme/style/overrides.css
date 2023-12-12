@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-c-brand-1: #646cff; /* https://github.com/vuejs/vitepress/pull/2797 */
+  /* --vp-c-brand-1: #646cff; https://github.com/vuejs/vitepress/pull/2797 */
   --vp-c-brand: #646cff;
   --vp-c-brand-light: #747bff;
   --vp-c-brand-lighter: #9499ff;
@@ -60,6 +60,22 @@
     --vp-home-hero-image-filter: blur(72px);
   }
 } */
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
 
 /**
  * VitePress: Custom fix
@@ -162,7 +178,7 @@
 }
 
 .VPDocAsideOutline .outline-link.active {
-  color: #409eff !important;
+  color: var(--vp-c-brand-1) !important;
 }
 
 .vp-doc p,
@@ -172,13 +188,6 @@
 
 .custom-block.tip {
   color: var(--vp-c-brand);
-}
-
-table tbody tr {
-  background: transparent !important;
-}
-table tbody tr:hover {
-  background: var(--vp-c-bg-soft) !important;
 }
 
 /* 覆盖naive-ui样式 */
@@ -195,4 +204,65 @@ table tbody tr:hover {
   color: white;
   border-radius: 10px;
   vertical-align: middle;
+}
+
+.pureadminutils-outline-label-num {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  margin-left: 4px;
+  border: 0.4px solid var(--vp-custom-block-tip-border);
+  background: var(--vp-custom-block-tip-bg);
+  color: var(--vp-c-brand-1);
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+/* markdown table */
+.pure-border {
+  border: 1px solid var(--pure-table-border-color);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+}
+.pure-border th,
+.pure-border tr,
+.pure-border td,
+.pure-no-border th,
+.pure-no-border tr,
+.pure-no-border td {
+  border: none;
+}
+.pure-border thead,
+.pure-border tbody,
+.pure-no-border thead,
+.pure-no-border tbody {
+  border: 1px solid var(--pure-table-border-color);
+}
+table tbody tr {
+  background: transparent !important;
+}
+table tbody tr:hover {
+  background: var(--vp-c-bg-soft) !important;
+}
+
+.VPSidebarItem.level-1.is-link {
+  padding: 0 10px;
+  border-radius: 8px;
+}
+.VPSidebarItem.level-1.is-link.is-active.has-active {
+  transition: all 0.3s ease;
+  background: rgba(100, 108, 255, 0.12);
+}
+.VPSidebarItem.level-1.is-link p {
+  transition: all 0.4s ease;
+}
+.VPSidebarItem.level-1.is-link.is-active.has-active p {
+  font-size: 0.95rem;
+  padding-left: 0.5rem;
+}
+
+/* component preview-image */
+.PhotoSlider__BannerRight > svg:first-child {
+  display: none !important;
 }

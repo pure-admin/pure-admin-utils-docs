@@ -1,34 +1,22 @@
 <script setup>
+import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
+useAddNumInOutlineLabel(2)
+
 import storageLocal from './storageLocal.vue'
 import storageSession from './storageSession.vue'
 </script>
 
-# 本地存储相关函数
-
-<ClientOnly>
-  <description-popover :num="2" :tagNameList="['浏览器']" />
-</ClientOnly>
-
-### storageLocal、storageSession 方法
-
-| **方法名**   | **说明**                    | **参数**                   |
-| ------------ | --------------------------- | -------------------------- |
-| `setItem`    | 储存对应键名的 Storage 对象 | `k` （键名）, `v` （键值） |
-| `getItem`    | 获取对应键名的 Storage 对象 | `k` （键名）               |
-| `removeItem` | 删除对应键名的 Storage 对象 | `k` （键名）               |
-| `clear`      | 删除此域的所有 Storage 对象 | -                          |
+::: tip 支持任意运行在浏览器的 `JavaScript` 语言
+本地存储
+:::
 
 ## storageLocal
 
-<ClientOnly>
-  <description :isShowIcon="false" description="localStorage相关函数" /> 
-</ClientOnly>
+处理 `localStorage`
 
-### 基础用法
+<div class="pure-border">
 
-<ClientOnly>
-  <storageLocal />
-</ClientOnly>
+<storageLocal />
 
 <details>
 
@@ -38,17 +26,15 @@ import storageSession from './storageSession.vue'
 
 </details>
 
+</div>
+
 ## storageSession
 
-<ClientOnly>
-  <description :isShowIcon="false" description="sessionStorage相关函数" /> 
-</ClientOnly>
+处理 `sessionStorage`
 
-### 基础用法
+<div class="pure-border">
 
-<ClientOnly>
-  <storageSession />
-</ClientOnly>
+<storageSession />
 
 <details>
 
@@ -57,3 +43,14 @@ import storageSession from './storageSession.vue'
 <<< @/utils/storage/storageSession.vue
 
 </details>
+
+</div>
+
+## 通用方法
+
+| **方法名**   | **说明**                      | **参数**                   |
+| ------------ | ----------------------------- | -------------------------- |
+| `setItem`    | 储存对应键名的 `Storage` 对象 | `k` （键名）, `v` （键值） |
+| `getItem`    | 获取对应键名的 `Storage` 对象 | `k` （键名）               |
+| `removeItem` | 删除对应键名的 `Storage` 对象 | `k` （键名）               |
+| `clear`      | 删除此域的所有 `Storage` 对象 |                            |

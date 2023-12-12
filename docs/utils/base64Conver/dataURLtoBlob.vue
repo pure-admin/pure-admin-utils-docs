@@ -20,7 +20,7 @@ function baseToBlob() {
         <template #trigger>
           <n-button @click="baseToBlob"> base64转blob </n-button>
         </template>
-        试着点击此按钮并打开控制台，观察打印的Blob吧😛
+        打开控制台然后点击此按钮，观察打印的Blob吧😛
       </n-tooltip>
       <img
         :src="blob"

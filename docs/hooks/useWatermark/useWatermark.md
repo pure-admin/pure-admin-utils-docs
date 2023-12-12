@@ -4,15 +4,16 @@ import watermark from './watermark.vue'
 
 # useWatermark
 
-<ClientOnly>
-  <description description="给元素加水印" :tagNameList="['Vue3']"  /> 
-</ClientOnly>
+::: tip 适用于 `Vue3`、`Nuxt3`
+给元素加水印
+:::
+
+<!-- <description description="给元素加水印" :tagNameList="['Vue3']"  /> -->
 
 ## 基础用法
 
-<ClientOnly>
-  <watermark />
-</ClientOnly>
+<watermark />
+
 <details>
 
 <summary>查看代码</summary>

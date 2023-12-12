@@ -9,10 +9,10 @@ import { hooks } from "../../.vitepress/utils/sortHooks";
 import {
   type EchartOptions,
   randomColor,
-  useDark,
   useECharts,
   debounce
 } from "@pureadmin/utils";
+import { useData as useDark } from "vitepress";
 
 const loading = ref(true);
 const { data } = useData();

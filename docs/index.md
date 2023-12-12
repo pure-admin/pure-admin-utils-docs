@@ -4,29 +4,35 @@ layout: home
 hero:
   name: "@pureadmin/utils"
   text: 常用的工具函数（utils、hooks）
-  tagline: 共125个工具函数，助您提高开发效率
+  tagline: 共126个工具函数，帮助提高开发效率
   image:
     src: /logo.png
     alt: "@pureadmin/utils"
   actions:
-    - theme: brand
-      text: Start
+    - theme: brand pure-utils-start
+      text: 快速开始
       link: /guide/guide
-    - theme: alt
-      text: Follow
-      link: https://github.com/xiaoxian521
+    - theme: alt pure-utils-github
+      text: 文档仓库
+      link: https://github.com/pure-admin/pure-admin-utils-docs
+    - theme: pure pure-doc
+      text: pure-admin-doc
+      link: https://yiming_chang.gitee.io/pure-admin-doc/
+    - theme: pure pure-table
+      text: pure-admin-table
+      link: https://github.com/pure-admin/pure-admin-table
 
 features:
   - icon: 🌎
     title: 任意 JavaScript 环境中运行
     details: 支持Node.js、浏览器以及任意JavaScript框架
   - icon: 📡
-    title: 可通过 CDN 使用
+    title: 可通过 CDN 引用
     details: 同时支持 unpkg 和 jsdelivr
   - icon: ⚡️
     title: 完全可摇树
     details: 自带 Tree-shaking ，只对引入的代码进行打包
-  - icon:  💫
+  - icon: 💫
     title: 零依赖
     details: 零 Dependencies 依赖，只会安装项目本身
   - icon: 🦾
@@ -38,9 +44,10 @@ features:
 ---
 
 <script setup>
+import './.vitepress/theme/style/home-links.css'
 import { onMounted } from 'vue'
 // import { useMessage } from "./components/message"
-import { addReleaseTag } from './.vitepress/utils/addReleaseTag.js'
+import { addReleaseTag } from './.vitepress/utils/createElement.ts'
 
 onMounted(() => {
   addReleaseTag()
