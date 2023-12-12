@@ -106,7 +106,7 @@ import throttle from './throttle.vue'
 
 </div>
 
-::: warning 相关信息
+::: info 相关信息
 
 防抖：指触发事件后在 `n` 秒内函数只能执行一次，如果在 `n` 秒内又触发了事件，则会重新计算函数执行时间
 

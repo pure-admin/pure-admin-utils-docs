@@ -87,7 +87,7 @@ uuid
 
 </div>
 
-::: warning 提示信息
+::: info 提示信息
 
 指定基数的母体为：`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`，总长度 `62`
 

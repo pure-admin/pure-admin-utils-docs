@@ -7,6 +7,12 @@ import "./style/overrides.css";
 
 import naive from "naive-ui";
 
+// import Toast from "vue-toastification";
+// import "vue-toastification/dist/index.css";
+
+import vue3PhotoPreview from "vue3-photo-preview";
+import "vue3-photo-preview/dist/index.css";
+
 import { useEcharts } from "../plugins/echarts";
 import {
   DividerBase,
@@ -19,6 +25,7 @@ import {
   NaiveTheme,
   // Description,
   // DescriptionPopover,
+  PreviewImage,
   ThemeChange,
   Layout
 } from "../../components";
@@ -32,6 +39,8 @@ export default {
       // await import("../plugins/wordcloud");
     }
     app.use(naive);
+    // app.use(Toast, { timeout: 2000 });
+    app.use(vue3PhotoPreview);
     app.component("divider-base", DividerBase);
     app.component("divider-options", DividerOptions);
     app.component("divider-param", DividerParam);
@@ -42,6 +51,7 @@ export default {
     app.component("naive-theme", NaiveTheme);
     // app.component("description", Description);
     // app.component("description-popover", DescriptionPopover);
+    app.component("preview-image", PreviewImage);
     app.component("theme-change", ThemeChange);
     app.use(useEcharts);
   }

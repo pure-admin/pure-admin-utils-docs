@@ -82,7 +82,7 @@ useAddNumInOutlineLabel(5)
 
 </div>
 
-::: warning 推荐文章
+::: info 推荐文章
 [百度 BD09 坐标系](https://baijiahao.baidu.com/s?id=1652433444439597387&wfr=spider&for=pc)  
  [WGS-84 坐标系](https://baike.baidu.com/item/WGS-84%E5%9D%90%E6%A0%87%E7%B3%BB/730443?fr=aladdin)  
  [什么是火星坐标系 GCJ-02](https://blog.csdn.net/mrib/article/details/78032562)  

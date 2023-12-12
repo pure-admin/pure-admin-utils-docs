@@ -168,6 +168,6 @@ import lighten from './lighten.vue'
 
 </div>
 
-::: warning 推荐文章
+::: info 推荐文章
 [CSS HSL 颜色](https://www.w3school.com.cn/css/css_colors_hsl.asp)
 :::

@@ -70,6 +70,6 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 
 </div>
 
-::: warning 提示信息
+::: info 提示信息
 在线图片`url`转`base64`，要求图片请求支持跨域，服务器配置下允许跨域即可
 :::

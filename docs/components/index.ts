@@ -8,6 +8,7 @@ import naiveTheme from "./theme.vue";
 import description from "./description.vue";
 import wordcloud from "./wordcloud/index.vue";
 import descriptionPopover from "./description-popover.vue";
+import previewImage from "./preview-image.vue";
 import themeChange from "./theme-change.vue";
 import layout from "./layout.vue";
 
@@ -21,6 +22,7 @@ const NaiveTheme = naiveTheme;
 const Description = description;
 const Wordcloud = wordcloud;
 const DescriptionPopover = descriptionPopover;
+const PreviewImage = previewImage;
 const ThemeChange = themeChange;
 const Layout = layout;
 
@@ -35,6 +37,7 @@ export {
   Description,
   Wordcloud,
   DescriptionPopover,
+  PreviewImage,
   ThemeChange,
   Layout
 };

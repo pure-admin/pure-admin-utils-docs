@@ -458,7 +458,7 @@ import hasCNChars from './hasCNChars.vue'
 
 <<< @/utils/is/types/hasCNChars.ts
 
-::: warning 提示信息
+::: info 提示信息
 
 - [unicode 转换](https://unicode.yunser.com/coding)
 - 将 `replaceUnicode` 值设置为非常用中文标点符号的 `unicode` 编码时，常用中文标点符号不会被识别为中文

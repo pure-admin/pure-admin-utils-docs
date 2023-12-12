@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^8.3.1
     version: 8.3.1
   '@pureadmin/utils':
-    specifier: ^1.10.1
-    version: 1.10.1(echarts@5.4.3)(vue@3.3.10)
+    specifier: ^1.10.4
+    version: 1.10.4(echarts@5.4.3)(vue@3.3.10)
   '@vicons/ionicons5':
     specifier: ^0.12.0
     version: 0.12.0
@@ -71,6 +71,12 @@ devDependencies:
   vue:
     specifier: ^3.3.10
     version: 3.3.10(typescript@5.3.2)
+  vue-toastification:
+    specifier: 2.0.0-rc.5
+    version: 2.0.0-rc.5(vue@3.3.10)
+  vue3-photo-preview:
+    specifier: ^0.3.0
+    version: 0.3.0(vue@3.3.10)
 
 packages:
 
@@ -898,8 +904,8 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@pureadmin/utils@1.10.1(echarts@5.4.3)(vue@3.3.10):
-    resolution: {integrity: sha512-hgI3PyqP5yCl1q2JCeFULtwXlPPtKM2EX1gjUthQYK5TVKL87vz0YimAJEzhDqWhrtacZ159w0XyBoqC40/CpA==}
+  /@pureadmin/utils@1.10.4(echarts@5.4.3)(vue@3.3.10):
+    resolution: {integrity: sha512-w/gWmsexWSdn6Mh/v6gm6L9KrlcxMptg8EA4NlNuuLmFYnxnu4OpnqDwcjEioLFwYvrcU7bjmXX8lZNwcQ5BAA==}
     peerDependencies:
       echarts: '*'
       vue: '*'
@@ -2941,6 +2947,24 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: 3.3.10(typescript@5.3.2)
+    dev: true
+
+  /vue-toastification@2.0.0-rc.5(vue@3.3.10):
+    resolution: {integrity: sha512-q73e5jy6gucEO/U+P48hqX+/qyXDozAGmaGgLFm5tXX4wJBcVsnGp4e/iJqlm9xzHETYOilUuwOUje2Qg1JdwA==}
+    peerDependencies:
+      vue: ^3.0.2
+    dependencies:
+      vue: 3.3.10(typescript@5.3.2)
+    dev: true
+
+  /vue3-photo-preview@0.3.0(vue@3.3.10):
+    resolution: {integrity: sha512-DeZ076yN85RcfWdhcgSYVEj5Y721mi6rmDoShDb4Bt7z7Q5Rfs4Y8PlP66OIrsyE0x4KVLdE0auJGxrxXRJXjA==}
+    engines: {node: '>=14', npm: '>=7'}
+    peerDependencies:
+      vue: '>=3.2.0'
+    dependencies:
+      lodash-es: 4.17.21
       vue: 3.3.10(typescript@5.3.2)
     dev: true
 

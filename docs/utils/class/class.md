@@ -160,6 +160,6 @@ import toggleClass from './toggleClass.vue'
 
 </div>
 
-::: warning 提示信息
+::: info 提示信息
 在基础用法的示例中，通过右键检查元素，可观察元素变化
 :::

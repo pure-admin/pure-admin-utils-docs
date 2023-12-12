@@ -227,11 +227,16 @@
 }
 .pure-border th,
 .pure-border tr,
-.pure-border td {
+.pure-border td,
+.pure-no-border th,
+.pure-no-border tr,
+.pure-no-border td {
   border: none;
 }
 .pure-border thead,
-.pure-border tbody {
+.pure-border tbody,
+.pure-no-border thead,
+.pure-no-border tbody {
   border: 1px solid var(--pure-table-border-color);
 }
 table tbody tr {
@@ -255,4 +260,9 @@ table tbody tr:hover {
 .VPSidebarItem.level-1.is-link.is-active.has-active p {
   font-size: 0.95rem;
   padding-left: 0.5rem;
+}
+
+/* component preview-image */
+.PhotoSlider__BannerRight > svg:first-child {
+  display: none !important;
 }
