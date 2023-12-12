@@ -23,7 +23,8 @@ getPerformance()
           :from="0"
           :to="performance?.dns"
           :precision="precision(performance?.dns)"
-        />秒
+        />
+        秒
       </n-gradient-text>
       <br />
 
@@ -33,7 +34,8 @@ getPerformance()
           :from="0"
           :to="performance?.tcp"
           :precision="precision(performance?.tcp)"
-        />秒
+        />
+        秒
       </n-gradient-text>
       <br />
 
@@ -54,7 +56,8 @@ getPerformance()
           :from="0"
           :to="performance?.dom"
           :precision="precision(performance?.dom)"
-        />秒
+        />
+        秒
       </n-gradient-text>
       <br />
 
