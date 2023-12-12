@@ -6,6 +6,7 @@ import dividerType from "./divider/type.vue";
 import dividerUse from "./divider/use.vue";
 import naiveTheme from "./theme.vue";
 import description from "./description.vue";
+import visualLoad from "./visual-load.vue";
 import wordcloud from "./wordcloud/index.vue";
 import descriptionPopover from "./description-popover.vue";
 import previewImage from "./preview-image.vue";
@@ -20,6 +21,7 @@ const DividerType = dividerType;
 const DividerUse = dividerUse;
 const NaiveTheme = naiveTheme;
 const Description = description;
+const VisualLoad = visualLoad;
 const Wordcloud = wordcloud;
 const DescriptionPopover = descriptionPopover;
 const PreviewImage = previewImage;
@@ -35,6 +37,7 @@ export {
   DividerUse,
   NaiveTheme,
   Description,
+  VisualLoad,
   Wordcloud,
   DescriptionPopover,
   PreviewImage,

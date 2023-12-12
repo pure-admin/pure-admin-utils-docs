@@ -25,6 +25,7 @@ import {
   NaiveTheme,
   // Description,
   // DescriptionPopover,
+  VisualLoad,
   PreviewImage,
   ThemeChange,
   Layout
@@ -51,6 +52,7 @@ export default {
     app.component("naive-theme", NaiveTheme);
     // app.component("description", Description);
     // app.component("description-popover", DescriptionPopover);
+    app.component("visual-load", VisualLoad);
     app.component("preview-image", PreviewImage);
     app.component("theme-change", ThemeChange);
     app.use(useEcharts);

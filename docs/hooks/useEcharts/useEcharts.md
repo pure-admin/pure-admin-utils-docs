@@ -265,6 +265,7 @@ setOptions(
 
 #### 加载动画
 
+<visual-load>
 <Eloading />
 
 <details>
@@ -274,9 +275,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/business/loading.vue
 
 </details>
+</visual-load>
 
 #### 动态图表
 
+<visual-load>
 <Edynamic />
 
 <details>
@@ -286,8 +289,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/business/dynamic.vue
 
 </details>
+</visual-load>
 
 #### 接口请求和图表下钻
+
+<visual-load>
 
 <ClientOnly>
   <Erequest />
@@ -300,8 +306,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/business/request.vue
 
 </details>
+  </visual-load>
 
 #### 自定义主题
+
+<visual-load>
 
 在 [theme-builder](https://echarts.apache.org/zh/theme-builder.html) 配置好主题后，点击其网站左上角的下载主题，选择`JSON`版本，复制到本地的自定义主题`json`文件即可，如下图
 
@@ -316,11 +325,13 @@ setOptions(
 <<< @/hooks/useEcharts/demo/business/customTheme.vue
 
 </details>
+</visual-load>
 
 ### 常用示例
 
 #### 折线图 line
 
+<visual-load>
 <Eline />
 
 <details>
@@ -330,9 +341,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/line.vue
 
 </details>
+</visual-load>
 
 #### 柱状图 bar
 
+<visual-load>
 <Ebar />
 
 <details>
@@ -342,9 +355,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/bar.vue
 
 </details>
+</visual-load>
 
 #### 饼图 pie
 
+<visual-load>
 <Epie />
 
 <details>
@@ -354,9 +369,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/pie.vue
 
 </details>
+</visual-load>
 
 #### 散点图 scatter
 
+<visual-load>
 <Escatter />
 
 <details>
@@ -366,9 +383,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/scatter.vue
 
 </details>
+</visual-load>
 
 #### K 线图 candlestick
 
+<visual-load>
 <Ecandlestick />
 
 <details>
@@ -378,9 +397,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/candlestick.vue
 
 </details>
+</visual-load>
 
 #### 雷达图 radar
 
+<visual-load>
 <Eradar />
 
 <details>
@@ -390,9 +411,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/radar.vue
 
 </details>
+</visual-load>
 
 #### 盒须图 boxplot
 
+<visual-load>
 <Eboxplot />
 
 <details>
@@ -402,9 +425,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/boxplot.vue
 
 </details>
+</visual-load>
 
 #### 热力图 heatmap
 
+<visual-load>
 <Eheatmap />
 
 <details>
@@ -414,10 +439,12 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/heatmap.vue
 
 </details>
+</visual-load>
 
 #### 关系图 graph
 
-  <Egraph />
+<visual-load>
+<Egraph />
 
 <details>
 
@@ -426,9 +453,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/graph.vue
 
 </details>
+</visual-load>
 
 #### 树图 tree
 
+<visual-load>
 <Etree />
 
 <details>
@@ -438,9 +467,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/tree.vue
 
 </details>
+</visual-load>
 
 #### 旭日图 sunburst
 
+<visual-load>
 <Esunburst />
 
 <details>
@@ -450,9 +481,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/sunburst.vue
 
 </details>
+</visual-load>
 
 #### 桑基图 sankey
 
+<visual-load>
 <Esankey />
 
 <details>
@@ -462,9 +495,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/sankey.vue
 
 </details>
+</visual-load>
 
 #### 漏斗图 funnel
 
+<visual-load>
 <Efunnel />
 
 <details>
@@ -474,9 +509,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/funnel.vue
 
 </details>
+</visual-load>
 
 #### 仪表盘 gauge
 
+<visual-load>
 <Egauge />
 
 <details>
@@ -486,9 +523,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/gauge.vue
 
 </details>
+</visual-load>
 
 #### 象形柱图 pictorialBar
 
+<visual-load>
 <EpictorialBar />
 
 <details>
@@ -498,10 +537,12 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/pictorialBar.vue
 
 </details>
+</visual-load>
 
 #### 主题河流图 themeRiver
 
-<EthemeRiver />
+<visual-load>
+  <EthemeRiver />
 
 <details>
 
@@ -510,6 +551,7 @@ setOptions(
 <<< @/hooks/useEcharts/demo/simple/themeRiver.vue
 
 </details>
+</visual-load>
 
 ### 高级示例
 
@@ -517,6 +559,7 @@ setOptions(
 
 #### demo1
 
+<visual-load>
 <ClientOnly>
   <Edemo1 />
 </ClientOnly>
@@ -528,9 +571,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo1.vue
 
 </details>
+</visual-load>
 
 #### demo2
 
+<visual-load>
 <Edemo2 />
 
 <details>
@@ -540,9 +585,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo2.vue
 
 </details>
+</visual-load>
 
 #### demo3
 
+<visual-load>
 <Edemo3 />
 
 <details>
@@ -552,9 +599,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo3.vue
 
 </details>
+</visual-load>
 
 #### demo4
 
+<visual-load>
 <Edemo4 />
 
 <details>
@@ -564,9 +613,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo4.vue
 
 </details>
+</visual-load>
 
 #### demo5
 
+<visual-load>
 <Edemo5 />
 
 <details>
@@ -576,9 +627,11 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo5.vue
 
 </details>
+</visual-load>
 
 #### demo6
 
+<visual-load>
 <Edemo6 />
 
 <details>
@@ -588,6 +641,9 @@ setOptions(
 <<< @/hooks/useEcharts/demo/advanced/demo6.vue
 
 </details>
+</visual-load>
+
+<visual-load>
 
 ::: info 平台维护组件推荐
 在使用`ECharts`时，往往有地图需求，但`ECharts`在`V5`版本去除了内置的 [geoJSON](https://echarts.apache.org/handbook/zh/basics/release-note/v5-upgrade-guide/#%E5%8E%BB%E9%99%A4%E5%86%85%E7%BD%AE%E7%9A%84-geojson) ，这使得用户在`ECharts`的`v5`版本中使用地图时还需要自己找地图数据，为了解决这个问题 [@esmjs/geo](https://github.com/esmjs/geo) 诞生，它使用`rust`和`typescript`编写，简单易用
@@ -596,3 +652,5 @@ setOptions(
 ::: info 更多`Demo`
 就这点`demo`？好啦，别闹，这就把配方拿出来 [配方](https://www.isqqw.com/) （注册后登录，可免费查看全部图表代码，非广告，只是个人觉得不错，推荐给大家）
 :::
+
+</visual-load>
