@@ -16,7 +16,7 @@
     "build": "vitepress build docs",
     "format": "prettier --check --write .",
     "clean": "pnpm store prune && pnpm install",
-    "svgo": "svgo -f docs/public -o docs/public",
+    "svgo": "svgo -f docs/public",
     "preview": "pnpm build && vitepress serve docs --port 8084"
   },
   "license": "MIT",

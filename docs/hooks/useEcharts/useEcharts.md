@@ -164,7 +164,7 @@ const {} = useECharts(elRef, options);
 
 `setOptions`非常重要，渲染图表都靠它。下面我们来详细了解一下吧 😜
 
-它接受无限参数，最重要的是第一个参数，完全兼容`echarts`提供的 [setOption](https://echarts.apache.org/zh/option.html) 方法中所传参数，当然也完全兼容 [GL配置](https://echarts.apache.org/zh/option-gl.html#globe)。不仅完全兼容，我们还额外新增四个`api`，如下
+它接收无限参数，最重要的是第一个参数，完全兼容`echarts`提供的 [setOption](https://echarts.apache.org/zh/option.html) 方法中所传参数，当然也完全兼容 [GL配置](https://echarts.apache.org/zh/option-gl.html#globe)。不仅完全兼容，我们还额外新增四个`api`，如下
 
 | **api**      | **说明**                                                                                                                                                                                           | **类型**            | **默认** |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | -------- |
