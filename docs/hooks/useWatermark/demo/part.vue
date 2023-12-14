@@ -8,10 +8,279 @@ const { setWatermark, clear } = useWatermark(partRef);
 
 <template>
   <naive-theme>
-    <div
-      ref="partRef"
-      class="mt-4 mb-4 w-[370px] h-[300px] border-dotted border-2 border-[#646cff]"
-    />
+    <div ref="partRef">
+      <n-scrollbar
+        x-scrollable
+        class="mt-4 mb-4 h-[300px] border-dotted border-2 border-[#646cff] overflow-auto"
+      >
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何
+          😉。useWatermark说：上下、左右滚动能奈我何 😉。
+        </div>
+        <div style="white-space: nowrap; padding: 12px">
+          滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
+          😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
+        </div>
+      </n-scrollbar>
+    </div>
 
     <n-space vertical>
       <n-button
