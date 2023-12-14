@@ -13,7 +13,7 @@ const { setWatermark, clear } = useWatermark(partRef);
         x-scrollable
         class="mt-4 mb-4 h-[300px] border-dotted border-2 border-[#646cff] overflow-auto"
       >
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -24,7 +24,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -32,7 +32,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -43,7 +43,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -51,7 +51,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -62,7 +62,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -70,7 +70,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -81,7 +81,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -89,7 +89,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -100,7 +100,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -108,7 +108,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -119,7 +119,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -127,7 +127,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -138,7 +138,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -146,7 +146,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -157,7 +157,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -165,7 +165,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -176,7 +176,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -184,7 +184,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -195,7 +195,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -203,7 +203,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -214,7 +214,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -222,7 +222,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -233,7 +233,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -241,7 +241,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -252,7 +252,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧
@@ -260,7 +260,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，你小子给我等着
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩 😳 ...
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何
@@ -271,7 +271,7 @@ const { setWatermark, clear } = useWatermark(partRef);
           😉。useWatermark说：上下、左右滚动能奈我何
           😉。useWatermark说：上下、左右滚动能奈我何 😉。
         </div>
-        <div style="white-space: nowrap; padding: 12px">
+        <div class="whitespace-nowrap p-3">
           滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，这么玩是吧 😳。滚动条说：好好好，这么玩是吧
           😳。滚动条说：好好好，你小子给我等着 😳。滚动条说：好好好，这么玩是吧

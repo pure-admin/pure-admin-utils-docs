@@ -9,7 +9,7 @@ import {
 # useWatermark
 
 ::: tip 适用于 `Vue3`、`Nuxt3`
-给元素加水印
+给元素加水印，自适应容器
 :::
 
 ### 最简代码
