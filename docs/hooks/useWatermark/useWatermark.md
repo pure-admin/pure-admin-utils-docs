@@ -1,7 +1,8 @@
 <script setup>
 import { 
   Wwhole, 
-  Wpart, 
+  Wpart,
+  Wwrap,
   Wforever
 } from './demo/index.ts'
 </script>
@@ -90,6 +91,21 @@ const {} = useWatermark(appendEl);
 <summary>查看代码</summary>
 
 <<< @/hooks/useWatermark/demo/part.vue
+
+</details>
+
+#### 多行水印
+
+某程序员：好家伙，当水印中包含额外的信息，如版权声明、公司名称、日期、时间戳或其他标识时，这不就信手拈来了嘛 🤏  
+多行水印：虽然我提供额外的信息和保护，但注意不要过度使用哦，以免干扰到主要内容，降低了可读性，影响到用户体验 🥺
+
+<Wwrap />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useWatermark/demo/wrap.vue
 
 </details>
 

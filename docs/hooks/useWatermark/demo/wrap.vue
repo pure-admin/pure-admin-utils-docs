@@ -7,10 +7,16 @@ const { setWatermark } = useWatermark(foreverRef);
 
 onMounted(() => {
   nextTick(() => {
-    setWatermark("无法删除的水印", {
-      forever: true,
+    // 哪里需要换行在哪里加个 、就行，这种模式适用大多数场景，前、后端基本不需要额外处理
+    setWatermark("vue-pure-admin、正式开源于、2020年11月16日", {
       width: 225
     });
+
+    // 当然也可以在 setWatermark 的第二次参数中添加 wrap 属性来自定义换行标识符
+    // setWatermark("vue-pure-admin|正式开源于|2020年11月16日", {
+    //   width: 225,
+    //   wrap: '|'
+    // })
   });
 });
 </script>

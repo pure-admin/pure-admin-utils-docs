@@ -11,7 +11,7 @@ const { setWatermark, clear } = useWatermark(partRef);
     <div ref="partRef">
       <n-scrollbar
         x-scrollable
-        class="mt-4 mb-4 h-[300px] border-dotted border-2 border-[#646cff] overflow-auto"
+        class="mt-4 mb-4 h-[300px] border-solid border-1 border-[var(--vp-c-divider)] rounded-md overflow-auto"
       >
         <div class="whitespace-nowrap p-3">
           useWatermark说：上下、左右滚动能奈我何
@@ -287,7 +287,7 @@ const { setWatermark, clear } = useWatermark(partRef);
         size="small"
         @click="
           setWatermark('局部水印', {
-            width: 135,
+            width: 138,
             height: 80
           })
         "
@@ -298,7 +298,7 @@ const { setWatermark, clear } = useWatermark(partRef);
         size="small"
         @click="
           setWatermark('局部水印', {
-            width: 135,
+            width: 138,
             height: 80,
             gradient: [
               { value: 0, color: 'magenta' },
@@ -314,7 +314,7 @@ const { setWatermark, clear } = useWatermark(partRef);
         size="small"
         @click="
           setWatermark('局部水印', {
-            width: 145,
+            width: 138,
             height: 75,
             rotate: 0,
             gradient: [
@@ -331,8 +331,8 @@ const { setWatermark, clear } = useWatermark(partRef);
         size="small"
         @click="
           setWatermark('局部水印', {
-            width: 140,
-            height: 64,
+            width: 138,
+            height: 61,
             gradient: [
               { value: 0, color: 'magenta' },
               { value: 0.5, color: 'blue' },
