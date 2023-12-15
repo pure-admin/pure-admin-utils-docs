@@ -1,13 +1,14 @@
 <script setup>
 import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
-useAddNumInOutlineLabel(2)
+useAddNumInOutlineLabel(3)
 
 import urlToBase64 from './urlToBase64.vue'
 import dataURLtoBlob from './dataURLtoBlob.vue'
+import convertImageToGray from './convertImageToGray.vue'
 </script>
 
 ::: tip 支持任意运行在浏览器的 `JavaScript` 语言
-图片 `url` 转 `base64`、`base64` 转 `blob`
+图片 `url` 转 `base64`、`base64` 转 `blob`、彩色图片转灰色图片
 :::
 
 ## urlToBase64
@@ -70,6 +71,52 @@ import dataURLtoBlob from './dataURLtoBlob.vue'
 
 </div>
 
+## convertImageToGray
+
+彩色图片转灰色图片
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
+
+<ClientOnly>
+  <convertImageToGray />
+</ClientOnly>
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/base64Conver/convertImageToGray.vue
+
+</details>
+
+#### <divider-param /> {#param3}
+
+接收两个参数，第一个参数 `url`，第二个参数 `options`，返回值类型 `Promise<string>`
+
+| **参数属性** | **说明**                                                      | **类型**  |
+| ------------ | ------------------------------------------------------------- | --------- |
+| `url`        | 彩色图片 `url`                                                | `string`  |
+| `options`    | 转灰色图片相关配置，拥有四个属性，具体看下面的 `options` 详情 | `grayOpt` |
+
+#### <divider-options /> {#options3}
+
+在`RGB`颜色模型中，灰色由红、绿、蓝三种颜色通道混合而成。值越小，灰色越深；值越大，灰色越浅，这里的值就是指下面的`red`、`green`、`blue`
+
+| **属性** | **说明**                                                                       | **类型** | **默认值** |
+| -------- | ------------------------------------------------------------------------------ | -------- | ---------- |
+| `red`    | `RGB`颜色模型中的红色                                                          | `number` | `0.3`      |
+| `green`  | `RGB`颜色模型中的绿色                                                          | `number` | `0.59`     |
+| `blue`   | `RGB`颜色模型中的蓝色                                                          | `number` | `0.11`     |
+| `scale`  | 使用`canvas`缩放图像比例，默认`1`不缩放保持原始比例，建议范围`0.2 < scale < 2` | `number` | `1`        |
+
+#### <divider-type /> {#type3}
+
+<<< @/utils/base64Conver/types/convertImageToGray.ts
+
+</div>
+
 ::: info 提示信息
-在线图片`url`转`base64`，要求图片请求支持跨域，服务器配置下允许跨域即可
+在线图片地址需要支持跨域，服务器配置下允许跨域即可
 :::
