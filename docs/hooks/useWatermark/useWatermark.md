@@ -3,6 +3,7 @@ import {
   Wwhole, 
   Wpart,
   Wwrap,
+  Wimage,
   Wforever
 } from './demo/index.ts'
 </script>
@@ -106,6 +107,21 @@ const {} = useWatermark(appendEl);
 <summary>查看代码</summary>
 
 <<< @/hooks/useWatermark/demo/wrap.vue
+
+</details>
+
+#### 图片水印
+
+图片水印：文字水印还是太单一了，瞧我不轻松拿捏你 😝  
+文字水印：啊，对对对。尽管你花里胡哨，加载失败时，不还是得靠我 😎
+
+<Wimage />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useWatermark/demo/image.vue
 
 </details>
 

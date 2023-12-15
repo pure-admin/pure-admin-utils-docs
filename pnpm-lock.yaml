@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^8.3.1
     version: 8.3.1
   '@pureadmin/utils':
-    specifier: ^1.10.9
-    version: 1.10.9(echarts@5.4.3)(vue@3.3.11)
+    specifier: ^1.11.0
+    version: 1.11.0(echarts@5.4.3)(vue@3.3.11)
   '@vicons/ionicons5':
     specifier: ^0.12.0
     version: 0.12.0
@@ -907,8 +907,8 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@pureadmin/utils@1.10.9(echarts@5.4.3)(vue@3.3.11):
-    resolution: {integrity: sha512-Benm3Y0IvbMa+U6ZKBsLgIN+zP9MT2kKL+FwBxCaJ19PzKjeIY6OYXmz8FLCO4Fvl5iec4/5djPof/aclGBGTA==}
+  /@pureadmin/utils@1.11.0(echarts@5.4.3)(vue@3.3.11):
+    resolution: {integrity: sha512-ufBw3q0IiN/nrVWD2ql/gFEw03R4XApnKaw8FpzRLH3UtZRuEMi2KTVMWAawml4/GGY8WkxPyEO1qvsQC+S6cg==}
     peerDependencies:
       echarts: '*'
       vue: '*'

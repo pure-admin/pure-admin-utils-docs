@@ -31,6 +31,12 @@ interface attr {
   wrap?: string;
   /** 文本对齐方向。当多行文本时默认`center`，反之默认`left`。具体设置看：https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D/textAlign */
   textAlign?: CanvasTextAlign;
+  /** 图片路径 */
+  image?: string;
+  /** 图片宽度 */
+  imageWidth?: number;
+  /** 图片高度 */
+  imageHeight?: number;
   /** 是否让水印无法删除，默认`false`，开启后在控制台操作对应的 `Elements` 也无法删除 */
   forever?: boolean;
 }
