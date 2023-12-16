@@ -79,7 +79,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
 ### 最简代码
 
-渲染`echarts`最简单的代码
+渲染`echarts`
 
 ```vue
 <script setup lang="ts">

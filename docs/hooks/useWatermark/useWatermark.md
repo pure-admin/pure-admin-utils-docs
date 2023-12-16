@@ -16,7 +16,7 @@ import {
 
 ### 最简代码
 
-添加`水印`最简单的代码
+添加水印
 
 ```vue
 <script setup lang="ts">

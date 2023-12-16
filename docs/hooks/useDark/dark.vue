@@ -1,9 +1,18 @@
+<script setup lang="ts">
+import { onMounted } from "vue";
+import { useDark } from "@pureadmin/utils";
+
+const { isDark, toggleDark } = useDark();
+
+onMounted(() => {
+  console.log(isDark.value ? "dark" : "light");
+});
+</script>
+
 <template>
-  <naive-theme #default="{ dark }">
-    <n-switch :value="dark" disabled>
-      <template #checked> dark </template>
-      <template #unchecked> light </template>
-    </n-switch>
-    点击右上角的主题切换按钮查看效果
+  <naive-theme>
+    <n-button @click="toggleDark">
+      {{ `当前网页处于 ${isDark ? "dark" : "light"} 主题，点击切换主题` }}
+    </n-button>
   </naive-theme>
 </template>

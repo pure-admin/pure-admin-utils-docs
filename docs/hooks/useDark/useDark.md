@@ -1,18 +1,68 @@
 <script setup>
-import dark from './dark.vue'
+import dark from "./dark.vue"
+import { onMounted, inject } from "vue"
+import { useDark } from "@pureadmin/utils"
+
+onMounted(() => {
+  console.log(isDark.value ? "dark" : "light")
+})
+const { isDark } = useDark()
+const toggle = inject("toggle-appearance", () => {
+  isDark.value = !isDark.value
+})
 </script>
 
 # useDark
 
 ::: tip 适用于 `Vue3`、`Nuxt3`
-获取当前网页的主题色
+检测网页整体是否处于暗色（`dark`）主题，它是响应式的
 :::
 
-<!-- <description description="获取当前网页的主题色" :tagNameList="['Vue3']" /> -->
+### 最简代码
 
-## 基础用法
+检测当前整个网页是否处于`dark`主题
 
-<dark />
+```vue
+<script setup lang="ts">
+import { useDark } from "@pureadmin/utils"; // [!code focus]
+const { isDark } = useDark(); // [!code focus]
+</script>
+```
+
+### API
+
+#### 参数
+
+```ts
+//  在此处配置参数
+const {} = useDark(options);
+```
+
+<div class="pure-no-border">
+
+拥有一个参数`options`对象，详情如下：
+
+| **属性**    | 必传 | **说明**                                           | **类型** |
+| ----------- | ---- | -------------------------------------------------- | -------- |
+| `selector`  | 否   | 自定义选择器，默认`html`，可选`body`               | `string` |
+| `className` | 否   | 检测某个类名是否在`html`或`body`上存在，默认`dark` | `string` |
+
+</div>
+
+#### 返回值、方法
+
+| **返回值、方法** | **说明**                             | **类型**              |
+| ---------------- | ------------------------------------ | --------------------- |
+| `isDark`         | 当前整个网页是否处于暗色(`dark`)主题 | `ShallowRef<boolean>` |
+| `toggleDark`     | `dark`和非`dark`主题间相互切换       | `() => void`          |
+
+### 示例
+
+<!-- <dark /> -->
+
+<naive-theme>
+  <n-button class="mt-2" @click="toggle">{{ `当前网页处于 ${isDark ? 'dark' : 'light'} 主题，点击切换主题` }}</n-button>
+</naive-theme>
 
 <details>
 
@@ -21,7 +71,3 @@ import dark from './dark.vue'
 <<< @/hooks/useDark/dark.vue
 
 </details>
-
-## 返回值或方法
-
-- 响应式`isDark`：当前网页的主题色（`true`: `dark`模式、`false`: `非dark`模式），主要利用 [MutationObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver) 来实时监听`html`元素变化，根据`html`的类名是否含有`dark`来进行判断

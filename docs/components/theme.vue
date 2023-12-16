@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
 import { darkTheme } from "naive-ui";
+import { useDark } from "@pureadmin/utils";
 import { ref, watch, onMounted } from "vue";
 
 import hljs from "highlight.js/lib/core";
@@ -9,7 +9,7 @@ hljs.registerLanguage("javascript", javascript);
 
 let show = ref(false);
 let dark = ref(false);
-const { isDark } = useData();
+const { isDark } = useDark();
 
 onMounted(() => {
   dark.value = isDark.value;

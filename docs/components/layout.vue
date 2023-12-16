@@ -42,7 +42,9 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout />
-  <n-back-top :visibility-height="800" />
+  <naive-theme>
+    <n-back-top :visibility-height="800" />
+  </naive-theme>
 </template>
 
 <style>
