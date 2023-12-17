@@ -40,7 +40,7 @@ export default {
       // await import("../plugins/wordcloud");
     }
     app.use(naive);
-    // app.use(Toast, { timeout: 2000 });
+    // app.use(Toast, { timeout: 1200, maxToasts: 6, icon: false });
     app.use(vue3PhotoPreview);
     app.component("divider-base", DividerBase);
     app.component("divider-options", DividerOptions);
