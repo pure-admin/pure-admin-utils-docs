@@ -36,14 +36,14 @@ npm install @pureadmin/utils
 
 ::: code-group
 
-```html [unpkg]
-<!-- 提供包含所有方法的全局变量 PureUtils -->
-<script src="//unpkg.com/@pureadmin/utils"></script>
-```
-
 ```html [jsdelivr]
 <!-- 提供包含所有方法的全局变量 PureUtils -->
 <script src="//cdn.jsdelivr.net/npm/@pureadmin/utils"></script>
+```
+
+```html [unpkg]
+<!-- 提供包含所有方法的全局变量 PureUtils -->
+<script src="//unpkg.com/@pureadmin/utils"></script>
 ```
 
 :::

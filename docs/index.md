@@ -25,10 +25,10 @@ hero:
 features:
   - icon: 🌎
     title: 任意 JavaScript 环境中运行
-    details: 支持Node.js、浏览器以及任意JavaScript框架
+    details: 支持 Node.js、浏览器以及任意 JavaScript 框架
   - icon: 📡
     title: 可通过 CDN 引用
-    details: 同时支持 unpkg 和 jsdelivr
+    details: 同时支持 jsdelivr 和 unpkg
   - icon: ⚡️
     title: 完全可摇树
     details: 自带 Tree-shaking ，只对引入的代码进行打包
