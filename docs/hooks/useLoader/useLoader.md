@@ -10,21 +10,21 @@
 
 ```vue
 <script setup lang="ts">
-import { onMounted } from "vue";
-import { useLoader } from "@pureadmin/utils";
-const { loadCss } = useLoader();
+import { onMounted } from "vue";  // [!code focus]
+import { useLoader } from "@pureadmin/utils";  // [!code focus]
+const { loadCss } = useLoader();  // [!code focus]
 
-onMounted(async () => {
-  try {
-    let result = await loadCss({
-      src: "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
-    });
-    if (result) {
-      // 加载成功要做的事
-    }
-  } catch (err) {
-    // 加载失败要做的事
-  }
+onMounted(async () => {  // [!code focus]
+  try {  // [!code focus]
+    let result = await loadCss({  // [!code focus]
+      src: "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"  // [!code focus]
+    });  // [!code focus]
+    if (result) {  // [!code focus]
+      // 加载成功要做的事  // [!code focus]
+    }  // [!code focus]
+  } catch (err) {  // [!code focus]
+    // 加载失败要做的事  // [!code focus]
+  }  // [!code focus]
 });
 </script>
 ```

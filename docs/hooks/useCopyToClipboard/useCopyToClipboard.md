@@ -15,18 +15,18 @@ import codeCopy from './code.vue'
 
 ```vue
 <script setup lang="ts">
-import { ref } from "vue";
-import { useCopyToClipboard } from "@pureadmin/utils";
+import { ref } from "vue"; // [!code focus]
+import { useCopyToClipboard } from "@pureadmin/utils"; // [!code focus]
 
-let textValue = ref(""); // 要拷贝的文本值
-const { copied, update } = useCopyToClipboard();
+let textValue = ref(""); // 要拷贝的文本值 // [!code focus]
+const { copied, update } = useCopyToClipboard(); // [!code focus]
 
-function copy() {
-  update(textValue); // 更新要拷贝的文本值
-  if (copied.value) {
-    //  拷贝成功
-  }
-}
+function copy() { // [!code focus]
+  update(textValue); // 更新要拷贝的文本值 // [!code focus]
+  if (copied.value) { // [!code focus]
+    //  拷贝成功 // [!code focus]
+  } // [!code focus]
+} // [!code focus]
 </script>
 
 <template>
