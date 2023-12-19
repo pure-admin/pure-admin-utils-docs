@@ -1,25 +1,29 @@
 <script setup lang="ts">
-import { ref, unref } from "vue";
 import { useCopyToClipboard } from "@pureadmin/utils";
 import { useMessage } from "../../components/message";
 
 const { message } = useMessage();
 
-let value = ref("copy");
+let codeValue = `function sayHello() {
+  console.log('Hello, World!');
+}`;
+
 const { clipboardValue, copied } = useCopyToClipboard();
 
 function copy() {
-  clipboardValue.value = unref(value);
+  clipboardValue.value = codeValue;
   if (copied.value) {
     message.success("拷贝成功");
+  } else {
+    message.warning("拷贝失败");
   }
 }
 </script>
 
 <template>
   <naive-theme>
-    <n-space className="flex items-center">
-      <n-input type="text" v-model:value="value" />
+    <n-space className="mt-2 flex items-center">
+      <n-code :code="codeValue" language="javascript" inline />
       <n-button @click="copy"> 拷贝 </n-button>
     </n-space>
   </naive-theme>

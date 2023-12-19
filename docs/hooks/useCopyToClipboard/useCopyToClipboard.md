@@ -1,28 +1,87 @@
 <script setup>
-import copyToClipboard from './copyToClipboard.vue'
+import inputCopy from './input.vue'
+import codeCopy from './code.vue'
 </script>
 
 # useCopyToClipboard
 
 ::: tip 适用于 `Vue3`、`Nuxt3`
-拷贝
+文本拷贝
 :::
 
-<!-- <description description="拷贝" :tagNameList="['Vue3']" /> -->
+### 最简代码
 
-## 基础用法
+拷贝文本
 
-<copyToClipboard />
+```vue
+<script setup lang="ts">
+import { ref } from "vue";
+import { useCopyToClipboard } from "@pureadmin/utils";
+
+let textValue = ref(""); // 要拷贝的文本值
+const { clipboardValue, copied } = useCopyToClipboard();
+
+function copy() {
+  clipboardValue.value = textValue.value;
+  if (copied.value) {
+    //  拷贝成功
+  }
+}
+</script>
+
+<template>
+  <button @click="copy">拷贝</button>
+</template>
+```
+
+### API
+
+#### 参数
+
+```ts
+//  在此处配置参数
+const {} = useCopyToClipboard(defaultValue);
+```
+
+<div class="pure-no-border">
+
+| **参数属性**   | 必传 | **说明**                                     | **类型** |
+| -------------- | ---- | -------------------------------------------- | -------- |
+| `defaultValue` | 否   | 当要拷贝的文本值为空时，拷贝的值，默认不设置 | `string` |
+
+</div>
+
+#### 返回值、方法
+
+| **返回值、方法** | **说明**                                              | **类型**              |
+| ---------------- | ----------------------------------------------------- | --------------------- |
+| `clipboardValue` | 要拷贝的文本值                                        | `ShallowRef<string>`  |
+| `copied`         | 是否拷贝成功。`true`代表拷贝成功，`false`代表拷贝失败 | `ShallowRef<boolean>` |
+
+### 示例
+
+#### 文本拷贝
+
+<inputCopy />
 
 <details>
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useCopyToClipboard/copyToClipboard.vue
+<<< @/hooks/useCopyToClipboard/input.vue
 
 </details>
 
-## 返回值或方法
+#### 代码片段拷贝
 
-- `clipboardValue`：要拷贝的数据
-- `copied`：是否拷贝成功（`true`：成功、`false`：失败）
+自动保留代码的空格、换行符和缩进
+
+<codeCopy />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useCopyToClipboard/code.vue
+
+</details>
