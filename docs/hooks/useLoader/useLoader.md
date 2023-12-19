@@ -25,7 +25,7 @@ onMounted(async () => {  // [!code focus]
   } catch (err) {  // [!code focus]
     // 加载失败要做的事  // [!code focus]
   }  // [!code focus]
-});
+});  // [!code focus]
 </script>
 ```
 
