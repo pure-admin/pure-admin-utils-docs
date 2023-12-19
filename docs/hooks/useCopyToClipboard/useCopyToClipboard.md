@@ -19,10 +19,10 @@ import { ref } from "vue";
 import { useCopyToClipboard } from "@pureadmin/utils";
 
 let textValue = ref(""); // 要拷贝的文本值
-const { clipboardValue, copied } = useCopyToClipboard();
+const { copied, update } = useCopyToClipboard();
 
 function copy() {
-  clipboardValue.value = textValue.value;
+  update(textValue); // 更新要拷贝的文本值
   if (copied.value) {
     //  拷贝成功
   }
@@ -51,12 +51,11 @@ const {} = useCopyToClipboard(defaultValue);
 
 </div>
 
-#### 返回值、方法
-
-| **返回值、方法** | **说明**                                              | **类型**              |
-| ---------------- | ----------------------------------------------------- | --------------------- |
-| `clipboardValue` | 要拷贝的文本值                                        | `ShallowRef<string>`  |
-| `copied`         | 是否拷贝成功。`true`代表拷贝成功，`false`代表拷贝失败 | `ShallowRef<boolean>` |
+| **返回值、方法** | **说明**                                              | **类型**                              |
+| ---------------- | ----------------------------------------------------- | ------------------------------------- |
+| `clipboardValue` | 拷贝后的文本值                                        | `ShallowRef<string>`                  |
+| `copied`         | 是否拷贝成功。`true`代表拷贝成功，`false`代表拷贝失败 | `ShallowRef<boolean>`                 |
+| `update`         | 更新要拷贝的文本值                                    | `(value: string/Ref<string>) => void` |
 
 ### 示例
 

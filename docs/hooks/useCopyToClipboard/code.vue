@@ -1,17 +1,18 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import { useCopyToClipboard } from "@pureadmin/utils";
 import { useMessage } from "../../components/message";
 
 const { message } = useMessage();
 
-let codeValue = `function sayHello() {
+let codeValue = ref(`function sayHello() {
   console.log('Hello, World!');
-}`;
+}`);
 
-const { clipboardValue, copied } = useCopyToClipboard();
+const { copied, update } = useCopyToClipboard();
 
 function copy() {
-  clipboardValue.value = codeValue;
+  update(codeValue); // 更新要拷贝的文本值
   if (copied.value) {
     message.success("拷贝成功");
   } else {

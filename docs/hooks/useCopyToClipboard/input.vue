@@ -6,10 +6,10 @@ import { useMessage } from "../../components/message";
 const { message } = useMessage();
 
 let textValue = ref("");
-const { clipboardValue, copied } = useCopyToClipboard("当值为空时我会被拷贝");
+const { copied, update } = useCopyToClipboard("当值为空时我会被拷贝");
 
 function copy() {
-  clipboardValue.value = textValue.value;
+  update(textValue); // 更新要拷贝的文本值
   if (copied.value) {
     message.success("拷贝成功");
   } else {
@@ -22,6 +22,7 @@ function copy() {
   <naive-theme>
     <n-space className="mt-2 flex items-center">
       <n-input
+        clearable
         type="text"
         v-model:value="textValue"
         placeholder="请输入要拷贝的值"
