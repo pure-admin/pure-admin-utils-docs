@@ -27,8 +27,8 @@ function onOpenDialog() {
       </div>
       <template #action>
         <n-button @click="reset">复位</n-button>
-        <n-button @click="close" v-if="draggable">关闭拖拽</n-button>
-        <n-button @click="open" v-else>开启拖拽</n-button>
+        <n-button @click="close" v-if="draggable">关闭拖动</n-button>
+        <n-button @click="open" v-else>开启拖动</n-button>
       </template>
     </n-modal>
   </naive-theme>

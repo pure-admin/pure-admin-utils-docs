@@ -12,7 +12,7 @@ import naiveuiDialog from './naiveuiDialog.vue'
 
 ### 最简代码
 
-可拖动的盒模型
+可拖动的`Div`
 
 ```vue
 <script setup lang="ts">
@@ -23,7 +23,7 @@ const targetRef = ref();
 const dragRef = ref();
 
 const { init } = useDraggable(targetRef, dragRef);
-// 初始化开启拖拽功能
+// 初始化开启拖动功能
 init();
 </script>
 
@@ -62,6 +62,7 @@ const {} = useDraggable(targetRef, dragRef, dragRefStyle);
 | **返回值、方法** | **说明**                                                                            | **类型**                             |
 | ---------------- | ----------------------------------------------------------------------------------- | ------------------------------------ |
 | `draggable`      | 是否已经开启拖动功能（响应式）。`true`代表已开启拖动功能，`false`代表关闭了拖动功能 | `Ref<boolean>`                       |
+| `dragging`       | 是否正在拖动中（响应式）。`true`代表正在拖动，`false`代表没有拖动                   | `Ref<boolean>`                       |
 | `transform`      | 响应式对象`transform`：包含当前被拖动元素的`offsetX`、`offsetY`信息                 | `{offsetX: number;offsetY: number;}` |
 | `init`           | 初始化开启拖动功能                                                                  | `() => void`                         |
 | `open`           | 开启拖动功能。常用于当关闭拖动时，想再次开启拖动并在当前所处位置继续拖动            | `() => void`                         |

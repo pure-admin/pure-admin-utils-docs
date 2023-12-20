@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useDraggable } from "@pureadmin/utils";
 
 const targetRef = ref();
 const dragRef = ref();
 
-const { transform, init, reset } = useDraggable(targetRef, dragRef);
-// 初始化开启拖拽功能
+const { dragging, transform, init, reset } = useDraggable(targetRef, dragRef);
+// 初始化开启拖动功能
 init();
 
 let info = computed(() => {
@@ -14,10 +14,21 @@ let info = computed(() => {
     transform.offsetY
   )}`;
 });
+
+watch(
+  () => dragging.value,
+  val => {
+    val ? console.log("正在拖动") : console.log("停止拖动");
+  }
+);
 </script>
 
 <template>
-  <div ref="targetRef" class="pure-target">
+  <div
+    ref="targetRef"
+    class="pure-target"
+    :style="{ zIndex: transform.offsetX === 0 ? 0 : 999 }"
+  >
     <div ref="dragRef" class="pure-drag">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +51,6 @@ let info = computed(() => {
 <style scoped>
 .pure-target {
   position: relative;
-  z-index: 999;
   width: 15em;
   height: 15em;
   display: flex;
