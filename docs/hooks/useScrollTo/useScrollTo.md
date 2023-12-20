@@ -15,14 +15,14 @@ import horizontalScrollTo from './horizontalScrollTo.vue'
 
 ```vue
 <script setup lang="ts">
-import { useScrollTo } from "@pureadmin/utils"; // [!code focus]
+import { useScrollTo } from "@pureadmin/utils";
 
 const onPageTop = () => {
-  useScrollTo({ // [!code focus]
-    el: document.documentElement, // [!code focus]
-    to: 0, // [!code focus]
-    directions: "scrollTop" // [!code focus]
-  }).start(); // [!code focus]
+  useScrollTo({
+    el: document.documentElement,
+    to: 0,
+    directions: "scrollTop"
+  }).start();
 };
 </script>
 
@@ -54,10 +54,14 @@ const {} = useScrollTo(options);
 
 #### 返回值、方法
 
+<div class="pure-no-border">
+
 | **返回值、方法** | **说明** | **类型**     |
 | ---------------- | -------- | ------------ |
 | `start`          | 开始滚动 | `() => void` |
 | `stop`           | 暂停滚动 | `() => void` |
+
+</div>
 
 ### 示例
 

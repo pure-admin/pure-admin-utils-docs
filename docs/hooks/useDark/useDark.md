@@ -24,8 +24,8 @@ const toggle = inject("toggle-appearance", () => {
 
 ```vue
 <script setup lang="ts">
-import { useDark } from "@pureadmin/utils"; // [!code focus]
-const { isDark } = useDark(); // [!code focus]
+import { useDark } from "@pureadmin/utils";
+const { isDark } = useDark();
 </script>
 ```
 
@@ -51,10 +51,14 @@ const {} = useDark(options);
 
 #### 返回值、方法
 
+<div class="pure-no-border">
+
 | **返回值、方法** | **说明**                             | **类型**              |
 | ---------------- | ------------------------------------ | --------------------- |
 | `isDark`         | 当前整个网页是否处于暗色(`dark`)主题 | `ShallowRef<boolean>` |
 | `toggleDark`     | `dark`和非`dark`主题间相互切换       | `() => void`          |
+
+</div>
 
 ### 示例
 

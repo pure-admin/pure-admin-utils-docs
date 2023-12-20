@@ -7,6 +7,3 @@ docs/dev-dist
 docs/.vitepress/dist
 docs/.vitepress/.temp
 docs/.vitepress/cache
-docs/hooks/useScrollTo/useScrollTo.md
-docs/hooks/useLoader/useLoader.md
-docs/hooks/useCopyToClipboard/useCopyToClipboard.md

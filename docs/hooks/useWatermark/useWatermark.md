@@ -20,9 +20,9 @@ import {
 
 ```vue
 <script setup lang="ts">
-import { useWatermark } from "@pureadmin/utils"; // [!code focus]
-const { setWatermark } = useWatermark(); // [!code focus]
-setWatermark("我是水印"); // [!code focus]
+import { useWatermark } from "@pureadmin/utils";
+const { setWatermark } = useWatermark();
+setWatermark("我是水印");
 </script>
 ```
 
