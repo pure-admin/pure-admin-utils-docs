@@ -42,16 +42,25 @@ init();
 
 ```ts
 //  在此处配置参数
-const {} = useDraggable(targetRef, dragRef, dragRefStyle);
+const {} = useDraggable(targetRef, dragRef, args);
 ```
 
 <div class="pure-no-border">
 
-| **参数属性**   | 必传 | **说明**                                                                                                                                                                                          | **类型**                  |
-| -------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| `targetRef`    | 是   | 要拖动的元素。可以是[获取DOM元素或组件实例引用的ref](https://cn.vuejs.org/guide/essentials/template-refs.html#template-refs)，也可以是`class类名`（如：`".target"`）或`元素ID`（如：`"#target"`） | `Ref<HTMLElement>/string` |
-| `dragRef`      | 是   | 拖动的地方。可以是[获取DOM元素或组件实例引用的ref](https://cn.vuejs.org/guide/essentials/template-refs.html#template-refs)，也可以是`class类名`（如：`".drag"`）或`元素ID`（如：`"#drag"`）       | `Ref<HTMLElement>/string` |
-| `dragRefStyle` | 否   | 添加额外样式到`dragRef`上。为了方便用户识别可拖动的区域，默认添加`{ cursor: "move", userSelect: "none" }`。当然也可以使用`{}`空对象清空默认样式，也可以自定义样式                                 | `CSSProperties`           |
+| **参数属性** | 必传 | **说明**                                                                                                                                                                                          | **类型**                  |
+| ------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| `targetRef`  | 是   | 要拖动的元素。可以是[获取DOM元素或组件实例引用的ref](https://cn.vuejs.org/guide/essentials/template-refs.html#template-refs)，也可以是`class类名`（如：`".target"`）或`元素ID`（如：`"#target"`） | `Ref<HTMLElement>/string` |
+| `dragRef`    | 是   | 拖动的地方。可以是[获取DOM元素或组件实例引用的ref](https://cn.vuejs.org/guide/essentials/template-refs.html#template-refs)，也可以是`class类名`（如：`".drag"`）或`元素ID`（如：`"#drag"`）       | `Ref<HTMLElement>/string` |
+| `args`       | 否   | 额外的可选参数，具体看下面的`args`详情                                                                                                                                                            | `ArgsDraggable`           |
+
+##### `args` 详情
+
+对象格式，拥有下面两个属性
+
+| **参数属性**   | **说明**                                                                                                                                                                                    | **类型**         | **默认值**                               |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------- |
+| `dragRefStyle` | 为了方便用户识别可拖动的区域，添加额外样式到`dragRef`上。可以使用`{}`空对象清空默认样式，也可以自定义样式                                                                                   | `CSSProperties`  | `{ cursor: "move", userSelect: "none" }` |
+| `resize`       | 当页面`resize`时，如果拖动的元素超出新的视口边界，是否将其恢复到初始位置。`true`：代表恢复到初始位置。`false`：代表不会恢复到初始位置。当然也可以填写`resize`时的防抖延迟时间，默认`60`毫秒 | `boolean/number` | `true`                                   |
 
 </div>
 
