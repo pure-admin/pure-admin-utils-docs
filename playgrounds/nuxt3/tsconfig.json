@@ -6,9 +6,6 @@
     "skipLibCheck": true,
     "ignoreDeprecations": "5.0",
     "suppressImplicitAnyIndexErrors": true,
-    "types": [
-      "element-plus/global",
-      "@nuxtjs/tailwindcss",
-    ]
+    "types": ["element-plus/global", "@nuxtjs/tailwindcss"]
   }
 }

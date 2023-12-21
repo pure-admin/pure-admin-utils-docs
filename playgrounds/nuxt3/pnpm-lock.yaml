@@ -6,19 +6,19 @@ settings:
 
 dependencies:
   '@pureadmin/utils':
-    specifier: ^1.9.15
-    version: 1.9.15(echarts@5.4.3)(vue@3.3.9)
+    specifier: ^1.17.1
+    version: 1.17.1(echarts@5.4.3)(vue@3.3.9)
   echarts:
     specifier: ^5.4.3
     version: 5.4.3
   element-plus:
-    specifier: ^2.4.3
-    version: 2.4.3(vue@3.3.9)
+    specifier: ^2.4.4
+    version: 2.4.4(vue@3.3.9)
 
 devDependencies:
   '@element-plus/nuxt':
     specifier: ^1.0.7
-    version: 1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.4.3)
+    version: 1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.4.4)
   '@nuxtjs/color-mode':
     specifier: ^3.3.2
     version: 3.3.2
@@ -29,11 +29,11 @@ devDependencies:
     specifier: ^3.8.2
     version: 3.8.2(vite@4.5.0)
   prettier:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.1.1
+    version: 3.1.1
   tailwindcss:
-    specifier: ^3.3.5
-    version: 3.3.5
+    specifier: ^3.4.0
+    version: 3.4.0
 
 packages:
 
@@ -436,7 +436,7 @@ packages:
     dependencies:
       vue: 3.3.9
 
-  /@element-plus/nuxt@1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.4.3):
+  /@element-plus/nuxt@1.0.7(@element-plus/icons-vue@2.3.1)(element-plus@2.4.4):
     resolution: {integrity: sha512-cRP2iMTzrKKKgfXuWXQ/HAC1vawVeErNZPz7ylA2OfhR+RKPS0UbDy43zytBx/imxhuZbtDI6lPuGAf7TOMYDQ==}
     peerDependencies:
       '@element-plus/icons-vue': '>=0.2.6'
@@ -444,7 +444,7 @@ packages:
     dependencies:
       '@element-plus/icons-vue': 2.3.1(vue@3.3.9)
       '@nuxt/kit': 3.8.2
-      element-plus: 2.4.3(vue@3.3.9)
+      element-plus: 2.4.4(vue@3.3.9)
       magic-string: 0.27.0
       unplugin: 1.5.1
     transitivePeerDependencies:
@@ -1513,8 +1513,8 @@ packages:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
 
-  /@pureadmin/utils@1.9.15(echarts@5.4.3)(vue@3.3.9):
-    resolution: {integrity: sha512-NElPS0GTHCQ/yFtbW8SC8pTfsUIXxyNKH2z4XQlRNIWBURenO1ram/28t/NPLjtvlAVlqv4D2WHhG0c7IuWeoA==}
+  /@pureadmin/utils@1.17.1(echarts@5.4.3)(vue@3.3.9):
+    resolution: {integrity: sha512-qDOkt4teE2Gi6JGe2LvBm4sTmkzXHrkyPANlndZ8JhPI45DIiRIrBCnGgqDg/O2I317FQvmJ259EKjezBLnQHA==}
     peerDependencies:
       echarts: '*'
       vue: '*'
@@ -3035,8 +3035,8 @@ packages:
     resolution: {integrity: sha512-KD6CWjf1BnQG+NsXuyiTDDT1eV13sKuYsOUioXkQweYTQIbgHkXPry9K7M+7cKtYHnSUPitVaLrXYB1jTkkYrw==}
     dev: true
 
-  /element-plus@2.4.3(vue@3.3.9):
-    resolution: {integrity: sha512-b3q26j+lM4SBqiyzw8HybybGnP2pk4MWgrnzzzYW5qKQUgV6EG1Zg7nMCfgCVccI8tNvZoTiUHb2mFaiB9qT8w==}
+  /element-plus@2.4.4(vue@3.3.9):
+    resolution: {integrity: sha512-TlKubXJgxwhER0dw+8ULn9hr9kZjraV4R6Q/eidwWUwCKxwXYPBGmMKsZ/85tlxlhMYbcLZd/YZh6G3QkHX4fg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -5511,8 +5511,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -6183,6 +6183,37 @@ packages:
 
   /tailwindcss@3.3.5:
     resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      arg: 5.0.2
+      chokidar: 3.5.3
+      didyoumean: 1.2.2
+      dlv: 1.1.3
+      fast-glob: 3.3.2
+      glob-parent: 6.0.2
+      is-glob: 4.0.3
+      jiti: 1.21.0
+      lilconfig: 2.1.0
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      object-hash: 3.0.0
+      picocolors: 1.0.0
+      postcss: 8.4.31
+      postcss-import: 15.1.0(postcss@8.4.31)
+      postcss-js: 4.0.1(postcss@8.4.31)
+      postcss-load-config: 4.0.2(postcss@8.4.31)
+      postcss-nested: 6.0.1(postcss@8.4.31)
+      postcss-selector-parser: 6.0.13
+      resolve: 1.22.8
+      sucrase: 3.34.0
+    transitivePeerDependencies:
+      - ts-node
+    dev: true
+
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
