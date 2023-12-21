@@ -1,27 +1,59 @@
 <script setup>
-import global from './global.vue'
+import demo from './demo.vue'
 </script>
 
 # useGlobal
 
 ::: tip 适用于 `Vue3`、`Nuxt3`
-获取实例中全局 `property`
+获取已经注册的全局属性对象 [globalProperties](https://cn.vuejs.org/api/application.html#app-config-globalproperties)
 :::
 
-<!-- <description description="获取实例中全局`property`" :tagNameList="['Vue3']"  /> -->
+### 示例
 
-## 基础用法
+`useGlobal`只做两件事，第一快速提取`globalProperties`，第二更方便、明确的类型提示
 
-<global />
+#### 既然想获取全局`globalProperties`，肯定要先注册它呀（第一步）
 
-<details>
+::: code-group
 
-<summary>查看代码</summary>
+```ts [Vue3]
+// main.ts
+import { type App, createApp } from "vue";
+import App from "./App.vue";
 
-<<< @/hooks/useGlobal/global.vue
+import * as echarts from "echarts";
 
-</details>
+const app = createApp(App);
+// 这里我们就以注册echarts为例
+app.config.globalProperties.$echarts = echarts;
 
-## 返回值或方法
+app.mount("#app");
+```
 
-- 返回 [`globalProperties`](https://vuejs.org/api/application.html#app-config-globalproperties)
+```ts [Nuxt3]
+// plugins/config.ts
+import * as echarts from "echarts";
+
+export default defineNuxtPlugin(nuxtApp => {
+  // 这里我们就以注册echarts为例
+  nuxtApp.vueApp.config.globalProperties.$echarts = echarts;
+});
+```
+
+:::
+
+#### 全局类型声明（第二步）
+
+<<< ../../global.d.ts
+
+#### 在组件中使用它（第三步即最后一步）
+
+<<< @/hooks/useGlobal/demo.vue
+
+##### 获得类型提示，如下图
+
+<preview-image imgSrc="/echarts1.jpg" />
+
+##### 获得实例的属性和方法，如下图
+
+<preview-image imgSrc="/echarts2.jpg" />
