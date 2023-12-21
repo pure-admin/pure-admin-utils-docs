@@ -24,7 +24,7 @@ import App from "./App.vue";
 import * as echarts from "echarts";
 
 const app = createApp(App);
-// 这里我们就以注册echarts为例
+// 这里我们就以注册$echarts为例
 app.config.globalProperties.$echarts = echarts;
 
 app.mount("#app");
@@ -35,7 +35,7 @@ app.mount("#app");
 import * as echarts from "echarts";
 
 export default defineNuxtPlugin(nuxtApp => {
-  // 这里我们就以注册echarts为例
+  // 这里我们就以注册$echarts为例
   nuxtApp.vueApp.config.globalProperties.$echarts = echarts;
 });
 ```
