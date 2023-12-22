@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useIntervalFn } from "@vueuse/core";
 import { ref, computed } from "vue";
+import { useIntervalFn } from "@vueuse/core";
 import { type UtilsEChartsOption, useDark, useECharts } from "@pureadmin/utils";
 
 // 兼容dark主题
