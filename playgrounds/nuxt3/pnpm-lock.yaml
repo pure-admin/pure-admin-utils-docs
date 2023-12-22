@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@pureadmin/utils':
-    specifier: ^1.17.1
-    version: 1.17.1(echarts@5.4.3)(vue@3.3.9)
+    specifier: ^2.0.0
+    version: 2.0.0(echarts@5.4.3)(vue@3.3.9)
   echarts:
     specifier: ^5.4.3
     version: 5.4.3
@@ -1513,8 +1513,8 @@ packages:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
 
-  /@pureadmin/utils@1.17.1(echarts@5.4.3)(vue@3.3.9):
-    resolution: {integrity: sha512-qDOkt4teE2Gi6JGe2LvBm4sTmkzXHrkyPANlndZ8JhPI45DIiRIrBCnGgqDg/O2I317FQvmJ259EKjezBLnQHA==}
+  /@pureadmin/utils@2.0.0(echarts@5.4.3)(vue@3.3.9):
+    resolution: {integrity: sha512-0uxudGll2zmTl/hPyK9LV2rZOA8Kv2MgOQir5UI+T41nQO3ksQFzkVAuYyvqaktLodmU4/oVPhygQGpN8YH0bg==}
     peerDependencies:
       echarts: '*'
       vue: '*'
