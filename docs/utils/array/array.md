@@ -1,11 +1,12 @@
 <script setup>
 import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
-useAddNumInOutlineLabel(4)
+useAddNumInOutlineLabel(5)
 
 import swapOrder from './swapOrder.vue'
 import isIncludeAllChildren from './isIncludeAllChildren.vue'
 import intersection from './intersection.vue'
 import getKeyList from './getKeyList.vue'
+import randomDivide from './randomDivide.vue'
 </script>
 
 ::: tip 支持任意 `JavaScript` 环境或框架
@@ -121,5 +122,36 @@ import getKeyList from './getKeyList.vue'
 | ------------ | ------------ | -------- |
 | `arr`        | 数组         | `any[]`  |
 | `key`        | 指定的 `key` | `string` |
+
+</div>
+
+## randomDivide
+
+将一个总数随机分配到指定份数的数组中
+
+<div class="pure-border">
+
+#### <divider-base /> {#base5}
+
+<randomDivide />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/randomDivide.vue
+
+</details>
+
+#### <divider-param /> {#param5}
+
+接收四个参数，第一个参数 `total`，第二个参数 `parts`，第三个参数 `minPerPart`，第四个参数 `maxPerPart`，返回值类型为 `number[]`
+
+| **参数属性** | **说明**                                         | **类型** |
+| ------------ | ------------------------------------------------ | -------- |
+| `total`      | 需要被分配的总数                                 | `number` |
+| `parts`      | 将总数分成多少份                                 | `number` |
+| `minPerPart` | 每一份的最小阀值。可选，默认`0`                  | `number` |
+| `maxPerPart` | 每一份的最大阀值。可选，默认最大阀值不会超过总数 | `number` |
 
 </div>

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "@pureadmin/utils"
   text: 常用的工具函数（utils、hooks）
-  tagline: 共127个工具函数，帮助提高开发效率
+  tagline: 共128个工具函数，帮助提高开发效率
   image:
     src: /logo.png
     alt: "@pureadmin/utils"

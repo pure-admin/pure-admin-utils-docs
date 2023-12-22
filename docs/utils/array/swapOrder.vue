@@ -9,7 +9,7 @@ let arr1 = ref([
 ]);
 let arr2 = ref([6, 5, 4, 3, 2, 1]);
 
-function onclick() {
+function onClick() {
   swapOrder(arr.value, 0, 1);
   swapOrder(arr1.value, 0, 1);
   swapOrder(arr2.value, 0, 5);
@@ -19,7 +19,7 @@ function onclick() {
 <template>
   <naive-theme>
     <n-space vertical className="mt-2">
-      <n-button @click="onclick"> 点击互换两个元素位置 </n-button>
+      <n-button @click="onClick"> 点击互换两个元素位置 </n-button>
       <n-gradient-text type="info">
         {{ arr }}
       </n-gradient-text>
