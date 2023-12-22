@@ -1,19 +1,16 @@
 <script setup lang="ts">
+import { ref, computed } from "vue";
 import { useIntervalFn } from "@vueuse/core";
-import { type Ref, ref, computed } from "vue";
-import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils";
+import { useDark, useECharts } from "@pureadmin/utils";
 
 const { isDark } = useDark();
 
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions, getInstance } = useECharts(
-  chartRef as Ref<HTMLDivElement>,
-  { theme }
-);
+const chartRef = ref();
+const { setOptions, getInstance } = useECharts(chartRef, { theme });
 
 let xData = (() => {
   let data: any[] = [];

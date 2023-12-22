@@ -1,19 +1,19 @@
 <script setup lang="ts">
+import { ref, computed } from "vue";
 import { Reload } from "@vicons/ionicons5";
-import { type Ref, ref, computed } from "vue";
-import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
+import { useDark, useECharts } from "@pureadmin/utils";
 
 // 加载动画
 const loading = ref(true);
 // 兼容dark主题
 const { isDark } = useDark();
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
 // 初始化ECharts
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 function renderEcharts() {
   // 显示加载动画

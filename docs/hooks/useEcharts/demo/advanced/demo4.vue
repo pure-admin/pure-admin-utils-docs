@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { type Ref, ref, computed } from "vue";
-import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
+import { ref, computed } from "vue";
+import { useDark, useECharts } from "@pureadmin/utils";
 // 必须引入，此处注释是因为echarts-gl对纯esm以及服务端支持不友好
 // 在此处引入了 https://github.com/pure-admin/pure-admin-utils-docs/blob/master/docs/.vitepress/theme/index.ts#L22
 // 对于vue3非服务端可以把import "echarts-gl"注释解开
@@ -8,13 +8,13 @@ import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
 
 // 兼容dark主题
 const { isDark } = useDark();
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
 // 初始化ECharts
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 let l1 = 2;
 let l2 = 5;

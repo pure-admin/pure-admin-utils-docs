@@ -8,8 +8,8 @@ let theme = computed(() => {
 });
 
 // 初始化ECharts
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 // 根据配置项渲染ECharts
 setOptions({

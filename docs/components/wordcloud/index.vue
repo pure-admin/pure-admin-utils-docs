@@ -1,17 +1,12 @@
 <script setup lang="ts">
 import { useData } from "./data";
+import { ref, computed } from "vue";
 import { useRouter } from "vitepress";
 import { Reload } from "@vicons/ionicons5";
-import { type Ref, ref, computed } from "vue";
 import { useEventListener } from "@vueuse/core";
 import "../../.vitepress/plugins/wordcloud/index.d.ts"; // 路径要写完整，确保打包时引用正确
 import { hooks } from "../../.vitepress/utils/sortHooks";
-import {
-  type EchartOptions,
-  randomColor,
-  useECharts,
-  debounce
-} from "@pureadmin/utils";
+import { randomColor, useECharts, debounce } from "@pureadmin/utils";
 import { useData as useDark } from "vitepress";
 
 const loading = ref(true);
@@ -19,12 +14,12 @@ const { data } = useData();
 const { go } = useRouter();
 const { isDark } = useDark();
 
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions, resize } = useECharts(chartRef as Ref<HTMLDivElement>, {
+const chartRef = ref();
+const { setOptions, resize } = useECharts(chartRef, {
   theme
 });
 

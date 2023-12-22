@@ -1,22 +1,17 @@
 <script setup lang="ts">
 import { useIntervalFn } from "@vueuse/core";
-import { type Ref, ref, computed } from "vue";
-import {
-  type EchartOptions,
-  type UtilsEChartsOption,
-  useDark,
-  useECharts
-} from "@pureadmin/utils";
+import { ref, computed } from "vue";
+import { type UtilsEChartsOption, useDark, useECharts } from "@pureadmin/utils";
 
 // 兼容dark主题
 const { isDark } = useDark();
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
 // 初始化ECharts
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 const advancedDemo1Url3 =
   "https://xiaoxian521.github.io/hyperlink/img/echarts-advanceddemo1-3.png";

@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import axios from "axios";
-import { type Ref, ref, computed, watch } from "vue";
-import { useDark, useECharts, type EchartOptions } from "@pureadmin/utils";
+import { ref, computed, watch } from "vue";
+import { useDark, useECharts } from "@pureadmin/utils";
 
 let echartsData = ref();
 let isBottom = ref(false);
 const { isDark } = useDark();
 
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 const selectValue = ref("first");
 const selectOptions = [

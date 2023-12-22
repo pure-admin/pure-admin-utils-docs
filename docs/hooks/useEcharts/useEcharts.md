@@ -87,7 +87,7 @@ import { ref } from "vue";
 import { useECharts } from "@pureadmin/utils";
 
 // 初始化ECharts
-const chartRef = ref(null);
+const chartRef = ref();
 const { setOptions } = useECharts(chartRef);
 
 // 根据配置项渲染ECharts

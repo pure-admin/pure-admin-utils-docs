@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { type Ref, ref, computed } from "vue";
-import { type EchartOptions, useDark, useECharts } from "@pureadmin/utils";
+import { ref, computed } from "vue";
+import { useDark, useECharts } from "@pureadmin/utils";
 
 // 兼容dark主题
 const { isDark } = useDark();
-let theme: EchartOptions["theme"] = computed(() => {
+let theme = computed(() => {
   return isDark.value ? "dark" : "default";
 });
 
 // 初始化ECharts
-const chartRef = ref<HTMLDivElement | null>(null);
-const { setOptions } = useECharts(chartRef as Ref<HTMLDivElement>, { theme });
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef, { theme });
 
 const pathSymbols = {
   reindeer:
@@ -35,6 +35,7 @@ setOptions({
       type: "none"
     },
     formatter: function (params) {
+      // @ts-expect-error
       return params[0].name + ": " + params[0].value;
     }
   },
