@@ -54,6 +54,9 @@ npm install @pureadmin/utils
 
 [查看示例代码](https://github.com/pure-admin/pure-admin-utils-docs/tree/master/playgrounds)
 
+我们为`nuxt3`提供了所有`hooks`示例  
+[代码仓库](https://github.com/pure-admin/pure-admin-utils-nuxt3) [在线预览](https://pure-admin.github.io/pure-admin-utils-nuxt3/)
+
 ### 🤔 反馈
 
 [反馈问题、新增需求](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)

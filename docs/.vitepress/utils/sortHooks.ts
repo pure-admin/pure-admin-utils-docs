@@ -1,6 +1,6 @@
 // 指定hooks顺序
 export const hooks = [
-  "useEcharts",
+  "useECharts",
   "useDraggable",
   "useWatermark",
   "useDark",

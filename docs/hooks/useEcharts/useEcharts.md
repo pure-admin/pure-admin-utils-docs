@@ -38,7 +38,7 @@ import {
 } from './demo/business/index.ts'
 </script>
 
-# useEcharts
+# useECharts
 
 ::: tip 适用于 `Vue3`、`Nuxt3`
 兼容 `echarts` 所有 `api` 并且额外添加尺寸自适应容器和自动销毁等功能，`echarts` 能实现的它都行
@@ -173,7 +173,7 @@ const {} = useECharts(elRef, options);
 | `delay`      | `window.onresize` 时改变图表尺寸的延时时间，单位毫秒。当 `echarts` 在拖拉窗口时不会自适应（一般不会出现这种情况），可以调整 `delay` 数值到自适应为止                                               | `number`            | `300`    |
 | `resize`     | 是否监听页面`resize`事件并在页面`resize`时改变图表尺寸以适应当前容器，监听及改变，`true`代表监听，`false`代表不监听                                                                                | `boolean`           | `true`   |
 
-上面说完第一个参数，那么剩余参数是干嘛的呢，请看下面的 [事件](useEcharts#事件) 解析
+上面说完第一个参数，那么剩余参数是干嘛的呢，请看下面的 [事件](useECharts#事件) 解析
 
 </div>
 
@@ -254,7 +254,7 @@ setOptions(
 
 <summary>点击查看类型声明</summary>
 
-<<< @/hooks/useEcharts/types/useEcharts.ts
+<<< @/hooks/useECharts/types/useECharts.ts
 
 </details>
 
@@ -272,7 +272,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/business/loading.vue
+<<< @/hooks/useECharts/demo/business/loading.vue
 
 </details>
 </visual-load>
@@ -286,7 +286,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/business/dynamic.vue
+<<< @/hooks/useECharts/demo/business/dynamic.vue
 
 </details>
 </visual-load>
@@ -303,7 +303,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/business/request.vue
+<<< @/hooks/useECharts/demo/business/request.vue
 
 </details>
   </visual-load>
@@ -322,7 +322,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/business/customTheme.vue
+<<< @/hooks/useECharts/demo/business/customTheme.vue
 
 </details>
 </visual-load>
@@ -338,7 +338,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/line.vue
+<<< @/hooks/useECharts/demo/simple/line.vue
 
 </details>
 </visual-load>
@@ -352,7 +352,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/bar.vue
+<<< @/hooks/useECharts/demo/simple/bar.vue
 
 </details>
 </visual-load>
@@ -366,7 +366,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/pie.vue
+<<< @/hooks/useECharts/demo/simple/pie.vue
 
 </details>
 </visual-load>
@@ -380,7 +380,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/scatter.vue
+<<< @/hooks/useECharts/demo/simple/scatter.vue
 
 </details>
 </visual-load>
@@ -394,7 +394,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/candlestick.vue
+<<< @/hooks/useECharts/demo/simple/candlestick.vue
 
 </details>
 </visual-load>
@@ -408,7 +408,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/radar.vue
+<<< @/hooks/useECharts/demo/simple/radar.vue
 
 </details>
 </visual-load>
@@ -422,7 +422,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/boxplot.vue
+<<< @/hooks/useECharts/demo/simple/boxplot.vue
 
 </details>
 </visual-load>
@@ -436,7 +436,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/heatmap.vue
+<<< @/hooks/useECharts/demo/simple/heatmap.vue
 
 </details>
 </visual-load>
@@ -450,7 +450,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/graph.vue
+<<< @/hooks/useECharts/demo/simple/graph.vue
 
 </details>
 </visual-load>
@@ -464,7 +464,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/tree.vue
+<<< @/hooks/useECharts/demo/simple/tree.vue
 
 </details>
 </visual-load>
@@ -478,7 +478,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/sunburst.vue
+<<< @/hooks/useECharts/demo/simple/sunburst.vue
 
 </details>
 </visual-load>
@@ -492,7 +492,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/sankey.vue
+<<< @/hooks/useECharts/demo/simple/sankey.vue
 
 </details>
 </visual-load>
@@ -506,7 +506,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/funnel.vue
+<<< @/hooks/useECharts/demo/simple/funnel.vue
 
 </details>
 </visual-load>
@@ -520,7 +520,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/gauge.vue
+<<< @/hooks/useECharts/demo/simple/gauge.vue
 
 </details>
 </visual-load>
@@ -534,7 +534,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/pictorialBar.vue
+<<< @/hooks/useECharts/demo/simple/pictorialBar.vue
 
 </details>
 </visual-load>
@@ -548,7 +548,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/simple/themeRiver.vue
+<<< @/hooks/useECharts/demo/simple/themeRiver.vue
 
 </details>
 </visual-load>
@@ -568,7 +568,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo1.vue
+<<< @/hooks/useECharts/demo/advanced/demo1.vue
 
 </details>
 </visual-load>
@@ -582,7 +582,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo2.vue
+<<< @/hooks/useECharts/demo/advanced/demo2.vue
 
 </details>
 </visual-load>
@@ -596,7 +596,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo3.vue
+<<< @/hooks/useECharts/demo/advanced/demo3.vue
 
 </details>
 </visual-load>
@@ -610,7 +610,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo4.vue
+<<< @/hooks/useECharts/demo/advanced/demo4.vue
 
 </details>
 </visual-load>
@@ -624,7 +624,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo5.vue
+<<< @/hooks/useECharts/demo/advanced/demo5.vue
 
 </details>
 </visual-load>
@@ -638,7 +638,7 @@ setOptions(
 
 <summary>查看代码</summary>
 
-<<< @/hooks/useEcharts/demo/advanced/demo6.vue
+<<< @/hooks/useECharts/demo/advanced/demo6.vue
 
 </details>
 </visual-load>
