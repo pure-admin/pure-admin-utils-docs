@@ -40,7 +40,7 @@ import {
 
 # useECharts
 
-::: tip 适用于 `Vue3`、`Nuxt3`
+::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 兼容 `echarts` 所有 `api` 并且额外添加尺寸自适应容器和自动销毁等功能，`echarts` 能实现的它都行
 :::
 

@@ -14,7 +14,7 @@ const toggle = inject("toggle-appearance", () => {
 
 # useDark
 
-::: tip 适用于 `Vue3`、`Nuxt3`
+::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 检测网页整体是否处于暗色（`dark`）主题，它是响应式的
 :::
 

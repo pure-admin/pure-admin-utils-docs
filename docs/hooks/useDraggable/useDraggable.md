@@ -6,7 +6,7 @@ import naiveuiDialog from './naiveuiDialog.vue'
 
 # useDraggable
 
-::: tip 适用于 `Vue3`、`Nuxt3`
+::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 使元素可拖动
 :::
 

@@ -4,7 +4,7 @@ import demo from './demo.vue'
 
 # useGlobal
 
-::: tip 适用于 `Vue3`、`Nuxt3`
+::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 获取已经注册的全局属性对象 [globalProperties](https://cn.vuejs.org/api/application.html#app-config-globalproperties)
 :::
 

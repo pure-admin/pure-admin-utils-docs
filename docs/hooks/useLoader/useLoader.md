@@ -1,6 +1,6 @@
 # useLoader
 
-::: tip 适用于 `Vue3`、`Nuxt3`
+::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 动态地将静态资源（`CSS`样式表或`JavaScript`脚本）加载到网页中
 :::
 
