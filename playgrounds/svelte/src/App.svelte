@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { buildUUID, getCurrentWeek } from "@pureadmin/utils";
+  import { dateFormat, getCurrentWeek, uuid } from '@pureadmin/utils'
 </script>
 
 <main>
-  <p>
-    {getCurrentWeek()} {buildUUID()}
-  </p>
+  <p>{ `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}` }</p>
 </main>

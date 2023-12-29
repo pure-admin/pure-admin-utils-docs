@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-utils-docs",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "pure-admin-utils-docs",
   "type": "module",
   "keywords": [
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@esmjs/geo": "^1.0.0",
     "@faker-js/faker": "^8.3.1",
-    "@pureadmin/utils": "^2.1.0",
+    "@pureadmin/utils": "^2.1.1",
     "@vicons/ionicons5": "^0.12.0",
     "@vue-macros/reactivity-transform": "^0.4.1",
     "@vueuse/components": "^10.7.0",

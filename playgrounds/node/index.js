@@ -1,7 +1,8 @@
 const Koa = require('koa')
 const logger = require('koa-logger')
 const router = require('@koa/router')()
-const { getCurrentWeek, buildUUID } = require('@pureadmin/utils')
+const { dateFormat, getCurrentWeek, uuid } = require('@pureadmin/utils')
+// https://pure-admin-utils.netlify.app/
 
 const app = new Koa()
 
@@ -11,7 +12,7 @@ app.use(logger())
 
 
 const helloWorld = ctx => {
-  ctx.body = getCurrentWeek() + buildUUID()
+  ctx.body = `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}`
 }
 
 router.get('/', helloWorld)

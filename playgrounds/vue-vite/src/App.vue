@@ -1,10 +1,24 @@
 <script setup lang="ts">
-import { buildUUID, getCurrentWeek } from "@pureadmin/utils"
+import { dateFormat, getCurrentWeek, uuid } from '@pureadmin/utils'
 </script>
 
 <template>
-  <p>
-    {{getCurrentWeek()}}{{buildUUID()}}
-  </p>
+  <p>{{ `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}` }}</p>
 </template>
 
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>

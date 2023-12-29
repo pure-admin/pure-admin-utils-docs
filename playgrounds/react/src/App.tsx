@@ -1,12 +1,10 @@
-import "./App.css";
-import { buildUUID, getCurrentWeek } from "@pureadmin/utils";
+import './App.css'
+import { dateFormat, getCurrentWeek, uuid } from '@pureadmin/utils'
 
 function App() {
   return (
     <div className="App">
-      <p>
-        {getCurrentWeek()} {buildUUID()}
-      </p>
+      <p>{ `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}` }</p>
     </div>
   );
 }

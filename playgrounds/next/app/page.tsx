@@ -1,14 +1,10 @@
-import type { Component } from 'solid-js';
-
-import styles from './App.module.css';
 import { dateFormat, getCurrentWeek, uuid } from '@pureadmin/utils'
+// https://pure-admin-utils.netlify.app/
 
-const App: Component = () => {
+export default function Home() {
   return (
-    <div class={styles.App}>
+    <div >
       <p>{ `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}` }</p>
     </div>
-  );
-};
-
-export default App;
+  )
+}

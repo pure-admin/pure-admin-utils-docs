@@ -1,1 +1,1 @@
-已迁移到 [pure-admin-utils-nuxt3](https://github.com/pure-admin/pure-admin-utils-nuxt3)
+仓库地址：[pure-admin-utils-nuxt3](https://github.com/pure-admin/pure-admin-utils-nuxt3)

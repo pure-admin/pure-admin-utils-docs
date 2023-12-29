@@ -1,18 +1,17 @@
 <template>
-  <p>
-    {{getCurrentWeek()}}{{buildUUID()}}
-  </p>
+  <p>{{ `${dateFormat("YYYY/MM/DD HH:mm")} ${getCurrentWeek()} ${uuid()}` }}</p>
 </template>
 
 <script>
-import { buildUUID, getCurrentWeek } from "@pureadmin/utils"
+import { dateFormat, getCurrentWeek, uuid } from '@pureadmin/utils'
 
 export default {
   name: 'App',
   data() {
     return {
-      buildUUID,
-      getCurrentWeek
+      uuid,
+      dateFormat,
+      getCurrentWeek,
     }
   }
 }
