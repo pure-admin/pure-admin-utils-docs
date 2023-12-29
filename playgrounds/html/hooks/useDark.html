@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>useDark</title>
+
+  <!-- jsdelivr cdn -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/theme-chalk/dark/css-vars.css" />
+  <script src="//cdn.jsdelivr.net/npm/vue/dist/vue.global.prod.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/element-plus/dist/index.full.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@pureadmin/utils@latest"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <div style="display: flex;align-items: center;justify-content: space-around;width: 10em;">
+      <h3>{{ isDark ? 'dark' : '非dark' }}</h3>
+      <el-switch v-model="isDark" inline-prompt size="large" active-text="非dark" inactive-text="dark"
+        @change="toggleDark" />
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue
+    const { isDark, toggleDark } = PureUtils.useDark()
+
+    const app = Vue.createApp({
+      data() {
+        return {
+          isDark: isDark.value
+        }
+      },
+      methods: {
+        toggleDark
+      },
+    })
+
+    app.use(ElementPlus).mount("#app")
+  </script>
+
+</body>
+
+</html>
