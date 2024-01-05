@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from "axios";
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, nextTick } from "vue";
 import { useDark, useECharts } from "@pureadmin/utils";
 
 let echartsData = ref();
@@ -80,6 +80,7 @@ watch(
       "https://xiaoxian521.github.io/hyperlink/json/echarts.json"
     );
     echartsData.value = data.multipleBar[val];
+    await nextTick(); // 确保DOM更新完成后再执行
     renderEcharts(data.multipleBar[val]);
   },
   {
