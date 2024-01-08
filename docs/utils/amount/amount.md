@@ -14,7 +14,7 @@ import addZero from './addZero.vue'
 转换金额
 :::
 
-### centsToDollars
+### centsToDollars {#centstodollars}
 
 分转元
 
@@ -43,7 +43,7 @@ import addZero from './addZero.vue'
 
 </div>
 
-### dollarsToCents
+### dollarsToCents {#dollarstocents}
 
 元转分
 
@@ -72,7 +72,7 @@ import addZero from './addZero.vue'
 
 </div>
 
-### priceUppercase
+### priceUppercase {#priceuppercase}
 
 金额转大写汉字（支持小数位）
 
@@ -101,7 +101,7 @@ import addZero from './addZero.vue'
 
 </div>
 
-### priceToThousands
+### priceToThousands {#pricetothousands}
 
 格式化金额，三位加一个逗号
 
@@ -141,7 +141,7 @@ import addZero from './addZero.vue'
 
 </div>
 
-### getDecimalPlaces
+### getDecimalPlaces {#getdecimalplaces}
 
 获取数值的小数位数
 
@@ -169,7 +169,7 @@ import addZero from './addZero.vue'
 
 </div>
 
-### addZero
+### addZero {#addzero}
 
 在数值后加 `.00`
 
