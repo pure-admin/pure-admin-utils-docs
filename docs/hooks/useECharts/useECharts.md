@@ -1,4 +1,12 @@
 <script setup>
+// 偏业务示例
+import { 
+  Eloading,
+  Edynamic,
+  Erequest,
+  EcustomTheme
+} from './demo/business/index.ts'
+
 // 常用示例
 import { 
   Eline, 
@@ -28,14 +36,6 @@ import {
   Edemo5,
   Edemo6
 } from './demo/advanced/index.ts'
-
-// 偏业务示例
-import { 
-  Eloading,
-  Edynamic,
-  Erequest,
-  EcustomTheme
-} from './demo/business/index.ts'
 </script>
 
 # useECharts
@@ -43,6 +43,63 @@ import {
 ::: tip 适用于 `Vue3`、`Nuxt3`、`HTML`
 兼容 `echarts` 所有 `api` 并且额外添加尺寸自适应容器和自动销毁等功能，`echarts` 能实现的它都行
 :::
+
+### 使用前提
+
+如下所示，必须先将 `echarts` 绑定到 [globalProperties](https://cn.vuejs.org/api/application.html#app-config-globalproperties)  
+下面代码全局引入了 `echarts` 也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)
+
+::: code-group
+
+```ts [Vue3]
+// main.ts // [!code focus]
+import { type App, createApp } from "vue";
+import App from "./App.vue";
+
+import * as echarts from "echarts"; // [!code focus]
+
+const app = createApp(App);
+// 这里$echarts写法自由，起名a、b、c都行，只要保证等号右侧引入的是echarts即可 // [!code focus]
+app.config.globalProperties.$echarts = echarts; // [!code focus]
+
+app.mount("#app");
+```
+
+```ts [Nuxt3]
+// plugins/config.ts
+import * as echarts from "echarts";
+
+export default defineNuxtPlugin(nuxtApp => {
+  // 这里$echarts写法自由，起名a、b、c都行，只要保证等号右侧引入的是echarts即可
+  nuxtApp.vueApp.config.globalProperties.$echarts = echarts;
+});
+```
+
+:::
+
+### 最简代码
+
+渲染`echarts`
+
+```vue
+<script setup lang="ts">
+import { ref } from "vue";
+import { useECharts } from "@pureadmin/utils";
+
+// 初始化ECharts
+const chartRef = ref();
+const { setOptions } = useECharts(chartRef);
+
+// 根据配置项渲染ECharts
+setOptions({
+  /** 配置项 https://echarts.apache.org/zh/option.html */
+});
+</script>
+
+<template>
+  <div ref="chartRef" style="width: 100%; height: 35vh" />
+</template>
+```
 
 ### 偏业务示例
 
@@ -437,63 +494,6 @@ import {
 :::
 
 </visual-load>
-
-### 使用前提
-
-如下所示，必须先将 `echarts` 绑定到 [globalProperties](https://cn.vuejs.org/api/application.html#app-config-globalproperties)  
-下面代码全局引入了 `echarts` 也可参考 [按需引入](https://echarts.apache.org/handbook/zh/basics/import#%E5%9C%A8-typescript-%E4%B8%AD%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5)
-
-::: code-group
-
-```ts [Vue3]
-// main.ts // [!code focus]
-import { type App, createApp } from "vue";
-import App from "./App.vue";
-
-import * as echarts from "echarts"; // [!code focus]
-
-const app = createApp(App);
-// 这里$echarts写法自由，起名a、b、c都行，只要保证等号右侧引入的是echarts即可 // [!code focus]
-app.config.globalProperties.$echarts = echarts; // [!code focus]
-
-app.mount("#app");
-```
-
-```ts [Nuxt3]
-// plugins/config.ts
-import * as echarts from "echarts";
-
-export default defineNuxtPlugin(nuxtApp => {
-  // 这里$echarts写法自由，起名a、b、c都行，只要保证等号右侧引入的是echarts即可
-  nuxtApp.vueApp.config.globalProperties.$echarts = echarts;
-});
-```
-
-:::
-
-### 最简代码
-
-渲染`echarts`
-
-```vue
-<script setup lang="ts">
-import { ref } from "vue";
-import { useECharts } from "@pureadmin/utils";
-
-// 初始化ECharts
-const chartRef = ref();
-const { setOptions } = useECharts(chartRef);
-
-// 根据配置项渲染ECharts
-setOptions({
-  /** 配置项 https://echarts.apache.org/zh/option.html */
-});
-</script>
-
-<template>
-  <div ref="chartRef" style="width: 100%; height: 35vh" />
-</template>
-```
 
 ### API
 

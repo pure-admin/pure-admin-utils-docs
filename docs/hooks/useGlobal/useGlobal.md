@@ -8,8 +8,6 @@ import demo from './demo.vue'
 获取已经注册的全局属性对象 [globalProperties](https://cn.vuejs.org/api/application.html#app-config-globalproperties)
 :::
 
-### 示例
-
 `useGlobal`只做两件事，第一快速提取`globalProperties`，第二更方便、明确的类型提示
 
 #### 既然想获取全局`globalProperties`，肯定要先注册它呀（第一步）
