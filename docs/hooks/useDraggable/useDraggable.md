@@ -10,6 +10,48 @@ import naiveuiDialog from './naiveuiDialog.vue'
 使元素可拖动
 :::
 
+### 示例
+
+#### 基础示例
+
+<draggable class="mt-2" />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useDraggable/draggable.vue
+
+</details>
+
+#### 可拖动的 [naiveui模态框](https://www.naiveui.com/zh-CN/os-theme/components/modal)
+
+##### 基础用法
+
+<naiveuiBase class="mt-2" />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useDraggable/naiveuiBase.vue
+
+</details>
+
+##### 使用 Dialog 预设
+
+哈哈，你没有看错，就是如此简单
+
+<naiveuiDialog class="mt-2" />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useDraggable/naiveuiDialog.vue
+
+</details>
+
 ### 最简代码
 
 可拖动的`Div`
@@ -79,48 +121,6 @@ const {} = useDraggable(targetRef, dragRef, args);
 | `reset`          | 将拖动元素恢复到初始位置                                                            | `() => void`                         |
 
 </div>
-
-### 示例
-
-#### 基础示例
-
-<draggable class="mt-2" />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useDraggable/draggable.vue
-
-</details>
-
-#### 可拖动的 [naiveui模态框](https://www.naiveui.com/zh-CN/os-theme/components/modal)
-
-##### 基础用法
-
-<naiveuiBase class="mt-2" />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useDraggable/naiveuiBase.vue
-
-</details>
-
-##### 使用 Dialog 预设
-
-哈哈，你没有看错，就是如此简单
-
-<naiveuiDialog class="mt-2" />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useDraggable/naiveuiDialog.vue
-
-</details>
 
 <style scoped>
 .pure-no-border > table > thead > tr > th:nth-child(2) {

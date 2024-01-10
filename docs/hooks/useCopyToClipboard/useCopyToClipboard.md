@@ -9,6 +9,34 @@ import codeCopy from './code.vue'
 文本拷贝
 :::
 
+### 示例
+
+#### 文本拷贝
+
+<inputCopy />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useCopyToClipboard/input.vue
+
+</details>
+
+#### 代码片段拷贝
+
+自动保留代码的空格、换行符和缩进
+
+<codeCopy />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useCopyToClipboard/code.vue
+
+</details>
+
 ### 最简代码
 
 拷贝文本
@@ -62,31 +90,3 @@ const {} = useCopyToClipboard(defaultValue);
 | `update`         | 更新要拷贝的文本值                                    | `(value: string/Ref<string>) => void` |
 
 </div>
-
-### 示例
-
-#### 文本拷贝
-
-<inputCopy />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useCopyToClipboard/input.vue
-
-</details>
-
-#### 代码片段拷贝
-
-自动保留代码的空格、换行符和缩进
-
-<codeCopy />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useCopyToClipboard/code.vue
-
-</details>

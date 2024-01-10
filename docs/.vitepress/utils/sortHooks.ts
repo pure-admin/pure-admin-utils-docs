@@ -3,6 +3,7 @@ export const hooks = [
   "useECharts",
   "useDraggable",
   "useWatermark",
+  "useResizeObserver",
   "useDark",
   "useScrollTo",
   "useLoader",

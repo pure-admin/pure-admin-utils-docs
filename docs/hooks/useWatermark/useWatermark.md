@@ -14,59 +14,6 @@ import {
 给元素加水印，自适应容器
 :::
 
-### 最简代码
-
-添加水印
-
-```vue
-<script setup lang="ts">
-import { useWatermark } from "@pureadmin/utils";
-const { setWatermark } = useWatermark();
-setWatermark("我是水印");
-</script>
-```
-
-### API
-
-#### 参数
-
-```ts
-//  在此处配置参数
-const {} = useWatermark(appendEl);
-```
-
-<div class="pure-no-border">
-
-| **参数属性** | 必传 | **说明**                     | **类型**           |
-| ------------ | ---- | ---------------------------- | ------------------ |
-| `appendEl`   | 否   | 要添加水印的主体，默认`body` | `Ref<HTMLElement>` |
-
-</div>
-
-#### 返回值、方法
-
-<div class="pure-no-border">
-
-| **返回值、方法** | **说明**                                                                     | **类型**                                           |
-| ---------------- | ---------------------------------------------------------------------------- | -------------------------------------------------- |
-| `setWatermark`   | 根据自定义配置项添加水印，具体看下面的 [详解](useWatermark#setwatermark详解) | `(str: string, attr?: attr ｜ undefined) => void ` |
-| `clear`          | 销毁水印                                                                     | `() => void`                                       |
-
-##### `setWatermark`详解
-
-它接收两个参数，如下
-
-| **参数** | **说明**                                                     | **类型** |
-| -------- | ------------------------------------------------------------ | -------- |
-| `str`    | 水印值                                                       | `string` |
-| `attr`   | 水印样式属性，具体看下面的 [类型声明](useWatermark#类型声明) | `attr`   |
-
-</div>
-
-#### 类型声明
-
-<<< @/hooks/useWatermark/types/useWatermark.ts
-
 ### 示例
 
 #### 整页水印
@@ -138,3 +85,56 @@ const {} = useWatermark(appendEl);
 <<< @/hooks/useWatermark/demo/forever.vue
 
 </details>
+
+### 最简代码
+
+添加水印
+
+```vue
+<script setup lang="ts">
+import { useWatermark } from "@pureadmin/utils";
+const { setWatermark } = useWatermark();
+setWatermark("我是水印");
+</script>
+```
+
+### API
+
+#### 参数
+
+```ts
+//  在此处配置参数
+const {} = useWatermark(appendEl);
+```
+
+<div class="pure-no-border">
+
+| **参数属性** | 必传 | **说明**                     | **类型**           |
+| ------------ | ---- | ---------------------------- | ------------------ |
+| `appendEl`   | 否   | 要添加水印的主体，默认`body` | `Ref<HTMLElement>` |
+
+</div>
+
+#### 返回值、方法
+
+<div class="pure-no-border">
+
+| **返回值、方法** | **说明**                                                                     | **类型**                                           |
+| ---------------- | ---------------------------------------------------------------------------- | -------------------------------------------------- |
+| `setWatermark`   | 根据自定义配置项添加水印，具体看下面的 [详解](useWatermark#setwatermark详解) | `(str: string, attr?: attr ｜ undefined) => void ` |
+| `clear`          | 销毁水印                                                                     | `() => void`                                       |
+
+##### `setWatermark`详解
+
+它接收两个参数，如下
+
+| **参数** | **说明**                                                     | **类型** |
+| -------- | ------------------------------------------------------------ | -------- |
+| `str`    | 水印值                                                       | `string` |
+| `attr`   | 水印样式属性，具体看下面的 [类型声明](useWatermark#类型声明) | `attr`   |
+
+</div>
+
+#### 类型声明
+
+<<< @/hooks/useWatermark/types/useWatermark.ts

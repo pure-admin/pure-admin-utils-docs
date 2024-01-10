@@ -9,6 +9,32 @@ import horizontalScrollTo from './horizontalScrollTo.vue'
 使元素可自定义缓动
 :::
 
+### 示例
+
+#### 纵向缓动
+
+<verticalScrollTo />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useScrollTo/verticalScrollTo.vue
+
+</details>
+
+#### 横向缓动
+
+<horizontalScrollTo />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useScrollTo/horizontalScrollTo.vue
+
+</details>
+
 ### 最简代码
 
 整页滚动到顶部
@@ -62,32 +88,6 @@ const {} = useScrollTo(options);
 | `stop`           | 暂停滚动 | `() => void` |
 
 </div>
-
-### 示例
-
-#### 纵向缓动
-
-<verticalScrollTo />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useScrollTo/verticalScrollTo.vue
-
-</details>
-
-#### 横向缓动
-
-<horizontalScrollTo />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useScrollTo/horizontalScrollTo.vue
-
-</details>
 
 <style scoped>
 .pure-no-border > table > thead > tr > th:nth-child(2) {

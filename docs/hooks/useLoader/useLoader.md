@@ -4,63 +4,6 @@
 动态地将静态资源（`CSS`样式表或`JavaScript`脚本）加载到网页中
 :::
 
-### 最简代码
-
-动态加载`CSS`样式表
-
-```vue
-<script setup lang="ts">
-import { onMounted } from "vue";
-import { useLoader } from "@pureadmin/utils";
-const { loadCss } = useLoader();
-
-onMounted(async () => {
-  try {
-    let result = await loadCss({
-      src: "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
-    });
-    if (result) {
-      // 加载成功要做的事
-    }
-  } catch (err) {
-    // 加载失败要做的事
-  }
-});
-</script>
-```
-
-### API
-
-#### 参数
-
-```ts
-//  在此处配置参数
-const {} = useLoader(destroy);
-```
-
-<div class="pure-no-border">
-
-| **参数属性** | 必传 | **说明**                     | **类型**  | 默认值 |
-| ------------ | ---- | ---------------------------- | --------- | ------ |
-| `destroy`    | 否   | 是否在生命周期结束后移除标签 | `boolean` | `true` |
-
-</div>
-
-#### 返回值、方法
-
-<div class="pure-no-border">
-
-| **返回值、方法** | **说明**                 | **类型**                                                        |
-| ---------------- | ------------------------ | --------------------------------------------------------------- |
-| `loadCss`        | 动态加载`CSS`样式表      | `(opts: OptionsScript/OptionsScript[])=> Promise<LoadResult[]>` |
-| `loadScript`     | 动态加载`JavaScript`脚本 | `(opts: OptionsScript/OptionsScript[])=> Promise<LoadResult[]>` |
-
-</div>
-
-#### 类型声明
-
-<<< @/hooks/useLoader/types/useLoader.ts
-
 ### 示例
 
 ```vue
@@ -210,6 +153,63 @@ loadCss({
   .catch(err => {});
 </script>
 ```
+
+### 最简代码
+
+动态加载`CSS`样式表
+
+```vue
+<script setup lang="ts">
+import { onMounted } from "vue";
+import { useLoader } from "@pureadmin/utils";
+const { loadCss } = useLoader();
+
+onMounted(async () => {
+  try {
+    let result = await loadCss({
+      src: "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css"
+    });
+    if (result) {
+      // 加载成功要做的事
+    }
+  } catch (err) {
+    // 加载失败要做的事
+  }
+});
+</script>
+```
+
+### API
+
+#### 参数
+
+```ts
+//  在此处配置参数
+const {} = useLoader(destroy);
+```
+
+<div class="pure-no-border">
+
+| **参数属性** | 必传 | **说明**                     | **类型**  | 默认值 |
+| ------------ | ---- | ---------------------------- | --------- | ------ |
+| `destroy`    | 否   | 是否在生命周期结束后移除标签 | `boolean` | `true` |
+
+</div>
+
+#### 返回值、方法
+
+<div class="pure-no-border">
+
+| **返回值、方法** | **说明**                 | **类型**                                                        |
+| ---------------- | ------------------------ | --------------------------------------------------------------- |
+| `loadCss`        | 动态加载`CSS`样式表      | `(opts: OptionsScript/OptionsScript[])=> Promise<LoadResult[]>` |
+| `loadScript`     | 动态加载`JavaScript`脚本 | `(opts: OptionsScript/OptionsScript[])=> Promise<LoadResult[]>` |
+
+</div>
+
+#### 类型声明
+
+<<< @/hooks/useLoader/types/useLoader.ts
 
 ### 温馨提示
 

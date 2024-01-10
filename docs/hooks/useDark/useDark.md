@@ -18,6 +18,22 @@ const toggle = inject("toggle-appearance", () => {
 检测网页整体是否处于暗色（`dark`）主题，它是响应式的
 :::
 
+### 示例
+
+<!-- <dark /> -->
+
+<naive-theme>
+  <n-button class="mt-2" @click="toggle">{{ `当前网页处于 ${isDark ? 'dark' : 'light'} 主题，点击切换主题` }}</n-button>
+</naive-theme>
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/hooks/useDark/dark.vue
+
+</details>
+
 ### 最简代码
 
 检测当前整个网页是否处于`dark`主题
@@ -59,19 +75,3 @@ const {} = useDark(options);
 | `toggleDark`     | `dark`和非`dark`主题间相互切换       | `() => void`          |
 
 </div>
-
-### 示例
-
-<!-- <dark /> -->
-
-<naive-theme>
-  <n-button class="mt-2" @click="toggle">{{ `当前网页处于 ${isDark ? 'dark' : 'light'} 主题，点击切换主题` }}</n-button>
-</naive-theme>
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/hooks/useDark/dark.vue
-
-</details>
