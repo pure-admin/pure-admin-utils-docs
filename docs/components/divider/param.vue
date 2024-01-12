@@ -1,6 +1,6 @@
 <template>
   <naive-theme>
-    <n-divider dashed> 参数 </n-divider>
+    <p class="text-start">参数</p>
   </naive-theme>
 </template>
 

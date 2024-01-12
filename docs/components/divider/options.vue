@@ -1,5 +1,5 @@
 <template>
   <naive-theme>
-    <n-divider dashed> options 详情 </n-divider>
+    <p class="text-start">options 详情</p>
   </naive-theme>
 </template>

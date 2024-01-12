@@ -1,5 +1,5 @@
 <template>
   <naive-theme>
-    <n-divider dashed> target 详情 </n-divider>
+    <p class="text-start">target 详情</p>
   </naive-theme>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <naive-theme>
-    <n-divider dashed> 基础用法 </n-divider>
+    <p class="text-start">基础用法</p>
   </naive-theme>
 </template>
 

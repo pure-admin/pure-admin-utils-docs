@@ -1,5 +1,5 @@
 <template>
   <naive-theme>
-    <n-divider dashed> 具体使用参考 </n-divider>
+    <p class="text-start">具体使用参考</p>
   </naive-theme>
 </template>
