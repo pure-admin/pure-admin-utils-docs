@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^8.3.1
     version: 8.3.1
   '@pureadmin/utils':
-    specifier: ^2.3.0
-    version: 2.3.0(echarts@5.4.3)(vue@3.3.13)
+    specifier: ^2.3.1
+    version: 2.3.1(echarts@5.4.3)(vue@3.3.13)
   '@vicons/ionicons5':
     specifier: ^0.12.0
     version: 0.12.0
@@ -54,8 +54,8 @@ devDependencies:
     specifier: ^3.1.1
     version: 3.1.1
   svgo:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.2.0
+    version: 3.2.0
   typeit:
     specifier: ^8.8.0
     version: 8.8.0
@@ -907,8 +907,8 @@ packages:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
     dev: true
 
-  /@pureadmin/utils@2.3.0(echarts@5.4.3)(vue@3.3.13):
-    resolution: {integrity: sha512-zgsqyI0+cAb/CnyDSPlZev7Hu7ZFAZtpg4AFxLdNsZ7EZx01/CmG3SQyTBajLSWvNk1Ajt2NozOZZYvGB1B4IQ==}
+  /@pureadmin/utils@2.3.1(echarts@5.4.3)(vue@3.3.13):
+    resolution: {integrity: sha512-rg23cFs7y0jJ54TNCIM810ZKLf6G7Hk8h2Lr/D1Uw+ertDxCtIeQYpJ56Vo+I8ibUpVZDBA0qpKiUziUTs//WA==}
     peerDependencies:
       echarts: '*'
       vue: '*'
@@ -2715,8 +2715,8 @@ packages:
       has-flag: 3.0.0
     dev: true
 
-  /svgo@3.1.0:
-    resolution: {integrity: sha512-R5SnNA89w1dYgNv570591F66v34b3eQShpIBcQtZtM5trJwm1VvxbIoMpRYY3ybTAutcKTLEmTsdnaknOHbiQA==}
+  /svgo@3.2.0:
+    resolution: {integrity: sha512-4PP6CMW/V7l/GmKRKzsLR8xxjdHTV4IMvhTnpuHwwBazSIlw5W/5SmPjN8Dwyt7lKbSJrRDgp4t9ph0HgChFBQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
