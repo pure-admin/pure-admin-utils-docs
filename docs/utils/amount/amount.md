@@ -14,13 +14,13 @@ import addZero from './addZero.vue'
 转换金额
 :::
 
-### centsToDollars {#centstodollars}
+## centsToDollars
 
 分转元
 
 <div class="pure-border">
 
-#### <divider-base /> {#base1}
+### <divider-base /> {#base1}
 
 <centsToDollars />
 
@@ -32,7 +32,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param1}
+### <divider-param /> {#param1}
 
 接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `number`
 
@@ -43,13 +43,13 @@ import addZero from './addZero.vue'
 
 </div>
 
-### dollarsToCents {#dollarstocents}
+## dollarsToCents
 
 元转分
 
 <div class="pure-border">
 
-#### <divider-base /> {#base2}
+### <divider-base /> {#base2}
 
 <dollarsToCents />
 
@@ -61,7 +61,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param2}
+### <divider-param /> {#param2}
 
 接收两个参数，第一个参数 `val`，第二个参数 `digit`，返回值类型 `number`
 
@@ -72,13 +72,13 @@ import addZero from './addZero.vue'
 
 </div>
 
-### priceUppercase {#priceuppercase}
+## priceUppercase
 
 金额转大写汉字（支持小数位）
 
 <div class="pure-border">
 
-#### <divider-base /> {#base3}
+### <divider-base /> {#base3}
 
 <priceUppercase />
 
@@ -90,7 +90,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param3}
+### <divider-param /> {#param3}
 
 接收两个参数，第一个参数 `val`，第二个参数 `format`，返回值类型 `string`
 
@@ -101,13 +101,13 @@ import addZero from './addZero.vue'
 
 </div>
 
-### priceToThousands {#pricetothousands}
+## priceToThousands
 
 格式化金额，三位加一个逗号
 
 <div class="pure-border">
 
-#### <divider-base /> {#base4}
+### <divider-base /> {#base4}
 
 <priceToThousands />
 
@@ -119,7 +119,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param4}
+### <divider-param /> {#param4}
 
 接收两个参数，第一个参数 `amount` ，第二个参数 `options` ，返回格式化后的金额
 
@@ -128,26 +128,26 @@ import addZero from './addZero.vue'
 | `amount`     | 金额                                      | `number`    |
 | `options`    | 拥有两个属性，具体看下面的 `options` 详情 | `AmountOpt` |
 
-#### <divider-options /> {#options4}
+### <divider-options /> {#options4}
 
 | **参数属性** | **说明**           | **类型**  | **默认值** |
 | ------------ | ------------------ | --------- | ---------- |
 | `digit`      | 保留几位小数       | `number`  | `0`        |
 | `round`      | 小数位是否四舍五入 | `boolean` | `false`    |
 
-#### <divider-type /> {#type4}
+### <divider-type /> {#type4}
 
 <<< @/utils/amount/types/priceToThousands.ts
 
 </div>
 
-### getDecimalPlaces {#getdecimalplaces}
+## getDecimalPlaces
 
 获取数值的小数位数
 
 <div class="pure-border">
 
-#### <divider-base /> {#base5}
+### <divider-base /> {#base5}
 
 <getDecimalPlaces />
 
@@ -159,7 +159,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param5}
+### <divider-param /> {#param5}
 
 接收一个参数 `val`，返回小数位数
 
@@ -169,13 +169,13 @@ import addZero from './addZero.vue'
 
 </div>
 
-### addZero {#addzero}
+## addZero
 
 在数值后加 `.00`
 
 <div class="pure-border">
 
-#### <divider-base /> {#base6}
+### <divider-base />
 
 <addZero />
 
@@ -187,7 +187,7 @@ import addZero from './addZero.vue'
 
 </details>
 
-#### <divider-param /> {#param6}
+### <divider-param /> {#param6}
 
 接收一个参数 `val`，返回加完 `.00` 后的值
 

@@ -131,10 +131,8 @@
 }
 
 .vp-doc h2 {
-  margin: 32px 0 8px 0;
+  margin: 12px 0 8px 0;
   border-top: none;
-  /* padding-top: 0; */
-  /* opacity: 0.8; */
   font-size: 22px;
 }
 
