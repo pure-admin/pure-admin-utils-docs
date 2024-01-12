@@ -73,7 +73,7 @@ const {} = useResizeObserver(target, callback, options);
 | ---------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | `target`   | 是   | 监听哪个容器元素，可以是类名（`'.class'`）、`ID`（`'.id'`），也可以是 [ref](https://cn.vuejs.org/guide/essentials/template-refs.html#template-refs) | `string`、`ElementRef<HTMLDivElement>`、`string[]`、`ElementRef<HTMLDivElement>[]` |
 | `callback` | 是   | 容器尺寸变化后的回调函数，返回一个`entries`数组对象，对象为监听容器元素的宽高等属性值                                                               | `ResizeObserverCallback`                                                           |
-| `options`  | 否   | 额外参数对象，具体看下面的 [`options`详情](useResizeObserver#options详情)                                                                               | `UseResizeObserverOptions`                                                         |
+| `options`  | 否   | 额外参数对象，具体看下面的 [`options`详情](useResizeObserver#options详情)                                                                           | `UseResizeObserverOptions`                                                         |
 
 ##### `options`详情
 

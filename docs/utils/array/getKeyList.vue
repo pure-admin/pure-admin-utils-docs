@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { getKeyList } from "@pureadmin/utils";
 let arr = [
-  { name: "Mary", age: 18 },
-  { name: "Tony", age: 18 },
+  { name: "Mar", age: 18 },
   { name: "Tom", age: 19 },
-  { name: "Jack", age: 20 }
+  { name: "Boy", age: 20 }
 ];
 </script>
 

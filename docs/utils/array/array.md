@@ -1,11 +1,15 @@
 <script setup>
 import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
-useAddNumInOutlineLabel(5)
+useAddNumInOutlineLabel(9)
 
+import getKeyList from './getKeyList.vue'
+import arrayAllExist from "./arrayAllExist.vue"
+import arrayAllExistDeep from "./arrayAllExistDeep.vue"
+import arrayAnyExist from "./arrayAnyExist.vue"
+import arrayAnyExistDeep from "./arrayAnyExistDeep.vue"
 import swapOrder from './swapOrder.vue'
 import isIncludeAllChildren from './isIncludeAllChildren.vue'
 import intersection from './intersection.vue'
-import getKeyList from './getKeyList.vue'
 import randomDivide from './randomDivide.vue'
 </script>
 
@@ -13,13 +17,158 @@ import randomDivide from './randomDivide.vue'
 处理数组
 :::
 
+## getKeyList
+
+从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值
+
+<div class="pure-border">
+
+#### <divider-base /> {#base1}
+
+<getKeyList />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/getKeyList.vue
+
+</details>
+
+#### <divider-param /> {#param1}
+
+接收二个参数，第一个参数 `arr`，第二个参数 `key`，返回值类型为 `any[]`
+
+| **参数属性** | **说明**     | **类型** |
+| ------------ | ------------ | -------- |
+| `arr`        | 数组         | `any[]`  |
+| `key`        | 指定的 `key` | `string` |
+
+</div>
+
+## arrayAllExist
+
+检测一个数组是否包含另一个数组中所有的值（内部使用`new Set`性能更好。该方法只针对基本数据类型，需要更复杂的场景可以用`arrayAllExistDeep`）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
+
+<arrayAllExist />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/arrayAllExist.vue
+
+</details>
+
+#### <divider-param /> {#param2}
+
+接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**               | **类型**         |
+| ------------ | ---------------------- | ---------------- |
+| `array`      | 初始数组               | `Array<unknown>` |
+| `checkArray` | 与初始数组做对比的数组 | `Array<unknown>` |
+
+</div>
+
+## arrayAllExistDeep
+
+检测一个数组是否包含另一个数组中所有的值（深度对比）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base3}
+
+<arrayAllExistDeep />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/arrayAllExistDeep.vue
+
+</details>
+
+#### <divider-param /> {#param3}
+
+接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**               | **类型**         |
+| ------------ | ---------------------- | ---------------- |
+| `array`      | 初始数组               | `Array<unknown>` |
+| `checkArray` | 与初始数组做对比的数组 | `Array<unknown>` |
+
+</div>
+
+## arrayAnyExist
+
+检测一个数组是否包含另一个数组中任意一个值（内部使用`new Set`性能更好。该方法只针对基本数据类型，需要更复杂的场景可以用`arrayAnyExistDeep`）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base4}
+
+<arrayAnyExist />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/arrayAnyExist.vue
+
+</details>
+
+#### <divider-param /> {#param4}
+
+接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**               | **类型**         |
+| ------------ | ---------------------- | ---------------- |
+| `array`      | 初始数组               | `Array<unknown>` |
+| `checkArray` | 与初始数组做对比的数组 | `Array<unknown>` |
+
+</div>
+
+## arrayAnyExistDeep
+
+检测一个数组是否包含另一个数组中任意一个值（深度对比）
+
+<div class="pure-border">
+
+#### <divider-base /> {#base5}
+
+<arrayAnyExistDeep />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/arrayAnyExistDeep.vue
+
+</details>
+
+#### <divider-param /> {#param5}
+
+接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
+
+| **参数属性** | **说明**               | **类型**         |
+| ------------ | ---------------------- | ---------------- |
+| `array`      | 初始数组               | `Array<unknown>` |
+| `checkArray` | 与初始数组做对比的数组 | `Array<unknown>` |
+
+</div>
+
 ## swapOrder
 
 数组中两个元素互换位置（内部使用 `splice` 会改变原数组）
 
 <div class="pure-border">
 
-#### <divider-base /> {#base1}
+#### <divider-base /> {#base6}
 
 <swapOrder />
 
@@ -31,7 +180,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param1}
+#### <divider-param /> {#param6}
 
 接收三个参数，第一个参数 `arr` ，第二个参数 `fIndex` ，第三个参数 `sIndex` ，返回值类型 `any[]`
 
@@ -49,7 +198,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base2}
+#### <divider-base /> {#base7}
 
 <isIncludeAllChildren />
 
@@ -61,7 +210,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param2}
+#### <divider-param /> {#param7}
 
 接收二个参数，第一个参数 `c`，第二个参数 `m`，返回值类型为 `boolean`
 
@@ -78,7 +227,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base3}
+#### <divider-base /> {#base8}
 
 <intersection />
 
@@ -90,38 +239,9 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param3}
+#### <divider-param /> {#param8}
 
 接收无数量限制的数组参数，返回由基本数据类型组成的数组交集
-
-</div>
-
-## getKeyList
-
-从数组中获取指定 `key` 组成的新数组，会去重也会去除不存在的值
-
-<div class="pure-border">
-
-#### <divider-base /> {#base4}
-
-<getKeyList />
-
-<details>
-
-<summary>查看代码</summary>
-
-<<< @/utils/array/getKeyList.vue
-
-</details>
-
-#### <divider-param /> {#param4}
-
-接收二个参数，第一个参数 `arr`，第二个参数 `key`，返回值类型为 `any[]`
-
-| **参数属性** | **说明**     | **类型** |
-| ------------ | ------------ | -------- |
-| `arr`        | 数组         | `any[]`  |
-| `key`        | 指定的 `key` | `string` |
 
 </div>
 
@@ -131,7 +251,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base5}
+#### <divider-base /> {#base9}
 
 <randomDivide />
 
@@ -143,7 +263,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param5}
+#### <divider-param /> {#param9}
 
 接收四个参数，第一个参数 `total`，第二个参数 `parts`，第三个参数 `minPerPart`，第四个参数 `maxPerPart`，返回值类型为 `number[]`
 
