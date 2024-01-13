@@ -11,6 +11,7 @@ let name = ref("iLoveStudy");
       <n-button @click="name = nameHyphenate(name)">
         驼峰命名转横线命名
       </n-button>
+      <n-button @click="name = 'iLoveStudy'"> 恢复初始值 </n-button>
       <n-gradient-text type="info">
         {{ name }}
       </n-gradient-text>

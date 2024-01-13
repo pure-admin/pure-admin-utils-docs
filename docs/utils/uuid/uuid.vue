@@ -3,19 +3,20 @@ import { ref } from "vue";
 import { uuid } from "@pureadmin/utils";
 
 let customUUID = ref("");
+customUUID.value = uuid(32, 62, "simpleton-");
 </script>
 
 <template>
   <naive-theme>
-    <n-space className="flex items-center mt-2">
+    <n-space vertical className="mt-2">
       <n-button @click="customUUID = uuid(32, 62, 'simpleton-')">
-        指定长度和基数的uuid
+        点击生成指定长度和基数的uuid
       </n-button>
-      <n-gradient-text type="error">
-        {{ customUUID }}
-        <n-tag :bordered="false" type="error" v-show="customUUID.length > 0">
+      <n-gradient-text type="info">
+        <n-tag :bordered="false" type="info" v-show="customUUID.length > 0">
           长度：{{ customUUID.length }}
         </n-tag>
+        {{ customUUID }}
       </n-gradient-text>
     </n-space>
   </naive-theme>

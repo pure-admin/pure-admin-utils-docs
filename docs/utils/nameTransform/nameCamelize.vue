@@ -9,6 +9,7 @@ let name = ref("i-love-study");
   <naive-theme>
     <n-space className="flex items-center mt-2">
       <n-button @click="name = nameCamelize(name)"> 横线转驼峰命名 </n-button>
+      <n-button @click="name = 'i-love-study'"> 恢复初始值 </n-button>
       <n-gradient-text type="info">
         {{ name }}
       </n-gradient-text>

@@ -4,7 +4,7 @@ useAddNumInOutlineLabel(1)
 </script>
 
 ::: tip 支持任意运行在 `Node` 的 `JavaScript` 语言
-包大小计算
+计算包的大小
 :::
 
 ## getPackageSize
@@ -13,7 +13,7 @@ useAddNumInOutlineLabel(1)
 
 <div class="pure-border">
 
-### <divider-use /> {#use1}
+#### <divider-use /> {#use1}
 
 [demo1](https://github.com/pure-admin/vue-pure-admin/blob/main/build/info.ts#L37)、[demo2](https://github.com/pure-admin/pure-admin-release/blob/main/src/index.ts#L56)
 
