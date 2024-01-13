@@ -247,7 +247,7 @@ import randomDivide from './randomDivide.vue'
 
 ## randomDivide
 
-将一个总数随机分配到指定份数的数组中
+将一个总数随机分配到指定份数的数组中，并按指定顺序返回数组（内部使用`Knuth`洗牌算法）
 
 <div class="pure-border">
 
@@ -265,13 +265,24 @@ import randomDivide from './randomDivide.vue'
 
 #### <divider-param /> {#param9}
 
-接收四个参数，第一个参数 `total`，第二个参数 `parts`，第三个参数 `minPerPart`，第四个参数 `maxPerPart`，返回值类型为 `number[]`
+接收三个参数，第一个参数 `total`，第二个参数 `parts`，第三个参数 `options`，返回值类型为 `number[]`
 
-| **参数属性** | **说明**                                         | **类型** |
-| ------------ | ------------------------------------------------ | -------- |
-| `total`      | 需要被分配的总数                                 | `number` |
-| `parts`      | 将总数分成多少份                                 | `number` |
-| `minPerPart` | 每一份的最小阀值。可选，默认`0`                  | `number` |
-| `maxPerPart` | 每一份的最大阀值。可选，默认最大阀值不会超过总数 | `number` |
+| **参数属性** | **说明**                                                      | **类型**        |
+| ------------ | ------------------------------------------------------------- | --------------- |
+| `total`      | 需要被分配的总数                                              | `number`        |
+| `parts`      | 将总数分成多少份                                              | `number`        |
+| `options`    | 额外参数对象，具体看下面的 [`options`详情](array#options详情) | `DivideOptions` |
+
+##### `options`详情
+
+| **属性**     | **说明**                                                            | **类型** | 默认值     |
+| ------------ | ------------------------------------------------------------------- | -------- | ---------- |
+| `minPerPart` | 每一份的最小阀值                                                    | `number` | `0`        |
+| `maxPerPart` | 每一份的最大阀值。默认最大阀值不会超过总数                          | `number` |            |
+| `order`      | 返回数组的排序方式：递增(`'asc'`)、递减(`'desc'`)、随机(`'random'`) | `string` | `'random'` |
+
+#### <divider-type /> {#type9}
+
+<<< @/utils/array/types/randomDivide.ts
 
 </div>

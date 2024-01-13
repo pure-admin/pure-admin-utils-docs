@@ -44,7 +44,7 @@ onMounted(() => (color.value = randomGradient()));
 
 <style scoped>
 /* 
-  color 属性不支持渐变，它只接受单一的颜色值
+  color 属性不支持渐变，它只接收单一的颜色值
   如果想要文本的颜色具有渐变效果需要先设置 color: transparent 使文本颜色透明
   然后使用 background-image 属性为文本设置渐变背景
   最后使用 background-clip: text 属性将渐变背景置于文本区域
