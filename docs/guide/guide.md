@@ -57,7 +57,15 @@ npm install @pureadmin/utils
 我们为`nuxt3`提供了所有`hooks`示例  
 [代码仓库](https://github.com/pure-admin/pure-admin-utils-nuxt3) [在线预览](https://pure-admin.github.io/pure-admin-utils-nuxt3/)
 
-### 🤔 反馈
+### 🤔 常见问题、反馈
+
+问题：如果自己项目中的函数与 `@pureadmin/utils` 内部的函数名称冲突怎么办？  
+答：这种问题很常见，可以使用 `ES6` 提供的 `as` 关键字来为导入的函数重命名，如下：
+
+```ts
+import { cloneDeep as _cloneDeep } from "@pureadmin/utils";
+_cloneDeep();
+```
 
 [反馈问题、新增需求](https://github.com/pure-admin/pure-admin-utils-docs/issues/new)
 
