@@ -1,8 +1,9 @@
 <script setup>
 import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
-useAddNumInOutlineLabel(9)
+useAddNumInOutlineLabel(10)
 
 import getKeyList from './getKeyList.vue'
+import extractFields from './extractFields.vue'
 import arrayAllExist from "./arrayAllExist.vue"
 import arrayAllExistDeep from "./arrayAllExistDeep.vue"
 import arrayAnyExist from "./arrayAnyExist.vue"
@@ -46,13 +47,42 @@ import randomDivide from './randomDivide.vue'
 
 </div>
 
+## extractFields
+
+提取对象数组中的任意字段，返回一个新的数组
+
+<div class="pure-border">
+
+#### <divider-base /> {#base2}
+
+<extractFields />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/array/extractFields.vue
+
+</details>
+
+#### <divider-param /> {#param2}
+
+接收无限参数，第一个参数 `array`，剩余参数`keys`，返回值类型为 `any[]`
+
+| **参数属性** | **说明**               | **类型** |
+| ------------ | ---------------------- | -------- |
+| `array`      | 数组                   | `any[]`  |
+| `keys`       | 任意指定字段，不限数量 | `string` |
+
+</div>
+
 ## arrayAllExist
 
 检测一个数组是否包含另一个数组中所有的值（内部使用`new Set`性能更好。该方法只针对基本数据类型，需要更复杂的场景可以用`arrayAllExistDeep`）
 
 <div class="pure-border">
 
-#### <divider-base /> {#base2}
+#### <divider-base /> {#base3}
 
 <arrayAllExist />
 
@@ -64,7 +94,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param2}
+#### <divider-param /> {#param3}
 
 接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
 
@@ -81,7 +111,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base3}
+#### <divider-base /> {#base4}
 
 <arrayAllExistDeep />
 
@@ -93,7 +123,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param3}
+#### <divider-param /> {#param4}
 
 接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
 
@@ -110,7 +140,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base4}
+#### <divider-base /> {#base5}
 
 <arrayAnyExist />
 
@@ -122,7 +152,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param4}
+#### <divider-param /> {#param5}
 
 接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
 
@@ -139,7 +169,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base5}
+#### <divider-base /> {#base6}
 
 <arrayAnyExistDeep />
 
@@ -151,7 +181,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param5}
+#### <divider-param /> {#param6}
 
 接收二个参数，第一个参数 `array`，第二个参数 `checkArray`，返回值类型为 `boolean`
 
@@ -168,7 +198,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base6}
+#### <divider-base /> {#base7}
 
 <swapOrder />
 
@@ -180,7 +210,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param6}
+#### <divider-param /> {#param7}
 
 接收三个参数，第一个参数 `arr` ，第二个参数 `fIndex` ，第三个参数 `sIndex` ，返回值类型 `any[]`
 
@@ -198,7 +228,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base7}
+#### <divider-base /> {#base8}
 
 <isIncludeAllChildren />
 
@@ -210,7 +240,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param7}
+#### <divider-param /> {#param8}
 
 接收二个参数，第一个参数 `c`，第二个参数 `m`，返回值类型为 `boolean`
 
@@ -227,7 +257,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base8}
+#### <divider-base /> {#base9}
 
 <intersection />
 
@@ -239,7 +269,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param8}
+#### <divider-param /> {#param9}
 
 接收无数量限制的数组参数，返回由基本数据类型组成的数组交集
 
@@ -251,7 +281,7 @@ import randomDivide from './randomDivide.vue'
 
 <div class="pure-border">
 
-#### <divider-base /> {#base9}
+#### <divider-base /> {#base10}
 
 <randomDivide />
 
@@ -263,7 +293,7 @@ import randomDivide from './randomDivide.vue'
 
 </details>
 
-#### <divider-param /> {#param9}
+#### <divider-param /> {#param10}
 
 接收三个参数，第一个参数 `total`，第二个参数 `parts`，第三个参数 `options`，返回值类型为 `number[]`
 
@@ -281,7 +311,7 @@ import randomDivide from './randomDivide.vue'
 | `maxPerPart` | 每一份的最大阀值。默认最大阀值不会超过总数                          | `number` |            |
 | `order`      | 返回数组的排序方式：递增(`'asc'`)、递减(`'desc'`)、随机(`'random'`) | `string` | `'random'` |
 
-#### <divider-type /> {#type9}
+#### <divider-type /> {#type10}
 
 <<< @/utils/array/types/randomDivide.ts
 
