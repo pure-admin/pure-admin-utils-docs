@@ -282,3 +282,14 @@ table tbody tr:hover {
 .VPLink.link.vp-external-link-icon.VPNavBarMenuLink > span:hover {
   opacity: 0.7;
 }
+
+#pure-badge {
+  display: inline-flex;
+  font-size: 12px;
+  padding: 0 4px;
+  margin-left: 10px;
+  border: 0.4px solid var(--vp-custom-block-tip-border);
+  background: var(--vp-custom-block-tip-bg);
+  color: var(--vp-c-brand-1);
+  border-radius: 6px;
+}

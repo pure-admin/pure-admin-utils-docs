@@ -4,6 +4,10 @@ import { hooks } from "./utils/sortHooks";
 import { defineConfig, type DefaultTheme } from "vitepress";
 import ReactivityTransform from "@vue-macros/reactivity-transform/vite";
 
+function addBadgeHTML(text: string) {
+  return `<div id="pure-badge">${text}</div>`;
+}
+
 function sortHooks(list: DefaultTheme.SidebarItem[]) {
   return hooks
     .map(hook => {
@@ -22,7 +26,7 @@ function getItems(path: string) {
     objectMode: true
   }).forEach(({ name }) => {
     links.push({
-      text: name,
+      text: name === "formData" ? name + addBadgeHTML("新内容更新") : name,
       link: `/${path}/${name}/${name}`
     });
   });
@@ -124,6 +128,7 @@ export default defineConfig({
     sidebar: [
       {
         text: "介绍",
+        collapsed: false,
         items: [
           {
             text: "快速开始",
@@ -133,12 +138,12 @@ export default defineConfig({
       },
       {
         text: `Hooks（${getItems("hooks").length}）`,
-        collapsible: true,
+        collapsed: false,
         items: sortHooks(getItems("hooks"))
       },
       {
         text: `Utils（${getItems("utils").length}）`,
-        collapsible: true,
+        collapsed: false,
         items: getItems("utils")
       }
     ] as DefaultTheme.SidebarItem[],

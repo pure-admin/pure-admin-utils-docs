@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { extractFields } from "@pureadmin/utils"
+import { extractFields } from "@pureadmin/utils";
 let arr = [
-  { name: "Mar", age: 18, sex: 'girl' },
-  { name: "Tom", age: 19, sex: 'boy' },
-]
+  { name: "Mar", age: 18, sex: "girl" },
+  { name: "Tom", age: 19, sex: "boy" }
+];
 </script>
 
 <template>
