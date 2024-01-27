@@ -119,10 +119,6 @@ export default defineConfig({
         text: "指南",
         link: "/guide/guide",
         activeMatch: `^/guide/`
-      },
-      {
-        text: "回顾2023！",
-        link: "https://www.bilibili.com/video/BV1He411m7Qs/"
       }
     ],
     sidebar: [
