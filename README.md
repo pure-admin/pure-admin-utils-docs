@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  pure-admin-utils 文档
+  pure-admin-utils 保姆级文档
 </p>
 
 <p align="center">
