@@ -17,7 +17,7 @@ hero:
       link: https://github.com/pure-admin/pure-admin-utils-docs
     - theme: pure pure-doc
       text: pure-admin-doc
-      link: https://yiming_chang.gitee.io/pure-admin-doc/
+      link: https://pure-admin.github.io/pure-admin-doc
     - theme: pure pure-table
       text: pure-admin-table
       link: https://github.com/pure-admin/pure-admin-table
