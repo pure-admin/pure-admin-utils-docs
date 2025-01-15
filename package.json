@@ -17,7 +17,7 @@
     "format": "prettier --check --write .",
     "clean": "pnpm store prune && pnpm install",
     "svgo": "svgo -f . -r",
-    "preview": "pnpm build && vitepress serve docs --port 8084"
+    "preview": "pnpm build && vitepress preview docs --port 8084"
   },
   "license": "MIT",
   "author": {
@@ -33,21 +33,21 @@
     "@vue-macros/reactivity-transform": "^1.1.4",
     "@vueuse/components": "^12.4.0",
     "@vueuse/core": "^12.4.0",
-    "axios": "^1.6.8",
-    "echarts": "^5.5.0",
+    "axios": "^1.7.9",
+    "echarts": "^5.6.0",
     "echarts-gl": "^2.0.9",
-    "fast-glob": "^3.3.2",
-    "highlight.js": "^11.9.0",
+    "fast-glob": "^3.3.3",
+    "highlight.js": "^11.11.1",
     "marked": "^11.2.0",
-    "naive-ui": "^2.38.1",
+    "naive-ui": "^2.41.0",
     "pathe": "^1.1.2",
-    "prettier": "^3.2.5",
-    "svgo": "^3.2.0",
-    "typeit": "^8.8.3",
-    "typescript": "^5.4.5",
-    "unocss": "^0.58.9",
-    "vite": "^5.2.8",
-    "vitepress": "^1.1.0",
+    "prettier": "^3.4.2",
+    "svgo": "^3.3.2",
+    "typeit": "^8.8.7",
+    "typescript": "^5.7.3",
+    "unocss": "^65.4.0",
+    "vite": "^6.0.7",
+    "vitepress": "^1.5.0",
     "vue": "^3.5.13",
     "vue-toastification": "2.0.0-rc.5",
     "vue3-photo-preview": "^0.3.0"
@@ -56,7 +56,6 @@
     "node": "^18.0.0 || >=20.0.0",
     "pnpm": ">=8.6.10"
   },
-  "packageManager": "pnpm@8.6.10",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
