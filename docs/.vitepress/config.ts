@@ -26,7 +26,7 @@ function getItems(path: string) {
     objectMode: true
   }).forEach(({ name }) => {
     links.push({
-      text: name === "formData" ? name + addBadgeHTML("新内容更新") : name,
+      text: name === "object" ? name + addBadgeHTML("new") : name,
       link: `/${path}/${name}/${name}`
     });
   });
