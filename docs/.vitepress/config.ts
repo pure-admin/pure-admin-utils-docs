@@ -26,7 +26,7 @@ function getItems(path: string) {
     objectMode: true
   }).forEach(({ name }) => {
     links.push({
-      text: name === "object" ? name + addBadgeHTML("new") : name,
+      text: name === "svg" ? name + addBadgeHTML("new") : name,
       link: `/${path}/${name}/${name}`
     });
   });

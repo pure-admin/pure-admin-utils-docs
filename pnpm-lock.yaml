@@ -15,8 +15,8 @@ importers:
         specifier: ^8.4.1
         version: 8.4.1
       '@pureadmin/utils':
-        specifier: ^2.5.0
-        version: 2.5.0(echarts@5.6.0)(vue@3.5.13(typescript@5.7.3))
+        specifier: ^2.6.0
+        version: 2.6.0(echarts@5.6.0)(vue@3.5.13(typescript@5.7.3))
       '@vicons/ionicons5':
         specifier: ^0.12.0
         version: 0.12.0
@@ -705,8 +705,8 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@pureadmin/utils@2.5.0':
-    resolution: {integrity: sha512-DJyHBqxQo9Uo4GDEMbLD9xDNIn+VrOMBOyS6bgArY1a1iv4ffpDf0tA1tQ2HRFMiIcERC5abLWAASpgITM5LOQ==}
+  '@pureadmin/utils@2.6.0':
+    resolution: {integrity: sha512-xPncBQ4DZUstKrljsHxr3yuYacEZmvEilSfrZ6vpWNgJtPnViJ24Lf7gl7c1Y1RKYm/kXxjrhI7x69S2oN1Pvg==}
     peerDependencies:
       echarts: '*'
       vue: '*'
@@ -2303,7 +2303,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@pureadmin/utils@2.5.0(echarts@5.6.0)(vue@3.5.13(typescript@5.7.3))':
+  '@pureadmin/utils@2.6.0(echarts@5.6.0)(vue@3.5.13(typescript@5.7.3))':
     optionalDependencies:
       echarts: 5.6.0
       vue: 3.5.13(typescript@5.7.3)
