@@ -27,7 +27,7 @@ export const useAddNumInOutlineLabel = (num = 0) => {
     nextTick(() => {
       // @media (min-width: 1279px) {}    >1279px
       const VPDocAsideOutline = document.querySelector(
-        "div.VPDocAsideOutline.has-outline > .content > div.outline-title"
+        "#doc-outline-aria-label"
       );
 
       // @media (min-width: 960px) and (max-width: 1279px) {}    960px<x<1279px

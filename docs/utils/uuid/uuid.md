@@ -1,8 +1,9 @@
 <script setup>
 import { useAddNumInOutlineLabel } from '../../.vitepress/utils/createElement.ts'
-useAddNumInOutlineLabel(3)
+useAddNumInOutlineLabel(4)
 
 import buildUUID from './buildUUID.vue'
+import buildGUID from './buildGUID.vue'
 import buildPrefixUUID from './buildPrefixUUID.vue'
 import uuid from './uuid.vue'
 </script>
@@ -24,6 +25,24 @@ uuid
 <summary>查看代码</summary>
 
 <<< @/utils/uuid/buildUUID.vue
+
+</details>
+
+</div>
+
+## buildGUID
+
+生成 `36` 位带横杠的 `GUID` 字符串（符合 `RFC 4122` 标准的 `UUID v4` 格式，以确保与 `C#` 和 `SQL Server` 的兼容性）
+
+<div class="pure-border">
+
+<buildGUID />
+
+<details>
+
+<summary>查看代码</summary>
+
+<<< @/utils/uuid/buildGUID.vue
 
 </details>
 
