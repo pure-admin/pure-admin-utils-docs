@@ -104,14 +104,15 @@ setWatermark("我是水印");
 
 ```ts
 //  在此处配置参数
-const {} = useWatermark(appendEl);
+const {} = useWatermark(appendEl, resizeReDraw);
 ```
 
 <div class="pure-no-border">
 
-| **参数属性** | 必传 | **说明**                     | **类型**           |
-| ------------ | ---- | ---------------------------- | ------------------ |
-| `appendEl`   | 否   | 要添加水印的主体，默认`body` | `Ref<HTMLElement>` |
+| **参数属性**   | 必传 | **说明**                                                                   | **类型**           |
+| -------------- | ---- | -------------------------------------------------------------------------- | ------------------ |
+| `appendEl`     | 否   | 要添加水印的主体，默认`body`                                               | `Ref<HTMLElement>` |
+| `resizeReDraw` | 否   | 当浏览器窗口的尺寸发生改变时，是否重新绘制水印，默认 `false`（不重新绘制） | `boolean`          |
 
 </div>
 
@@ -138,3 +139,9 @@ const {} = useWatermark(appendEl);
 #### 类型声明
 
 <<< @/hooks/useWatermark/types/useWatermark.ts
+
+<style scoped>
+.pure-no-border > table > thead > tr > th:nth-child(2) {
+  min-width: 60px;
+}
+</style>

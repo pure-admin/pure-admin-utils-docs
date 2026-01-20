@@ -39,6 +39,8 @@ interface attr {
   imageHeight?: number;
   /** 是否让水印无法删除，默认`false`，开启后在控制台操作对应的 `Elements` 也无法删除 */
   forever?: boolean;
+  /** 偶数列的垂直偏移量，默认 `0`（完全对齐），可设置为正数使偶数列向下偏移 */
+  verticalOffset?: number;
 }
 interface gradientType {
   /** 范围 `0.0` 到 `1.0` https://www.runoob.com/tags/canvas-addcolorstop.html */

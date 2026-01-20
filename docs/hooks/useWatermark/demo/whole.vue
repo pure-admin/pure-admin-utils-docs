@@ -23,7 +23,7 @@ onBeforeUnmount(() => {
     <n-space vertical>
       <n-button
         size="small"
-        @click="setWatermark(value, { width: 400, height: 320 })"
+        @click="setWatermark(value, { verticalOffset: 160 })"
       >
         创建整页水印
       </n-button>
@@ -31,13 +31,12 @@ onBeforeUnmount(() => {
         size="small"
         @click="
           setWatermark(value, {
-            width: 400,
-            height: 320,
             gradient: [
               { value: 0, color: 'magenta' },
               { value: 0.5, color: 'blue' },
               { value: 1.0, color: 'red' }
-            ]
+            ],
+            verticalOffset: 160
           })
         "
       >
@@ -47,14 +46,13 @@ onBeforeUnmount(() => {
         size="small"
         @click="
           setWatermark(value, {
-            width: 400,
-            height: 320,
             rotate: 0,
             gradient: [
               { value: 0, color: 'magenta' },
               { value: 0.5, color: 'blue' },
               { value: 1.0, color: 'red' }
-            ]
+            ],
+            verticalOffset: 160
           })
         "
       >
@@ -64,14 +62,13 @@ onBeforeUnmount(() => {
         size="small"
         @click="
           setWatermark(value, {
-            width: 400,
-            height: 320,
             gradient: [
               { value: 0, color: 'magenta' },
               { value: 0.5, color: 'blue' },
               { value: 1.0, color: 'red' }
             ],
-            shadowConfig: [20]
+            shadowConfig: [20],
+            verticalOffset: 160
           })
         "
       >
@@ -81,14 +78,13 @@ onBeforeUnmount(() => {
         size="small"
         @click="
           setWatermark(value, {
-            width: 400,
-            height: 320,
             globalAlpha: 0.15, // 值越低越透明
             gradient: [
               { value: 0, color: 'magenta' },
               { value: 0.5, color: 'blue' },
               { value: 1.0, color: 'red' }
-            ]
+            ],
+            verticalOffset: 160
           })
         "
       >
