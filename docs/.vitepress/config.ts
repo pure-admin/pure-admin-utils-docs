@@ -8,7 +8,7 @@ function addBadgeHTML(text: string) {
   return `<div id="pure-badge">${text}</div>`;
 }
 
-function sortHooks(list: DefaultTheme.SidebarItem[]) {
+function sortHooks(list) {
   return hooks
     .map(hook => {
       return list.map(l => {
@@ -19,18 +19,31 @@ function sortHooks(list: DefaultTheme.SidebarItem[]) {
     .filter(Boolean);
 }
 
+const newBadges = new Set(["useWatermark", "svg"]);
+
+const withBadge = (name: string) =>
+  newBadges.has(name) ? name + addBadgeHTML("new") : name;
+
 function getItems(path: string) {
-  const links: DefaultTheme.SidebarItem[] = [];
-  fg.sync(`docs/${path}/*`, {
-    onlyDirectories: true,
-    objectMode: true
-  }).forEach(({ name }) => {
-    links.push({
-      text: name === "svg" ? name + addBadgeHTML("new") : name,
+  const links = fg
+    .sync(`docs/${path}/*`, { onlyDirectories: true, objectMode: true })
+    .map(({ name }) => ({
+      text: name,
       link: `/${path}/${name}/${name}`
-    });
+    }));
+
+  const decorate = (v: { text: string; link: string }) => ({
+    ...v,
+    text: withBadge(v.text)
   });
-  return links;
+
+  const hooks = sortHooks(links.filter(v => v.text.startsWith("use"))).map(
+    decorate
+  );
+
+  const utils = links.filter(v => !v.text.startsWith("use")).map(decorate);
+
+  return [...hooks, ...utils];
 }
 
 export default defineConfig({
@@ -135,7 +148,7 @@ export default defineConfig({
       {
         text: `Hooks（${getItems("hooks").length}）`,
         collapsed: false,
-        items: sortHooks(getItems("hooks"))
+        items: getItems("hooks")
       },
       {
         text: `Utils（${getItems("utils").length}）`,
